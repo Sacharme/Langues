@@ -1,6 +1,7 @@
 import random
 import tkinter as tk
 from tkinter import ttk, messagebox
+import os
 
 # Variable pour choisir le dictionnaire
 # 1: dictionnaire complet, 2: dictionnaire échantillon
@@ -20,22 +21,34 @@ mots_francais = []
 # créé une liste qui contient tous les mots en espagnol (après le "%" dans dictionnaire.txt)
 mots_espagnols = []
 
+# Chemin de base pour les fichiers (racine du projet)
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish.txt'
+    fichier_dictionnaire = os.path.join(base_dir, 'Dictionnaires', 'dictionnaire_spanish.txt')
 elif dictionnaire == 2:
-    fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish_sample.txt'
+    fichier_dictionnaire = os.path.join(base_dir, 'Dictionnaires', 'dictionnaire_spanish_sample.txt')
 else:
-    fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish.txt'
+    fichier_dictionnaire = os.path.join(base_dir, 'Dictionnaires', 'dictionnaire_spanish.txt')
 
 # Lecture du fichier dictionnaire
-with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
-    for ligne in fichier:
-        ligne = ligne.strip()
-        if '%' in ligne:
-            francais, espagnol = ligne.split(' % ')
-            mots_francais.append(francais)
-            mots_espagnols.append(espagnol)
+try:
+    with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
+        for ligne in fichier:
+            ligne = ligne.strip()
+            if '%' in ligne:
+                francais, espagnol = ligne.split(' % ')
+                mots_francais.append(francais)
+                mots_espagnols.append(espagnol)
+except FileNotFoundError:
+    messagebox.showerror("Erreur", f"Le fichier dictionnaire est introuvable :\n{fichier_dictionnaire}")
+
+# Vérification que le dictionnaire n'est pas vide
+if not mots_francais:
+    # Ajout de valeurs par défaut pour éviter le crash si le fichier est vide ou mal lu
+    mots_francais = ["Erreur"]
+    mots_espagnols = ["Dictionnaire vide ou introuvable"]
 
 # Verbes pour la conjugaison (infinitif en espagnol)
 verbes_ar = [
@@ -814,20 +827,33 @@ class QuizApp:
         mots_francais.clear()
         mots_espagnols.clear()
 
+        # Chemin de base
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
         # Choisir le bon fichier avec la bonne extension
         if dictionnaire == 1:
-            fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish.txt'
+            fichier_dictionnaire = os.path.join(base_dir, 'Dictionnaires', 'dictionnaire_spanish.txt')
         else:
-            fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish_sample.txt'
+            fichier_dictionnaire = os.path.join(base_dir, 'Dictionnaires', 'dictionnaire_spanish_sample.txt')
 
         # Recharger les mots
-        with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
-            for ligne in fichier:
-                ligne = ligne.strip()
-                if '%' in ligne:
-                    francais, espagnol = ligne.split(' % ')
-                    mots_francais.append(francais)
-                    mots_espagnols.append(espagnol)
+        try:
+            with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
+                for ligne in fichier:
+                    ligne = ligne.strip()
+                    if '%' in ligne:
+                        francais, espagnol = ligne.split(' % ')
+                        mots_francais.append(francais)
+                        mots_espagnols.append(espagnol)
+        except FileNotFoundError:
+            messagebox.showerror("Erreur", f"Le fichier dictionnaire est introuvable :\n{fichier_dictionnaire}")
+            # Restaurer des valeurs par défaut pour éviter le crash
+            mots_francais.append("Erreur")
+            mots_espagnols.append("Fichier introuvable")
+
+        if not mots_francais:
+             mots_francais.append("Vide")
+             mots_espagnols.append("Dictionnaire vide")
 
         # Mettre à jour l'affichage
         self.mettre_a_jour_statuts()

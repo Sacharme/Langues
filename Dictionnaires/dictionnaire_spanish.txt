@@ -1,0 +1,1735 @@
+0 % cero
+1 (M) % uno
+1 (F) % una
+2 % dos
+3 % tres
+4 % cuatro
+5 % cinco
+6 % seis
+7 % siete
+8 % ocho
+9 % nueve
+10 % diez
+11 % once
+12 % doce
+13 % trece
+14 % catorce
+15 % quince
+16 % dieciséis
+17 % diecisiete
+18 % dieciocho
+19 % diecinueve
+20 % veinte
+21 % veintiuno
+22 % veintidós
+23 % veintitrés
+24 % veinticuatro
+25 % veinticinco
+30 % treinta
+40 % cuarenta
+50 % cincuenta
+60 % sesenta
+70 % setenta
+80 % ochenta
+90 % noventa
+100 % cien
+200 % doscientos
+300 % trescientos
+400 % cuatrocientos
+500 % quinientos
+600 % seiscientos
+700 % setecientos
+800 % ochocientos
+900 % novecientos
+1 000 % mil
+10 000 % diez mil
+100 000 % cien mil
+1 000 000 % un millón
+
+1er % primero
+1ère % primera
+2ème (M) % segundo
+2ème (F) % segunda
+3ème (M) % tercero
+3ème (F) % tercera
+4ème (M) % cuarto
+4ème (F) % cuarta
+5ème (M) % quinto
+5ème (F) % quinta
+6ème (M) % sexto
+6ème (F) % sexta
+7ème (M) % séptimo
+7ème (F) % séptima
+8ème (M) % octavo
+8ème (F) % octava
+9ème (M) % noveno
+9ème (F) % novena
+10ème (M) % décimo
+10ème (F) % décima
+11ème (M) % undécimo
+11ème (F) % undécima
+12ème (M) % duodécimo
+12ème (F) % duodécima
+13ème (M) % décimo tercero
+13ème (F) % décima tercera
+14ème (M) % décimo cuarto
+14ème (F) % décima cuarta
+15ème (M) % décimo quinto
+15ème (F) % décima quinta
+16ème (M) % décimo sexto
+16ème (F) % décima sexta
+17ème (M) % décimo séptimo
+17ème (F) % décima séptima
+18ème (M) % décimo octavo
+18ème (F) % décima octava
+19ème (M) % décimo noveno
+19ème (F) % décima novena
+20ème (M) % vigésimo
+20ème (F) % vigésima
+25ème (M) % vigésimo quinto
+25ème (F) % vigésima quinta
+30ème (M) % trigésimo
+30ème (F) % trigésima
+35ème (M) % trigésimo quinto
+35ème (F) % trigésima quinta
+40ème (M) % cuadragésimo
+40ème (F) % cuadragésima
+45ème (M) % cuadragésimo quinto
+45ème (F) % cuadragésima quinta
+50ème (M) % quincuagésimo
+50ème (F) % quincuagésima
+55ème (M) % quincuagésimo quinto
+55ème (F) % quincuagésima quinta
+60ème (M) % sexagésimo
+60ème (F) % sexagésima
+65ème (M) % sexagésimo quinto
+65ème (F) % sexagésima quinta
+70ème (M) % septuagésimo
+70ème (F) % septuagésima
+75ème (M) % septuagésimo quinto
+75ème (F) % septuagésima quinta
+80ème (M) % octogésimo
+80ème (F) % octogésima
+85ème (M) % octogésimo quinto
+85ème (F) % octogésima quinta
+90ème (M) % nonagésimo
+90ème (F) % nonagésima
+95ème (M) % nonagésimo quinto
+95ème (F) % nonagésima quinta
+100ème (M) % centésimo
+100ème (F) % centésima
+
+Lundi % lunes
+Mardi % martes
+Mercredi % miércoles
+Jeudi % jueves
+Vendredi % viernes
+Samedi % sábado
+Dimanche % domingo
+Janvier % enero
+Février % febrero
+Mars % marzo
+Avril % abril
+Mai % mayo
+Juin % junio
+Juillet % julio
+Août % agosto
+Septembre % septiembre
+Octobre % octubre
+Novembre % noviembre
+Décembre % diciembre
+Jour % día
+Semaine % semana
+Mois % mes
+Année % año
+Aujourd'hui % hoy
+Demain % mañana
+Hier % ayer
+Matin % mañana
+Après-midi % tarde
+Soir % noche
+Nuit % noche
+Seconde % segundo
+Minute % minuto
+Heure % hora
+Maintenant % ahora
+Fois % vez
+Temps % tiempo
+Bientôt % pronto
+Tôt % temprano
+Tard % tarde
+
+Couleur % color
+Bleu % azul
+Bleue % azul
+Rouge (M) % rojo
+Rouge (F) % roja
+Vert % verde
+Verte % verde
+Jaune (M) % amarillo
+Jaune (F) % amarilla
+Orange % naranja
+Violet % violeta
+Violette % violeta
+Rose % rosa
+Blanc % blanco
+Blanche % blanca
+Noir % negro
+Noire % negra
+Gris % gris
+Grise % gris
+
+Bonjour % hola
+Salut % hola
+Au revoir % adiós
+Merci % gracias
+De rien % de nada
+Ça va % qué tal
+Oui % sí
+Non % no
+Excusez-moi % disculpe
+Près % cerca
+Loin % lejos
+Je % yo
+Tu % tú
+Il % él
+Elle % ella
+On % nosotros
+Nous % nosotros
+Vous % vosotros
+Ils % ellos
+Elles % ellas
+Gauche % izquierda
+Droite % derecha
+Il y a % hay
+Au dessus % encima
+En dessous % debajo
+Bon appétit % buen provecho
+S'il vous plaît % por favor
+Devant % delante
+Derrière % detrás
+Désolé (courant) % perdón
+Désolé (poli) % disculpe
+Pendant que % mientras
+Ok / Merci (cool) % vale
+Ok (cool) (l) % guay
+Ok (cool) (b) % de acuerdo
+Chaque % cada
+Mais % pero
+Ou % o
+Tout % todo
+Tous % todos
+Où (o) % dónde
+Où (c) % dónde está
+Aussi % también
+Et % y
+Si % si
+Déjà % ya
+Donc % entonces
+Pourquoi % por qué
+Toujours (always) % siempre
+Toujours (still) % todavía
+Parce que % porque
+Comment % cómo
+Jamais % nunca
+Quoi % qué
+Combien % cuánto
+Bon (b) % bien
+Bon (c) % bueno
+Quand % cuándo
+Quel % cuál
+Que % que
+Qui % quién
+Ça % eso
+Ce % este
+Cet (proche) % este
+Cette (proche) % esta
+Cet (loin) % aquel
+Cette (loin) % aquella
+En % en
+Dans (M Sing) % en el
+Dans (F Sing) % en la
+Dans (M Plur) % en los
+Dans (F Plur) % en las
+Beaucoup (M) % mucho
+Beaucoup (F) % mucha
+Le % el
+La % la
+Plus (+) % más
+Ici % aquí
+Avec % con
+Moins % menos
+La-bas % allí
+Peu (M) % poco
+Peu (F) % poca
+Pour % para
+De % de
+Du % del
+De la % de la
+Des (M) % de los
+Des (F) % de las
+Par % por
+Même (M) (same) % mismo
+Même (F) (same) % misma
+Même (even) % incluso
+Presque % casi
+À % a
+Sans % sin
+Aucun % ningún
+Aucune % ninguna
+Meilleur % mejor
+Meilleure % mejor
+Pire % peor
+Autre (M) % otro
+Autre (F) % otra
+Quelque chose % algo
+Quelqu'un % alguien
+Quelques (M) % algunos
+Quelques (F) % algunas
+Rien % nada
+Let's go ! (b) % vamos
+Let's go ! (p) % vámonos
+Dedans % dentro
+Dehors % fuera
+Avant % antes
+Après % después
+Encore (yet) % todavía
+Encore (again) % otra vez
+Depuis % desde
+Parfois % a veces
+Peut-être % tal vez
+Sur % sobre
+À propos % sobre
+Jusqu'à % hasta
+Trop % demasiado
+Pas assez % no suficiente
+Assez % suficiente
+À partir de % a partir de
+Personne (nobody) % nadie
+Personne (somebody) % persona
+Comme ça % así
+Bien sûr % claro
+Outre % además de
+Seulement % solamente
+tant (so) % tanto
+Tant que % mientras
+Ensemble (together) % juntos
+Suivant % siguiente
+Durant % durante
+Au secours % socorro
+Précédent % anterior
+N'est-ce pas % verdad
+Côté (side) % lado
+Juste (only) % solo
+Tout droit % todo recto
+Plutôt que % en vez de
+Attention (be careful) % cuidado
+Au moins % por lo menos
+Au plus % como máximo
+Autant que % tanto como
+Restant % restante
+Au cause de % a causa de
+Grâce à % gracias a
+Sauf % excepto
+Contre (against) % contra
+Il y avait % había
+Il y aura % habrá
+Il y aurait % habría
+Soudainement % de repente
+Lentement % despacio
+Sinon % si no
+Moitié % mitad
+Malgré % a pesar de
+Entre % entre
+À côté % al lado
+Sous % debajo
+Vers % hacia
+À peine % apenas
+D'ailleurs % por cierto
+Allo % aló / diga
+Autour % alrededor
+Quelconque % cualquiera
+D'affilés % seguidos
+Aussitôt que % en cuanto
+Nulle part % en ningún lugar
+Selon % según
+Bref % en resumen
+Certainement % ciertamente
+Parmi % entre
+À travers % a través
+Dès que % en cuanto
+Au % al
+À la % a la
+Récemment % recientemente
+Actuellement % actualmente
+En tant que % como
+Dont % cuyo
+Au lieu de % en lugar de
+Plus loin % más lejos
+Soit (either) % sea
+Vite (soon) % pronto
+Propre (own) % propio
+C'est-à-dire % es decir
+
+Être (Permanent) % ser
+Être (Temporaire) % estar
+Rester % quedarse
+Pouvoir % poder
+Marcher % andar / caminar
+Avoir besoin % necesitar
+Avoir % tener
+Faire % hacer
+Manger % comer
+Boire % beber
+Savoir % saber
+Penser % pensar
+Croire % creer
+Donner % dar
+Travailler % trabajar
+Aller % ir
+Venir % venir
+Prendre (un objet) % coger / tomar
+Prendre (une douche, un taxi) % tomar
+Voir % ver
+Apprendre % aprender
+Aimer % gustar / amar
+Vouloir % querer
+Attendre % esperar
+Parler % hablar
+Ouvrir % abrir
+Fermer % cerrar
+Écrire % escribir
+Lire % leer
+Devoir % deber
+Se nommer % llamarse
+Demander (to ask) % preguntar
+Demander (to request) % pedir
+Répondre % responder
+Mettre % poner
+Regarder (to look) % mirar
+Regarder (to watch) % ver
+Dire % decir
+Acheter % comprar
+Vendre % vender
+Couper % cortar
+Tirer % tirar / jalar
+Pousser % empujar
+Dormir % dormir
+Vivre % vivir
+Mourir % morir
+Apporter/Ammener % traer
+Emporter/Emmener % llevar
+Comprendre % entender / comprender
+Montrer % mostrar / enseñar
+Casser % romper
+Voler (steal) % robar
+Voler (fly) % volar
+Arrêter % parar
+Nager % nadar
+Écouter % escuchar
+Entendre % oír
+Jouer (aux jeux vidéos) % jugar
+Jouer (en général) % jugar
+Éteindre % apagar
+Allumer % encender
+Uriner % orinar
+Payer % pagar
+Détester % odiar
+Oublier % olvidar
+Commencer % empezar / comenzar
+Terminer (t) % terminar
+Terminer (a) % acabar
+Connaître % conocer
+Gagner % ganar
+Perdre % perder
+Organiser/Réparer % arreglar
+Agir % actuar
+Revenir % volver
+Refuser % rechazar
+Mériter % merecer
+Crier % gritar
+Sauver % salvar
+Jeter % lanzar / tirar
+Sauter % saltar
+Essayer % intentar / probar
+Devenir % convertirse / volverse
+Mentir % mentir
+Se souvenir % acordarse / recordar
+Laisser % dejar
+Embrasser % besar
+Choisir % elegir / escoger
+Changer % cambiar
+Aider % ayudar
+Prétendre % fingir
+Inventer % inventar
+Prendre soin % cuidar
+Suivre % seguir
+Porter (to wear) % llevar / vestir
+Porter (to carry) % cargar / llevar
+Penser (trouver) % opinar / creer
+Envoyer % enviar / mandar
+Obtenir % conseguir / obtener
+Être d'accord % estar de acuerdo
+Espérer % esperar
+Exister % existir
+Expliquer % explicar
+Coller % pegar
+Danser % bailar
+Chanter % cantar
+Echanger % cambiar / intercambiar
+Arriver % llegar
+Découvrir % descubrir
+Tourner % girar
+Toucher (verbe) % tocar
+Manquer % faltar
+Empêcher % impedir
+Bouger % mover
+Répandre % esparcir
+Tomber % caer
+Remercier % agradecer
+Faire confiance % confiar
+Parier (bet) % apostar
+Prendre (une photo) % sacar / tomar
+Sourir % sonreír
+Pleurer % llorar
+Assembler % montar
+Décider % decidir
+Servir % servir
+Fonctionner % funcionar
+Deviner % adivinar
+Naître % nacer
+Placer % colocar
+Garder % guardar
+Maintenir % mantener
+Grandir % crecer
+Protéger % proteger
+Promettre % prometer
+Préparer % preparar
+Confondre % confundir
+Admirer % admirar
+Prier % rezar
+Courrir % correr
+Sentir (to feel) % sentir
+Se passer (to happen) % pasar / ocurrir
+Télécharger % descargar
+Cacher % esconder
+Tenir % sostener / tener
+Créer % crear
+Contenir % contener
+Respirer % respirar
+Déplacer % desplazar / mover
+Se moquer % burlarse
+S'échapper % escapar / huir
+Vivre (habiter) % vivir
+Apparaître % aparecer
+Disparaître (d) % desaparecer
+Disparaître (s) % desaparecer
+Déchirer % rasgar / romper
+Mélanger % mezclar
+Continuer % continuar
+Remplir % llenar
+Vider % vaciar
+Vomir % vomitar
+Respecter % respetar
+Autoriser % autorizar
+Permettre % permitir
+Interdire % prohibir
+Interdire % prohibir
+Sécher % secar
+Mouiller % mojar
+Accéder % acceder
+Chuchoter % susurrar
+Partager (c) % compartir
+Partager (p) % compartir
+Rêver % soñar
+Développer % desarrollar
+Comparer % comparar
+Tricher % hacer trampa
+Copier % copiar
+Ajouter % añadir / agregar
+Observer % observar
+Espionner % espiar
+Abandonner % abandonar
+Démissionner % renunciar / dimitir
+Douter % dudar
+Juger % juzgar
+Répéter % repetir
+Conduire % conducir / manejar
+Paniquer % entrar en pánico
+Monter % subir
+Descendre % bajar
+S'asseoir % sentarse
+Préférer % preferir
+Risquer % arriesgar
+Remplacer % reemplazar / sustituir
+Augmenter % aumentar
+Soutenir % apoyar
+Utiliser % usar / utilizar
+Avoir faim % tener hambre
+S'inquiéter % preocuparse
+Retourner % devolver
+Avoir soif % tener sed
+Trouver (to find) % encontrar
+Se venger % vengarse
+Tuer % matar
+Accompagner % acompañar
+Réserver % reservar
+Sonner % sonar
+Pratiquer % practicar
+Oser % atreverse
+Intéresser % interesar
+Enseigner % enseñar
+Déguiser % disfrazar
+Approcher % acercar
+Cliquer % hacer clic
+Convaincre % convencer
+Jurer % jurar
+Chasser (to hunt) % cazar
+Défendre % defender
+Attaquer % atacar
+Gâcher % estropear / arruinar
+S'éloigner % alejarse
+Prédire % predecir
+Échouer % fracasar / fallar
+Lâcher % soltar
+Exagérer % exagerar
+Surprendre % sorprender
+Gossiper % cotillear / chismear
+Récupérer % recuperar
+Voter % votar
+Soulager % aliviar
+Réduire % reducir
+Diminuer % disminuir
+Survivre % sobrevivir
+Tendre % tender / extender
+Se dépêcher % darse prisa
+Conseiller % aconsejar
+Lier % atar / ligar
+Récompenser % recompensar
+Croquer % morder
+Profiter % aprovechar / disfrutar
+Punir % castigar
+Souffrir % sufrir
+Énerver / Faire chier % molestar / cabrear
+Faire pitié (dar) % dar pena
+Faire pitié (fazer) % dar lástima
+Concerner % concernir
+Regretter % arrepentirse
+Exciter % excitar
+Prévenir % avisar / prevenir
+S'entraîner (physique) % entrenar
+S'entraîner (général) % practicar
+Avancer % avanzar
+Fair exprès % hacer a propósito
+Se battre % pelear
+Séparer % separar
+Partir % irse
+Piéger/Duper % engañar
+Supporter (to cheer) % animar
+Supprimer % borrar / eliminar
+Ralentir % ralentizar
+Accélérer % acelerar
+Définir % definir
+Décrire % describir
+Guider % guiar
+Programmer % programar
+Motiver % motivar
+Choquer % chocar
+Alterner % alternar
+Présenter % presentar
+Se tromper % equivocarse
+Habituer % acostumbrar
+Câliner % abrazar
+Fumer % fumar
+Insulter (formel) % insultar
+Insulter (informel) % insultar
+Annuler % cancelar
+Avoir l'habitude % soler / tener la costumbre
+Galérer (to struggle) % pasarlo mal / luchar
+Arnaquer % estafar
+Contrôler % controlar
+Sélectionner % seleccionar
+Influencer % influenciar
+Coincer (physique) % atascar
+Coincer (stratégique) % acorralar
+Hésiter % dudar / vacilar
+Rembourser % reembolsar
+Rechercher % investigar / buscar
+Harceler % acosar
+Se plaindre % quejarse
+Évaluer % evaluar
+Cultiver % cultivar
+Menacer % amenazar
+Attirer % atraer
+Empoisonner % envenenar
+Pardonner % perdonar
+Rassurer % tranquilizar
+Bouillir % hervir
+Prouver % probar / demostrar
+Insister % insistir
+Manquer (quand on part) % echar de menos / extrañar
+Trahir % traicionar
+Exclure % excluir
+Imaginer % imaginar
+S'étouffer % ahogarse
+Grossir % engordar
+Maigrir % adelgazar
+Fondre % derretir
+Adopter % adoptar
+Dépenser % gastar
+Impacter % impactar
+Élever % criar
+Résoudre % resolver
+Étonner % asombrar
+Afficher % mostrar / exhibir
+Se la péter % presumir / chulear
+Supporter/En pouvoir % aguantar / soportar
+Passioner % apasionar
+Posséder % poseer
+Brûler % quemar
+Déchiffrer % descifrar
+Restreindre % restringir
+Appartenir % pertenecer
+Moisir % enmohecer
+Frotter % frotar
+Peindre % pintar
+Apprécier % apreciar
+Inonder % inundar
+Se lever % levantarse
+Louer % alquilar
+Enlever % quitar
+Retirer % retirar
+Réunir % reunir
+Déclarer % declarar
+Critiquer % criticar
+Tousser % toser
+Ronfler % roncar
+Péter % tirarse un pedo
+Inviter % invitar
+Se demander % preguntarse
+
+Mon (Pronom Possessif) % mi
+Ma (Pronom Possessif) % mi
+Mes (Pronom Possessif) (M) % mis
+Mes (Pronom Possessif) (F) % mis
+Ton/Son (Pronom Possessif) % tu / su
+Ta/Sa (Pronom Possessif) % tu / su
+Tes/Ses (Pronom Possessif) (M) % tus / sus
+Tes/Ses (Pronom Possessif) (F) % tus / sus
+Notre (Pronom Possessif) (M) % nuestro
+Notre (Pronom Possessif) (F) % nuestra
+Nos (Pronom Possessif) (M) % nuestros
+Nos (Pronom Possessif) (F) % nuestras
+Votre/Leur (Pronom Possessif) (M) % vuestro / su
+Votre/Leur (Pronom Possessif) (F) % vuestra / su
+Vos/Leurs (Pronom Possessif) (M) % vuestros / sus
+Vos/Leurs (Pronom Possessif) (F) % vuestras / sus
+
+Moi (Pronom Tonique) % mí
+Toi (Pronom Tonique) % ti
+Lui (Pronom Tonique) % él
+Elle (Pronom Tonique) % ella
+Nous (Pronom Tonique) % nosotros
+Vous (Pronom Tonique) % vosotros / ustedes
+Eux (Pronom Tonique) % ellos
+Elles (Pronom Tonique) % ellas
+
+Me (Pronom Réfléchi) % me
+Te (Pronom Réfléchi) % te
+Se (Pronom Réfléchi) % se
+Le (Pronom Réfléchi) % lo
+La (Pronom Réfléchi) % la
+Nous (Pronom Réfléchi) % nos
+Vous (Pronom Réfléchi) % os
+
+Moi-même (M) % yo mismo
+Moi-même (F) % yo misma
+Toi-même (M) % tú mismo
+Toi-même (F) % tú misma
+Lui-même % él mismo
+Elle-même % ella misma
+Nous-mêmes (M) % nosotros mismos
+Nous-mêmes (F) % nosotras mismas
+Vous-mêmes (M) % vosotros mismos
+Vous-mêmes (F) % vosotras mismas
+Eux-mêmes % ellos mismos
+Elles-mêmes % ellas mismas
+
+Beau (Joli) % guapo / bonito
+Belle (Joli) % guapa / bonita
+Beau (Magnifique) % hermoso
+Belle (Magnifique) % hermosa
+Moche (M) % feo
+Moche (F) % fea
+Grand % grande
+Grande % grande
+Petit % pequeño
+Petite % pequeña
+Bien (M) % bueno
+Bien (F) % buena
+Mauvais % malo
+Facile % fácil
+Difficile % difícil
+Heureux % feliz
+Triste % triste
+Chaud % caliente
+Froid % frío
+Froide % fría
+Reposé % descansado
+Reposée % descansada
+Fatigué % cansado
+Fatiguée % cansada
+Nouveau % nuevo
+Nouvelle % nueva
+Ancien % antiguo
+Ancienne % antigua
+Jeune % joven
+Vieux % viejo
+Vieille % vieja
+Cher % caro
+Chère % cara
+Bon marché (M) % barato
+Bon marché (F) % barata
+Propre (M) % limpio
+Propre (F) % limpia
+Sale (M) % sucio
+Sale (F) % sucia
+Rapide (M) % rápido
+Rapide (F) % rápida
+Lent % lento
+Lente % lenta
+Gentil % amable
+Méchant % malvado
+Méchante % malvada
+Intelligent % inteligente
+Débile (M) % tonto
+Débile (F) % tonta
+Gros % gordo
+Grosse % gorda
+Riche (M) % rico
+Riche (F) % rica
+Pauvre % pobre
+Possible % posible
+Impossible % imposible
+Souvent % a menudo
+Rare (M) % raro
+Rare (F) % rara
+Lourd % pesado
+Lourde % pesada
+Léger % ligero
+Légère % ligera
+Libre % libre
+Obligatoire % obligatorio
+Plein % lleno
+Pleine % llena
+Vide (M) % vacío
+Vide (F) % vacía
+Parfait % perfecto
+Parfaite % perfecta
+Incroyable % increíble
+Drôle (M) % gracioso
+Drôle (F) % graciosa
+Sérieux % serio
+Sérieuse % seria
+Évident % evidente
+Discret % discreto
+Discrète % discreta
+Mignon % lindo / mono
+Mignonne % linda / mona
+Premier % primero
+Première % primera
+Dernier % último
+Dernière % última
+Calme (M) % tranquilo
+Calme (F) % tranquila
+Long % largo
+Longue % larga
+Court % corto
+Courte % corta
+Spécial % especial
+Spéciale % especial
+Ordinaire % común
+Timide (M) % tímido
+Timide (F) % tímida
+Prêt % listo
+Prête % lista
+Malade % enfermo
+Malade % enferma
+Bourré (drunk) % borracho
+Bourrée (drunk) % borracha
+Vrai % verdadero
+Vraie % verdadera
+Faux % falso
+Fausse % falsa
+Fort % fuerte
+Forte % fuerte
+Faible (M) % débil
+Faible (F) % débil
+Généreux % generoso
+Généreuse % generosa
+Égoïste % egoísta
+Juste (fair) (M) % justo
+Juste (fair) (F) % justa
+Injuste (M) % injusto
+Injuste (F) % injusta
+En avance (M) % adelantado
+En avance (F) % adelantada
+En retard (M) % atrasado
+En retard (F) % atrasada
+Seul % solo
+Seule % sola
+Clair % claro
+Claire % clara
+Sombre (M) % oscuro
+Sombre (F) % oscura
+Précis % preciso
+Précise % precisa
+Imprécis % impreciso
+Imprécise % imprecisa
+Occupé % ocupado
+Occupée % ocupada
+Curieux % curioso
+Curieuse % curiosa
+Curieuse % curiosa
+Intéressant % interesante
+Intéressante % interesante
+Ennuyeux % aburrido
+Ennuyeuse % aburrida
+Étrange (M) % extraño
+Étrange (F) % extraña
+Anxieux % ansioso
+Anxieuse % ansiosa
+Normal % normal
+Normale % normal
+Original % original
+Originale % original
+Autorisé % autorizado
+Autorisée % autorizada
+Interdit % prohibido
+Interdite % prohibida
+Important % importante
+Importante % importante
+Capable % capaz
+Incapable % incapaz
+Soudain % repentino
+Soudaine % repentina
+Vivant % vivo
+Vivante % viva
+Mort % muerto
+Morte % muerta
+Maigre (M) % delgado
+Maigre (F) % delgada
+Blessé % herido
+Blessée % herida
+Excellent % excelente
+Excellente % excelente
+Chiant % pesado / molesto
+Chiante % pesada / molesta
+Sec % seco
+Sèche % seca
+Mouillé % mojado
+Mouillée % mojada
+Entier % entero
+Entière % entera
+Certain % cierto
+Certaine % cierta
+Incertain % incierto
+Incertaine % incierta
+Fier % orgulloso
+Fière % orgullosa
+Deçu % decepcionado
+Deçue % decepcionada
+Principal % principal
+Principale % principal
+Réel % real
+Réelle % real
+Fictif % ficticio
+Fictive % ficticia
+Solide (M) % sólido
+Solide (F) % sólida
+Liquide (M) % líquido
+Liquide (F) % líquida
+Dangeureux % peligroso
+Dangeureuse % peligrosa
+Fou % loco
+Folle % loca
+Utile % útil
+Inutile % inútil
+Nécessaire (M) % necesario
+Nécessaire (F) % necesaria
+Infini % infinito
+Infinie % infinita
+Fini % finito
+Finie % finita
+Impressionnant % impresionante
+Impressionnante % impresionante
+Simple % simple
+Compliqué % complicado
+Compliquée % complicada
+Stressant % estresante
+Stressante % estresante
+Basique (M) % básico
+Basique (F) % básica
+Complexe (M) % complejo
+Complexe (F) % compleja
+Moderne (M) % moderno
+Moderne (F) % moderna
+Neutre (M) % neutro
+Neutre (F) % neutra
+Raciste % racista
+Frais % fresco
+Fraîche % fresca
+Agréable % agradable
+Aléatoire (M) % aleatorio
+Aléatoire (F) % aleatoria
+Précieux % precioso
+Précieuse % preciosa
+Grave % grave
+Honteux % vergonzoso
+Honteuse % vergonzosa
+Doux % dulce
+Douce % dulce
+Gênant % vergonzoso / incómodo
+Gênante % vergonzosa / incómoda
+Pair % par
+Paire % par
+Impair % impar
+Impaire % impar
+Dégoûtant % asqueroso
+Dégoûtante % asquerosa
+Répugnant % repugnante
+Répugnante % repugnante
+National % nacional
+Nationale % nacional
+International % internacional
+Internationale % internacional
+Ridicule (M) % ridículo
+Ridicule (F) % ridícula
+Mou % blando
+Molle % blanda
+Dur % duro
+Dure % dura
+Automatique (M) % automático
+Automatique (F) % automática
+Manuel % manual
+Manuelle % manual
+Général % general
+Générale % general
+Privé % privado
+Privée % privada
+Public % público
+Publique % pública
+Efficace % eficaz
+Concentré % concentrado
+Concentrée % concentrada
+Déconcentré % desconcentrado
+Déconcentrée % desconcentrada
+Jaloux % celoso
+Jalouse % celosa
+Logique (M) % lógico
+Logique (F) % lógica
+Illogique (M) % ilógico
+Illogique (F) % ilógica
+À l'aise % cómodo
+Mal à l'aise % incómodo
+Récent % reciente
+Récente % reciente
+Confortable % cómodo
+Inconfortable % incómodo
+Actuel % actual
+Actuelle % actual
+Fascinant % fascinante
+Fascinante % fascinante
+Matériel % material
+Matérielle % material
+Imaginaire (M) % imaginario
+Imaginaire (F) % imaginaria
+Affamé % hambriento
+Affamée % hambrienta
+Noble % noble
+Ambitieux % ambicioso
+Ambitieuse % ambiciosa
+Géant % gigante
+Géante % gigante
+Nain % enano
+Naine % enana
+Commercial % comercial
+Commerciale % comercial
+Faillible % falible
+Infaillible % infalible
+Clair (obvious) % obvio
+Claire (obvious) % obvia
+Honnête (M) % honesto
+Honnête (F) % honesta
+Secret % secreto
+Secrète % secreta
+Enceinte % embarazada
+Absent % ausente
+Absente % ausente
+Perdu % perdido
+Perdue % perdida
+Vulnérable % vulnerable
+Hypocrite % hipócrita
+Fameux/Connu % famoso
+Fameuse/Connue % famosa
+Spectaculaire % espectacular
+Comparable % comparable
+Incomparable % incomparable
+Aveugle (M) % ciego
+Aveugle (F) % ciega
+Sourd % sordo
+Sourde) % sorda
+Muet % mudo
+Muette % muda
+Gourmand % goloso
+Gourmande % golosa
+Urgent % urgente
+Urgente % urgente
+Éternel % eterno
+Éternelle % eterna
+
+En parlant du loup % hablando del rey de Roma
+Wow (DAMN) % vaya
+Enfin Vendredi % por fin es viernes
+Foncedalle % munchies / bajón
+Putain % joder
+Genre (tic) % tipo / o sea
+Bonne chance % buena suerte
+Passer du tout au tout % cambiar radicalmente
+Personne qui porte malheur % gafe
+Personne qui porte bonheur % amuleto
+À bientôt % hasta pronto
+Point de vue % punto de vista
+Ça dit quoi (what's up) % qué pasa
+Personne qui ment en miskine un peu % mentiroso
+Personne qui s'habille mal % hortera
+Pay attention ! (gentil) % fíjate
+Pay attention ! (méchant) % espabila
+Personne fragile % frágil
+Jeter un coup d'œil % echar un vistazo
+Le plus... le plus... % cuanto más... más...
+Before de soirée % previa
+Pecho régulier % rollo
+Le truc/scret/astuce % el truco
+Passe-temps % pasatiempo
+Grave (de ouf) % totalmente
+Exactement % exactamente
+De ouf % un montón
+
+Famille % familia
+Père % padre
+Mère % madre
+Frère % hermano
+Sœur % hermana
+Grand-père % abuelo
+Grand-mère % abuela
+Cousin % primo
+Cousine % prima
+Oncle % tío
+Tante % tía
+Neveu % sobrino
+Nièce % sobrina
+Fils % hijo
+Fille % hija
+Petit-fils % nieto
+Petite-fille % nieta
+
+Pays % país
+Brésil % brasil
+France % francia
+USA % estados unidos
+Portugal % portugal
+Espagne % españa
+Italie % italia
+Angleterre % inglaterra
+Russie % rusia
+Chine % china
+Mexique % méxico
+Inde % india
+Japon % japón
+
+Chien % perro
+Chienne % perra
+Chat % gato
+Chatte % gata
+Oiseau % pájaro
+Vache % vaca
+Cheval % caballo
+Poisson % pez
+Cochon % cerdo
+Cochonne % cerda
+Mouton % oveja
+Poule % gallina
+Lion % león
+Capybara % capibara
+Singe % mono
+Tigre % tigre
+Grenouille % rana
+Serpent % serpiente
+Lapin % conejo
+Perroquet % loro
+Chèvre % cabra
+Moustique % mosquito
+Mouche % mosca
+Abeille % abeja
+
+Oeuf % huevo
+Lait % leche
+Sel % sal
+Poivre % pimienta
+Riz % arroz
+Sauce % salsa
+Viande % carne
+Sucre % azúcar
+Eau % agua
+Pain % pan
+Jus % zumo / jugo
+Fromage % queso
+Huile % aceite
+Ail % ajo
+Beurre % mantequilla
+Thé % té
+Café % café
+Vanille % vainilla
+Chocolat % chocolate
+Pâte % pasta
+Blé % trigo
+Glace (ice cream) % helado
+Gâteau % pastel / tarta
+
+Pomme % manzana
+Banane % plátano
+Orange % naranja
+Mangue % mango
+Ananas % piña
+Raisin % uva
+Fraise % fresa
+Citron % limón
+Noix de coco % coco
+Pastèque % sandía
+
+Carotte % zanahoria
+Tomate % tomate
+Salade % lechuga / ensalada
+Oignon % cebolla
+Pomme de terre % patata / papa
+Maïs % maíz
+Haricot % judía / frijol
+Courgette % calabacín
+
+Nom % apellido
+Prénom % nombre
+Sortie % salida
+Entrée % entrada
+Route % carretera
+Voiture % coche / carro
+Maison % casa
+Téléphone % teléfono
+Ordinateur % ordenador / computadora
+École % escuela
+Cours % clase
+Amour % amor
+Soleil % sol
+Ville % ciudad
+Magasin % tienda
+Plage % playa
+Homme % hombre
+Femme % mujer
+Enfant % niño / niña
+Ami % amigo
+Livre % libro
+Sac % bolso / bolsa
+Pluie % lluvia
+Mer % mar
+Vent % viento
+Clé % llave
+Table % mesa
+Lit % cama
+Rivière % río
+Forêt % bosque
+Monnaie % moneda
+Virgule % coma
+Arbre % árbol
+Fleur % flor
+Musique % música
+Film % película
+Porte % puerta
+Chargeur % cargador
+Lumière % luz
+Chaussure % zapato
+Pantalon % pantalón
+T-shirt % camiseta
+Lunettes % gafas
+Bouteille % botella
+Nuage % nube
+Ciel % cielo
+Restaurant % restaurante
+Bras % brazo
+Jambe % pierna
+Tête % cabeza
+Prix % precio
+Question % pregunta
+Réponse % respuesta
+Petit-déjeuner % desayuno
+Déjeuner % almuerzo
+Dîner % cena
+Stylo % bolígrafo
+Cahier % cuaderno
+Montre % reloj
+Piscine % piscina
+Bus % autobús
+Marché % mercado
+Yeux % ojos
+Chambre % habitación / cuarto
+Salle de bain % baño
+Cuisine % cocina
+Salon % salón
+Feu % fuego
+Pharmacie % farmacia
+Hôpital % hospital
+Médecin (M) % médico
+Médecin (F) % médica
+Alphabet % alfabeto
+Photographie % fotografía
+Vidéo % vídeo
+Langue % lengua / idioma
+Musée % museo
+Coeur % corazón
+Sport % deporte
+Point % punto
+Point d'interrogation % signo de interrogación
+Point d'exclamation % signo de exclamación
+Phrase % frase
+Mot % palabra
+Lettre % letra
+Échecs (jeu) % ajedrez
+Oreille % oreja
+Nez % nariz
+Bouche % boca
+Main % mano
+Pied % pie
+Doigt % dedo
+Sein % pecho
+Cheveux % pelo / cabello
+Docteur % doctor
+Docteure % doctora
+Douleur % dolor
+Sol % suelo
+Mur % pared
+Montagne % montaña
+Prochain % próximo
+Prochaine % próxima
+Saison % estación
+Été % verano
+Automne % otoño
+Hiver % invierno
+Printemps % primavera
+Groupe/Bande % grupo
+Chance % suerte
+Garçon % chico / niño
+Fille % chica / niña
+Choix % elección
+Lieu % lugar
+Peur % miedo
+Idée % idea
+Animal % animal
+Danger % peligro
+Vêtement % ropa
+Parapluie % paraguas
+Armoire % armario
+Frigo % nevera
+Ange % ángel
+Dieu % dios
+Cri % grito
+Silence % silencio
+Rêve % sueño
+Retard % retraso
+Mission % misión
+Façon % manera / forma
+Vérité % verdad
+Mensonge % mentira
+Santé % salud
+Nord % norte
+Sud % sur
+Est (direction) % este
+Ouest % oeste
+Les deux (both) (M) % ambos
+Les deux (both) (F) % ambas
+Histoire % historia
+Propriétaire (M) % dueño
+Propriétaire (F) % dueña
+Espace % espacio
+Étoile % estrella
+Douche % ducha
+Pièce (part) % pieza
+Tâche % tarea
+Client % cliente
+Cliente % cliente
+Analyse % análisis
+Milieu % medio
+Équipe % equipo
+Capote % condón
+Règle (ruler) % regla
+Lien % enlace
+Cause % causa
+Conséquence % consecuencia
+Avion % avión
+Bateau % barco
+Train % tren
+Drapeau % bandera
+Trou % agujero
+Papier % papel
+Virage % curva
+Anniversaire % cumpleaños
+Lune % luna
+Couteau % cuchillo
+Fourchette % tenedor
+Odeur % olor
+Sens % sentido
+Vue % vista
+Odorat % olfato
+Toucher (sens) % tacto
+Goût % gusto
+Ouïe % oído
+Village (indigène) % aldea
+Village (urbain) % pueblo
+Humiliation % humillación
+Tirage au sort % sorteo
+Panier % cesta
+Sorcier % brujo
+Sorcière % bruja
+Problème % problema
+Solution % solución
+Nouvelle (news) % noticia
+Aile % ala
+Chaise % silla
+Cadeau % regalo
+Jardin % jardín
+Camion % camión
+Professeur % profesor
+Professeure % profesora
+Peau % piel
+Élève (M) % alumno
+Élève (F) % alumna
+Étudiant % estudiante
+Étudiante % estudiante
+Cerveau % cerebro
+Dent % diente
+Cauchemar % pesadilla
+Dessin % dibujo
+Avantage % ventaja
+Poids % peso
+Vitesse % velocidad
+Taille % tamaño
+Passé % pasado
+Présent % presente
+Futur % futuro
+Bagarre % pelea
+Paix % paz
+Sujet % tema / sujeto
+Roi % rey
+Reine % reina
+Voisin % vecino
+Voisine % vecina
+Nature % naturaleza
+Beauté % belleza
+Église % iglesia
+Champ % campo
+Raison % razón
+Occupation % ocupación
+Bruit % ruido
+Hésitation % duda
+Émotion % emoción
+Bougie % vela
+Outil % herramienta
+Âge % edad
+Repas % comida
+Or (gold) % oro
+Chemin % camino
+Étage % piso / planta
+Moment % momento
+Adresse % dirección
+Objectif % objetivo
+Signal % señal
+Campagne (countryside) % campo
+Poudre % polvo
+Blague (grosse blague) % chiste
+Blague (petite blague) % broma
+Surprise % sorpresa
+Entreprise % empresa
+Immeuble % edificio
+Terrain % terreno
+Personnage % personaje
+Confiance % confianza
+Touriste % turista
+Énergie % energía
+Conclusion % conclusión
+Exemple % ejemplo
+Limite % límite
+Option % opción
+Sac à dos % mochila
+Objet % objeto
+Responsable % responsable
+Doute % duda
+Blessure (bobo) % herida
+Blessure (grave) % lesión
+Gamin (méchant) % mocoso
+Gamin (normal) % chaval
+Mec/Bro % tío
+Stade % estadio
+Glace (ice) % hielo
+Espoir % esperanza
+Pause % pausa
+Dessert % postre
+Voeu % deseo
+Verre % vaso
+Voyage % viaje
+Niveau % nivel
+Vacance % vacaciones
+Éducation % educación
+Bisou % beso
+Miel % miel
+Vie % vida
+Match % partido
+Serviette % toalla
+Piège % trampa
+Corde % cuerda
+Usine % fábrica
+Action % acción
+Escalier % escalera
+Ascenseur % ascensor
+Gomme % goma
+Corps % cuerpo
+Chute % caída
+Comportement % comportamiento
+Neige % nieve
+Sucette % piruleta
+Gorgée (d'eau) % sorbo
+Flèche (pour panneau) % flecha
+Chaussette % calcetín
+Réseau % red
+Stress % estrés
+Bande déssinée % cómic
+Vague (wave) % ola
+Visage % cara
+Os % hueso
+Muscle % músculo
+Conversation % conversación
+Réunion % reunión
+Succès % éxito
+Gossip % chisme
+Cas (case) % caso
+Accident % accidente
+Condition % condición
+Planète % planeta
+Brosse à dents % cepillo de dientes
+Dentifrice % pasta de dientes
+Prison % prisión
+Erreur % error
+Maladie % enfermedad
+Science % ciencia
+Supporter (fan) (t) % hincha
+Supporter (fan) (f) % fan
+Air % aire
+Paysage % paisaje
+Humain % humano
+Humanité % humanidad
+Nourriture % comida
+Boisson % bebida
+Honte % vergüenza
+Conseil % consejo
+Plaisir % placer
+Pitié % piedad
+Quantité % cantidad
+Risque % riesgo
+Récompense % recompensa
+Proie % presa
+Prédateur % depredador
+Alphabet % alfabeto
+Art % arte
+Alcool % alcohol
+Cash % dinero
+Accent % acento
+Arbitre (foot) % árbitro
+Poubelle % basura
+Déchet % residuo
+Publicité % publicidad
+Information % información
+Liste % lista
+Paradis % paraíso
+Enfer % infierno
+Définition % definición
+Organisation % organización
+Description % descripción
+Guide % guía
+Transport % transporte
+Éléctricité % electricidad
+Réalité % realidad
+Motivation % motivación
+Journal % periódico
+Carte (card) % carta
+Carte (map) % mapa
+Dos (corps) % espalda
+Internet % internet
+Bébé % bebé
+Avancement % avance
+Détail % detalle
+Intérêt % interés
+Respect % respeto
+Opportunité % oportunidad
+Guerre % guerra
+Ministe (M) % ministro
+Ministre (F) % ministra
+Président % presidente
+Politique % política
+Origine % origen
+Avis / Opinion % opinión
+Valeur % valor
+Fumée % humo
+Habitude % hábito
+Midi % mediodía
+Minuit % medianoche
+Voleur % ladrón
+Voleuse % ladrona
+Échelle (ladder) % escalera
+Échelle (scale) % escala
+Collection % colección
+Charisme % carisma
+Couronnne % corona
+Trésor % tesoro
+Arme % arma
+Épée % espada
+Tir % disparo
+Opération % operación
+Bijou % joya
+Voix (voice) % voz
+Arnaque % estafa
+Arnaqueur % estafador
+Câlin % abrazo
+Code % código
+Domaine % dominio
+Taux % tasa
+Bordel (mess) % lío
+Indice (hint) % pista
+Examen % examen
+Étape % etapa
+Remboursement % reembolso
+Pouvoir (power) % poder
+Manifestation % manifestación
+Trajet % trayecto
+Devoir (homework) % deberes
+Lac % lago
+Noël % navidad
+Bouton % botón
+Avant hier % anteayer
+Après demain % pasado mañana
+Pompier % bombero
+Policier % policía
+Police % policía
+Culture % cultura
+Recette % receta
+Ventre % barriga
+Loi % ley
+Avocat (lawyer) % abogado
+Boule % bola
+Ballon % balón
+Carré % cuadrado
+Triangle % triángulo
+Cercle % círculo
+Gueule de bois % resaca
+Jambon % jamón
+Campagnard % campesino
+Argot % jerga
+Cabane % cabaña
+Bois % madera
+Herbe % hierba
+Couloir % pasillo
+Poche % bolsillo
+Pouce % pulgar
+Noeud % nudo
+Cou % cuello
+Moustache % bigote
+Barbe % barba
+Magie % magia
+Amande % almendra
+Parents % padres
+Siège % asiento
+Angoisse % angustia
+Collier % collar
+Boucle % lazo
+Casque (moto) % casco
+Casque (musique) % auriculares
+Passion % pasión
+Talent % talento
+Possession % posesión
+Défi % desafío
+Menton % barbilla
+Joue % mejilla
+Folie % locura
+Jeunesse % juventud
+Dragon % dragón
+Cinglé % loco
+Esprit % espíritu
+Ennemi % enemigo
+Sanction % sanción
+Imagination % imaginación
+Incendie % incendio
+Absence % ausencia
+Commerce % comercio
+Honneur % honor
+Foyer % hogar
+Armure % armadura
+Grenier % ático
+Garage % garaje
+Rouille % óxido
+Moisissure % moho
+Expérience % experiencia
+Coffre % cofre
+Nid % nido
+Addiction % adicción
+Feu (signalisation) % semáforo
+Fenêtre % ventana
+Urgence % urgencia
+Génération % generación
+Feu d'artifice % fuegos artificiales
+Fête % fiesta
+Victoire % victoria
+Critique % crítica
+Génie % genio
+Tour de magie % truco de magia
+Trahison % traición
+Admiration % admiración
+Statue % estatua
+Distance % distancia
+Diplôme % diploma
+Trône % trono
+Chapeau % sombrero
+Casquette % gorra
+Veste % chaqueta
+Tasse % taza
+Sieste % siesta
+Prince % príncipe
+Princesse % princesa
+Tour (bâtiment) % torre
+Monde % mundo
+Corne % cuerno
+Restriction % restricción
+Horaire % horario
+Hypocrisie % hipocresía
+Graine % semilla
+Racine % raíz
+Célébration % celebración
+Blessé (émotionnel) % dolido
+Spectacle % espectáculo
+Poison % veneno
+Zombie % zombi
+Squelette % esqueleto
+Jalousie % celos
+Fée % hada
+Humour % humor
+Gros mot % palabrota
+Autoroute % autopista
+Brique % ladrillo
+Hommage % homenaje
+Bombe % bomba
+Recherche % investigación
