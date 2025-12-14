@@ -346,7 +346,7 @@ Sous % debajo
 Vers % hacia
 À peine % apenas
 D'ailleurs % por cierto
-Allo % aló / diga
+Allo % aló
 Autour % alrededor
 Quelconque % cualquiera
 D'affilés % seguidos
@@ -375,7 +375,7 @@ C'est-à-dire % es decir
 Être (Temporaire) % estar
 Rester % quedarse
 Pouvoir % poder
-Marcher % andar / caminar
+Marcher % andar
 Avoir besoin % necesitar
 Avoir % tener
 Faire % hacer
@@ -388,11 +388,11 @@ Donner % dar
 Travailler % trabajar
 Aller % ir
 Venir % venir
-Prendre (un objet) % coger / tomar
+Prendre (un objet) % tomar
 Prendre (une douche, un taxi) % tomar
 Voir % ver
 Apprendre % aprender
-Aimer % gustar / amar
+Aimer % gustar
 Vouloir % querer
 Attendre % esperar
 Parler % hablar
@@ -412,15 +412,15 @@ Dire % decir
 Acheter % comprar
 Vendre % vender
 Couper % cortar
-Tirer % tirar / jalar
+Tirer % tirar
 Pousser % empujar
 Dormir % dormir
 Vivre % vivir
 Mourir % morir
 Apporter/Ammener % traer
 Emporter/Emmener % llevar
-Comprendre % entender / comprender
-Montrer % mostrar / enseñar
+Comprendre % entender
+Montrer % mostrar
 Casser % romper
 Voler (steal) % robar
 Voler (fly) % volar
@@ -436,7 +436,7 @@ Uriner % orinar
 Payer % pagar
 Détester % odiar
 Oublier % olvidar
-Commencer % empezar / comenzar
+Commencer % empezar
 Terminer (t) % terminar
 Terminer (a) % acabar
 Connaître % conocer
@@ -449,26 +449,26 @@ Refuser % rechazar
 Mériter % merecer
 Crier % gritar
 Sauver % salvar
-Jeter % lanzar / tirar
+Jeter % lanzar
 Sauter % saltar
-Essayer % intentar / probar
-Devenir % convertirse / volverse
+Essayer % intentar
+Devenir % convertirse
 Mentir % mentir
-Se souvenir % acordarse / recordar
+Se souvenir % acordarse
 Laisser % dejar
 Embrasser % besar
-Choisir % elegir / escoger
+Choisir % elegir
 Changer % cambiar
 Aider % ayudar
 Prétendre % fingir
 Inventer % inventar
 Prendre soin % cuidar
 Suivre % seguir
-Porter (to wear) % llevar / vestir
-Porter (to carry) % cargar / llevar
-Penser (trouver) % opinar / creer
-Envoyer % enviar / mandar
-Obtenir % conseguir / obtener
+Porter (to wear) % llevar
+Porter (to carry) % cargar
+Penser (trouver) % opinar
+Envoyer % enviar
+Obtenir % conseguir
 Être d'accord % estar de acuerdo
 Espérer % esperar
 Exister % existir
@@ -476,7 +476,7 @@ Expliquer % explicar
 Coller % pegar
 Danser % bailar
 Chanter % cantar
-Echanger % cambiar / intercambiar
+Echanger % cambiar
 Arriver % llegar
 Découvrir % descubrir
 Tourner % girar
@@ -489,7 +489,7 @@ Tomber % caer
 Remercier % agradecer
 Faire confiance % confiar
 Parier (bet) % apostar
-Prendre (une photo) % sacar / tomar
+Prendre (une photo) % sacar
 Sourir % sonreír
 Pleurer % llorar
 Assembler % montar
@@ -510,21 +510,21 @@ Admirer % admirar
 Prier % rezar
 Courrir % correr
 Sentir (to feel) % sentir
-Se passer (to happen) % pasar / ocurrir
+Se passer (to happen) % pasar
 Télécharger % descargar
 Cacher % esconder
-Tenir % sostener / tener
+Tenir % sostener
 Créer % crear
 Contenir % contener
 Respirer % respirar
-Déplacer % desplazar / mover
+Déplacer % desplazar
 Se moquer % burlarse
-S'échapper % escapar / huir
+S'échapper % escapar
 Vivre (habiter) % vivir
 Apparaître % aparecer
 Disparaître (d) % desaparecer
 Disparaître (s) % desaparecer
-Déchirer % rasgar / romper
+Déchirer % rasgar
 Mélanger % mezclar
 Continuer % continuar
 Remplir % llenar
@@ -546,25 +546,25 @@ Développer % desarrollar
 Comparer % comparar
 Tricher % hacer trampa
 Copier % copiar
-Ajouter % añadir / agregar
+Ajouter % añadir
 Observer % observar
 Espionner % espiar
 Abandonner % abandonar
-Démissionner % renunciar / dimitir
+Démissionner % renunciar
 Douter % dudar
 Juger % juzgar
 Répéter % repetir
-Conduire % conducir / manejar
+Conduire % conducir
 Paniquer % entrar en pánico
 Monter % subir
 Descendre % bajar
 S'asseoir % sentarse
 Préférer % preferir
 Risquer % arriesgar
-Remplacer % reemplazar / sustituir
+Remplacer % reemplazar
 Augmenter % aumentar
 Soutenir % apoyar
-Utiliser % usar / utilizar
+Utiliser % usar
 Avoir faim % tener hambre
 S'inquiéter % preocuparse
 Retourner % devolver
@@ -587,36 +587,36 @@ Jurer % jurar
 Chasser (to hunt) % cazar
 Défendre % defender
 Attaquer % atacar
-Gâcher % estropear / arruinar
+Gâcher % estropear
 S'éloigner % alejarse
 Prédire % predecir
-Échouer % fracasar / fallar
+Échouer % fracasar
 Lâcher % soltar
 Exagérer % exagerar
 Surprendre % sorprender
-Gossiper % cotillear / chismear
+Gossiper % cotillear
 Récupérer % recuperar
 Voter % votar
 Soulager % aliviar
 Réduire % reducir
 Diminuer % disminuir
 Survivre % sobrevivir
-Tendre % tender / extender
+Tendre % tender
 Se dépêcher % darse prisa
 Conseiller % aconsejar
-Lier % atar / ligar
+Lier % atar
 Récompenser % recompensar
 Croquer % morder
-Profiter % aprovechar / disfrutar
+Profiter % aprovechar
 Punir % castigar
 Souffrir % sufrir
-Énerver / Faire chier % molestar / cabrear
+Énerver / Faire chier % molestar
 Faire pitié (dar) % dar pena
 Faire pitié (fazer) % dar lástima
 Concerner % concernir
 Regretter % arrepentirse
 Exciter % excitar
-Prévenir % avisar / prevenir
+Prévenir % avisar
 S'entraîner (physique) % entrenar
 S'entraîner (général) % practicar
 Avancer % avanzar
@@ -626,7 +626,7 @@ Séparer % separar
 Partir % irse
 Piéger/Duper % engañar
 Supporter (to cheer) % animar
-Supprimer % borrar / eliminar
+Supprimer % borrar
 Ralentir % ralentizar
 Accélérer % acelerar
 Définir % definir
@@ -644,17 +644,17 @@ Fumer % fumar
 Insulter (formel) % insultar
 Insulter (informel) % insultar
 Annuler % cancelar
-Avoir l'habitude % soler / tener la costumbre
-Galérer (to struggle) % pasarlo mal / luchar
+Avoir l'habitude % soler
+Galérer (to struggle) % pasarlo mal
 Arnaquer % estafar
 Contrôler % controlar
 Sélectionner % seleccionar
 Influencer % influenciar
 Coincer (physique) % atascar
 Coincer (stratégique) % acorralar
-Hésiter % dudar / vacilar
+Hésiter % dudar
 Rembourser % reembolsar
-Rechercher % investigar / buscar
+Rechercher % investigar
 Harceler % acosar
 Se plaindre % quejarse
 Évaluer % evaluar
@@ -665,9 +665,9 @@ Empoisonner % envenenar
 Pardonner % perdonar
 Rassurer % tranquilizar
 Bouillir % hervir
-Prouver % probar / demostrar
+Prouver % probar
 Insister % insistir
-Manquer (quand on part) % echar de menos / extrañar
+Manquer (quand on part) % echar de menos
 Trahir % traicionar
 Exclure % excluir
 Imaginer % imaginar
@@ -681,9 +681,9 @@ Impacter % impactar
 Élever % criar
 Résoudre % resolver
 Étonner % asombrar
-Afficher % mostrar / exhibir
-Se la péter % presumir / chulear
-Supporter/En pouvoir % aguantar / soportar
+Afficher % mostrar
+Se la péter % presumir
+Supporter/En pouvoir % aguantar
 Passioner % apasionar
 Posséder % poseer
 Brûler % quemar
@@ -712,25 +712,25 @@ Mon (Pronom Possessif) % mi
 Ma (Pronom Possessif) % mi
 Mes (Pronom Possessif) (M) % mis
 Mes (Pronom Possessif) (F) % mis
-Ton/Son (Pronom Possessif) % tu / su
-Ta/Sa (Pronom Possessif) % tu / su
-Tes/Ses (Pronom Possessif) (M) % tus / sus
-Tes/Ses (Pronom Possessif) (F) % tus / sus
+Ton/Son (Pronom Possessif) % tu
+Ta/Sa (Pronom Possessif) % tu
+Tes/Ses (Pronom Possessif) (M) % tus
+Tes/Ses (Pronom Possessif) (F) % tus
 Notre (Pronom Possessif) (M) % nuestro
 Notre (Pronom Possessif) (F) % nuestra
 Nos (Pronom Possessif) (M) % nuestros
 Nos (Pronom Possessif) (F) % nuestras
-Votre/Leur (Pronom Possessif) (M) % vuestro / su
-Votre/Leur (Pronom Possessif) (F) % vuestra / su
-Vos/Leurs (Pronom Possessif) (M) % vuestros / sus
-Vos/Leurs (Pronom Possessif) (F) % vuestras / sus
+Votre/Leur (Pronom Possessif) (M) % vuestro
+Votre/Leur (Pronom Possessif) (F) % vuestra
+Vos/Leurs (Pronom Possessif) (M) % vuestros
+Vos/Leurs (Pronom Possessif) (F) % vuestras
 
 Moi (Pronom Tonique) % mí
 Toi (Pronom Tonique) % ti
 Lui (Pronom Tonique) % él
 Elle (Pronom Tonique) % ella
 Nous (Pronom Tonique) % nosotros
-Vous (Pronom Tonique) % vosotros / ustedes
+Vous (Pronom Tonique) % vosotros
 Eux (Pronom Tonique) % ellos
 Elles (Pronom Tonique) % ellas
 
@@ -755,8 +755,8 @@ Vous-mêmes (F) % vosotras mismas
 Eux-mêmes % ellos mismos
 Elles-mêmes % ellas mismas
 
-Beau (Joli) % guapo / bonito
-Belle (Joli) % guapa / bonita
+Beau (Joli) % guapo
+Belle (Joli) % guapa
 Beau (Magnifique) % hermoso
 Belle (Magnifique) % hermosa
 Moche (M) % feo
@@ -834,8 +834,8 @@ Sérieuse % seria
 Évident % evidente
 Discret % discreto
 Discrète % discreta
-Mignon % lindo / mono
-Mignonne % linda / mona
+Mignon % lindo
+Mignonne % linda
 Premier % primero
 Première % primera
 Dernier % último
@@ -923,8 +923,8 @@ Blessé % herido
 Blessée % herida
 Excellent % excelente
 Excellente % excelente
-Chiant % pesado / molesto
-Chiante % pesada / molesta
+Chiant % pesado
+Chiante % pesada
 Sec % seco
 Sèche % seca
 Mouillé % mojado
@@ -989,8 +989,8 @@ Honteux % vergonzoso
 Honteuse % vergonzosa
 Doux % dulce
 Douce % dulce
-Gênant % vergonzoso / incómodo
-Gênante % vergonzosa / incómoda
+Gênant % vergonzoso
+Gênante % vergonzosa
 Pair % par
 Paire % par
 Impair % impar
@@ -1091,9 +1091,9 @@ Urgente % urgente
 En parlant du loup % hablando del rey de Roma
 Wow (DAMN) % vaya
 Enfin Vendredi % por fin es viernes
-Foncedalle % munchies / bajón
+Foncedalle % munchies
 Putain % joder
-Genre (tic) % tipo / o sea
+Genre (tic) % tipo
 Bonne chance % buena suerte
 Passer du tout au tout % cambiar radicalmente
 Personne qui porte malheur % gafe
@@ -1183,7 +1183,7 @@ Viande % carne
 Sucre % azúcar
 Eau % agua
 Pain % pan
-Jus % zumo / jugo
+Jus % zumo
 Fromage % queso
 Huile % aceite
 Ail % ajo
@@ -1195,7 +1195,7 @@ Chocolat % chocolate
 Pâte % pasta
 Blé % trigo
 Glace (ice cream) % helado
-Gâteau % pastel / tarta
+Gâteau % pastel
 
 Pomme % manzana
 Banane % plátano
@@ -1210,11 +1210,11 @@ Pastèque % sandía
 
 Carotte % zanahoria
 Tomate % tomate
-Salade % lechuga / ensalada
+Salade % lechuga
 Oignon % cebolla
-Pomme de terre % patata / papa
+Pomme de terre % patata
 Maïs % maíz
-Haricot % judía / frijol
+Haricot % judía
 Courgette % calabacín
 
 Nom % apellido
@@ -1222,10 +1222,10 @@ Prénom % nombre
 Sortie % salida
 Entrée % entrada
 Route % carretera
-Voiture % coche / carro
+Voiture % coche
 Maison % casa
 Téléphone % teléfono
-Ordinateur % ordenador / computadora
+Ordinateur % ordenador
 École % escuela
 Cours % clase
 Amour % amor
@@ -1235,10 +1235,10 @@ Magasin % tienda
 Plage % playa
 Homme % hombre
 Femme % mujer
-Enfant % niño / niña
+Enfant % niño
 Ami % amigo
 Livre % libro
-Sac % bolso / bolsa
+Sac % bolso
 Pluie % lluvia
 Mer % mar
 Vent % viento
@@ -1280,7 +1280,7 @@ Piscine % piscina
 Bus % autobús
 Marché % mercado
 Yeux % ojos
-Chambre % habitación / cuarto
+Chambre % habitación
 Salle de bain % baño
 Cuisine % cocina
 Salon % salón
@@ -1292,7 +1292,7 @@ Médecin (F) % médica
 Alphabet % alfabeto
 Photographie % fotografía
 Vidéo % vídeo
-Langue % lengua / idioma
+Langue % lengua
 Musée % museo
 Coeur % corazón
 Sport % deporte
@@ -1310,7 +1310,7 @@ Main % mano
 Pied % pie
 Doigt % dedo
 Sein % pecho
-Cheveux % pelo / cabello
+Cheveux % pelo
 Docteur % doctor
 Docteure % doctora
 Douleur % dolor
@@ -1326,8 +1326,8 @@ Hiver % invierno
 Printemps % primavera
 Groupe/Bande % grupo
 Chance % suerte
-Garçon % chico / niño
-Fille % chica / niña
+Garçon % chico
+Fille % chica
 Choix % elección
 Lieu % lugar
 Peur % miedo
@@ -1345,7 +1345,7 @@ Silence % silencio
 Rêve % sueño
 Retard % retraso
 Mission % misión
-Façon % manera / forma
+Façon % manera
 Vérité % verdad
 Mensonge % mentira
 Santé % salud
@@ -1426,7 +1426,7 @@ Présent % presente
 Futur % futuro
 Bagarre % pelea
 Paix % paz
-Sujet % tema / sujeto
+Sujet % tema
 Roi % rey
 Reine % reina
 Voisin % vecino
@@ -1446,7 +1446,7 @@ Outil % herramienta
 Repas % comida
 Or (gold) % oro
 Chemin % camino
-Étage % piso / planta
+Étage % piso
 Moment % momento
 Adresse % dirección
 Objectif % objetivo
