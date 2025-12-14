@@ -218,7 +218,7 @@ Ok (cool) (b) % beleza
 Chaque % cada
 Mais % mas
 Ou % ou
-Tout % todo
+Tout % tudo
 Tous % todos
 Où (o) % onde
 Où (c) % cadê
@@ -361,6 +361,16 @@ Parmi % entre
 Dès que % assim que
 Au % ao
 À la % à
+Récemment % recentemente
+Actuellement % atualmente
+En tant que % como
+Dont % cujo
+Au lieu de % em vez de
+Plus loin % adiante
+Soit (either) % seja
+Vite (soon) % logo
+Propre (own) % próprio
+C'est-à-dire % ou seja
 
 Être (Permanent) % ser
 Être (Temporaire) % estar
@@ -636,6 +646,68 @@ Insulter (formel) % insultar
 Insulter (informel) % xingar
 Annuler % cancelar
 Avoir l'habitude % ter o hábito
+Galérer (to struggle) % penar
+Arnaquer % enganar
+Contrôler % controlar
+Sélectionner % selecionar
+Influencer % influenciar
+Coincer (physique) % prender
+Coincer (stratégique) % encurralar
+Hésiter % hesitar
+Rembourser % reembolsar
+Rechercher % pesquisar
+Harceler % assediar
+Se plaindre % reclamar
+Évaluer % avaliar
+Cultiver % cultivar
+Menacer % ameaçar
+Attirer % atrair
+Empoisonner % envenenar
+Pardonner % perdoar
+Rassurer % tranquilizar
+Bouillir % ferver
+Prouver % provar
+Insister % insistir
+Manquer (quand on part) % ter saudade
+Trahir % trair
+Exclure % excluir
+Imaginer % imaginar
+S'étouffer % engasgar
+Grossir % engordar
+Maigrir % emagrecer
+Fondre % derreter
+Adopter % adotar
+Dépenser % gastar
+Impacter % impactar
+Élever % criar
+Résoudre % resolver
+Étonner % surpreender
+Afficher % exibir
+Se la péter % se achar
+Supporter/En pouvoir % aguentar
+Passioner % apaixonar
+Posséder % possuir
+Brûler % queimar
+Déchiffrer % decifrar
+Restreindre % restringir
+Appartenir % pertencer
+Moisir % mofar
+Frotter % esfregar
+Peindre % pintar
+Apprécier % curtir
+Inonder % inundar
+Se lever % levantar
+Louer % alugar
+Enlever % tirar
+Retirer % remover
+Réunir % reunir
+Déclarer % declarar
+Critiquer % criticar
+Tousser % tossir
+Ronfler % roncar
+Péter % peidar
+Inviter % convidar
+Se demander % perguntar-se
 
 Mon (Pronom Possessif) % meu
 Ma (Pronom Possessif) % minha
@@ -959,6 +1031,63 @@ Logique (M) % lógico
 Logique (F) % lógica
 Illogique (M) % ilógico
 Illogique (F) % ilógica
+À l'aise % a vontade
+Mal à l'aise % desconfortável
+Récent % recente
+Récente % recente
+Confortable % confortável
+Inconfortable % desconfortável
+Actuel % atual
+Actuelle % atual
+Fascinant % fascinante
+Fascinante % fascinante
+Matériel % material
+Matérielle % material
+Imaginaire (M) % imaginário
+Imaginaire (F) % imaginária
+Affamé % faminto
+Affamée % faminta
+Noble % nobre
+Ambitieux % ambicioso
+Ambitieuse % ambiciosa
+Géant % gigante
+Géante % gigante
+Nain % anão
+Naine % anã
+Commercial % comercial
+Commerciale % comercial
+Faillible % falível
+Infaillible % infalível
+Clair (obvious) % óbvio
+Claire (obvious) % óbvia
+Honnête (M) % honesto
+Honnête (F) % honesta
+Secret % secreto
+Secrète % secreta
+Enceinte % grávida
+Absent % ausente
+Absente % ausente
+Perdu % perdido
+Perdue % perdida
+Vulnérable % vulnerável
+Hypocrite % hipócrita
+Fameux/Connu % famoso
+Fameuse/Connue % famosa
+Spectaculaire % espetacular
+Comparable % comparável
+Incomparable % incomparável
+Aveugle (M) % cego
+Aveugle (F) % cega
+Sourd % surdo
+Sourde) % surda
+Muet % mudo
+Muette % muda
+Gourmand % guloso
+Gourmande % gulosa
+Urgent % urgente
+Urgente % urgente
+Éternel % eterno
+Éternelle % eterna
 
 En parlant du loup % falando do diabo
 Wow (DAMN) % eita
@@ -973,6 +1102,20 @@ Personne qui porte bonheur % pé quente
 À bientôt % até
 Point de vue % ponto de vista
 Ça dit quoi (what's up) % fala
+Personne qui ment en miskine un peu % sonso
+Personne qui s'habille mal % fubanga
+Pay attention ! (gentil) % se liga
+Pay attention ! (méchant) % se toca
+Personne fragile % macio
+Jeter un coup d'œil % dar uma olhada
+Le plus... le plus... % quanto mais... mais...
+Before de soirée % esquenta
+Pecho régulier % fiquente
+Le truc/scret/astuce % o pulo do gato
+Passe-temps % passatempo
+Grave (de ouf) % pois é
+Exactement % isso mesmo
+De ouf % pra caralho
 
 Famille % família
 Père % pai
