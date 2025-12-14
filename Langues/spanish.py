@@ -17,53 +17,48 @@ verb_mode = 0
 # créé une liste qui contient tous les mots en français (avant le "%" dans dictionnaire.txt)
 mots_francais = []
 
-# créé une liste qui contient tous les mots en portugais (après le "%" dans dictionnaire.txt)
-mots_portugais = []
+# créé une liste qui contient tous les mots en espagnol (après le "%" dans dictionnaire.txt)
+mots_espagnols = []
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = 'dictionnaire.txt'
+    fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish.txt'
 elif dictionnaire == 2:
-    fichier_dictionnaire = 'dictionnaire_sample.txt'
+    fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish_sample.txt'
 else:
-    fichier_dictionnaire = 'dictionnaire.txt'
+    fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish.txt'
 
 # Lecture du fichier dictionnaire
 with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
     for ligne in fichier:
         ligne = ligne.strip()
         if '%' in ligne:
-            francais, portugais = ligne.split(' % ')
+            francais, espagnol = ligne.split(' % ')
             mots_francais.append(francais)
-            mots_portugais.append(portugais)
+            mots_espagnols.append(espagnol)
 
-# Verbes pour la conjugaison (infinitif en portugais)
+# Verbes pour la conjugaison (infinitif en espagnol)
 verbes_ar = [
-    'amar', 'andar', 'ajudar', 'arrumar', 'atuar', 'brincar', 'cantar', 'chamar', 'chegar',
-    'comprar', 'conversar', 'cortar', 'dançar', 'desejar', 'encontrar', 'escutar', 'estudar',
-    'falar', 'ganhar', 'gostar', 'guardar', 'jogar', 'lavar', 'levar', 'mandar', 'mudar',
-    'nadar', 'pagar', 'pensar', 'preparar', 'procurar', 'trabalhar', 'usar', 'visitar', 'voltar'
+    'amar', 'andar', 'ayudar', 'bailar', 'buscar', 'caminar', 'cantar', 'cenar', 'comprar',
+    'conversar', 'cortar', 'dejar', 'desear', 'entrar', 'escuchar', 'esperar', 'estudiar',
+    'explicar', 'ganar', 'gastar', 'gustar', 'hablar', 'lavar', 'levantar', 'llamar', 'llegar',
+    'llevar', 'mandar', 'mirar', 'nadar', 'necesitar', 'pagar', 'pasar', 'pensar', 'preguntar',
+    'preparar', 'quedar', 'regresar', 'terminar', 'tocar', 'tomar', 'trabajar', 'usar', 'viajar', 'visitar'
 ]
 
 verbes_er = [
-    'aprender', 'beber', 'comer', 'correr', 'crescer', 'dever', 'entender', 'escrever', 'escolher',
-    'esquecer', 'morrer', 'mover', 'nascer', 'perder', 'prometer', 'receber', 'resolver',
-    'responder', 'vender', 'proteger', 'chover', 'suceder', 'esconder', 'temer', 'valer',
-    'meter', 'reconhecer', 'reter', 'tecer', 'oferecer', 'absorver', 'agradecer', 'depender',
-    'persuadir', 'conceder'
+    'aprender', 'beber', 'comer', 'comprender', 'correr', 'creer', 'deber', 'leer', 'meter',
+    'poseer', 'romper', 'temer', 'vender', 'esconder', 'sorprender', 'responder', 'prometer'
 ]
 
 verbes_ir = [
-    'admitir', 'assistir', 'compartir', 'construir', 'decidir', 'discutir', 'dormir', 'fugir',
-    'impedir', 'insistir', 'investir', 'omitir', 'partir', 'permitir', 'proibir',
-    'repetir', 'seguir', 'servir', 'subir', 'sumir', 'vestir', 'consentir',
-    'distribuir', 'dividir', 'imprimir', 'instruir', 'garantir', 'cobrir',
-    'concluir', 'agir', 'assistir', 'punir', 'polir', 'definir', 'decrescer'
+    'abrir', 'asistir', 'compartir', 'consistir', 'decidir', 'describir', 'discutir', 'escribir',
+    'existir', 'insistir', 'partir', 'permitir', 'recibir', 'subir', 'sufrir', 'unir', 'vivir',
+    'admitir', 'añadir', 'cubrir', 'descubrir', 'imprimir', 'ocurrir'
 ]
 
 # Verbes irréguliers
-verbes_irreguliers = ['ser', 'estar', 'ter', 'fazer', 'vir', 'ir', 'poder', 'dizer', 'saber', 'ver', 'dar', 'trazer',
-                      'querer']
+verbes_irreguliers = ['ser', 'estar', 'tener', 'hacer', 'venir', 'ir', 'poder', 'decir', 'saber', 'ver', 'dar', 'traer', 'querer']
 verbes_irreguliers_connus = []
 verbes_irreguliers_pas_connus = []
 
@@ -73,253 +68,253 @@ temps_connus = ['impératif', 'conditionnel présent', 'passé', 'présent', 'fu
 temps_pas_connus = ['présent du subjonctif', 'imparfait du subjonctif', 'futur du subjonctif']
 
 # Pronoms
-pronoms = ['eu', 'ele/você/a gente', 'nós', 'eles/vocês']
+pronoms = ['yo', 'tú', 'él/ella/usted', 'nosotros', 'vosotros', 'ellos/ellas/ustedes']
 
 # Terminaisons par temps et pronom
 terminaisons = {
     'ar': {
-        'présent': ['o', 'a', 'amos', 'am'],
-        'passé': ['ei', 'ou', 'amos', 'aram'],
-        'futur': ['arei', 'ará', 'aremos', 'arão'],
-        'imparfait': ['ava', 'ava', 'ávamos', 'avam'],
-        'présent du subjonctif': ['e', 'e', 'emos', 'em'],
-        'imparfait du subjonctif': ['asse', 'asse', 'ássemos', 'assem'],
-        'futur du subjonctif': ['ar', 'ar', 'armos', 'arem'],
-        'participe passé': ['ado', 'ado', 'ado', 'ado'],
-        'gérondif': ['ando', 'ando', 'ando', 'ando'],
-        'impératif': ['', 'e', 'emos', 'em'],
-        'conditionnel présent': ['aria', 'aria', 'aríamos', 'ariam']
+        'présent': ['o', 'as', 'a', 'amos', 'áis', 'an'],
+        'passé': ['é', 'aste', 'ó', 'amos', 'asteis', 'aron'],
+        'futur': ['aré', 'arás', 'ará', 'aremos', 'aréis', 'arán'],
+        'imparfait': ['aba', 'abas', 'aba', 'ábamos', 'abais', 'aban'],
+        'présent du subjonctif': ['e', 'es', 'e', 'emos', 'éis', 'en'],
+        'imparfait du subjonctif': ['ara', 'aras', 'ara', 'áramos', 'arais', 'aran'],
+        'futur du subjonctif': ['are', 'ares', 'are', 'áremos', 'areis', 'aren'],
+        'participe passé': ['ado', 'ado', 'ado', 'ado', 'ado', 'ado'],
+        'gérondif': ['ando', 'ando', 'ando', 'ando', 'ando', 'ando'],
+        'impératif': ['', 'a', 'e', 'emos', 'ad', 'en'],
+        'conditionnel présent': ['aría', 'arías', 'aría', 'aríamos', 'aríais', 'arían']
     },
     'er': {
-        'présent': ['o', 'e', 'emos', 'em'],
-        'passé': ['i', 'eu', 'emos', 'eram'],
-        'futur': ['erei', 'erá', 'eremos', 'erão'],
-        'imparfait': ['ia', 'ia', 'íamos', 'iam'],
-        'présent du subjonctif': ['a', 'a', 'amos', 'am'],
-        'imparfait du subjonctif': ['esse', 'esse', 'êssemos', 'essem'],
-        'futur du subjonctif': ['er', 'er', 'ermos', 'erem'],
-        'participe passé': ['ido', 'ido', 'ido', 'ido'],
-        'gérondif': ['endo', 'endo', 'endo', 'endo'],
-        'impératif': ['', 'a', 'amos', 'am'],
-        'conditionnel présent': ['eria', 'eria', 'eríamos', 'eriam']
+        'présent': ['o', 'es', 'e', 'emos', 'éis', 'en'],
+        'passé': ['í', 'iste', 'ió', 'imos', 'isteis', 'ieron'],
+        'futur': ['eré', 'erás', 'erá', 'eremos', 'eréis', 'erán'],
+        'imparfait': ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
+        'présent du subjonctif': ['a', 'as', 'a', 'amos', 'áis', 'an'],
+        'imparfait du subjonctif': ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran'],
+        'futur du subjonctif': ['iere', 'ieres', 'iere', 'iéremos', 'iereis', 'ieren'],
+        'participe passé': ['ido', 'ido', 'ido', 'ido', 'ido', 'ido'],
+        'gérondif': ['iendo', 'iendo', 'iendo', 'iendo', 'iendo', 'iendo'],
+        'impératif': ['', 'e', 'a', 'amos', 'ed', 'an'],
+        'conditionnel présent': ['ería', 'erías', 'ería', 'eríamos', 'eríais', 'erían']
     },
     'ir': {
-        'présent': ['o', 'e', 'imos', 'em'],
-        'passé': ['i', 'iu', 'imos', 'iram'],
-        'futur': ['irei', 'irá', 'iremos', 'irão'],
-        'imparfait': ['ia', 'ia', 'íamos', 'iam'],
-        'présent du subjonctif': ['a', 'a', 'amos', 'am'],
-        'imparfait du subjonctif': ['isse', 'isse', 'íssemos', 'issem'],
-        'futur du subjonctif': ['ir', 'ir', 'irmos', 'irem'],
-        'participe passé': ['ido', 'ido', 'ido', 'ido'],
-        'gérondif': ['indo', 'indo', 'indo', 'indo'],
-        'impératif': ['', 'a', 'amos', 'am'],
-        'conditionnel présent': ['iria', 'iria', 'iríamos', 'iriam']
+        'présent': ['o', 'es', 'e', 'imos', 'ís', 'en'],
+        'passé': ['í', 'iste', 'ió', 'imos', 'isteis', 'ieron'],
+        'futur': ['iré', 'irás', 'irá', 'iremos', 'iréis', 'irán'],
+        'imparfait': ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
+        'présent du subjonctif': ['a', 'as', 'a', 'amos', 'áis', 'an'],
+        'imparfait du subjonctif': ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran'],
+        'futur du subjonctif': ['iere', 'ieres', 'iere', 'iéremos', 'iereis', 'iren'],
+        'participe passé': ['ido', 'ido', 'ido', 'ido', 'ido', 'ido'],
+        'gérondif': ['iendo', 'iendo', 'iendo', 'iendo', 'iendo', 'iendo'],
+        'impératif': ['', 'e', 'a', 'amos', 'id', 'an'],
+        'conditionnel présent': ['iría', 'irías', 'iría', 'iríamos', 'iríais', 'irían']
     }
 }
 
 # Terminaisons spéciales pour les verbes irréguliers
-terminaisons_ter = {
-    'présent': ['tenho', 'tem', 'temos', 'têm'],
-    'passé': ['tive', 'teve', 'tivemos', 'tiveram'],
-    'futur': ['terei', 'terá', 'teremos', 'terão'],
-    'imparfait': ['tinha', 'tinha', 'tínhamos', 'tinham'],
-    'présent du subjonctif': ['tenha', 'tenha', 'tenhamos', 'tenham'],
-    'imparfait du subjonctif': ['tivesse', 'tivesse', 'tivéssemos', 'tivessem'],
-    'futur du subjonctif': ['tiver', 'tiver', 'tivermos', 'tiverem'],
-    'participe passé': ['tido', 'tido', 'tido', 'tido'],
-    'gérondif': ['tendo', 'tendo', 'tendo', 'tendo'],
-    'impératif': ['', 'tenha', 'tenhamos', 'tenham'],
-    'conditionnel présent': ['teria', 'teria', 'teríamos', 'teriam']
+terminaisons_tener = {
+    'présent': ['tengo', 'tienes', 'tiene', 'tenemos', 'tenéis', 'tienen'],
+    'passé': ['tuve', 'tuviste', 'tuvo', 'tuvimos', 'tuvisteis', 'tuvieron'],
+    'futur': ['tendré', 'tendrás', 'tendrá', 'tendremos', 'tendréis', 'tendrán'],
+    'imparfait': ['tenía', 'tenías', 'tenía', 'teníamos', 'teníais', 'tenían'],
+    'présent du subjonctif': ['tenga', 'tengas', 'tenga', 'tengamos', 'tengáis', 'tengan'],
+    'imparfait du subjonctif': ['tuviera', 'tuvieras', 'tuviera', 'tuviéramos', 'tuvierais', 'tuvieran'],
+    'futur du subjonctif': ['tuviere', 'tuvieres', 'tuviere', 'tuviéremos', 'tuviereis', 'tuvieren'],
+    'participe passé': ['tenido', 'tenido', 'tenido', 'tenido', 'tenido', 'tenido'],
+    'gérondif': ['teniendo', 'teniendo', 'teniendo', 'teniendo', 'teniendo', 'teniendo'],
+    'impératif': ['', 'ten', 'tenga', 'tengamos', 'tened', 'tengan'],
+    'conditionnel présent': ['tendría', 'tendrías', 'tendría', 'tendríamos', 'tendríais', 'tendrían']
 }
 
-terminaisons_fazer = {
-    'présent': ['faço', 'faz', 'fazemos', 'fazem'],
-    'passé': ['fiz', 'fez', 'fizemos', 'fizeram'],
-    'futur': ['farei', 'fará', 'faremos', 'farão'],
-    'imparfait': ['fazia', 'fazia', 'fazíamos', 'faziam'],
-    'présent du subjonctif': ['faça', 'faça', 'façamos', 'façam'],
-    'imparfait du subjonctif': ['fizesse', 'fizesse', 'fizéssemos', 'fizessem'],
-    'futur du subjonctif': ['fizer', 'fizer', 'fizermos', 'fizerem'],
-    'participe passé': ['feito', 'feito', 'feito', 'feito'],
-    'gérondif': ['fazendo', 'fazendo', 'fazendo', 'fazendo'],
-    'impératif': ['', 'faça', 'façamos', 'façam'],
-    'conditionnel présent': ['faria', 'faria', 'faríamos', 'fariam']
+terminaisons_hacer = {
+    'présent': ['hago', 'haces', 'hace', 'hacemos', 'hacéis', 'hacen'],
+    'passé': ['hice', 'hiciste', 'hizo', 'hicimos', 'hicisteis', 'hicieron'],
+    'futur': ['haré', 'harás', 'hará', 'haremos', 'haréis', 'harán'],
+    'imparfait': ['hacía', 'hacías', 'hacía', 'hacíamos', 'hacíais', 'hacían'],
+    'présent du subjonctif': ['haga', 'hagas', 'haga', 'hagamos', 'hagáis', 'hagan'],
+    'imparfait du subjonctif': ['hiciera', 'hicieras', 'hiciera', 'hiciéramos', 'hicierais', 'hicieran'],
+    'futur du subjonctif': ['hiciere', 'hicieres', 'hiciere', 'hiciéremos', 'hiciereis', 'hicieren'],
+    'participe passé': ['hecho', 'hecho', 'hecho', 'hecho', 'hecho', 'hecho'],
+    'gérondif': ['haciendo', 'haciendo', 'haciendo', 'haciendo', 'haciendo', 'haciendo'],
+    'impératif': ['', 'haz', 'haga', 'hagamos', 'haced', 'hagan'],
+    'conditionnel présent': ['haría', 'harías', 'haría', 'haríamos', 'haríais', 'harían']
 }
 
 terminaisons_ser = {
-    'présent': ['sou', 'é', 'somos', 'são'],
-    'passé': ['fui', 'foi', 'fomos', 'foram'],
-    'futur': ['serei', 'será', 'seremos', 'serão'],
-    'imparfait': ['era', 'era', 'éramos', 'eram'],
-    'présent du subjonctif': ['seja', 'seja', 'sejamos', 'sejam'],
-    'imparfait du subjonctif': ['fosse', 'fosse', 'fôssemos', 'fossem'],
-    'futur du subjonctif': ['for', 'for', 'formos', 'forem'],
-    'participe passé': ['sido', 'sido', 'sido', 'sido'],
-    'gérondif': ['sendo', 'sendo', 'sendo', 'sendo'],
-    'impératif': ['', 'seja', 'sejamos', 'sejam'],
-    'conditionnel présent': ['seria', 'seria', 'seríamos', 'seriam']
+    'présent': ['soy', 'eres', 'es', 'somos', 'sois', 'son'],
+    'passé': ['fui', 'fuiste', 'fue', 'fuimos', 'fuisteis', 'fueron'],
+    'futur': ['seré', 'serás', 'será', 'seremos', 'seréis', 'serán'],
+    'imparfait': ['era', 'eras', 'era', 'éramos', 'erais', 'eran'],
+    'présent du subjonctif': ['sea', 'seas', 'sea', 'seamos', 'seáis', 'sean'],
+    'imparfait du subjonctif': ['fuera', 'fueras', 'fuera', 'fuéramos', 'fuerais', 'fueran'],
+    'futur du subjonctif': ['fuere', 'fueres', 'fuere', 'fuéremos', 'fuereis', 'fueren'],
+    'participe passé': ['sido', 'sido', 'sido', 'sido', 'sido', 'sido'],
+    'gérondif': ['siendo', 'siendo', 'siendo', 'siendo', 'siendo', 'siendo'],
+    'impératif': ['', 'sé', 'sea', 'seamos', 'sed', 'sean'],
+    'conditionnel présent': ['sería', 'serías', 'sería', 'seríamos', 'seríais', 'serían']
 }
 
 terminaisons_estar = {
-    'présent': ['estou', 'está', 'estamos', 'estão'],
-    'passé': ['estive', 'esteve', 'estivemos', 'estiveram'],
-    'futur': ['estarei', 'estará', 'estaremos', 'estarão'],
-    'imparfait': ['estava', 'estava', 'estávamos', 'estavam'],
-    'présent du subjonctif': ['esteja', 'esteja', 'estejamos', 'estejam'],
-    'imparfait du subjonctif': ['estivesse', 'estivesse', 'estivéssemos', 'estivessem'],
-    'futur du subjonctif': ['estiver', 'estiver', 'estivermos', 'estiverem'],
-    'participe passé': ['estado', 'estado', 'estado', 'estado'],
-    'gérondif': ['estando', 'estando', 'estando', 'estando'],
-    'impératif': ['', 'esteja', 'estejamos', 'estejam'],
-    'conditionnel présent': ['estaria', 'estaria', 'estaríamos', 'estariam']
+    'présent': ['estoy', 'estás', 'está', 'estamos', 'estáis', 'están'],
+    'passé': ['estuve', 'estuviste', 'estuvo', 'estuvimos', 'estuvisteis', 'estuvieron'],
+    'futur': ['estaré', 'estarás', 'estará', 'estaremos', 'estaréis', 'estarán'],
+    'imparfait': ['estaba', 'estabas', 'estaba', 'estábamos', 'estabais', 'estaban'],
+    'présent du subjonctif': ['esté', 'estés', 'esté', 'estemos', 'estéis', 'estén'],
+    'imparfait du subjonctif': ['estuviera', 'estuvieras', 'estuviera', 'estuviéramos', 'estuvierais', 'estuvieran'],
+    'futur du subjonctif': ['estuviere', 'estuvieres', 'estuviere', 'estuviéremos', 'estuviereis', 'estuvieren'],
+    'participe passé': ['estado', 'estado', 'estado', 'estado', 'estado', 'estado'],
+    'gérondif': ['estando', 'estando', 'estando', 'estando', 'estando', 'estando'],
+    'impératif': ['', 'está', 'esté', 'estemos', 'estad', 'estén'],
+    'conditionnel présent': ['estaría', 'estarías', 'estaría', 'estaríamos', 'estaríais', 'estarían']
 }
 
-terminaisons_vir = {
-    'présent': ['venho', 'vem', 'vimos', 'vêm'],
-    'passé': ['vim', 'veio', 'viemos', 'vieram'],
-    'futur': ['virei', 'virá', 'viremos', 'virão'],
-    'imparfait': ['vinha', 'vinha', 'vínhamos', 'vinham'],
-    'présent du subjonctif': ['venha', 'venha', 'venhamos', 'venham'],
-    'imparfait du subjonctif': ['viesse', 'viesse', 'viéssemos', 'viessem'],
-    'futur du subjonctif': ['vier', 'vier', 'viermos', 'vierem'],
-    'participe passé': ['vindo', 'vindo', 'vindo', 'vindo'],
-    'gérondif': ['vindo', 'vindo', 'vindo', 'vindo'],
-    'impératif': ['', 'venha', 'venhamos', 'venham'],
-    'conditionnel présent': ['viria', 'viria', 'viríamos', 'viriam']
+terminaisons_venir = {
+    'présent': ['vengo', 'vienes', 'viene', 'venimos', 'venís', 'vienen'],
+    'passé': ['vine', 'viniste', 'vino', 'vinimos', 'vinisteis', 'vinieron'],
+    'futur': ['vendré', 'vendrás', 'vendrá', 'vendremos', 'vendréis', 'vendrán'],
+    'imparfait': ['venía', 'venías', 'venía', 'veníamos', 'veníais', 'venían'],
+    'présent du subjonctif': ['venga', 'vengas', 'venga', 'vengamos', 'vengáis', 'vengan'],
+    'imparfait du subjonctif': ['viniera', 'vinieras', 'viniera', 'viniéramos', 'vinierais', 'vinieran'],
+    'futur du subjonctif': ['viniere', 'vinieres', 'viniere', 'viniéremos', 'viniereis', 'vinieren'],
+    'participe passé': ['venido', 'venido', 'venido', 'venido', 'venido', 'venido'],
+    'gérondif': ['viniendo', 'viniendo', 'viniendo', 'viniendo', 'viniendo', 'viniendo'],
+    'impératif': ['', 'ven', 'venga', 'vengamos', 'venid', 'vengan'],
+    'conditionnel présent': ['vendría', 'vendrías', 'vendría', 'vendríamos', 'vendríais', 'vendrían']
 }
 
 terminaisons_ir = {
-    'présent': ['vou', 'vai', 'vamos', 'vão'],
-    'passé': ['fui', 'foi', 'fomos', 'foram'],
-    'futur': ['irei', 'irá', 'iremos', 'irão'],
-    'imparfait': ['ia', 'ia', 'íamos', 'iam'],
-    'présent du subjonctif': ['vá', 'vá', 'vamos', 'vão'],
-    'imparfait du subjonctif': ['fosse', 'fosse', 'fôssemos', 'fossem'],
-    'futur du subjonctif': ['for', 'for', 'formos', 'forem'],
-    'participe passé': ['ido', 'ido', 'ido', 'ido'],
-    'gérondif': ['indo', 'indo', 'indo', 'indo'],
-    'impératif': ['', 'vá', 'vamos', 'vão'],
-    'conditionnel présent': ['iria', 'iria', 'iríamos', 'iriam']
+    'présent': ['voy', 'vas', 'va', 'vamos', 'vais', 'van'],
+    'passé': ['fui', 'fuiste', 'fue', 'fuimos', 'fuisteis', 'fueron'],
+    'futur': ['iré', 'irás', 'irá', 'iremos', 'iréis', 'irán'],
+    'imparfait': ['iba', 'ibas', 'iba', 'íbamos', 'ibais', 'iban'],
+    'présent du subjonctif': ['vaya', 'vayas', 'vaya', 'vayamos', 'vayáis', 'vayan'],
+    'imparfait du subjonctif': ['fuera', 'fueras', 'fuera', 'fuéramos', 'fuerais', 'fueran'],
+    'futur du subjonctif': ['fuere', 'fueres', 'fuere', 'fuéremos', 'fuereis', 'fueren'],
+    'participe passé': ['ido', 'ido', 'ido', 'ido', 'ido', 'ido'],
+    'gérondif': ['yendo', 'yendo', 'yendo', 'yendo', 'yendo', 'yendo'],
+    'impératif': ['', 've', 'vaya', 'vayamos', 'id', 'vayan'],
+    'conditionnel présent': ['iría', 'irías', 'iría', 'iríamos', 'iríais', 'irían']
 }
 
 terminaisons_poder = {
-    'présent': ['posso', 'pode', 'podemos', 'podem'],
-    'passé': ['pude', 'pôde', 'pudemos', 'puderam'],
-    'futur': ['poderei', 'poderá', 'poderemos', 'poderão'],
-    'imparfait': ['podia', 'podia', 'podíamos', 'podiam'],
-    'présent du subjonctif': ['possa', 'possa', 'possamos', 'possam'],
-    'imparfait du subjonctif': ['pudesse', 'pudesse', 'pudéssemos', 'pudessem'],
-    'futur du subjonctif': ['puder', 'puder', 'pudermos', 'puderem'],
-    'participe passé': ['podido', 'podido', 'podido', 'podido'],
-    'gérondif': ['podendo', 'podendo', 'podendo', 'podendo'],
-    'impératif': ['', 'possa', 'possamos', 'possam'],
-    'conditionnel présent': ['poderia', 'poderia', 'poderíamos', 'poderiam']
+    'présent': ['puedo', 'puedes', 'puede', 'podemos', 'podéis', 'pueden'],
+    'passé': ['pude', 'pudiste', 'pudo', 'pudimos', 'pudisteis', 'pudieron'],
+    'futur': ['podré', 'podrás', 'podrá', 'podremos', 'podréis', 'podrán'],
+    'imparfait': ['podía', 'podías', 'podía', 'podíamos', 'podíais', 'podían'],
+    'présent du subjonctif': ['pueda', 'puedas', 'pueda', 'podamos', 'podáis', 'puedan'],
+    'imparfait du subjonctif': ['pudiera', 'pudieras', 'pudiera', 'pudiéramos', 'pudierais', 'pudieran'],
+    'futur du subjonctif': ['pudiere', 'pudieres', 'pudiere', 'pudiéremos', 'pudiereis', 'pudieren'],
+    'participe passé': ['podido', 'podido', 'podido', 'podido', 'podido', 'podido'],
+    'gérondif': ['pudiendo', 'pudiendo', 'pudiendo', 'pudiendo', 'pudiendo', 'pudiendo'],
+    'impératif': ['', 'puede', 'pueda', 'podamos', 'poded', 'puedan'],
+    'conditionnel présent': ['podría', 'podrías', 'podría', 'podríamos', 'podríais', 'podrían']
 }
 
 # Nouvelles terminaisons irrégulières
-terminaisons_dizer = {
-    'présent': ['digo', 'diz', 'dizemos', 'dizem'],
-    'passé': ['disse', 'disse', 'dissemos', 'disseram'],
-    'futur': ['direi', 'dirá', 'diremos', 'dirão'],
-    'imparfait': ['dizia', 'dizia', 'dizíamos', 'diziam'],
-    'présent du subjonctif': ['diga', 'diga', 'digamos', 'digam'],
-    'imparfait du subjonctif': ['dissesse', 'dissesse', 'disséssemos', 'dissessem'],
-    'futur du subjonctif': ['disser', 'disser', 'dissermos', 'disserem'],
-    'participe passé': ['dito', 'dito', 'dito', 'dito'],
-    'gérondif': ['dizendo', 'dizendo', 'dizendo', 'dizendo'],
-    'impératif': ['', 'diga', 'digamos', 'digam'],
-    'conditionnel présent': ['diria', 'diria', 'diríamos', 'diriam']
+terminaisons_decir = {
+    'présent': ['digo', 'dices', 'dice', 'decimos', 'decís', 'dicen'],
+    'passé': ['dije', 'dijiste', 'dijo', 'dijimos', 'dijisteis', 'dijeron'],
+    'futur': ['diré', 'dirás', 'dirá', 'diremos', 'diréis', 'dirán'],
+    'imparfait': ['decía', 'decías', 'decía', 'decíamos', 'decíais', 'decían'],
+    'présent du subjonctif': ['diga', 'digas', 'diga', 'digamos', 'digáis', 'digan'],
+    'imparfait du subjonctif': ['dijera', 'dijeras', 'dijera', 'dijéramos', 'dijerais', 'dijeran'],
+    'futur du subjonctif': ['dijere', 'dijeres', 'dijere', 'dijéremos', 'dijereis', 'dijeren'],
+    'participe passé': ['dicho', 'dicho', 'dicho', 'dicho', 'dicho', 'dicho'],
+    'gérondif': ['diciendo', 'diciendo', 'diciendo', 'diciendo', 'diciendo', 'diciendo'],
+    'impératif': ['', 'di', 'diga', 'digamos', 'decid', 'digan'],
+    'conditionnel présent': ['diría', 'dirías', 'diría', 'diríamos', 'diríais', 'dirían']
 }
 
 terminaisons_saber = {
-    'présent': ['sei', 'sabe', 'sabemos', 'sabem'],
-    'passé': ['soube', 'soube', 'soubemos', 'souberam'],
-    'futur': ['saberei', 'saberá', 'saberemos', 'saberão'],
-    'imparfait': ['sabia', 'sabia', 'sabíamos', 'sabiam'],
-    'présent du subjonctif': ['saiba', 'saiba', 'saibamos', 'saibam'],
-    'imparfait du subjonctif': ['soubesse', 'soubesse', 'soubéssemos', 'soubessem'],
-    'futur du subjonctif': ['souber', 'souber', 'soubermos', 'souberem'],
-    'participe passé': ['sabido', 'sabido', 'sabido', 'sabido'],
-    'gérondif': ['sabendo', 'sabendo', 'sabendo', 'sabendo'],
-    'impératif': ['', 'saiba', 'saibamos', 'saibam'],
-    'conditionnel présent': ['saberia', 'saberia', 'saberíamos', 'saberiam']
+    'présent': ['sé', 'sabes', 'sabe', 'sabemos', 'sabéis', 'saben'],
+    'passé': ['supe', 'supiste', 'supo', 'supimos', 'supisteis', 'supieron'],
+    'futur': ['sabré', 'sabrás', 'sabrá', 'sabremos', 'sabréis', 'sabrán'],
+    'imparfait': ['sabía', 'sabías', 'sabía', 'sabíamos', 'sabíais', 'sabían'],
+    'présent du subjonctif': ['sepa', 'sepas', 'sepa', 'sepamos', 'sepáis', 'sepan'],
+    'imparfait du subjonctif': ['supiera', 'supieras', 'supiera', 'supiéramos', 'supierais', 'supieran'],
+    'futur du subjonctif': ['supiere', 'supieres', 'supiere', 'supiéremos', 'supiereis', 'supieren'],
+    'participe passé': ['sabido', 'sabido', 'sabido', 'sabido', 'sabido', 'sabido'],
+    'gérondif': ['sabiendo', 'sabiendo', 'sabiendo', 'sabiendo', 'sabiendo', 'sabiendo'],
+    'impératif': ['', 'sabe', 'sepa', 'sepamos', 'sabed', 'sepan'],
+    'conditionnel présent': ['sabría', 'sabrías', 'sabría', 'sabríamos', 'sabríais', 'sabrían']
 }
 
 terminaisons_ver = {
-    'présent': ['vejo', 'vê', 'vemos', 'veem'],
-    'passé': ['vi', 'viu', 'vimos', 'viram'],
-    'futur': ['verei', 'verá', 'veremos', 'verão'],
-    'imparfait': ['via', 'via', 'víamos', 'viam'],
-    'présent du subjonctif': ['veja', 'veja', 'vejamos', 'vejam'],
-    'imparfait du subjonctif': ['visse', 'visse', 'víssemos', 'vissem'],
-    'futur du subjonctif': ['vir', 'vir', 'virmos', 'virem'],
-    'participe passé': ['visto', 'visto', 'visto', 'visto'],
-    'gérondif': ['vendo', 'vendo', 'vendo', 'vendo'],
-    'impératif': ['', 'veja', 'vejamos', 'vejam'],
-    'conditionnel présent': ['veria', 'veria', 'veríamos', 'veriam']
+    'présent': ['veo', 'ves', 've', 'vemos', 'veis', 'ven'],
+    'passé': ['vi', 'viste', 'vio', 'vimos', 'visteis', 'vieron'],
+    'futur': ['veré', 'verás', 'verá', 'veremos', 'veréis', 'verán'],
+    'imparfait': ['veía', 'veías', 'veía', 'veíamos', 'veíais', 'veían'],
+    'présent du subjonctif': ['vea', 'veas', 'vea', 'veamos', 'veáis', 'vean'],
+    'imparfait du subjonctif': ['viera', 'vieras', 'viera', 'viéramos', 'vierais', 'vieran'],
+    'futur du subjonctif': ['viere', 'vieres', 'viere', 'viéremos', 'viereis', 'vieren'],
+    'participe passé': ['visto', 'visto', 'visto', 'visto', 'visto', 'visto'],
+    'gérondif': ['viendo', 'viendo', 'viendo', 'viendo', 'viendo', 'viendo'],
+    'impératif': ['', 've', 'vea', 'veamos', 'ved', 'vean'],
+    'conditionnel présent': ['vería', 'verías', 'vería', 'veríamos', 'veríais', 'verían']
 }
 
 terminaisons_dar = {
-    'présent': ['dou', 'dá', 'damos', 'dão'],
-    'passé': ['dei', 'deu', 'demos', 'deram'],
-    'futur': ['darei', 'dará', 'daremos', 'darão'],
-    'imparfait': ['dava', 'dava', 'dávamos', 'davam'],
-    'présent du subjonctif': ['dê', 'dê', 'demos', 'deem'],
-    'imparfait du subjonctif': ['desse', 'desse', 'déssemos', 'dessem'],
-    'futur du subjonctif': ['der', 'der', 'dermos', 'derem'],
-    'participe passé': ['dado', 'dado', 'dado', 'dado'],
-    'gérondif': ['dando', 'dando', 'dando', 'dando'],
-    'impératif': ['', 'dê', 'demos', 'deem'],
-    'conditionnel présent': ['daria', 'daria', 'daríamos', 'dariam']
+    'présent': ['doy', 'das', 'da', 'damos', 'dais', 'dan'],
+    'passé': ['di', 'diste', 'dio', 'dimos', 'disteis', 'dieron'],
+    'futur': ['daré', 'darás', 'dará', 'daremos', 'daréis', 'darán'],
+    'imparfait': ['daba', 'dabas', 'daba', 'dábamos', 'dabais', 'daban'],
+    'présent du subjonctif': ['dé', 'des', 'dé', 'demos', 'deis', 'den'],
+    'imparfait du subjonctif': ['diera', 'dieras', 'diera', 'diéramos', 'dierais', 'dieran'],
+    'futur du subjonctif': ['diere', 'dieres', 'diere', 'diéremos', 'diereis', 'dieren'],
+    'participe passé': ['dado', 'dado', 'dado', 'dado', 'dado', 'dado'],
+    'gérondif': ['dando', 'dando', 'dando', 'dando', 'dando', 'dando'],
+    'impératif': ['', 'da', 'dé', 'demos', 'dad', 'den'],
+    'conditionnel présent': ['daría', 'darías', 'daría', 'daríamos', 'daríais', 'darían']
 }
 
-terminaisons_trazer = {
-    'présent': ['trago', 'traz', 'trazemos', 'trazem'],
-    'passé': ['trouxe', 'trouxe', 'trouxemos', 'trouxeram'],
-    'futur': ['trarei', 'trará', 'traremos', 'trarão'],
-    'imparfait': ['trazia', 'trazia', 'trazíamos', 'traziam'],
-    'présent du subjonctif': ['tragam', 'tragam', 'tragamos', 'tragam'],
-    'imparfait du subjonctif': ['trouxesse', 'trouxesse', 'trouxéssemos', 'trouxessem'],
-    'futur du subjonctif': ['trouxer', 'trouxer', 'trouxermos', 'trouxerem'],
-    'participe passé': ['trado', 'trado', 'trado', 'trado'],
-    'gérondif': ['trazendo', 'trazendo', 'trazendo', 'trazendo'],
-    'impératif': ['', 'tragam', 'tragamos', 'tragam'],
-    'conditionnel présent': ['traria', 'traria', 'traríamos', 'trariam']
+terminaisons_traer = {
+    'présent': ['traigo', 'traes', 'trae', 'traemos', 'traéis', 'traen'],
+    'passé': ['traje', 'trajiste', 'trajo', 'trajimos', 'trajisteis', 'trajeron'],
+    'futur': ['traeré', 'traerás', 'traerá', 'traeremos', 'traeréis', 'traerán'],
+    'imparfait': ['traía', 'traías', 'traía', 'traíamos', 'traíais', 'traían'],
+    'présent du subjonctif': ['traiga', 'traigas', 'traiga', 'traigamos', 'traigáis', 'traigan'],
+    'imparfait du subjonctif': ['trajera', 'trajeras', 'trajera', 'trajéramos', 'trajerais', 'trajeran'],
+    'futur du subjonctif': ['trajere', 'trajeres', 'trajere', 'trajéremos', 'trajereis', 'trajeren'],
+    'participe passé': ['traído', 'traído', 'traído', 'traído', 'traído', 'traído'],
+    'gérondif': ['trayendo', 'trayendo', 'trayendo', 'trayendo', 'trayendo', 'trayendo'],
+    'impératif': ['', 'trae', 'traiga', 'traigamos', 'traed', 'traigan'],
+    'conditionnel présent': ['traería', 'traerías', 'traería', 'traeríamos', 'traeríais', 'traerían']
 }
 
 terminaisons_querer = {
-    'présent': ['quero', 'quer', 'queremos', 'querem'],
-    'passé': ['quis', 'quis', 'quisemos', 'quiseram'],
-    'futur': ['quererei', 'quererá', 'quereremos', 'quererão'],
-    'imparfait': ['queria', 'queria', 'queríamos', 'queriam'],
-    'présent du subjonctif': ['queira', 'queira', 'queiramos', 'queiram'],
-    'imparfait du subjonctif': ['quisesse', 'quisesse', 'quiséssemos', 'quisessem'],
-    'futur du subjonctif': ['quiser', 'quiser', 'quisermos', 'quiserem'],
-    'participe passé': ['querido', 'querido', 'querido', 'querido'],
-    'gérondif': ['querendo', 'querendo', 'querendo', 'querendo'],
-    'impératif': ['', 'queira', 'queiramos', 'queiram'],
-    'conditionnel présent': ['quereria', 'quereria', 'quereríamos', 'quereriam']
+    'présent': ['quiero', 'quieres', 'quiere', 'queremos', 'queréis', 'quieren'],
+    'passé': ['quise', 'quisiste', 'quiso', 'quisimos', 'quisisteis', 'quisieron'],
+    'futur': ['querré', 'querrás', 'querrá', 'querremos', 'querréis', 'querrán'],
+    'imparfait': ['quería', 'querías', 'quería', 'queríamos', 'queríais', 'querían'],
+    'présent du subjonctif': ['quiera', 'quieras', 'quiera', 'queramos', 'queráis', 'quieran'],
+    'imparfait du subjonctif': ['quisiera', 'quisieras', 'quisiera', 'quisiéramos', 'quisierais', 'quisieran'],
+    'futur du subjonctif': ['quisiere', 'quisieres', 'quisiere', 'quisiéremos', 'quisiereis', 'quisieren'],
+    'participe passé': ['querido', 'querido', 'querido', 'querido', 'querido', 'querido'],
+    'gérondif': ['queriendo', 'queriendo', 'queriendo', 'queriendo', 'queriendo', 'queriendo'],
+    'impératif': ['', 'quiere', 'quiera', 'queramos', 'quered', 'quieran'],
+    'conditionnel présent': ['querría', 'querrías', 'querría', 'querríamos', 'querríais', 'querrían']
 }
 
 
 def conjuguer_verbe(verbe, pronom_index, temps_choisi):
     """Conjugue un verbe selon le pronom et le temps donnés"""
     # Vérifier si c'est un verbe irrégulier
-    if verbe == 'ter':
+    if verbe == 'tener':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
-            return terminaisons_ter[temps_choisi][0]
+            return terminaisons_tener[temps_choisi][0]
         elif temps_choisi == 'impératif' and pronom_index == 0:
             return "Forme inexistante à l'impératif"
         else:
-            return terminaisons_ter[temps_choisi][pronom_index]
-    elif verbe == 'fazer':
+            return terminaisons_tener[temps_choisi][pronom_index]
+    elif verbe == 'hacer':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
-            return terminaisons_fazer[temps_choisi][0]
+            return terminaisons_hacer[temps_choisi][0]
         elif temps_choisi == 'impératif' and pronom_index == 0:
             return "Forme inexistante à l'impératif"
         else:
-            return terminaisons_fazer[temps_choisi][pronom_index]
+            return terminaisons_hacer[temps_choisi][pronom_index]
     elif verbe == 'ser':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
             return terminaisons_ser[temps_choisi][0]
@@ -334,13 +329,13 @@ def conjuguer_verbe(verbe, pronom_index, temps_choisi):
             return "Forme inexistante à l'impératif"
         else:
             return terminaisons_estar[temps_choisi][pronom_index]
-    elif verbe == 'vir':
+    elif verbe == 'venir':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
-            return terminaisons_vir[temps_choisi][0]
+            return terminaisons_venir[temps_choisi][0]
         elif temps_choisi == 'impératif' and pronom_index == 0:
             return "Forme inexistante à l'impératif"
         else:
-            return terminaisons_vir[temps_choisi][pronom_index]
+            return terminaisons_venir[temps_choisi][pronom_index]
     elif verbe == 'ir':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
             return terminaisons_ir[temps_choisi][0]
@@ -355,13 +350,13 @@ def conjuguer_verbe(verbe, pronom_index, temps_choisi):
             return "Forme inexistante à l'impératif"
         else:
             return terminaisons_poder[temps_choisi][pronom_index]
-    elif verbe == 'dizer':
+    elif verbe == 'decir':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
-            return terminaisons_dizer[temps_choisi][0]
+            return terminaisons_decir[temps_choisi][0]
         elif temps_choisi == 'impératif' and pronom_index == 0:
             return "Forme inexistante à l'impératif"
         else:
-            return terminaisons_dizer[temps_choisi][pronom_index]
+            return terminaisons_decir[temps_choisi][pronom_index]
     elif verbe == 'saber':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
             return terminaisons_saber[temps_choisi][0]
@@ -383,13 +378,13 @@ def conjuguer_verbe(verbe, pronom_index, temps_choisi):
             return "Forme inexistante à l'impératif"
         else:
             return terminaisons_dar[temps_choisi][pronom_index]
-    elif verbe == 'trazer':
+    elif verbe == 'traer':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
-            return terminaisons_trazer[temps_choisi][0]
+            return terminaisons_traer[temps_choisi][0]
         elif temps_choisi == 'impératif' and pronom_index == 0:
             return "Forme inexistante à l'impératif"
         else:
-            return terminaisons_trazer[temps_choisi][pronom_index]
+            return terminaisons_traer[temps_choisi][pronom_index]
     elif verbe == 'querer':
         if temps_choisi == 'participe passé' or temps_choisi == 'gérondif':
             return terminaisons_querer[temps_choisi][0]
@@ -417,7 +412,7 @@ def conjuguer_verbe(verbe, pronom_index, temps_choisi):
         terminaison = terminaisons[type_verbe][temps_choisi][0]
         return radical + terminaison
     elif temps_choisi == 'impératif' and pronom_index == 0:
-        # L'impératif n'a pas de forme pour "eu"
+        # L'impératif n'a pas de forme pour "yo"
         return "Forme inexistante à l'impératif"
     else:
         terminaison = terminaisons[type_verbe][temps_choisi][pronom_index]
@@ -437,7 +432,7 @@ class QuizApp:
         # Couleur de fond de la fenêtre principale
         self.root.configure(bg='#454545')
 
-        self.root.title("Portugais")
+        self.root.title("Espagnol")
 
         # Mettre la fenêtre en vrai plein écran
         self.root.attributes('-fullscreen', True)
@@ -477,7 +472,7 @@ class QuizApp:
 
         # Frame principal (centré)
         main_frame = ttk.Frame(self.root, padding="20")
-        main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+        main_frame.grid(row=0, column=0, sticky="nsew")
 
         # Configuration de la grille pour le frame principal
         main_frame.columnconfigure(0, weight=1)
@@ -536,7 +531,7 @@ class QuizApp:
 
         # Champ de saisie uniquement (sans label "Votre réponse :")
         self.reponse_entry = ttk.Entry(saisie_frame, font=("Arial", 45), width=20)
-        self.reponse_entry.grid(row=0, column=0, sticky=(tk.W, tk.E))
+        self.reponse_entry.grid(row=0, column=0, sticky="ew")
         self.reponse_entry.bind('<Return>', lambda e: self.verifier_reponse())
 
         # Bouton valider (centré et beaucoup plus grand)
@@ -642,9 +637,9 @@ class QuizApp:
     def generer_question_traduction(self):
         self.index_aleatoire = random.randint(0, len(mots_francais) - 1)
 
-        # Toujours français vers portugais
+        # Toujours français vers espagnol
         mot_affiche = mots_francais[self.index_aleatoire]
-        self.bonne_reponse = mots_portugais[self.index_aleatoire]
+        self.bonne_reponse = mots_espagnols[self.index_aleatoire]
 
         # Masquer le frame de conjugaison et afficher le label simple
         self.conjugaison_frame.pack_forget()
@@ -720,9 +715,9 @@ class QuizApp:
             return
 
         if self.mode_actuel == 'traduction':
-            # Vérification pour la traduction (toujours français vers portugais)
+            # Vérification pour la traduction (toujours français vers espagnol)
             try:
-                index_reponse = mots_portugais.index(reponse_utilisateur)
+                index_reponse = mots_espagnols.index(reponse_utilisateur)
                 if index_reponse == self.index_aleatoire:
                     self.afficher_resultat("succes")
                 else:
@@ -770,6 +765,8 @@ class QuizApp:
     def afficher_resultat(self, resultat):
         """Affiche le résultat en changeant la couleur de fond de toute la fenêtre"""
 
+        couleur_fond = '#454545'  # Valeur par défaut
+
         if resultat == "succes":
             # Fond vert pour succès - changer toute la fenêtre
             couleur_fond = '#15853f'
@@ -808,29 +805,29 @@ class QuizApp:
 
     def changer_dictionnaire(self):
         """Change le type de dictionnaire utilisé"""
-        global dictionnaire, mots_francais, mots_portugais
+        global dictionnaire, mots_francais, mots_espagnols
 
         # Cycle entre les valeurs 1 et 2
         dictionnaire = 1 if dictionnaire == 2 else 2
 
         # Recharger le dictionnaire
         mots_francais.clear()
-        mots_portugais.clear()
+        mots_espagnols.clear()
 
         # Choisir le bon fichier avec la bonne extension
         if dictionnaire == 1:
-            fichier_dictionnaire = 'dictionnaire.txt'
+            fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish.txt'
         else:
-            fichier_dictionnaire = 'dictionnaire_sample.txt'
+            fichier_dictionnaire = '../Dictionnaires/dictionnaire_spanish_sample.txt'
 
         # Recharger les mots
         with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
             for ligne in fichier:
                 ligne = ligne.strip()
                 if '%' in ligne:
-                    francais, portugais = ligne.split(' % ')
+                    francais, espagnol = ligne.split(' % ')
                     mots_francais.append(francais)
-                    mots_portugais.append(portugais)
+                    mots_espagnols.append(espagnol)
 
         # Mettre à jour l'affichage
         self.mettre_a_jour_statuts()

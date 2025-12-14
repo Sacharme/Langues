@@ -22,11 +22,11 @@ mots_portugais = []
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = 'dictionnaire.txt'
+    fichier_dictionnaire = '../Dictionnaires/dictionnaire_portuguese.txt'
 elif dictionnaire == 2:
-    fichier_dictionnaire = 'dictionnaire_sample.txt'
+    fichier_dictionnaire = '../Dictionnaires/dictionnaire_portuguese_sample.txt'
 else:
-    fichier_dictionnaire = 'dictionnaire.txt'
+    fichier_dictionnaire = '../Dictionnaires/dictionnaire_portuguese.txt'
 
 # Lecture du fichier dictionnaire
 with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
