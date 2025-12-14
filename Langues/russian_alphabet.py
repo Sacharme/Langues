@@ -83,8 +83,8 @@ class AlphabetApp:
         instruction_label.grid(row=2, column=0, pady=(0, 20))
 
         # Champ de saisie
-        self.reponse_entry = ttk.Entry(main_frame, font=("Arial", 40), justify="center")
-        self.reponse_entry.grid(row=3, column=0, pady=20, sticky="ew", padx=100)
+        self.reponse_entry = ttk.Entry(main_frame, font=("Arial", 40), justify="center", width=10)
+        self.reponse_entry.grid(row=3, column=0, pady=20)
         self.reponse_entry.bind('<Return>', lambda e: self.verifier_reponse())
         self.reponse_entry.focus()
 
@@ -100,8 +100,8 @@ class AlphabetApp:
         self.lettre_actuelle, self.reponses_possibles = random.choice(list(alphabet.items()))
 
         self.question_label.config(text=self.lettre_actuelle)
-        self.reponse_entry.delete(0, tk.END)
         self.reponse_entry.config(state="normal")
+        self.reponse_entry.delete(0, tk.END)
         self.valider_btn.config(state="normal")
         self.feedback_label.config(text="")
 
@@ -139,7 +139,7 @@ class AlphabetApp:
             couleur = '#a32c2c' # Rouge
             reponse_str = " ou ".join([r for r in self.reponses_possibles if r])
             if not reponse_str: reponse_str = "(aucune)"
-            self.feedback_label.config(text=f"Non, c'était : {reponse_str}", foreground="white")
+            self.feedback_label.config(text=f"{reponse_str}", foreground="white")
 
         self.root.configure(bg=couleur)
         style = ttk.Style()
@@ -153,4 +153,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = AlphabetApp(root)
     root.mainloop()
-

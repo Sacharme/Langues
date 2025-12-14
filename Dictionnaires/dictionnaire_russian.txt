@@ -1,0 +1,33 @@
+Oui % da
+Non % niet
+Bonjour % priviet
+Merci % spasibo
+Au revoir % da svidania
+S'il vous plaît % pajalousta
+Pardon % izvinitie
+Comment ça va ? % kak dela
+Bien % khorosho
+Mal % plokho
+Maison % dom
+Chat % kot
+Chien % sobaka
+Ami % droug
+Eau % voda
+Pain % khleb
+Lait % moloko
+Thé % tchaï
+Café % kofé
+Mère % mama
+Père % papa
+Frère % brat
+Soeur % sestra
+Un % odin
+Deux % dva
+Trois % tri
+Quatre % tchetire
+Cinq % piat
+Six % chest
+Sept % sem
+Huit % vossem
+Neuf % deviat
+Dix % dessiat
