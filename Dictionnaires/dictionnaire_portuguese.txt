@@ -1734,28 +1734,3 @@ Brique % tijolo
 Hommage % homenagem
 Bombe % bomba
 Recherche % pesquisa
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

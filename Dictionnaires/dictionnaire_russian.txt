@@ -1,33 +1,417 @@
-Oui % da
-Non % niet
-Bonjour % priviet
-Merci % spasibo
-Au revoir % da svidania
-S'il vous plaît % pajalousta
-Pardon % izvinitie
-Comment ça va ? % kak dela
-Bien % khorosho
-Mal % plokho
-Maison % dom
-Chat % kot
-Chien % sobaka
-Ami % droug
-Eau % voda
-Pain % khleb
-Lait % moloko
-Thé % tchaï
-Café % kofé
-Mère % mama
-Père % papa
-Frère % brat
-Soeur % sestra
-Un % odin
-Deux % dva
-Trois % tri
-Quatre % tchetire
-Cinq % piat
-Six % chest
-Sept % sem
-Huit % vossem
-Neuf % deviat
-Dix % dessiat
+0 %
+1 (M) %
+1 (F) %
+2 (M) %
+2 (F) %
+3 %
+4 %
+5 %
+6 %
+7 %
+8 %
+9 %
+10 %
+
+Lundi %
+Mardi %
+Mercredi %
+Jeudi %
+Vendredi %
+Samedi %
+Dimanche %
+Janvier %
+Février %
+Mars %
+Avril %
+Mai %
+Juin %
+Juillet %
+Août %
+Septembre %
+Octobre %
+Novembre %
+Décembre %
+Jour %
+Semaine %
+Mois %
+Année %
+Aujourd'hui %
+Demain %
+Hier %
+Matin %
+Après-midi %
+Soir %
+Nuit %
+Seconde %
+Minute %
+Heure %
+Maintenant %
+
+Couleur %
+Bleu %
+Rouge %
+Vert %
+Jaune %
+Noir %
+Blanc %
+Gris %
+
+Bonjour %
+Salut %
+Au revoir %
+Merci %
+De rien %
+Ça va %
+Oui %
+Non %
+Excusez-moi %
+S'il vous plaît %
+Désolé %
+Je %
+Tu %
+Il %
+Elle %
+Nous %
+Vous %
+Ils %
+Elles %
+Où %
+Pourquoi %
+Comment %
+Quand %
+Quoi %
+Combien %
+Et %
+Mais %
+Ou %
+Parce que %
+Toujours %
+Jamais %
+Déjà %
+Aussi %
+Ici %
+Là-bas %
+Près %
+Loin %
+Avant %
+Après %
+Dans %
+Avec %
+Sans %
+Pour %
+De %
+Sur %
+Sous %
+Beaucoup %
+Peu %
+Plus %
+Moins %
+Tout %
+Rien %
+Quelque chose %
+Quelqu'un %
+Personne (nobody) %
+Peut-être %
+Toujours (still) %
+Encore (again) %
+Bien sûr %
+Attention (be careful) %
+
+Être %
+Avoir %
+Aller %
+Venir %
+Pouvoir %
+Vouloir %
+Devoir %
+Faire %
+Dire %
+Voir %
+Regarder %
+Manger %
+Boire %
+Dormir %
+Prendre %
+Donner %
+Mettre %
+Prendre (une douche) %
+Aimer %
+Détester %
+Savoir %
+Comprendre %
+Penser %
+Parler %
+Écouter %
+Entendre %
+Demander %
+Répondre %
+Aider %
+Trouver %
+Arriver %
+Partir %
+Revenir %
+Travailler %
+Étudier %
+Jouer %
+Acheter %
+Payer %
+Ouvrir %
+Fermer %
+Commencer %
+Terminer %
+Utiliser %
+Vivre (habiter) %
+Se souvenir %
+Oublier %
+Essayer %
+Espérer %
+Rester %
+Sortir %
+Entrer %
+Tomber %
+Porter (to wear) %
+Porter (to carry) %
+S'asseoir %
+Se lever %
+Marcher %
+Courrir %
+
+Mon %
+Ma %
+Mes (M) %
+Mes (F) %
+Ton/Son %
+Ta/Sa %
+Tes/Ses (M) %
+Tes/Ses (F) %
+Notre (M) %
+Notre (F) %
+Nos (M) %
+Nos (F) %
+Votre/Leur (M) %
+Votre/Leur (F) %
+Vos/Leurs (M) %
+Vos/Leurs (F) %
+
+Beau %
+Belle %
+Grand %
+Petit %
+Bien (M) %
+Bien (F) %
+Mauvais %
+Facile %
+Difficile %
+Heureux %
+Triste %
+Chaud %
+Froid %
+Fatigué %
+Fatiguée %
+Nouveau %
+Nouvelle %
+Jeune %
+Vieux %
+Vieille %
+Cher %
+Chère %
+Bon marché (M) %
+Bon marché (F) %
+Propre (M) %
+Propre (F) %
+Sale (M) %
+Sale (F) %
+Rapide (M) %
+Rapide (F) %
+Lent %
+Lente %
+Gentil %
+Méchant %
+Méchante %
+Intelligent %
+Gros %
+Grosse %
+Riche (M) %
+Riche (F) %
+Pauvre %
+Possible %
+Impossible %
+Lourd %
+Léger %
+Plein %
+Vide (M) %
+Vide (F) %
+Parfait %
+Parfaite %
+Drôle (M) %
+Drôle (F) %
+Calme (M) %
+Calme (F) %
+Prêt %
+Prête %
+Malade %
+Seul %
+Seule %
+Fort %
+Forte %
+Faible (M) %
+Faible (F) %
+En retard (M) %
+En retard (F) %
+En avance (M) %
+En avance (F) %
+Important %
+Importante %
+Utile %
+Inutile %
+Simple %
+Compliqué %
+Compliquée %
+Basique (M) %
+Basique (F) %
+Confortable %
+Inconfortable %
+
+Famille %
+Père %
+Mère %
+Frère %
+Sœur %
+Grand-père %
+Grand-mère %
+Fils %
+Fille %
+Ami %
+Amie %
+Enfant %
+Garçon %
+Fille (enfant) %
+
+Pays %
+Brésil %
+France %
+Portugal %
+Espagne %
+USA %
+
+Chien %
+Chat %
+Oiseau %
+Poisson %
+Vache %
+Cheval %
+Mouton %
+Poulet %
+
+Oeuf %
+Lait %
+Sel %
+Riz %
+Viande %
+Eau %
+Pain %
+Fromage %
+Beurre %
+Sucre %
+Café %
+Thé %
+Pomme %
+Banane %
+Orange %
+Tomate %
+Salade %
+Pomme de terre %
+
+Maison %
+Appartement %
+Chambre %
+Salle de bain %
+Cuisine %
+Salon %
+Porte %
+Fenêtre %
+Lit %
+Table %
+Chaise %
+Clé %
+
+Ville %
+Rue %
+Magasin %
+Marché %
+Restaurant %
+École %
+Hôpital %
+Pharmacie %
+Gare %
+Arrêt de bus %
+Plage %
+Parc %
+
+Voiture %
+Bus %
+Train %
+Avion %
+
+Nom %
+Prénom %
+Numéro %
+Téléphone %
+Ordinateur %
+Internet %
+
+Soleil %
+Pluie %
+Mer %
+Vent %
+Ciel %
+Nuage %
+
+Amour %
+Peur %
+Joie %
+Colère %
+Tristesse %
+
+Prix %
+Argent (money) %
+Temps %
+Question %
+Réponse %
+Idée %
+Problème %
+Solution %
+Chance %
+Vie %
+Mort %
+
+Petit-déjeuner %
+Déjeuner %
+Dîner %
+
+Stylo %
+Cahier %
+Livre %
+Sac %
+Bouteille %
+Montre %
+Lunettes %
+Chaussure %
+Pantalon %
+T-shirt %
+
+Yeux %
+Oreille %
+Nez %
+Bouche %
+Dent %
+Main %
+Pied %
+Tête %
+Jambe %
+Bras %
+Ventre %
+
+Oui %
+Non %
+Peut-être %

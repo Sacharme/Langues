@@ -22,11 +22,11 @@ mots_portugais = []
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = '../Dictionnaires/dictionnaire_russian.txt'
+    fichier_dictionnaire = './Dictionnaires/dictionnaire_russian.txt'
 elif dictionnaire == 2:
-    fichier_dictionnaire = '../Dictionnaires/dictionnaire_russian_sample.txt'
+    fichier_dictionnaire = './Dictionnaires/dictionnaire_russian_sample.txt'
 else:
-    fichier_dictionnaire = '../Dictionnaires/dictionnaire_russian.txt'
+    fichier_dictionnaire = './Dictionnaires/dictionnaire_russian.txt'
 
 # Lecture du fichier dictionnaire
 with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
@@ -450,6 +450,10 @@ class QuizApp:
         self.temps_choisi = None
         self.index_aleatoire = None
 
+        # Variables pour le compteur de pourcentage
+        self.total_questions = 0
+        self.correct_answers = 0
+
         self.setup_ui()
         self.nouvelle_question()
 
@@ -601,6 +605,13 @@ class QuizApp:
                                    command=self.quitter_application,
                                    style="Control.TButton")
         self.quit_btn.grid(row=5, column=0, pady=(20, 10))
+
+        # Label pour afficher le pourcentage de bonnes réponses (en bas)
+        self.percentage_label = ttk.Label(main_frame, text="0% (0/0)",
+                                          font=("Arial", 24, "bold"),
+                                          foreground="#00bcd4",
+                                          justify="center")
+        self.percentage_label.grid(row=6, column=0, pady=(10, 20))
 
         # Mettre à jour l'affichage des statuts
         self.mettre_a_jour_statuts()
@@ -769,6 +780,13 @@ class QuizApp:
 
     def afficher_resultat(self, resultat):
         """Affiche le résultat en changeant la couleur de fond de toute la fenêtre"""
+        # Mettre à jour le compteur
+        self.total_questions += 1
+        if resultat == "succes" or resultat == "presque":
+            self.correct_answers += 1
+        
+        # Mettre à jour l'affichage du pourcentage
+        self.update_percentage_display()
 
         if resultat == "succes":
             # Fond vert pour succès - changer toute la fenêtre
@@ -796,6 +814,16 @@ class QuizApp:
 
         # Remettre le fond neutre après 750ms
         self.root.after(750, self.remettre_fond_neutre)
+
+    def update_percentage_display(self):
+        """Met à jour l'affichage du pourcentage de bonnes réponses"""
+        if self.total_questions > 0:
+            percentage = (self.correct_answers / self.total_questions) * 100
+            self.percentage_label.config(
+                text=f"{percentage:.1f}% ({self.correct_answers}/{self.total_questions})"
+            )
+        else:
+            self.percentage_label.config(text="0% (0/0)")
 
     def remettre_fond_neutre(self):
         """Remet le fond neutre de toute la fenêtre"""

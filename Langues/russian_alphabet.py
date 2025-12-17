@@ -62,6 +62,10 @@ class AlphabetApp:
         self.lettre_actuelle = None
         self.reponses_possibles = None
 
+        # Variables pour le compteur de pourcentage
+        self.total_questions = 0
+        self.correct_answers = 0
+
         self.setup_ui()
         self.nouvelle_question()
 
@@ -99,6 +103,13 @@ class AlphabetApp:
         quit_btn = ttk.Button(main_frame, text="Quitter", command=self.quitter)
         quit_btn.grid(row=5, column=0, pady=20)
 
+        # Label pour afficher le pourcentage de bonnes réponses (en bas)
+        self.percentage_label = ttk.Label(main_frame, text="0% (0/0)",
+                                          font=("Arial", 24, "bold"),
+                                          foreground="#00bcd4",
+                                          justify="center")
+        self.percentage_label.grid(row=6, column=0, pady=(10, 20))
+
     def nouvelle_question(self):
         self.lettre_actuelle, self.reponses_possibles = random.choice(list(alphabet.items()))
 
@@ -135,6 +146,14 @@ class AlphabetApp:
         self.root.after(2000, self.nouvelle_question)
 
     def afficher_resultat(self, succes):
+        # Mettre à jour le compteur
+        self.total_questions += 1
+        if succes:
+            self.correct_answers += 1
+        
+        # Mettre à jour l'affichage du pourcentage
+        self.update_percentage_display()
+
         if succes:
             couleur = '#15853f' # Vert
             self.feedback_label.config(text="Correct !", foreground="white")
@@ -148,6 +167,16 @@ class AlphabetApp:
         style = ttk.Style()
         style.configure('TFrame', background=couleur)
         style.configure('TLabel', background=couleur)
+
+    def update_percentage_display(self):
+        """Met à jour l'affichage du pourcentage de bonnes réponses"""
+        if self.total_questions > 0:
+            percentage = (self.correct_answers / self.total_questions) * 100
+            self.percentage_label.config(
+                text=f"{percentage:.1f}% ({self.correct_answers}/{self.total_questions})"
+            )
+        else:
+            self.percentage_label.config(text="0% (0/0)")
 
     def quitter(self):
         self.root.destroy()
