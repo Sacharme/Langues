@@ -52,16 +52,16 @@ if not mots_francais:
 
 # Verbes pour la conjugaison (infinitif en espagnol)
 verbes_ar = [
-    'amar', 'andar', 'ayudar', 'bailar', 'buscar', 'caminar', 'cantar', 'cenar', 'comprar',
+    'amar', 'andar', 'ayudar', 'bailar', 'caminar', 'cantar', 'cenar', 'comprar',
     'conversar', 'cortar', 'dejar', 'desear', 'entrar', 'escuchar', 'esperar', 'estudiar',
-    'explicar', 'ganar', 'gastar', 'gustar', 'hablar', 'lavar', 'levantar', 'llamar', 'llegar',
-    'llevar', 'mandar', 'mirar', 'nadar', 'necesitar', 'pagar', 'pasar', 'pensar', 'preguntar',
-    'preparar', 'quedar', 'regresar', 'terminar', 'tocar', 'tomar', 'trabajar', 'usar', 'viajar', 'visitar'
+    'ganar', 'gastar', 'hablar', 'lavar', 'levantar', 'llamar',
+    'llevar', 'mandar', 'mirar', 'nadar', 'necesitar', 'pasar', 'preguntar',
+    'preparar', 'quedar', 'regresar', 'terminar', 'tomar', 'trabajar', 'usar', 'viajar', 'visitar'
 ]
 
 verbes_er = [
-    'aprender', 'beber', 'comer', 'comprender', 'correr', 'creer', 'deber', 'leer', 'meter',
-    'poseer', 'romper', 'temer', 'vender', 'esconder', 'sorprender', 'responder', 'prometer'
+    'aprender', 'beber', 'comer', 'comprender', 'correr', 'deber', 'meter',
+    'romper', 'temer', 'vender', 'esconder', 'sorprender', 'responder', 'prometer'
 ]
 
 verbes_ir = [
@@ -118,7 +118,7 @@ terminaisons = {
         'imparfait': ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'],
         'présent du subjonctif': ['a', 'as', 'a', 'amos', 'áis', 'an'],
         'imparfait du subjonctif': ['iera', 'ieras', 'iera', 'iéramos', 'ierais', 'ieran'],
-        'futur du subjonctif': ['iere', 'ieres', 'iere', 'iéremos', 'iereis', 'iren'],
+        'futur du subjonctif': ['iere', 'ieres', 'iere', 'iéremos', 'iereis', 'ieren'],
         'participe passé': ['ido', 'ido', 'ido', 'ido', 'ido', 'ido'],
         'gérondif': ['iendo', 'iendo', 'iendo', 'iendo', 'iendo', 'iendo'],
         'impératif': ['', 'e', 'a', 'amos', 'id', 'an'],
@@ -221,7 +221,7 @@ terminaisons_poder = {
     'futur du subjonctif': ['pudiere', 'pudieres', 'pudiere', 'pudiéremos', 'pudiereis', 'pudieren'],
     'participe passé': ['podido', 'podido', 'podido', 'podido', 'podido', 'podido'],
     'gérondif': ['pudiendo', 'pudiendo', 'pudiendo', 'pudiendo', 'pudiendo', 'pudiendo'],
-    'impératif': ['', 'puede', 'pueda', 'podamos', 'poded', 'puedan'],
+    'impératif': ['', 'puede', 'pueda', 'podamos', None, 'puedan'],
     'conditionnel présent': ['podría', 'podrías', 'podría', 'podríamos', 'podríais', 'podrían']
 }
 
