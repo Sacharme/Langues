@@ -68,9 +68,9 @@ verbes_irreguliers_connus = []
 verbes_irreguliers_pas_connus = []
 
 # Temps
-temps = ['imparfait']
-temps_connus = ['impératif', 'conditionnel présent', 'passé', 'présent', 'futur', 'gérondif', 'participe passé']
-temps_pas_connus = ['présent du subjonctif', 'imparfait du subjonctif', 'futur du subjonctif']
+temps = ['imparfait', 'conditionnel présent', 'passé', 'présent', 'futur', 'gérondif', 'participe passé']
+temps_connus = []
+temps_pas_connus = ['présent du subjonctif', 'imparfait du subjonctif', 'futur du subjonctif', 'impératif']
 
 # Pronoms
 pronoms = ['eu', 'ele/você/a gente', 'nós', 'eles/vocês']

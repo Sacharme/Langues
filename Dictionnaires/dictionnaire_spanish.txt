@@ -66,58 +66,6 @@
 9ème (F) % novena
 10ème (M) % décimo
 10ème (F) % décima
-11ème (M) % undécimo
-11ème (F) % undécima
-12ème (M) % duodécimo
-12ème (F) % duodécima
-13ème (M) % décimo tercero
-13ème (F) % décima tercera
-14ème (M) % décimo cuarto
-14ème (F) % décima cuarta
-15ème (M) % décimo quinto
-15ème (F) % décima quinta
-16ème (M) % décimo sexto
-16ème (F) % décima sexta
-17ème (M) % décimo séptimo
-17ème (F) % décima séptima
-18ème (M) % décimo octavo
-18ème (F) % décima octava
-19ème (M) % décimo noveno
-19ème (F) % décima novena
-20ème (M) % vigésimo
-20ème (F) % vigésima
-25ème (M) % vigésimo quinto
-25ème (F) % vigésima quinta
-30ème (M) % trigésimo
-30ème (F) % trigésima
-35ème (M) % trigésimo quinto
-35ème (F) % trigésima quinta
-40ème (M) % cuadragésimo
-40ème (F) % cuadragésima
-45ème (M) % cuadragésimo quinto
-45ème (F) % cuadragésima quinta
-50ème (M) % quincuagésimo
-50ème (F) % quincuagésima
-55ème (M) % quincuagésimo quinto
-55ème (F) % quincuagésima quinta
-60ème (M) % sexagésimo
-60ème (F) % sexagésima
-65ème (M) % sexagésimo quinto
-65ème (F) % sexagésima quinta
-70ème (M) % septuagésimo
-70ème (F) % septuagésima
-75ème (M) % septuagésimo quinto
-75ème (F) % septuagésima quinta
-80ème (M) % octogésimo
-80ème (F) % octogésima
-85ème (M) % octogésimo quinto
-85ème (F) % octogésima quinta
-90ème (M) % nonagésimo
-90ème (F) % nonagésima
-95ème (M) % nonagésimo quinto
-95ème (F) % nonagésima quinta
-100ème (M) % centésimo
-100ème (F) % centésima
 
 Lundi % lunes
 Mardi % martes
