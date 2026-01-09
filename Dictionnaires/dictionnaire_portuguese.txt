@@ -1527,7 +1527,7 @@ Intérêt % interesse
 Respect % respeito
 Opportunité % oportunidade
 Guerre % guerra
-Ministe (M) % ministro
+Ministre (M) % ministro
 Ministre (F) % ministra
 Président % presidente
 Politique % política

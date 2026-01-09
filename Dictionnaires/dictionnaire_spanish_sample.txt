@@ -1,0 +1,319 @@
+0 % cero
+1 (M) % uno
+1 (F) % una
+2 % dos
+3 % tres
+4 % cuatro
+5 % cinco
+6 % seis
+7 % siete
+8 % ocho
+9 % nueve
+10 % diez
+11 % once
+12 % doce
+13 % trece
+14 % catorce
+15 % quince
+16 % dieciséis
+17 % diecisiete
+18 % dieciocho
+19 % diecinueve
+20 % veinte
+21 % veintiuno
+22 % veintidós
+23 % veintitrés
+24 % veinticuatro
+25 % veinticinco
+30 % treinta
+40 % cuarenta
+50 % cincuenta
+60 % sesenta
+70 % setenta
+80 % ochenta
+90 % noventa
+100 % cien
+200 % doscientos
+300 % trescientos
+400 % cuatrocientos
+500 % quinientos
+600 % seiscientos
+700 % setecientos
+800 % ochocientos
+900 % novecientos
+1 000 % mil
+10 000 % diez mil
+100 000 % cien mil
+1 000 000 % un millón
+
+1er % primero
+1ère % primera
+2ème (M) % segundo
+2ème (F) % segunda
+3ème (M) % tercero
+3ème (F) % tercera
+4ème (M) % cuarto
+4ème (F) % cuarta
+5ème (M) % quinto
+5ème (F) % quinta
+6ème (M) % sexto
+6ème (F) % sexta
+7ème (M) % séptimo
+7ème (F) % séptima
+8ème (M) % octavo
+8ème (F) % octava
+9ème (M) % noveno
+9ème (F) % novena
+10ème (M) % décimo
+10ème (F) % décima
+
+Lundi % lunes
+Mardi % martes
+Mercredi % miércoles
+Jeudi % jueves
+Vendredi % viernes
+Samedi % sábado
+Dimanche % domingo
+Janvier % enero
+Février % febrero
+Mars % marzo
+Avril % abril
+Mai % mayo
+Juin % junio
+Juillet % julio
+Août % agosto
+Septembre % septiembre
+Octobre % octubre
+Novembre % noviembre
+Décembre % diciembre
+Jour % día
+Semaine % semana
+Mois % mes
+Année % año
+Aujourd'hui % hoy
+Demain % mañana
+Hier % ayer
+Matin % mañana
+Après-midi % tarde
+Soir % noche
+Nuit % noche
+Seconde % segundo
+Minute % minuto
+Heure % hora
+Maintenant % ahora
+Fois % vez
+Temps % tiempo
+Bientôt % pronto
+Tôt % temprano
+Tard % tarde
+
+Couleur % color
+Bleu % azul
+Bleue % azul
+Rouge (M) % rojo
+Rouge (F) % roja
+Vert % verde
+Verte % verde
+Jaune (M) % amarillo
+Jaune (F) % amarilla
+Orange % naranja
+Violet % violeta
+Violette % violeta
+Rose % rosa
+Blanc % blanco
+Blanche % blanca
+Noir % negro
+Noire % negra
+Gris % gris
+Grise % gris
+
+Bonjour % hola
+Salut % hola
+Au revoir % adiós
+Merci % gracias
+De rien % de nada
+Ça va % qué tal
+Oui % sí
+Non % no
+Excusez-moi % disculpe
+Près % cerca
+Loin % lejos
+Je % yo
+Tu % tú
+Il % él
+Elle % ella
+On % nosotros
+Nous % nosotros
+Vous % vosotros
+Ils % ellos
+Elles % ellas
+Gauche % izquierda
+Droite % derecha
+Il y a % hay
+Au dessus % encima
+En dessous % debajo
+Bon appétit % buen provecho
+S'il vous plaît % por favor
+Devant % delante
+Derrière % detrás
+Désolé (courant) % perdón
+Désolé (poli) % disculpe
+Pendant que % mientras
+Ok / Merci (cool) % vale
+Ok (cool) (l) % guay
+Ok (cool) (b) % de acuerdo
+Chaque % cada
+Mais % pero
+Ou % o
+Tout % todo
+Tous % todos
+Où (o) % dónde
+Où (c) % dónde está
+Aussi % también
+Et % y
+Si % si
+Déjà % ya
+Donc % entonces
+Pourquoi % por qué
+Toujours (always) % siempre
+Toujours (still) % todavía
+Parce que % porque
+Comment % cómo
+Jamais % nunca
+Quoi % qué
+Combien % cuánto
+Bon (b) % bien
+Bon (c) % bueno
+Quand % cuándo
+Quel % cuál
+Que % que
+Qui % quién
+Ça % eso
+Ce % este
+Cet (proche) % este
+Cette (proche) % esta
+Cet (loin) % aquel
+Cette (loin) % aquella
+En % en
+Dans (M Sing) % en el
+Dans (F Sing) % en la
+Dans (M Plur) % en los
+Dans (F Plur) % en las
+Beaucoup (M) % mucho
+Beaucoup (F) % mucha
+Le % el
+La % la
+Plus (+) % más
+Ici % aquí
+Avec % con
+Moins % menos
+La-bas % allí
+Peu (M) % poco
+Peu (F) % poca
+Pour % para
+De % de
+Du % del
+De la % de la
+Des (M) % de los
+Des (F) % de las
+Par % por
+Même (M) (same) % mismo
+Même (F) (same) % misma
+Même (even) % incluso
+Presque % casi
+À % a
+Sans % sin
+Aucun % ningún
+Aucune % ninguna
+Meilleur % mejor
+Meilleure % mejor
+Pire % peor
+Autre (M) % otro
+Autre (F) % otra
+Quelque chose % algo
+Quelqu'un % alguien
+Quelques (M) % algunos
+Quelques (F) % algunas
+Rien % nada
+Let's go ! % vamos
+Dedans % dentro
+Dehors % fuera
+Avant % antes
+Après % después
+Encore (yet) % todavía
+Encore (again) % otra vez
+Depuis % desde
+Parfois % a veces
+Peut-être % tal vez
+Sur % sobre
+À propos % sobre
+Jusqu'à % hasta
+Trop % demasiado
+Pas assez % no suficiente
+Assez % suficiente
+À partir de % a partir de
+Personne (nobody) % nadie
+Personne (somebody) % persona
+Comme ça % así
+Bien sûr % claro
+Outre % además de
+Seulement % solamente
+tant (so) % tanto
+Tant que % mientras
+Ensemble (together) % juntos
+Suivant % siguiente
+Durant % durante
+Au secours % socorro
+Précédent % anterior
+N'est-ce pas % verdad
+Côté (side) % lado
+Juste (only) % solo
+Tout droit % todo recto
+Plutôt que % en vez de
+Attention (be careful) % cuidado
+Au moins % por lo menos
+Au plus % como máximo
+Autant que % tanto como
+Restant % restante
+Au cause de % a causa de
+Grâce à % gracias a
+Sauf % excepto
+Contre (against) % contra
+Il y avait % había
+Il y aura % habrá
+Il y aurait % habría
+Soudainement % de repente
+Lentement % despacio
+Sinon % si no
+Moitié % mitad
+Malgré % a pesar de
+Entre % entre
+À côté % al lado
+Sous % debajo
+Vers % hacia
+À peine % apenas
+D'ailleurs % por cierto
+Allo % aló
+Autour % alrededor
+Quelconque % cualquiera
+D'affilés % seguidos
+Aussitôt que % en cuanto
+Nulle part % en ningún lugar
+Selon % según
+Bref % en resumen
+Certainement % ciertamente
+Parmi % entre
+À travers % a través
+Dès que % en cuanto
+Au % al
+À la % a la
+Récemment % recientemente
+Actuellement % actualmente
+En tant que % como
+Dont % cuyo
+Au lieu de % en lugar de
+Plus loin % más lejos
+Soit (either) % sea
+Vite (soon) % pronto
+Propre (own) % propio
+C'est-à-dire % es decir

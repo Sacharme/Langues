@@ -8,11 +8,11 @@ dictionnaire = 1
 
 # Variable pour choisir le type d'entraînement
 # 0: conjugaison et traduction, 1: uniquement traduction, 2: uniquement conjugaison
-training_type = 0
+training_type = 2
 
 # Variable pour choisir le type de verbes
 # 0: tous les verbes, 1: uniquement verbes irréguliers, 2: uniquement verbes réguliers
-verb_mode = 0
+verb_mode = 2
 
 # créé une liste qui contient tous les mots en français (avant le "%" dans dictionnaire.txt)
 mots_francais = []

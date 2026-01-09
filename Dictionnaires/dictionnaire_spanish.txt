@@ -235,8 +235,7 @@ Quelqu'un % alguien
 Quelques (M) % algunos
 Quelques (F) % algunas
 Rien % nada
-Let's go ! (b) % vamos
-Let's go ! (p) % vámonos
+Let's go ! % vamos
 Dedans % dentro
 Dehors % fuera
 Avant % antes
@@ -1526,7 +1525,7 @@ Intérêt % interés
 Respect % respeto
 Opportunité % oportunidad
 Guerre % guerra
-Ministe (M) % ministro
+Ministre (M) % ministro
 Ministre (F) % ministra
 Président % presidente
 Politique % política

@@ -9,11 +9,11 @@ dictionnaire = 1
 
 # Variable pour choisir le type d'entraînement
 # 0: conjugaison et traduction, 1: uniquement traduction, 2: uniquement conjugaison
-training_type = 0
+training_type = 1
 
 # Variable pour choisir le type de verbes
 # 0: tous les verbes, 1: uniquement verbes irréguliers, 2: uniquement verbes réguliers
-verb_mode = 0
+verb_mode = 2
 
 # créé une liste qui contient tous les mots en français (avant le "%" dans dictionnaire.txt)
 mots_francais = []
@@ -61,13 +61,17 @@ verbes_ar = [
 
 verbes_er = [
     'aprender', 'beber', 'comer', 'comprender', 'correr', 'deber', 'meter',
-    'romper', 'temer', 'vender', 'esconder', 'sorprender', 'responder', 'prometer'
+    'romper', 'temer', 'vender', 'esconder', 'sorprender', 'responder', 'prometer',
+    'acceder', 'atender', 'barrer', 'ceder', 'coger', 'coser', 'creer', 'leer',
+    'oler', 'prender', 'recoger', 'resolver', 'tejer', 'toser', 'verter'
 ]
 
 verbes_ir = [
     'abrir', 'asistir', 'compartir', 'consistir', 'decidir', 'describir', 'discutir', 'escribir',
     'existir', 'insistir', 'partir', 'permitir', 'recibir', 'subir', 'sufrir', 'unir', 'vivir',
-    'admitir', 'añadir', 'cubrir', 'descubrir', 'imprimir', 'ocurrir'
+    'admitir', 'añadir', 'cubrir', 'descubrir', 'imprimir', 'ocurrir',
+    'acudir', 'aplaudir', 'batir', 'confundir', 'cumplir', 'dirigir', 'distinguir', 'dividir',
+    'fundir', 'omitir', 'percibir', 'producir', 'sacudir', 'transmitir'
 ]
 
 # Verbes irréguliers
@@ -76,7 +80,7 @@ verbes_irreguliers_connus = []
 verbes_irreguliers_pas_connus = []
 
 # Temps
-temps = ['imparfait', 'conditionnel présent', 'passé', 'présent', 'futur', 'gérondif', 'participe passé']
+temps = ['passé', 'présent', 'futur', 'imparfait', 'conditionnel présent', 'gérondif', 'participe passé']
 temps_connus = []
 temps_pas_connus = ['présent du subjonctif', 'imparfait du subjonctif', 'futur du subjonctif', 'impératif']
 
