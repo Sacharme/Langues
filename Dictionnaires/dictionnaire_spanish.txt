@@ -1037,30 +1037,21 @@ Urgente % urgente
 
 En parlant du loup % hablando del rey de Roma
 Wow (DAMN) % vaya
-Enfin Vendredi % por fin es viernes
 Foncedalle % munchies
 Putain % joder
 Genre (tic) % tipo
 Bonne chance % buena suerte
-Passer du tout au tout % cambiar radicalmente
-Personne qui porte malheur % gafe
-Personne qui porte bonheur % amuleto
 À bientôt % hasta pronto
 Point de vue % punto de vista
 Ça dit quoi (what's up) % qué pasa
-Personne qui ment en miskine un peu % mentiroso
-Personne qui s'habille mal % hortera
 Pay attention ! (gentil) % fíjate
 Pay attention ! (méchant) % espabila
-Personne fragile % frágil
 Jeter un coup d'œil % echar un vistazo
 Le plus... le plus... % cuanto más... más...
 Before de soirée % previa
 Pecho régulier % rollo
-Le truc/scret/astuce % el truco
 Passe-temps % pasatiempo
 Grave (de ouf) % totalmente
-Exactement % exactamente
 De ouf % un montón
 
 Famille % familia
@@ -1239,7 +1230,7 @@ Médecin (F) % médica
 Alphabet % alfabeto
 Photographie % fotografía
 Vidéo % vídeo
-Langue % lengua
+Langue % idioma
 Musée % museo
 Coeur % corazón
 Sport % deporte
