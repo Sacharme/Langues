@@ -6,29 +6,15 @@ from tkinter import ttk
 # Clé : Lettre (Majuscule + Minuscule)
 # Valeur : Liste des translittérations acceptées
 alphabet = {
-    'Е е': ['ye', 'ie', 'je', 'e'],
-    'Ё ё': ['yo', 'io', 'jo'],
-    'Ж ж': ['zh', 'j'],
-    'З з': ['z'],
-    'У у': ['u', 'ou'],
-    'Х х': ['kh', 'h'],
-    'Ц ц': ['ts'],
-    'Ч ч': ['ch', 'tch'],
-    'Ш ш': ['sh', 'ch'],
-    'Щ щ': ['shch', 'sch', 'chtch'],
-    'Ъ ъ': ['dur', 'hard', '"'],
-    'Ы ы': ['y', 'i'],
-    'Ь ь': ['mou', 'soft', "'"],
-    'Э э': ['e', 'eh'],
-    'Ю ю': ['yu', 'iu', 'ju', 'you'],
-}
-
-alphabet_known = {
     'А а': ['a'],
     'Б б': ['b'],
     'В в': ['v'],
     'Г г': ['g', 'gue'],
     'Д д': ['d'],
+    'Е е': ['ye', 'ie', 'je', 'e'],
+    'Ё ё': ['yo', 'io', 'jo'],
+    'Ж ж': ['zh', 'j'],
+    'З з': ['z'],
     'И и': ['i'],
     'Й й': ['y', 'i', 'j', 'ï'],
     'К к': ['k'],
@@ -40,8 +26,19 @@ alphabet_known = {
     'Р р': ['r'],
     'С с': ['s'],
     'Т т': ['t'],
+    'У у': ['u', 'ou'],
     'Ф ф': ['f'],
-    'Я я': ['ya', 'ia', 'ja']
+    'Х х': ['kh', 'h'],
+    'Ц ц': ['ts'],
+    'Ч ч': ['ch', 'tch'],
+    'Ш ш': ['sh', 'ch'],
+    'Щ щ': ['shch', 'sch', 'chtch'],
+    'Ъ ъ': ['dur', 'hard', '"'],
+    'Ы ы': ['y', 'i'],
+    'Ь ь': ['mou', 'soft', "'"],
+    'Э э': ['e', 'eh'],
+    'Ю ю': ['yu', 'iu', 'ju', 'you'],
+    'Я я': ['ya', 'ia', 'ja'],
 }
 
 class AlphabetApp:

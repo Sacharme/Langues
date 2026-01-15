@@ -132,7 +132,7 @@ Salut % hola
 Au revoir % adiós
 Merci % gracias
 De rien % de nada
-Ça va % qué tal
+Ça va ? % qué tal
 Oui % sí
 Non % no
 Excusez-moi % disculpe
@@ -160,15 +160,12 @@ Désolé (courant) % perdón
 Désolé (poli) % disculpe
 Pendant que % mientras
 Ok / Merci (cool) % vale
-Ok (cool) (l) % guay
-Ok (cool) (b) % de acuerdo
 Chaque % cada
 Mais % pero
 Ou % o
 Tout % todo
 Tous % todos
-Où (o) % dónde
-Où (c) % dónde está
+Où % dónde
 Aussi % también
 Et % y
 Si % si
@@ -335,8 +332,7 @@ Donner % dar
 Travailler % trabajar
 Aller % ir
 Venir % venir
-Prendre (un objet) % tomar
-Prendre (une douche, un taxi) % tomar
+Prendre % tomar
 Voir % ver
 Apprendre % aprender
 Aimer % gustar
@@ -469,8 +465,7 @@ Se moquer % burlarse
 S'échapper % escapar
 Vivre (habiter) % vivir
 Apparaître % aparecer
-Disparaître (d) % desaparecer
-Disparaître (s) % desaparecer
+Disparaître % desaparecer
 Déchirer % rasgar
 Mélanger % mezclar
 Continuer % continuar
@@ -486,8 +481,7 @@ Sécher % secar
 Mouiller % mojar
 Accéder % acceder
 Chuchoter % susurrar
-Partager (c) % compartir
-Partager (p) % compartir
+Partager % compartir
 Rêver % soñar
 Développer % desarrollar
 Comparer % comparar
@@ -558,8 +552,7 @@ Profiter % aprovechar
 Punir % castigar
 Souffrir % sufrir
 Énerver / Faire chier % molestar
-Faire pitié (dar) % dar pena
-Faire pitié (fazer) % dar lástima
+Faire pitié % dar pena
 Concerner % concernir
 Regretter % arrepentirse
 Exciter % excitar
@@ -614,7 +607,6 @@ Rassurer % tranquilizar
 Bouillir % hervir
 Prouver % probar
 Insister % insistir
-Manquer (quand on part) % echar de menos
 Trahir % traicionar
 Exclure % excluir
 Imaginer % imaginar
@@ -862,8 +854,8 @@ Soudain % repentino
 Soudaine % repentina
 Vivant % vivo
 Vivante % viva
-Mort % muerto
-Morte % muerta
+Mort (adj) % muerto
+Morte (adj) % muerta
 Maigre (M) % delgado
 Maigre (F) % delgada
 Blessé % herido
@@ -1025,7 +1017,7 @@ Incomparable % incomparable
 Aveugle (M) % ciego
 Aveugle (F) % ciega
 Sourd % sordo
-Sourde) % sorda
+Sourde % sorda
 Muet % mudo
 Muette % muda
 Gourmand % goloso
@@ -1044,8 +1036,6 @@ Bonne chance % buena suerte
 À bientôt % hasta pronto
 Point de vue % punto de vista
 Ça dit quoi (what's up) % qué pasa
-Pay attention ! (gentil) % fíjate
-Pay attention ! (méchant) % espabila
 Jeter un coup d'œil % echar un vistazo
 Le plus... le plus... % cuanto más... más...
 Before de soirée % previa
@@ -1099,13 +1089,10 @@ Cochonne % cerda
 Mouton % oveja
 Poule % gallina
 Lion % león
-Capybara % capibara
 Singe % mono
 Tigre % tigre
-Grenouille % rana
 Serpent % serpiente
 Lapin % conejo
-Perroquet % loro
 Chèvre % cabra
 Moustique % mosquito
 Mouche % mosca
@@ -1466,8 +1453,7 @@ Prison % prisión
 Erreur % error
 Maladie % enfermedad
 Science % ciencia
-Supporter (fan) (t) % hincha
-Supporter (fan) (f) % fan
+Supporter (nom) % fan
 Air % aire
 Paysage % paisaje
 Humain % humano
@@ -1577,7 +1563,6 @@ Cercle % círculo
 Gueule de bois % resaca
 Jambon % jamón
 Campagnard % campesino
-Argot % jerga
 Cabane % cabaña
 Bois % madera
 Herbe % hierba
