@@ -82,9 +82,7 @@ class AlphabetApp:
         self.question_label = ttk.Label(main_frame, text="", font=("Arial", 150, "bold"), justify="center")
         self.question_label.grid(row=1, column=0, pady=50)
 
-        # Instruction
-        instruction_label = ttk.Label(main_frame, text="Entrez la prononciation (translittération)", font=("Arial", 20))
-        instruction_label.grid(row=2, column=0, pady=(0, 20))
+
 
         # Champ de saisie
         self.reponse_entry = ttk.Entry(main_frame, font=("Arial", 40), justify="center", width=10)
@@ -140,7 +138,7 @@ class AlphabetApp:
         self.reponse_entry.config(state="disabled")
         self.valider_btn.config(state="disabled")
 
-        self.root.after(2000, self.nouvelle_question)
+        self.root.after(1000, self.nouvelle_question)
 
     def afficher_resultat(self, succes):
         # Mettre à jour le compteur
@@ -151,13 +149,14 @@ class AlphabetApp:
         # Mettre à jour l'affichage du pourcentage
         self.update_percentage_display()
 
+        reponse_str = " / ".join([r for r in self.reponses_possibles if r])
+        if not reponse_str: reponse_str = "(aucune)"
+
         if succes:
             couleur = '#15853f' # Vert
-            self.feedback_label.config(text="Correct !", foreground="white")
+            self.feedback_label.config(text=f"{reponse_str}", foreground="white")
         else:
             couleur = '#a32c2c' # Rouge
-            reponse_str = " ou ".join([r for r in self.reponses_possibles if r])
-            if not reponse_str: reponse_str = "(aucune)"
             self.feedback_label.config(text=f"{reponse_str}", foreground="white")
 
         self.root.configure(bg=couleur)
