@@ -1,6 +1,41 @@
 import random
 import tkinter as tk
 from tkinter import ttk, messagebox
+import os
+import csv
+from datetime import datetime
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.dates as mdates
+import numpy as np
+
+# ============== CONFIGURATION ==============
+AUTO_SAVE_THRESHOLD = 500  # Nombre d'essais avant auto-sauvegarde
+
+# Objectifs par catégorie (%)
+GOALS = {
+    'reguliers': 85,      # Conjugaison verbes réguliers
+    'irreguliers': 70,    # Conjugaison verbes irréguliers  
+    'vocabulaire': 70,    # Vocabulaire dictionnaire complet
+    'tout': 75            # Tous les verbes + tout le vocabulaire
+}
+
+# Noms des fichiers par catégorie
+CATEGORY_FILES = {
+    'reguliers': 'conjugaison_reguliers',
+    'irreguliers': 'conjugaison_irreguliers',
+    'vocabulaire': 'vocabulaire',
+    'tout': 'tout'
+}
+
+# Chemins des fichiers
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, 'Data', 'Portuguese')
+GRAPHS_DIR = os.path.join(BASE_DIR, 'Graphs', 'Portuguese')
+
+# Créer les dossiers s'ils n'existent pas
+os.makedirs(DATA_DIR, exist_ok=True)
+os.makedirs(GRAPHS_DIR, exist_ok=True)
 
 # Variable pour choisir le dictionnaire
 # 1: dictionnaire complet, 2: dictionnaire échantillon
@@ -22,20 +57,28 @@ mots_portugais = []
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = './Dictionnaires/dictionnaire_portuguese.txt'
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese.txt')
 elif dictionnaire == 2:
-    fichier_dictionnaire = './Dictionnaires/dictionnaire_portuguese_sample.txt'
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese_sample.txt')
 else:
-    fichier_dictionnaire = './Dictionnaires/dictionnaire_portuguese.txt'
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese.txt')
 
 # Lecture du fichier dictionnaire
-with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
-    for ligne in fichier:
-        ligne = ligne.strip()
-        if '%' in ligne:
-            francais, portugais = ligne.split(' % ')
-            mots_francais.append(francais)
-            mots_portugais.append(portugais)
+try:
+    with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
+        for ligne in fichier:
+            ligne = ligne.strip()
+            if '%' in ligne:
+                francais, portugais = ligne.split(' % ')
+                mots_francais.append(francais)
+                mots_portugais.append(portugais)
+except FileNotFoundError:
+    print(f"Erreur: Le fichier dictionnaire est introuvable: {fichier_dictionnaire}")
+
+# Vérification que le dictionnaire n'est pas vide
+if not mots_francais:
+    mots_francais = ["Erreur"]
+    mots_portugais = ["Dictionnaire vide ou introuvable"]
 
 # Verbes pour la conjugaison (infinitif en portugais)
 verbes_ar = [
@@ -424,6 +467,98 @@ def conjuguer_verbe(verbe, pronom_index, temps_choisi):
         return radical + terminaison
 
 
+def get_current_category():
+    """Détermine la catégorie actuelle basée sur training_type et verb_mode"""
+    if training_type == 2:  # Conjugaison uniquement
+        if verb_mode == 2:  # Réguliers uniquement
+            return 'reguliers'
+        elif verb_mode == 1:  # Irréguliers uniquement
+            return 'irreguliers'
+        else:  # Tous les verbes
+            return 'tout'
+    elif training_type == 1:  # Traduction uniquement
+        return 'vocabulaire'
+    else:  # Mixte
+        return 'tout'
+
+
+def generate_3d_graph(category):
+    """Génère un graphique 3D de la progression pour une catégorie"""
+    csv_file = os.path.join(DATA_DIR, f'{CATEGORY_FILES[category]}.csv')
+    graph_file = os.path.join(GRAPHS_DIR, f'{CATEGORY_FILES[category]}_progress.png')
+    goal = GOALS[category]
+    
+    if not os.path.exists(csv_file):
+        return
+    
+    dates = []
+    attempts = []
+    percentages = []
+    
+    with open(csv_file, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                dates.append(datetime.strptime(row['date'], '%Y-%m-%d'))
+                attempts.append(int(row['attempts']))
+                percentages.append(float(row['percentage']))
+            except (ValueError, KeyError):
+                continue
+    
+    if not dates:
+        return
+    
+    fig = plt.figure(figsize=(12, 8))
+    ax = fig.add_subplot(111, projection='3d')
+    
+    # Convertir les dates en nombres pour le graphique
+    date_nums = mdates.date2num(dates)
+    
+    # Points de progression
+    ax.scatter(attempts, date_nums, percentages, c='blue', s=100, marker='o', label='Scores')
+    
+    # Ligne reliant les points
+    if len(dates) > 1:
+        ax.plot(attempts, date_nums, percentages, c='blue', alpha=0.5)
+    
+    # Fixer les limites de l'axe Z (0 à 100%)
+    ax.set_zlim(0, 100)
+    
+    # Ligne de but (plan horizontal au pourcentage objectif)
+    if attempts and dates:
+        # Étendre légèrement les ranges pour que le plan soit bien visible
+        x_min, x_max = min(attempts), max(attempts)
+        x_margin = max(1, (x_max - x_min) * 0.1)
+        y_min, y_max = min(date_nums), max(date_nums)
+        y_margin = max(0.5, (y_max - y_min) * 0.1)
+        
+        x_range = [x_min - x_margin, x_max + x_margin]
+        y_range = [y_min - y_margin, y_max + y_margin]
+        X, Y = np.meshgrid(x_range, y_range)
+        Z = np.full_like(X, goal, dtype=float)
+        ax.plot_surface(X, Y, Z, alpha=0.4, color='red', edgecolor='darkred', linewidth=2)
+    
+    # Category names in English
+    category_names = {
+        'reguliers': 'Regular Conjugation',
+        'irreguliers': 'Irregular Conjugation',
+        'vocabulaire': 'Vocabulary',
+        'tout': 'All (Verbs + Vocabulary)'
+    }
+    
+    ax.set_xlabel('Number of attempts')
+    ax.set_ylabel('Date')
+    ax.set_zlabel('Success rate (%)')
+    ax.set_title(f'Portuguese Progress - {category_names[category]} (Goal: {goal}%)')
+    
+    # Formater l'axe Y pour afficher les dates
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: mdates.num2date(x).strftime('%d/%m')))
+    
+    plt.tight_layout()
+    plt.savefig(graph_file, dpi=150, bbox_inches='tight')
+    plt.close()
+
+
 class QuizApp:
     def __init__(self, root):
         self.root = root
@@ -453,6 +588,10 @@ class QuizApp:
         # Variables pour le compteur de pourcentage
         self.total_questions = 0
         self.correct_answers = 0
+        
+        # Variables pour le suivi de catégorie et sauvegarde
+        self.current_category = get_current_category()
+        self.has_saved = False
 
         self.setup_ui()
         self.nouvelle_question()
@@ -600,21 +739,40 @@ class QuizApp:
                                           justify="center")
         self.irregular_status.grid(row=1, column=2, padx=20)
 
+        # Frame pour boutons Enregistrer et Quitter
+        bottom_frame = ttk.Frame(main_frame)
+        bottom_frame.grid(row=5, column=0, pady=(20, 10))
+        
+        # Bouton Enregistrer
+        style.configure("Save.TButton", font=("Arial", 20, "bold"))
+        self.save_btn = ttk.Button(bottom_frame, text="Enregistrer",
+                                   command=self.save_progress,
+                                   style="Save.TButton")
+        self.save_btn.grid(row=0, column=0, padx=20)
+        
         # Bouton Quitter
-        self.quit_btn = ttk.Button(main_frame, text="Quitter",
+        self.quit_btn = ttk.Button(bottom_frame, text="Quitter",
                                    command=self.quitter_application,
                                    style="Control.TButton")
-        self.quit_btn.grid(row=5, column=0, pady=(20, 10))
+        self.quit_btn.grid(row=0, column=1, padx=20)
 
         # Label pour afficher le pourcentage de bonnes réponses (en bas)
         self.percentage_label = ttk.Label(main_frame, text="0% (0/0)",
                                           font=("Arial", 24, "bold"),
                                           foreground="#00bcd4",
                                           justify="center")
-        self.percentage_label.grid(row=6, column=0, pady=(10, 20))
+        self.percentage_label.grid(row=6, column=0, pady=(10, 5))
+
+        # Label pour afficher l'objectif de la catégorie
+        self.goal_label = ttk.Label(main_frame, text="",
+                                    font=("Arial", 18),
+                                    foreground="#ff6b6b",
+                                    justify="center")
+        self.goal_label.grid(row=7, column=0, pady=(0, 20))
 
         # Mettre à jour l'affichage des statuts
         self.mettre_a_jour_statuts()
+        self.update_goal_display()
 
         # Focus sur le champ de saisie
         self.reponse_entry.focus()
@@ -775,6 +933,9 @@ class QuizApp:
         self.valider_btn.config(state="disabled", text="Valider")
         self.reponse_entry.config(state="disabled")
 
+        # Vérifier auto-save
+        self.check_auto_save()
+
         # Passer automatiquement à la question suivante après 750ms
         self.root.after(750, self.nouvelle_question)
 
@@ -825,6 +986,18 @@ class QuizApp:
         else:
             self.percentage_label.config(text="0% (0/0)")
 
+    def update_goal_display(self):
+        """Met à jour l'affichage de l'objectif de la catégorie"""
+        # Ne pas afficher si dictionnaire sample
+        if dictionnaire == 2:
+            self.goal_label.config(text="")
+            return
+        
+        category = get_current_category()
+        goal = GOALS[category]
+        
+        self.goal_label.config(text=f"Objectif : {goal}%")
+
     def remettre_fond_neutre(self):
         """Remet le fond neutre de toute la fenêtre"""
         self.root.configure(bg='#454545')
@@ -847,21 +1020,31 @@ class QuizApp:
 
         # Choisir le bon fichier avec la bonne extension
         if dictionnaire == 1:
-            fichier_dictionnaire = 'dictionnaire.txt'
+            fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese.txt')
         else:
-            fichier_dictionnaire = 'dictionnaire_sample.txt'
+            fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese_sample.txt')
 
         # Recharger les mots
-        with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
-            for ligne in fichier:
-                ligne = ligne.strip()
-                if '%' in ligne:
-                    francais, portugais = ligne.split(' % ')
-                    mots_francais.append(francais)
-                    mots_portugais.append(portugais)
+        try:
+            with open(fichier_dictionnaire, 'r', encoding='utf-8') as fichier:
+                for ligne in fichier:
+                    ligne = ligne.strip()
+                    if '%' in ligne:
+                        francais, portugais = ligne.split(' % ')
+                        mots_francais.append(francais)
+                        mots_portugais.append(portugais)
+        except FileNotFoundError:
+            messagebox.showerror("Erreur", f"Le fichier dictionnaire est introuvable :\n{fichier_dictionnaire}")
+            mots_francais.append("Erreur")
+            mots_portugais.append("Fichier introuvable")
+
+        if not mots_francais:
+            mots_francais.append("Vide")
+            mots_portugais.append("Dictionnaire vide")
 
         # Mettre à jour l'affichage
         self.mettre_a_jour_statuts()
+        self.update_goal_display()
         # Générer une nouvelle question si on est en mode traduction
         if hasattr(self, 'mode_actuel') and self.mode_actuel == 'traduction':
             self.nouvelle_question()
@@ -872,9 +1055,16 @@ class QuizApp:
 
         # Cycle entre 0, 1, 2
         training_type = (training_type + 1) % 3
+        
+        # Vérifier si la catégorie a changé
+        new_category = get_current_category()
+        if new_category != self.current_category:
+            self.reset_progress()
+            self.current_category = new_category
 
         # Mettre à jour l'affichage
         self.mettre_a_jour_statuts()
+        self.update_goal_display()
         # Générer une nouvelle question
         self.nouvelle_question()
 
@@ -884,9 +1074,16 @@ class QuizApp:
 
         # Basculer entre les trois modes
         verb_mode = (verb_mode + 1) % 3
+        
+        # Vérifier si la catégorie a changé
+        new_category = get_current_category()
+        if new_category != self.current_category:
+            self.reset_progress()
+            self.current_category = new_category
 
         # Mettre à jour l'affichage
         self.mettre_a_jour_statuts()
+        self.update_goal_display()
         # Générer une nouvelle question si on est en mode conjugaison
         if hasattr(self, 'mode_actuel') and self.mode_actuel == 'conjugaison':
             self.nouvelle_question()
@@ -917,6 +1114,49 @@ class QuizApp:
 
     def quitter_application(self):
         """Ferme l'application"""
+        self.root.quit()
+        self.root.destroy()
+    
+    def reset_progress(self):
+        """Réinitialise la progression (quand on change de catégorie)"""
+        self.total_questions = 0
+        self.correct_answers = 0
+        self.has_saved = False
+        self.update_percentage_display()
+    
+    def check_auto_save(self):
+        """Vérifie si l'auto-sauvegarde doit être déclenchée"""
+        if self.total_questions >= AUTO_SAVE_THRESHOLD and not self.has_saved:
+            self.save_progress()
+    
+    def save_progress(self):
+        """Sauvegarde la progression dans un fichier CSV et génère le graphique"""
+        if self.has_saved or self.total_questions == 0:
+            return
+        
+        self.has_saved = True
+        
+        # Déterminer la catégorie actuelle
+        category = get_current_category()
+        csv_file = os.path.join(DATA_DIR, f'{CATEGORY_FILES[category]}.csv')
+        
+        # Calculer le pourcentage
+        percentage = (self.correct_answers / self.total_questions) * 100
+        today = datetime.now().strftime('%Y-%m-%d')
+        
+        # Créer le fichier CSV s'il n'existe pas
+        file_exists = os.path.exists(csv_file)
+        
+        with open(csv_file, 'a', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            if not file_exists:
+                writer.writerow(['date', 'attempts', 'percentage'])
+            writer.writerow([today, self.total_questions, f'{percentage:.1f}'])
+        
+        # Générer le graphique 3D
+        generate_3d_graph(category)
+        
+        # Fermer l'application
         self.root.quit()
         self.root.destroy()
 
