@@ -5,12 +5,10 @@ import os
 import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.dates as mdates
-import numpy as np
 
 # ============== CONFIGURATION ==============
-AUTO_SAVE_THRESHOLD = 200  # Nombre d'essais avant auto-sauvegarde
+AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
 GOAL_PERCENTAGE = 95       # Objectif de réussite (%)
 
 # Chemins des fichiers
@@ -24,48 +22,131 @@ GRAPH_FILE = os.path.join(GRAPHS_DIR, 'alphabet_progress.png')
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(GRAPHS_DIR, exist_ok=True)
 
-# Dictionnaire de l'alphabet arabe
-# Clé : Lettre arabe
-# Valeur : Liste des translittérations acceptées
+# Dictionnaire de l'alphabet arabe avec les 4 formes positionnelles
+# Structure: lettre_base: {'name': nom, 'translits': [...], 'forms': {'isolated': X, 'initial': X, 'medial': X, 'final': X}}
+# Note: Certaines lettres ne se connectent pas à gauche (alif, dal, dhal, ra, zay, waw)
 alphabet = {
-    'ا': ['a', 'alif'],
-    'ب': ['b', 'ba'],
-    'ت': ['t', 'ta'],
-    'ث': ['th', 'tha'],
-    'ج': ['j', 'jim', 'g'],
-    'ح': ['h', 'ha', 'haa'],
-    'خ': ['kh', 'kha'],
-    'د': ['d', 'dal'],
-    'ذ': ['dh', 'dhal', 'th'],
-    'ر': ['r', 'ra'],
-    'ز': ['z', 'zay'],
-    'س': ['s', 'sin'],
-    'ش': ['sh', 'shin', 'ch'],
-    'ص': ['s', 'sad'],
-    'ض': ['d', 'dad'],
-    'ط': ['t', 'ta'],
-    'ظ': ['z', 'za', 'dh'],
-    'ع': ['a', 'ayn', 'ain'],
-    'غ': ['gh', 'ghayn'],
-    'ف': ['f', 'fa'],
-    'ق': ['q', 'qaf'],
-    'ك': ['k', 'kaf'],
-    'ل': ['l', 'lam'],
-    'م': ['m', 'mim'],
-    'ن': ['n', 'nun'],
-    'ه': ['h', 'ha'],
-    'و': ['w', 'waw', 'u', 'o'],
-    'ي': ['y', 'ya', 'i'],
+    'alif': {
+        'translits': ['a', 'alif'],
+        'forms': {'isolated': 'ا', 'initial': 'ا', 'medial': 'ـا', 'final': 'ـا'}
+    },
+    'ba': {
+        'translits': ['b', 'ba'],
+        'forms': {'isolated': 'ب', 'initial': 'بـ', 'medial': 'ـبـ', 'final': 'ـب'}
+    },
+    'ta': {
+        'translits': ['t', 'ta'],
+        'forms': {'isolated': 'ت', 'initial': 'تـ', 'medial': 'ـتـ', 'final': 'ـت'}
+    },
+    'tha': {
+        'translits': ['th', 'tha'],
+        'forms': {'isolated': 'ث', 'initial': 'ثـ', 'medial': 'ـثـ', 'final': 'ـث'}
+    },
+    'jim': {
+        'translits': ['j', 'jim', 'g'],
+        'forms': {'isolated': 'ج', 'initial': 'جـ', 'medial': 'ـجـ', 'final': 'ـج'}
+    },
+    'ha': {
+        'translits': ['h', 'ha', 'haa'],
+        'forms': {'isolated': 'ح', 'initial': 'حـ', 'medial': 'ـحـ', 'final': 'ـح'}
+    },
+    'kha': {
+        'translits': ['kh', 'kha'],
+        'forms': {'isolated': 'خ', 'initial': 'خـ', 'medial': 'ـخـ', 'final': 'ـخ'}
+    },
+    'dal': {
+        'translits': ['d', 'dal'],
+        'forms': {'isolated': 'د', 'initial': 'د', 'medial': 'ـد', 'final': 'ـد'}
+    },
+    'dhal': {
+        'translits': ['dh', 'dhal', 'th'],
+        'forms': {'isolated': 'ذ', 'initial': 'ذ', 'medial': 'ـذ', 'final': 'ـذ'}
+    },
+    'ra': {
+        'translits': ['r', 'ra'],
+        'forms': {'isolated': 'ر', 'initial': 'ر', 'medial': 'ـر', 'final': 'ـر'}
+    },
+    'zay': {
+        'translits': ['z', 'zay'],
+        'forms': {'isolated': 'ز', 'initial': 'ز', 'medial': 'ـز', 'final': 'ـز'}
+    },
+    'sin': {
+        'translits': ['s', 'sin'],
+        'forms': {'isolated': 'س', 'initial': 'سـ', 'medial': 'ـسـ', 'final': 'ـس'}
+    },
+    'shin': {
+        'translits': ['sh', 'shin', 'ch'],
+        'forms': {'isolated': 'ش', 'initial': 'شـ', 'medial': 'ـشـ', 'final': 'ـش'}
+    },
+    'sad': {
+        'translits': ['s', 'sad'],
+        'forms': {'isolated': 'ص', 'initial': 'صـ', 'medial': 'ـصـ', 'final': 'ـص'}
+    },
+    'dad': {
+        'translits': ['d', 'dad'],
+        'forms': {'isolated': 'ض', 'initial': 'ضـ', 'medial': 'ـضـ', 'final': 'ـض'}
+    },
+    'tah': {
+        'translits': ['t', 'ta', 'tah'],
+        'forms': {'isolated': 'ط', 'initial': 'طـ', 'medial': 'ـطـ', 'final': 'ـط'}
+    },
+    'zah': {
+        'translits': ['z', 'za', 'dh', 'zah'],
+        'forms': {'isolated': 'ظ', 'initial': 'ظـ', 'medial': 'ـظـ', 'final': 'ـظ'}
+    },
+    'ayn': {
+        'translits': ['a', 'ayn', 'ain'],
+        'forms': {'isolated': 'ع', 'initial': 'عـ', 'medial': 'ـعـ', 'final': 'ـع'}
+    },
+    'ghayn': {
+        'translits': ['gh', 'ghayn'],
+        'forms': {'isolated': 'غ', 'initial': 'غـ', 'medial': 'ـغـ', 'final': 'ـغ'}
+    },
+    'fa': {
+        'translits': ['f', 'fa'],
+        'forms': {'isolated': 'ف', 'initial': 'فـ', 'medial': 'ـفـ', 'final': 'ـف'}
+    },
+    'qaf': {
+        'translits': ['q', 'qaf'],
+        'forms': {'isolated': 'ق', 'initial': 'قـ', 'medial': 'ـقـ', 'final': 'ـق'}
+    },
+    'kaf': {
+        'translits': ['k', 'kaf'],
+        'forms': {'isolated': 'ك', 'initial': 'كـ', 'medial': 'ـكـ', 'final': 'ـك'}
+    },
+    'lam': {
+        'translits': ['l', 'lam'],
+        'forms': {'isolated': 'ل', 'initial': 'لـ', 'medial': 'ـلـ', 'final': 'ـل'}
+    },
+    'mim': {
+        'translits': ['m', 'mim'],
+        'forms': {'isolated': 'م', 'initial': 'مـ', 'medial': 'ـمـ', 'final': 'ـم'}
+    },
+    'nun': {
+        'translits': ['n', 'nun'],
+        'forms': {'isolated': 'ن', 'initial': 'نـ', 'medial': 'ـنـ', 'final': 'ـن'}
+    },
+    'ha_end': {
+        'translits': ['h', 'ha'],
+        'forms': {'isolated': 'ه', 'initial': 'هـ', 'medial': 'ـهـ', 'final': 'ـه'}
+    },
+    'waw': {
+        'translits': ['w', 'waw', 'u', 'o', 'ou'],
+        'forms': {'isolated': 'و', 'initial': 'و', 'medial': 'ـو', 'final': 'ـو'}
+    },
+    'ya': {
+        'translits': ['y', 'ya', 'i'],
+        'forms': {'isolated': 'ي', 'initial': 'يـ', 'medial': 'ـيـ', 'final': 'ـي'}
+    },
 }
 
 
-def generate_3d_graph():
-    """Génère un graphique 3D de la progression"""
+def generate_2d_graph():
+    """Génère un graphique 2D de la progression"""
     if not os.path.exists(CSV_FILE):
         return
     
     dates = []
-    attempts = []
     percentages = []
     
     with open(CSV_FILE, 'r', encoding='utf-8') as f:
@@ -73,7 +154,6 @@ def generate_3d_graph():
         for row in reader:
             try:
                 dates.append(datetime.strptime(row['date'], '%Y-%m-%d'))
-                attempts.append(int(row['attempts']))
                 percentages.append(float(row['percentage']))
             except (ValueError, KeyError):
                 continue
@@ -81,42 +161,29 @@ def generate_3d_graph():
     if not dates:
         return
     
-    fig = plt.figure(figsize=(12, 8))
-    ax = fig.add_subplot(111, projection='3d')
+    fig, ax = plt.subplots(figsize=(12, 6))
     
-    # Convertir les dates en nombres pour le graphique
-    date_nums = mdates.date2num(dates)
+    # Progress points and line
+    ax.plot(dates, percentages, 'b-o', markersize=8, linewidth=2, label='Scores')
     
-    # Points de progression
-    ax.scatter(attempts, date_nums, percentages, c='blue', s=100, marker='o', label='Scores')
+    # Goal line (horizontal line at goal percentage)
+    ax.axhline(y=GOAL_PERCENTAGE, color='red', linestyle='--', linewidth=2, label=f'Goal: {GOAL_PERCENTAGE}%')
     
-    # Ligne reliant les points
-    if len(dates) > 1:
-        ax.plot(attempts, date_nums, percentages, c='blue', alpha=0.5)
+    # Fix Y-axis limits (0 to 100%)
+    ax.set_ylim(0, 100)
     
-    # Fixer les limites de l'axe Z (0 à 100%)
-    ax.set_zlim(0, 100)
+    ax.set_xlabel('Date', fontsize=12)
+    ax.set_ylabel('Success rate (%)', fontsize=12)
+    ax.set_title(f'Arabic Alphabet Progress (Goal: {GOAL_PERCENTAGE}%)', fontsize=14)
     
-    # Ligne de but (plan horizontal à GOAL_PERCENTAGE)
-    if attempts and dates:
-        x_min, x_max = min(attempts), max(attempts)
-        x_margin = max(1, (x_max - x_min) * 0.1)
-        y_min, y_max = min(date_nums), max(date_nums)
-        y_margin = max(0.5, (y_max - y_min) * 0.1)
-        
-        x_range = [x_min - x_margin, x_max + x_margin]
-        y_range = [y_min - y_margin, y_max + y_margin]
-        X, Y = np.meshgrid(x_range, y_range)
-        Z = np.full_like(X, GOAL_PERCENTAGE, dtype=float)
-        ax.plot_surface(X, Y, Z, alpha=0.4, color='red', edgecolor='darkred', linewidth=2)
+    # Format X-axis to display dates nicely
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%d/%m'))
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator())
+    plt.xticks(rotation=45)
     
-    ax.set_xlabel('Number of attempts')
-    ax.set_ylabel('Date')
-    ax.set_zlabel('Success rate (%)')
-    ax.set_title(f'Arabic Alphabet Progress (Goal: {GOAL_PERCENTAGE}%)')
-    
-    # Formater l'axe Y pour afficher les dates
-    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: mdates.num2date(x).strftime('%d/%m')))
+    # Add grid for better readability
+    ax.grid(True, alpha=0.3)
+    ax.legend()
     
     plt.tight_layout()
     plt.savefig(GRAPH_FILE, dpi=150, bbox_inches='tight')
@@ -194,7 +261,14 @@ class AlphabetApp:
         self.goal_label.grid(row=7, column=0, pady=(0, 20))
 
     def nouvelle_question(self):
-        self.lettre_actuelle, self.reponses_possibles = random.choice(list(alphabet.items()))
+        # Select a random letter
+        letter_name = random.choice(list(alphabet.keys()))
+        letter_data = alphabet[letter_name]
+        
+        # Select a random form (isolated, initial, medial, or final)
+        form_name = random.choice(['isolated', 'initial', 'medial', 'final'])
+        self.lettre_actuelle = letter_data['forms'][form_name]
+        self.reponses_possibles = letter_data['translits']
 
         self.question_label.config(text=self.lettre_actuelle)
         self.reponse_entry.config(state="normal")
@@ -209,6 +283,10 @@ class AlphabetApp:
         self.reponse_entry.focus()
 
     def verifier_reponse(self):
+        # Prevent multiple submissions if entry is already disabled
+        if str(self.reponse_entry.cget('state')) == 'disabled':
+            return
+            
         reponse = self.reponse_entry.get().strip().lower()
 
         if not reponse and '' not in self.reponses_possibles:
@@ -279,7 +357,7 @@ class AlphabetApp:
                 writer.writerow(['date', 'attempts', 'percentage'])
             writer.writerow([today, self.total_questions, f'{percentage:.1f}'])
         
-        generate_3d_graph()
+        generate_2d_graph()
         
         self.root.quit()
         self.root.destroy()

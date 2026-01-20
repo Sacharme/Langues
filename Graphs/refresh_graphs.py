@@ -8,9 +8,7 @@ import sys
 import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.dates as mdates
-import numpy as np
 
 # Get the base directory (parent of Graphs folder)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -74,14 +72,13 @@ CONFIGS = {
 }
 
 
-def generate_3d_graph(csv_file, graph_file, goal, title):
-    """Generates a 3D progress graph from CSV data"""
+def generate_2d_graph(csv_file, graph_file, goal, title):
+    """Generates a 2D progress graph from CSV data"""
     if not os.path.exists(csv_file):
         print(f"  [!] CSV file not found: {csv_file}")
         return False
     
     dates = []
-    attempts = []
     percentages = []
     
     with open(csv_file, 'r', encoding='utf-8') as f:
@@ -89,7 +86,6 @@ def generate_3d_graph(csv_file, graph_file, goal, title):
         for row in reader:
             try:
                 dates.append(datetime.strptime(row['date'], '%Y-%m-%d'))
-                attempts.append(int(row['attempts']))
                 percentages.append(float(row['percentage']))
             except (ValueError, KeyError) as e:
                 print(f"  [!] Error parsing row: {row} - {e}")
@@ -102,42 +98,29 @@ def generate_3d_graph(csv_file, graph_file, goal, title):
     # Create graphs directory if it doesn't exist
     os.makedirs(os.path.dirname(graph_file), exist_ok=True)
     
-    fig = plt.figure(figsize=(12, 8))
-    ax = fig.add_subplot(111, projection='3d')
+    fig, ax = plt.subplots(figsize=(12, 6))
     
-    # Convert dates to numbers for the graph
-    date_nums = mdates.date2num(dates)
+    # Progress points and line
+    ax.plot(dates, percentages, 'b-o', markersize=8, linewidth=2, label='Scores')
     
-    # Progress points
-    ax.scatter(attempts, date_nums, percentages, c='blue', s=100, marker='o', label='Scores')
+    # Goal line (horizontal line at goal percentage)
+    ax.axhline(y=goal, color='red', linestyle='--', linewidth=2, label=f'Goal: {goal}%')
     
-    # Line connecting points
-    if len(dates) > 1:
-        ax.plot(attempts, date_nums, percentages, c='blue', alpha=0.5)
+    # Fix Y-axis limits (0 to 100%)
+    ax.set_ylim(0, 100)
     
-    # Fix Z-axis limits (0 to 100%)
-    ax.set_zlim(0, 100)
+    ax.set_xlabel('Date', fontsize=12)
+    ax.set_ylabel('Success rate (%)', fontsize=12)
+    ax.set_title(f'{title} (Goal: {goal}%)', fontsize=14)
     
-    # Goal plane (horizontal plane at goal percentage)
-    if attempts and dates:
-        x_min, x_max = min(attempts), max(attempts)
-        x_margin = max(1, (x_max - x_min) * 0.1)
-        y_min, y_max = min(date_nums), max(date_nums)
-        y_margin = max(0.5, (y_max - y_min) * 0.1)
-        
-        x_range = [x_min - x_margin, x_max + x_margin]
-        y_range = [y_min - y_margin, y_max + y_margin]
-        X, Y = np.meshgrid(x_range, y_range)
-        Z = np.full_like(X, goal, dtype=float)
-        ax.plot_surface(X, Y, Z, alpha=0.4, color='red', edgecolor='darkred', linewidth=2)
+    # Format X-axis to display dates nicely
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%d/%m'))
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator())
+    plt.xticks(rotation=45)
     
-    ax.set_xlabel('Number of attempts')
-    ax.set_ylabel('Date')
-    ax.set_zlabel('Success rate (%)')
-    ax.set_title(f'{title} (Goal: {goal}%)')
-    
-    # Format Y-axis to display dates
-    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: mdates.num2date(x).strftime('%d/%m')))
+    # Add grid for better readability
+    ax.grid(True, alpha=0.3)
+    ax.legend()
     
     plt.tight_layout()
     plt.savefig(graph_file, dpi=150, bbox_inches='tight')
@@ -164,7 +147,7 @@ def refresh_all_graphs():
             title = f"{config['title_prefix']} - {category_info['name']}"
             goal = category_info['goal']
             
-            if generate_3d_graph(csv_file, graph_file, goal, title):
+            if generate_2d_graph(csv_file, graph_file, goal, title):
                 print(f"  [OK] {category_info['name']} graph refreshed")
                 total_refreshed += 1
             else:
@@ -191,7 +174,7 @@ def refresh_language(language):
         title = f"{config['title_prefix']} - {category_info['name']}"
         goal = category_info['goal']
         
-        if generate_3d_graph(csv_file, graph_file, goal, title):
+        if generate_2d_graph(csv_file, graph_file, goal, title):
             print(f"  [OK] {category_info['name']} graph refreshed")
 
 

@@ -306,7 +306,7 @@ Au % al
 À la % a la
 Récemment % recientemente
 Actuellement % actualmente
-En tant que % como
+Comme % como
 Dont % cuyo
 Au lieu de % en lugar de
 Plus loin % más lejos
@@ -317,7 +317,7 @@ C'est-à-dire % es decir
 
 Être (Permanent) % ser
 Être (Temporaire) % estar
-Rester % quedarse
+Rester % quedar
 Pouvoir % poder
 Marcher % andar
 Avoir besoin % necesitar
@@ -1602,10 +1602,7 @@ Commerce % comercio
 Honneur % honor
 Foyer % hogar
 Armure % armadura
-Grenier % ático
 Garage % garaje
-Rouille % óxido
-Moisissure % moho
 Expérience % experiencia
 Coffre % cofre
 Nid % nido

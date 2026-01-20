@@ -5,12 +5,10 @@ import os
 import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.dates as mdates
-import numpy as np
 
 # ============== CONFIGURATION ==============
-AUTO_SAVE_THRESHOLD = 500  # Nombre d'essais avant auto-sauvegarde
+AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
 
 # Objectifs par catégorie (%)
 GOALS = {
@@ -485,8 +483,8 @@ def get_current_category():
         return 'tout'
 
 
-def generate_3d_graph(category):
-    """Génère un graphique 3D de la progression pour une catégorie"""
+def generate_2d_graph(category):
+    """Génère un graphique 2D de la progression pour une catégorie"""
     csv_file = os.path.join(DATA_DIR, f'{CATEGORY_FILES[category]}.csv')
     graph_file = os.path.join(GRAPHS_DIR, f'{CATEGORY_FILES[category]}_progress.png')
     goal = GOALS[category]
@@ -495,7 +493,6 @@ def generate_3d_graph(category):
         return
     
     dates = []
-    attempts = []
     percentages = []
     
     with open(csv_file, 'r', encoding='utf-8') as f:
@@ -503,7 +500,6 @@ def generate_3d_graph(category):
         for row in reader:
             try:
                 dates.append(datetime.strptime(row['date'], '%Y-%m-%d'))
-                attempts.append(int(row['attempts']))
                 percentages.append(float(row['percentage']))
             except (ValueError, KeyError):
                 continue
@@ -511,35 +507,16 @@ def generate_3d_graph(category):
     if not dates:
         return
     
-    fig = plt.figure(figsize=(12, 8))
-    ax = fig.add_subplot(111, projection='3d')
+    fig, ax = plt.subplots(figsize=(12, 6))
     
-    # Convertir les dates en nombres pour le graphique
-    date_nums = mdates.date2num(dates)
+    # Progress points and line
+    ax.plot(dates, percentages, 'b-o', markersize=8, linewidth=2, label='Scores')
     
-    # Points de progression
-    ax.scatter(attempts, date_nums, percentages, c='blue', s=100, marker='o', label='Scores')
+    # Goal line (horizontal line at goal percentage)
+    ax.axhline(y=goal, color='red', linestyle='--', linewidth=2, label=f'Goal: {goal}%')
     
-    # Ligne reliant les points
-    if len(dates) > 1:
-        ax.plot(attempts, date_nums, percentages, c='blue', alpha=0.5)
-    
-    # Fixer les limites de l'axe Z (0 à 100%)
-    ax.set_zlim(0, 100)
-    
-    # Ligne de but (plan horizontal au pourcentage objectif)
-    if attempts and dates:
-        # Étendre légèrement les ranges pour que le plan soit bien visible
-        x_min, x_max = min(attempts), max(attempts)
-        x_margin = max(1, (x_max - x_min) * 0.1)
-        y_min, y_max = min(date_nums), max(date_nums)
-        y_margin = max(0.5, (y_max - y_min) * 0.1)
-        
-        x_range = [x_min - x_margin, x_max + x_margin]
-        y_range = [y_min - y_margin, y_max + y_margin]
-        X, Y = np.meshgrid(x_range, y_range)
-        Z = np.full_like(X, goal, dtype=float)
-        ax.plot_surface(X, Y, Z, alpha=0.4, color='red', edgecolor='darkred', linewidth=2)
+    # Fix Y-axis limits (0 to 100%)
+    ax.set_ylim(0, 100)
     
     # Category names in English
     category_names = {
@@ -549,13 +526,18 @@ def generate_3d_graph(category):
         'tout': 'All (Verbs + Vocabulary)'
     }
     
-    ax.set_xlabel('Number of attempts')
-    ax.set_ylabel('Date')
-    ax.set_zlabel('Success rate (%)')
-    ax.set_title(f'Spanish Progress - {category_names[category]} (Goal: {goal}%)')
+    ax.set_xlabel('Date', fontsize=12)
+    ax.set_ylabel('Success rate (%)', fontsize=12)
+    ax.set_title(f'Spanish Progress - {category_names[category]} (Goal: {goal}%)', fontsize=14)
     
-    # Formater l'axe Y pour afficher les dates
-    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: mdates.num2date(x).strftime('%d/%m')))
+    # Format X-axis to display dates nicely
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%d/%m'))
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator())
+    plt.xticks(rotation=45)
+    
+    # Add grid for better readability
+    ax.grid(True, alpha=0.3)
+    ax.legend()
     
     plt.tight_layout()
     plt.savefig(graph_file, dpi=150, bbox_inches='tight')
@@ -1162,8 +1144,8 @@ class QuizApp:
                 writer.writerow(['date', 'attempts', 'percentage'])
             writer.writerow([today, self.total_questions, f'{percentage:.1f}'])
         
-        # Générer le graphique 3D
-        generate_3d_graph(category)
+        # Générer le graphique 2D
+        generate_2d_graph(category)
         
         # Fermer l'application
         self.root.quit()

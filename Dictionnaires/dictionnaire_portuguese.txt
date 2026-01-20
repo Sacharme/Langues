@@ -311,7 +311,7 @@ Au % ao
 À la % à
 Récemment % recentemente
 Actuellement % atualmente
-En tant que % como
+Comme % como
 Dont % cujo
 Au lieu de % em vez de
 Plus loin % adiante
@@ -1628,10 +1628,7 @@ Commerce % comércio
 Honneur % honra
 Foyer % lar
 Armure % armadura
-Grenier % sótão
 Garage % garagem
-Rouille % ferrugem
-Moisissure % mofo
 Expérience % experiência
 Coffre % baú
 Nid % ninho
