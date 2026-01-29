@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import os
 import csv
+import sys
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -12,10 +13,10 @@ AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
 
 # Objectifs par catégorie (%)
 GOALS = {
-    'reguliers': 85,      # Conjugaison verbes réguliers
-    'irreguliers': 70,    # Conjugaison verbes irréguliers  
+    'reguliers': 90,      # Conjugaison verbes réguliers
+    'irreguliers': 85,    # Conjugaison verbes irréguliers  
     'vocabulaire': 70,    # Vocabulaire dictionnaire complet
-    'tout': 75            # Tous les verbes + tout le vocabulaire
+    'tout': 85            # Tous les verbes + tout le vocabulaire
 }
 
 # Noms des fichiers par catégorie
@@ -37,7 +38,7 @@ os.makedirs(GRAPHS_DIR, exist_ok=True)
 
 # Variable pour choisir le dictionnaire
 # 1: dictionnaire complet, 2: dictionnaire échantillon
-dictionnaire = 1
+dictionnaire = 2
 
 # Variable pour choisir le type d'entraînement
 # 0: conjugaison et traduction, 1: uniquement traduction, 2: uniquement conjugaison
@@ -45,7 +46,7 @@ training_type = 1
 
 # Variable pour choisir le type de verbes
 # 0: tous les verbes, 1: uniquement verbes irréguliers, 2: uniquement verbes réguliers
-verb_mode = 2
+verb_mode = 1
 
 # créé une liste qui contient tous les mots en français (avant le "%" dans dictionnaire.txt)
 mots_francais = []
@@ -1107,6 +1108,7 @@ class QuizApp:
         """Ferme l'application"""
         self.root.quit()
         self.root.destroy()
+        sys.exit(0)
     
     def reset_progress(self):
         """Réinitialise la progression (quand on change de catégorie)"""
@@ -1150,6 +1152,7 @@ class QuizApp:
         # Fermer l'application
         self.root.quit()
         self.root.destroy()
+        sys.exit(0)
 
 
 # Remplacer la boucle while par l'interface graphique

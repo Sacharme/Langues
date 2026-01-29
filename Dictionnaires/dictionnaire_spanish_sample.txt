@@ -128,7 +128,6 @@ Gris % gris
 Grise % gris
 
 Bonjour % hola
-Salut % hola
 Au revoir % adiós
 Merci % gracias
 De rien % de nada
@@ -182,8 +181,9 @@ Comment % cómo
 Jamais % nunca
 Quoi % qué
 Combien % cuánto
-Bon (b) % bien
-Bon (c) % bueno
+Bon % bueno
+Bien % bien
+Comme % como
 Quand % cuándo
 Quel % cuál
 Que % que

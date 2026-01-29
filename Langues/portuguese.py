@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import os
 import csv
+import sys
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -12,10 +13,10 @@ AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
 
 # Objectifs par catégorie (%)
 GOALS = {
-    'reguliers': 85,      # Conjugaison verbes réguliers
-    'irreguliers': 70,    # Conjugaison verbes irréguliers  
+    'reguliers': 90,      # Conjugaison verbes réguliers
+    'irreguliers': 85,    # Conjugaison verbes irréguliers  
     'vocabulaire': 70,    # Vocabulaire dictionnaire complet
-    'tout': 75            # Tous les verbes + tout le vocabulaire
+    'tout': 85            # Tous les verbes + tout le vocabulaire
 }
 
 # Noms des fichiers par catégorie
@@ -1098,6 +1099,7 @@ class QuizApp:
         """Ferme l'application"""
         self.root.quit()
         self.root.destroy()
+        sys.exit(0)
     
     def reset_progress(self):
         """Réinitialise la progression (quand on change de catégorie)"""
@@ -1141,6 +1143,7 @@ class QuizApp:
         # Fermer l'application
         self.root.quit()
         self.root.destroy()
+        sys.exit(0)
 
 
 # Remplacer la boucle while par l'interface graphique
