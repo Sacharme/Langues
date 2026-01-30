@@ -81,18 +81,24 @@ def generate_2d_graph(csv_file, graph_file, goal, title):
     dates = []
     percentages = []
     
-    with open(csv_file, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            try:
-                dates.append(datetime.strptime(row['date'], '%Y-%m-%d'))
-                percentages.append(float(row['percentage']))
-            except (ValueError, KeyError) as e:
-                print(f"  [!] Error parsing row: {row} - {e}")
-                continue
+    try:
+        with open(csv_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                try:
+                    date_val = datetime.strptime(row['date'], '%Y-%m-%d')
+                    pct_val = float(row['percentage'])
+                    dates.append(date_val)
+                    percentages.append(pct_val)
+                except (ValueError, KeyError, TypeError) as e:
+                    print(f"  [!] Error parsing row: {row} - {e}")
+                    continue
+    except Exception as e:
+        print(f"  [!] Error reading file: {csv_file} - {e}")
+        return False
     
-    if not dates:
-        print(f"  [!] No valid data found in: {csv_file}")
+    if not dates or len(dates) != len(percentages):
+        print(f"  [!] No valid data or mismatched data in: {csv_file}")
         return False
     
     # Create graphs directory if it doesn't exist

@@ -186,11 +186,12 @@ Quel % cuál
 Que % que
 Qui % quién
 Ça % eso
-Ce % este
-Cet (proche) % este
-Cette (proche) % esta
-Cet (loin) % aquel
-Cette (loin) % aquella
+Ce (Ici) % este
+Cette (Ici) % esta
+Ce (Là) % ese
+Cette (Là) % esa
+Ce (Là-bas) % aquél
+Cette (Là-bas) % aquella
 En % en
 Dans (M Sing) % en el
 Dans (F Sing) % en la
@@ -200,6 +201,8 @@ Beaucoup (M) % mucho
 Beaucoup (F) % mucha
 Le % el
 La % la
+Les (M) % los
+Les (F) % las
 Plus (+) % más
 Ici % aquí
 Avec % con
@@ -238,12 +241,11 @@ Dehors % fuera
 Avant % antes
 Après % después
 Encore (yet) % todavía
-Encore (again) % otra vez
+Encore (again) % de nuevo
 Depuis % desde
 Parfois % a veces
 Peut-être % tal vez
 Sur % sobre
-À propos % sobre
 Jusqu'à % hasta
 Trop % demasiado
 Pas assez % no suficiente
@@ -306,7 +308,6 @@ Au % al
 À la % a la
 Récemment % recientemente
 Actuellement % actualmente
-Comme % como
 Dont % cuyo
 Au lieu de % en lugar de
 Plus loin % más lejos
@@ -604,13 +605,11 @@ Attirer % atraer
 Empoisonner % envenenar
 Pardonner % perdonar
 Rassurer % tranquilizar
-Bouillir % hervir
 Prouver % probar
 Insister % insistir
 Trahir % traicionar
 Exclure % excluir
 Imaginer % imaginar
-S'étouffer % ahogarse
 Grossir % engordar
 Maigrir % adelgazar
 Fondre % derretir
@@ -649,20 +648,23 @@ Se demander % preguntarse
 
 Mon (Pronom Possessif) % mi
 Ma (Pronom Possessif) % mi
-Mes (Pronom Possessif) (M) % mis
-Mes (Pronom Possessif) (F) % mis
-Ton/Son (Pronom Possessif) % tu
-Ta/Sa (Pronom Possessif) % tu
-Tes/Ses (Pronom Possessif) (M) % tus
-Tes/Ses (Pronom Possessif) (F) % tus
+Mes (Pronom Possessif) % mis
+Ton (Pronom Possessif) % tu
+Ta (Pronom Possessif) % tu
+Tes (Pronom Possessif) % tus
+Son (Pronom Possessif) % su
+Sa (Pronom Possessif) % su
+Ses (Pronom Possessif) % sus
 Notre (Pronom Possessif) (M) % nuestro
 Notre (Pronom Possessif) (F) % nuestra
 Nos (Pronom Possessif) (M) % nuestros
 Nos (Pronom Possessif) (F) % nuestras
-Votre/Leur (Pronom Possessif) (M) % vuestro
-Votre/Leur (Pronom Possessif) (F) % vuestra
-Vos/Leurs (Pronom Possessif) (M) % vuestros
-Vos/Leurs (Pronom Possessif) (F) % vuestras
+Votre (Pronom Possessif) (M) % vuestro
+Votre (Pronom Possessif) (F) % vuestra
+Vos (Pronom Possessif) (M) % vuestros
+Vos (Pronom Possessif) (F) % vuestras
+Leur (Pronom Possessif) % su
+Leurs (Pronom Possessif) % sus
 
 Moi (Pronom Tonique) % mí
 Toi (Pronom Tonique) % ti
@@ -1252,7 +1254,7 @@ Printemps % primavera
 Groupe/Bande % grupo
 Chance % suerte
 Garçon % chico
-Fille % chica
+Fille (girl) % chica
 Choix % elección
 Lieu % lugar
 Peur % miedo

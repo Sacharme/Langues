@@ -620,7 +620,6 @@ Manquer (quand on part) % ter saudade
 Trahir % trair
 Exclure % excluir
 Imaginer % imaginar
-S'étouffer % engasgar
 Grossir % engordar
 Maigrir % emagrecer
 Fondre % derreter

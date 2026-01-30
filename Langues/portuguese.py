@@ -14,7 +14,7 @@ AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
 # Objectifs par catégorie (%)
 GOALS = {
     'reguliers': 90,      # Conjugaison verbes réguliers
-    'irreguliers': 85,    # Conjugaison verbes irréguliers  
+    'irreguliers': 80,    # Conjugaison verbes irréguliers  
     'vocabulaire': 70,    # Vocabulaire dictionnaire complet
     'tout': 85            # Tous les verbes + tout le vocabulaire
 }
@@ -493,16 +493,21 @@ def generate_2d_graph(category):
     dates = []
     percentages = []
     
-    with open(csv_file, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            try:
-                dates.append(datetime.strptime(row['date'], '%Y-%m-%d'))
-                percentages.append(float(row['percentage']))
-            except (ValueError, KeyError):
-                continue
-    
-    if not dates:
+    try:
+        with open(csv_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                try:
+                    date_val = datetime.strptime(row['date'], '%Y-%m-%d')
+                    pct_val = float(row['percentage'])
+                    dates.append(date_val)
+                    percentages.append(pct_val)
+                except (ValueError, KeyError, TypeError):
+                    continue
+        
+        if not dates or len(dates) != len(percentages):
+            return
+    except Exception:
         return
     
     fig, ax = plt.subplots(figsize=(12, 6))
@@ -1109,9 +1114,13 @@ class QuizApp:
         self.update_percentage_display()
     
     def check_auto_save(self):
-        """Vérifie si l'auto-sauvegarde doit être déclenchée"""
+        """Vérifie si l'auto-sauvegarde doit être déclenchée - quitte automatiquement"""
         if self.total_questions >= AUTO_SAVE_THRESHOLD and not self.has_saved:
             self.save_progress()
+            # Force exit in case save_progress didn't exit
+            self.root.quit()
+            self.root.destroy()
+            sys.exit(0)
     
     def save_progress(self):
         """Sauvegarde la progression dans un fichier CSV et génère le graphique"""
@@ -1120,25 +1129,31 @@ class QuizApp:
         
         self.has_saved = True
         
-        # Déterminer la catégorie actuelle
-        category = get_current_category()
-        csv_file = os.path.join(DATA_DIR, f'{CATEGORY_FILES[category]}.csv')
-        
-        # Calculer le pourcentage
-        percentage = (self.correct_answers / self.total_questions) * 100
-        today = datetime.now().strftime('%Y-%m-%d')
-        
-        # Créer le fichier CSV s'il n'existe pas
-        file_exists = os.path.exists(csv_file)
-        
-        with open(csv_file, 'a', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            if not file_exists:
-                writer.writerow(['date', 'attempts', 'percentage'])
-            writer.writerow([today, self.total_questions, f'{percentage:.1f}'])
-        
-        # Générer le graphique 2D
-        generate_2d_graph(category)
+        try:
+            # Déterminer la catégorie actuelle
+            category = get_current_category()
+            csv_file = os.path.join(DATA_DIR, f'{CATEGORY_FILES[category]}.csv')
+            
+            # Calculer le pourcentage
+            percentage = (self.correct_answers / self.total_questions) * 100
+            today = datetime.now().strftime('%Y-%m-%d')
+            
+            # Créer le fichier CSV s'il n'existe pas
+            file_exists = os.path.exists(csv_file)
+            
+            with open(csv_file, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                if not file_exists:
+                    writer.writerow(['date', 'attempts', 'percentage'])
+                writer.writerow([today, self.total_questions, f'{percentage:.1f}'])
+            
+            # Générer le graphique 2D (wrapped in try-except)
+            try:
+                generate_2d_graph(category)
+            except Exception:
+                pass  # Ignore graph errors, still close the app
+        except Exception:
+            pass  # Ignore save errors, still close the app
         
         # Fermer l'application
         self.root.quit()

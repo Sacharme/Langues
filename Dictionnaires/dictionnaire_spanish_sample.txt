@@ -159,15 +159,12 @@ Désolé (courant) % perdón
 Désolé (poli) % disculpe
 Pendant que % mientras
 Ok / Merci (cool) % vale
-Ok (cool) (l) % guay
-Ok (cool) (b) % de acuerdo
 Chaque % cada
 Mais % pero
 Ou % o
 Tout % todo
 Tous % todos
-Où (o) % dónde
-Où (c) % dónde está
+Où % dónde
 Aussi % también
 Et % y
 Si % si
@@ -189,11 +186,12 @@ Quel % cuál
 Que % que
 Qui % quién
 Ça % eso
-Ce % este
-Cet (proche) % este
-Cette (proche) % esta
-Cet (loin) % aquel
-Cette (loin) % aquella
+Ce (Ici) % este
+Cette (Ici) % esta
+Ce (Là) % ese
+Cette (Là) % esa
+Ce (Là-bas) % aquél
+Cette (Là-bas) % aquella
 En % en
 Dans (M Sing) % en el
 Dans (F Sing) % en la
@@ -203,6 +201,9 @@ Beaucoup (M) % mucho
 Beaucoup (F) % mucha
 Le % el
 La % la
+Les (M) % los
+Les (F) % las
+
 Plus (+) % más
 Ici % aquí
 Avec % con
@@ -241,12 +242,11 @@ Dehors % fuera
 Avant % antes
 Après % después
 Encore (yet) % todavía
-Encore (again) % otra vez
+Encore (again) % de nuevo
 Depuis % desde
 Parfois % a veces
 Peut-être % tal vez
 Sur % sobre
-À propos % sobre
 Jusqu'à % hasta
 Trop % demasiado
 Pas assez % no suficiente
@@ -317,3 +317,53 @@ Soit (either) % sea
 Vite (soon) % pronto
 Propre (own) % propio
 C'est-à-dire % es decir
+
+Mon (Pronom Possessif) % mi
+Ma (Pronom Possessif) % mi
+Mes (Pronom Possessif) % mis
+Ton (Pronom Possessif) % tu
+Ta (Pronom Possessif) % tu
+Tes (Pronom Possessif) % tus
+Son (Pronom Possessif) % su
+Sa (Pronom Possessif) % su
+Ses (Pronom Possessif) % sus
+Notre (Pronom Possessif) (M) % nuestro
+Notre (Pronom Possessif) (F) % nuestra
+Nos (Pronom Possessif) (M) % nuestros
+Nos (Pronom Possessif) (F) % nuestras
+Votre (Pronom Possessif) (M) % vuestro
+Votre (Pronom Possessif) (F) % vuestra
+Vos (Pronom Possessif) (M) % vuestros
+Vos (Pronom Possessif) (F) % vuestras
+Leur (Pronom Possessif) % su
+Leurs (Pronom Possessif) % sus
+
+Moi (Pronom Tonique) % mí
+Toi (Pronom Tonique) % ti
+Lui (Pronom Tonique) % él
+Elle (Pronom Tonique) % ella
+Nous (Pronom Tonique) % nosotros
+Vous (Pronom Tonique) % vosotros
+Eux (Pronom Tonique) % ellos
+Elles (Pronom Tonique) % ellas
+
+Me (Pronom Réfléchi) % me
+Te (Pronom Réfléchi) % te
+Se (Pronom Réfléchi) % se
+Le (Pronom Réfléchi) % lo
+La (Pronom Réfléchi) % la
+Nous (Pronom Réfléchi) % nos
+Vous (Pronom Réfléchi) % os
+
+Moi-même (M) % yo mismo
+Moi-même (F) % yo misma
+Toi-même (M) % tú mismo
+Toi-même (F) % tú misma
+Lui-même % él mismo
+Elle-même % ella misma
+Nous-mêmes (M) % nosotros mismos
+Nous-mêmes (F) % nosotras mismas
+Vous-mêmes (M) % vosotros mismos
+Vous-mêmes (F) % vosotras mismas
+Eux-mêmes % ellos mismos
+Elles-mêmes % ellas mismas
