@@ -141,7 +141,6 @@ Je % yo
 Tu % tú
 Il % él
 Elle % ella
-On % nosotros
 Nous % nosotros
 Vous % vosotros
 Ils % ellos
@@ -178,7 +177,6 @@ Comment % cómo
 Jamais % nunca
 Quoi % qué
 Combien % cuánto
-Bon (b) % bueno
 Bien % bien
 Comme % como
 Quand % cuándo
@@ -312,7 +310,6 @@ Dont % cuyo
 Au lieu de % en lugar de
 Plus loin % más lejos
 Soit (either) % sea
-Vite (soon) % pronto
 Propre (own) % propio
 C'est-à-dire % es decir
 
@@ -410,7 +407,6 @@ Prendre soin % cuidar
 Suivre % seguir
 Porter (to wear) % llevar
 Porter (to carry) % cargar
-Penser (trouver) % opinar
 Envoyer % enviar
 Obtenir % conseguir
 Être d'accord % estar de acuerdo
@@ -536,7 +532,6 @@ Prédire % predecir
 Lâcher % soltar
 Exagérer % exagerar
 Surprendre % sorprender
-Gossiper % cotillear
 Récupérer % recuperar
 Voter % votar
 Soulager % aliviar
@@ -706,8 +701,8 @@ Grand % grande
 Grande % grande
 Petit % pequeño
 Petite % pequeña
-Bien (M) % bueno
-Bien (F) % buena
+Bon % bueno
+Bonne % buena
 Mauvais % malo
 Facile % fácil
 Difficile % difícil
@@ -1031,7 +1026,6 @@ Urgente % urgente
 
 En parlant du loup % hablando del rey de Roma
 Wow (DAMN) % vaya
-Foncedalle % munchies
 Putain % joder
 Genre (tic) % tipo
 Bonne chance % buena suerte
@@ -1039,12 +1033,8 @@ Bonne chance % buena suerte
 Point de vue % punto de vista
 Ça dit quoi (what's up) % qué pasa
 Jeter un coup d'œil % echar un vistazo
-Le plus... le plus... % cuanto más... más...
-Before de soirée % previa
-Pecho régulier % rollo
 Passe-temps % pasatiempo
 Grave (de ouf) % totalmente
-De ouf % un montón
 
 Famille % familia
 Père % padre
@@ -1160,8 +1150,8 @@ Soleil % sol
 Ville % ciudad
 Magasin % tienda
 Plage % playa
-Homme % hombre
-Femme % mujer
+Homme (sexe) % hombre
+Femme (sexe) % mujer
 Enfant % niño
 Ami % amigo
 Livre % libro
@@ -1444,7 +1434,6 @@ Muscle % músculo
 Conversation % conversación
 Réunion % reunión
 Succès % éxito
-Gossip % chisme
 Cas (case) % caso
 Accident % accidente
 Condition % condición
@@ -1651,7 +1640,6 @@ Fée % hada
 Humour % humor
 Gros mot % palabrota
 Autoroute % autopista
-Brique % ladrillo
 Hommage % homenaje
 Bombe % bomba
 Recherche % investigación

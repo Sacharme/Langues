@@ -19,9 +19,9 @@ CONFIGS = {
         'data_dir': os.path.join(BASE_DIR, 'Data', 'Spanish'),
         'graphs_dir': os.path.join(BASE_DIR, 'Graphs', 'Spanish'),
         'categories': {
-            'vocabulaire': {'file': 'vocabulaire', 'goal': 75, 'name': 'Vocabulary'},
-            'reguliers': {'file': 'conjugaison_reguliers', 'goal': 80, 'name': 'Regular Conjugation'},
-            'irreguliers': {'file': 'conjugaison_irreguliers', 'goal': 70, 'name': 'Irregular Conjugation'},
+            'vocabulaire': {'file': 'vocabulaire', 'goal': 70, 'name': 'Vocabulary'},
+            'reguliers': {'file': 'conjugaison_reguliers', 'goal': 85, 'name': 'Regular Conjugation'},
+            'irreguliers': {'file': 'conjugaison_irreguliers', 'goal': 80, 'name': 'Irregular Conjugation'},
             'tout': {'file': 'tout', 'goal': 70, 'name': 'All (Verbs + Vocabulary)'}
         },
         'title_prefix': 'Spanish Progress'
@@ -30,9 +30,9 @@ CONFIGS = {
         'data_dir': os.path.join(BASE_DIR, 'Data', 'Portuguese'),
         'graphs_dir': os.path.join(BASE_DIR, 'Graphs', 'Portuguese'),
         'categories': {
-            'vocabulaire': {'file': 'vocabulaire', 'goal': 75, 'name': 'Vocabulary'},
-            'reguliers': {'file': 'conjugaison_reguliers', 'goal': 80, 'name': 'Regular Conjugation'},
-            'irreguliers': {'file': 'conjugaison_irreguliers', 'goal': 70, 'name': 'Irregular Conjugation'},
+            'vocabulaire': {'file': 'vocabulaire', 'goal': 70, 'name': 'Vocabulary'},
+            'reguliers': {'file': 'conjugaison_reguliers', 'goal': 85, 'name': 'Regular Conjugation'},
+            'irreguliers': {'file': 'conjugaison_irreguliers', 'goal': 80, 'name': 'Irregular Conjugation'},
             'tout': {'file': 'tout', 'goal': 70, 'name': 'All (Verbs + Vocabulary)'}
         },
         'title_prefix': 'Portuguese Progress'

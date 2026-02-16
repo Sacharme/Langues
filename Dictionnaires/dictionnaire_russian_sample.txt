@@ -1,0 +1,48 @@
+Je %
+Tu %
+Il %
+Elle %
+Nous %
+Vous %
+Ils %
+Elles %
+
+Bonjour %
+Au revoir %
+Oui %
+Non %
+Merci %
+De rien %
+S'il vous plaît %
+Ça va %
+Désolé %
+Ou %
+Et %
+Donc %
+
+Être %
+Avoir % 
+Faire % 
+Manger %
+Boire %
+Croire % 
+Marcher % 
+
+Beau % 
+Belle % 
+Moche (M) % 
+Moche (F) % 
+Grand % 
+Grande %
+Petit % 
+Petite % 
+Bon % 
+Bonne % 
+Mauvais % 
+Mauvaise % 
+Facile (M) % 
+Facile (F) %
+Difficile (M) % 
+Difficile (F) %
+Heureux % 
+Heureuse % 

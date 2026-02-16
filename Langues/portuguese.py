@@ -13,10 +13,10 @@ AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
 
 # Objectifs par catégorie (%)
 GOALS = {
-    'reguliers': 90,      # Conjugaison verbes réguliers
+    'reguliers': 85,      # Conjugaison verbes réguliers
     'irreguliers': 80,    # Conjugaison verbes irréguliers  
     'vocabulaire': 70,    # Vocabulaire dictionnaire complet
-    'tout': 85            # Tous les verbes + tout le vocabulaire
+    'tout': 70            # Tous les verbes + tout le vocabulaire
 }
 
 # Noms des fichiers par catégorie
@@ -42,11 +42,11 @@ dictionnaire = 1
 
 # Variable pour choisir le type d'entraînement
 # 0: conjugaison et traduction, 1: uniquement traduction, 2: uniquement conjugaison
-training_type = 2
+training_type = 0
 
 # Variable pour choisir le type de verbes
 # 0: tous les verbes, 1: uniquement verbes irréguliers, 2: uniquement verbes réguliers
-verb_mode = 2
+verb_mode = 0
 
 # créé une liste qui contient tous les mots en français (avant le "%" dans dictionnaire.txt)
 mots_francais = []

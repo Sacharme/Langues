@@ -1674,7 +1674,6 @@ Fée % fada
 Humour % humor
 Gros mot % palavrão
 Autoroute % rodovia
-Brique % tijolo
 Hommage % homenagem
 Bombe % bomba
 Recherche % pesquisa

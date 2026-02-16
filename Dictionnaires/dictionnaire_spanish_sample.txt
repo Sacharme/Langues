@@ -141,7 +141,6 @@ Je % yo
 Tu % tú
 Il % él
 Elle % ella
-On % nosotros
 Nous % nosotros
 Vous % vosotros
 Ils % ellos
@@ -179,6 +178,7 @@ Jamais % nunca
 Quoi % qué
 Combien % cuánto
 Bon % bueno
+Bonne % buena
 Bien % bien
 Comme % como
 Quand % cuándo
