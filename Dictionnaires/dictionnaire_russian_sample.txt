@@ -1,48 +1,21 @@
-Je %
-Tu %
-Il %
-Elle %
-Nous %
-Vous %
-Ils %
-Elles %
+Je % ya
+Tu % ty
+Il % on
+Elle % ona
+Nous % my
+Vous % vy
+Ils % oni
+Elles % oni
 
-Bonjour %
-Au revoir %
-Oui %
-Non %
-Merci %
-De rien %
-S'il vous plaît %
-Ça va %
-Désolé %
-Ou %
-Et %
-Donc %
-
-Être %
-Avoir % 
-Faire % 
-Manger %
-Boire %
-Croire % 
-Marcher % 
-
-Beau % 
-Belle % 
-Moche (M) % 
-Moche (F) % 
-Grand % 
-Grande %
-Petit % 
-Petite % 
-Bon % 
-Bonne % 
-Mauvais % 
-Mauvaise % 
-Facile (M) % 
-Facile (F) %
-Difficile (M) % 
-Difficile (F) %
-Heureux % 
-Heureuse % 
+Bonjour % privyet
+Au revoir % poka
+Oui % da
+Non % nyet
+Merci % spasibo
+De rien % pozhaluista
+S'il vous plaît % pozhaluista
+Ça va % kak dyela
+Désolé % izvinitye
+Ou % ili
+Et % i
+Donc % tak chto

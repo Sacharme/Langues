@@ -1,0 +1,26 @@
+Être % byt'
+Avoir % yest'
+Faire % dyelat'
+Manger % yest'
+Boire % pit'
+Croire % vyerit'
+Marcher % idti
+
+Beau % krasivyi
+Belle % krasivaya
+Moche (M) % nyekrasivyi
+Moche (F) % nyekrasivaya
+Grand % bol'choi
+Grande % bol'chaya
+Petit % malyenkii
+Petite % malyenkaya
+Bon % khorochii
+Bonne % khorochaya
+Mauvais % plokhoi
+Mauvaise % plokhaya
+Facile (M) % lyogkii
+Facile (F) % lyogkaya
+Difficile (M) % troudnyi
+Difficile (F) % troudnaya
+Heureux % stchastlivyi
+Heureuse % stchastlivaya

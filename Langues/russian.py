@@ -38,11 +38,11 @@ os.makedirs(GRAPHS_DIR, exist_ok=True)
 
 # Variable pour choisir le dictionnaire
 # 1: dictionnaire complet, 2: dictionnaire échantillon
-dictionnaire = 1
+dictionnaire = 2
 
 # Variable pour choisir le type d'entraînement
 # 0: conjugaison et traduction, 1: uniquement traduction, 2: uniquement conjugaison
-training_type = 0
+training_type = 1
 
 # Variable pour choisir le type de verbes
 # 0: tous les verbes, 1: uniquement verbes irréguliers, 2: uniquement verbes réguliers
