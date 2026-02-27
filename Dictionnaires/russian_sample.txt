@@ -14,7 +14,7 @@ Non % nyet
 Merci % spasibo
 De rien % pozhaluista
 S'il vous plaît % pozhaluista
-Ça va % kak dyela
+Ça va % kak dyela ?
 Désolé % izvinitye
 Ou % ili
 Et % i
@@ -26,11 +26,11 @@ Faire % dyelat'
 Manger % yest'
 Boire % pit'
 
-Beau % krasivyi
-Grand % bol'choi
-Petit % malyenkii
-Facile (M) % lyogkii
-Heureux % stchastlivyi
+Beau % krasiv
+Grand % bol'ch
+Petit % malyenk
+Facile % lyogk
+Heureux % stchastliv
 
 Pain % khlyeb
 Eau % vodá

@@ -56,11 +56,11 @@ mots_russes = []
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_russian.txt')
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'russian.txt')
 elif dictionnaire == 2:
-    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_russian_sample.txt')
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'russian_sample.txt')
 else:
-    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_russian.txt')
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'russian.txt')
 
 # Lecture du fichier dictionnaire
 try:
