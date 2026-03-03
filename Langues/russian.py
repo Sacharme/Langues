@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 # ============== CONFIGURATION ==============
-AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
+AUTO_SAVE_THRESHOLD = 10000  # Nombre d'essais avant auto-sauvegarde
 
 # Objectifs par catégorie (%)
 GOALS = {
@@ -111,11 +111,11 @@ verbes_irreguliers_connus = []
 verbes_irreguliers_pas_connus = []
 
 # Temps
-temps = ["présent", "passé", "futur", "impératif", "participe passé", "gérondif"]
+temps = ["présent"]
 temps_connus = []
-temps_pas_connus = []
+temps_pas_connus = ["passé", "futur", "impératif", "participe passé", "gérondif"]
 
-# Pronoms russes (translittérés)
+# Pronoms russes
 pronoms = ["ya", "ty", "on/ona", "my", "vy", "oni"]
 
 # ============== TERMINAISONS RÉGULIÈRES ==============

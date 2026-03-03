@@ -1,7 +1,20 @@
+0 % nol'
+1 % adin
+2 % dva
+3 % tri
+4 % tchetyre
+5 % pyat'
+6 % shest'
+7 % sem'
+8 % vosem'
+9 % dyevyat'
+10 % dyesyat'
+
 Je % ya
 Tu % ty
 Il % on
 Elle % ona
+Ça % eto
 Nous % my
 Vous % vy
 Ils % oni
@@ -14,7 +27,7 @@ Non % nyet
 Merci % spasibo
 De rien % pozhaluista
 S'il vous plaît % pozhaluista
-Ça va % kak dyela ?
+Ça va ? % kak dyela
 Désolé % izvinitye
 Ou % ili
 Et % i
