@@ -59,11 +59,11 @@ base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = './Dictionnaires/dictionnaire_spanish.txt'
+    fichier_dictionnaire = './Dictionnaires/spanish.txt'
 elif dictionnaire == 2:
-    fichier_dictionnaire = './Dictionnaires/dictionnaire_spanish_sample.txt'
+    fichier_dictionnaire = './Dictionnaires/spanish_sample.txt'
 else:
-    fichier_dictionnaire = './Dictionnaires/dictionnaire_spanish.txt'
+    fichier_dictionnaire = './Dictionnaires/spanish.txt'
 
 # Lecture du fichier dictionnaire
 try:

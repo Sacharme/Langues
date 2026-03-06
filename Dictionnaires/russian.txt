@@ -1,8 +1,6 @@
 0 %
-1 (M) %
-1 (F) %
-2 (M) %
-2 (F) %
+1 %
+2 %
 3 %
 4 %
 5 %
@@ -414,3 +412,4 @@ Jambe %
 Bras %
 Ventre %
 
+Tic de language (genre) % Tipo

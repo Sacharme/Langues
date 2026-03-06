@@ -42,11 +42,11 @@ dictionnaire = 2
 
 # Variable pour choisir le type d'entraînement
 # 0: conjugaison et traduction, 1: uniquement traduction, 2: uniquement conjugaison
-training_type = 1
+training_type = 2
 
 # Variable pour choisir le type de verbes
 # 0: tous les verbes, 1: uniquement verbes irréguliers, 2: uniquement verbes réguliers
-verb_mode = 0
+verb_mode = 1
 
 # créé une liste qui contient tous les mots en français (avant le "%" dans dictionnaire.txt)
 mots_francais = []
@@ -110,13 +110,86 @@ verbes_irreguliers = [
 verbes_irreguliers_connus = []
 verbes_irreguliers_pas_connus = []
 
+# Traductions des verbes (russe translittéré -> français)
+traductions_verbes = {
+    # 1ère conjugaison
+    "tchitat'": "lire",
+    "dyelat'": "faire",
+    "znat'": "savoir",
+    "igrat'": "jouer",
+    "goulyat'": "se promener",
+    "doumat'": "penser",
+    "rabotat'": "travailler",
+    "slouchat'": "écouter",
+    "polagat'": "supposer",
+    "pytsat'": "essayer",
+    "pisat'": "écrire",
+    "iskat'": "chercher",
+    "otvyetchat'": "répondre",
+    "koupat'": "baigner",
+    "pomogat'": "aider",
+    "vybirat'": "choisir",
+    "posylat'": "envoyer",
+    "nachinat'": "commencer",
+    "kontchat'": "terminer",
+    "otkryvat'": "ouvrir",
+    "zakryvat'": "fermer",
+    "priglachat'": "inviter",
+    "obyedat'": "déjeuner",
+    "oujinat'": "dîner",
+    "zavtrakat'": "petit-déjeuner",
+    # 2ème conjugaison
+    "govorit'": "parler",
+    "khodit'": "marcher",
+    "lyoubit'": "aimer",
+    "outchit'": "apprendre",
+    "videt'": "voir",
+    "smotret'": "regarder",
+    "stoyat'": "être debout",
+    "sidet'": "être assis",
+    "lyejat'": "être couché",
+    "spat'": "dormir",
+    "derjat'": "tenir",
+    "nosit'": "porter",
+    "prosit'": "demander",
+    "platit'": "payer",
+    "gotovit'": "préparer",
+    "stroit'": "construire",
+    "zvonit'": "appeler",
+    "kourit'": "fumer",
+    "khotyet'": "vouloir",
+    "loujit'sya": "se coucher",
+    "stanovit'sya": "devenir",
+    "pokoupat'": "acheter",
+    "pomnit'": "se souvenir",
+    "kontchit'": "finir",
+    "poloutchit'": "recevoir",
+    "otpravit'": "envoyer",
+    # Irréguliers
+    "byt'": "être",
+    "yest'": "manger",
+    "pit'": "boire",
+    "dat'": "donner",
+    "jit'": "vivre",
+    "idti": "aller à pied",
+    "yekhat'": "aller en véhicule",
+    "motch'": "pouvoir",
+    "brat'": "prendre",
+    "stat'": "devenir",
+    "vzyat'": "saisir",
+}
+
 # Temps
-temps = ["présent"]
+temps = ["présent", "passé", "futur", "gérondif"]
 temps_connus = []
-temps_pas_connus = ["passé", "futur", "impératif", "participe passé", "gérondif"]
+temps_pas_connus = ["participe passé", "impératif"]
 
 # Pronoms russes
 pronoms = ["ya", "ty", "on/ona", "my", "vy", "oni"]
+
+# Genres pour le passé et participe passé (masculin, féminin, neutre, pluriel)
+genres_passe = ["Masculin (Ya/Ty/On)", "Féminin (Ya/Ty/Ona)", "Neutre (Ono)", "Pluriel (My/Vy/Oni)"]
+genres_participe = ["Masculin", "Féminin", "Neutre", "Pluriel"]
 
 # ============== TERMINAISONS RÉGULIÈRES ==============
 
@@ -124,18 +197,18 @@ pronoms = ["ya", "ty", "on/ona", "my", "vy", "oni"]
 terminaisons = {
     "1ere": {
         "présent": ["you", "yech'", "yet", "yem", "yete", "yout"],
-        "passé": ["l", "l", "l/la", "li", "li", "li"],
+        "passé": ["l", "la", "lo", "li"],
         "futur": ["boudou", "boudech'", "boudyet", "boudyem", "boudyete", "boudout"],
         "impératif": ["", "i", "", "", "ite", ""],
-        "participe passé": ["l", "l", "l", "l", "l", "l"],
+        "participe passé": ["nniy", "nnaya", "nnoye", "nnyye"],
         "gérondif": ["ya", "ya", "ya", "ya", "ya", "ya"]
     },
     "2eme": {
         "présent": ["you", "ich'", "it", "im", "ite", "yat"],
-        "passé": ["l", "l", "l/la", "li", "li", "li"],
+        "passé": ["l", "la", "lo", "li"],
         "futur": ["boudou", "boudech'", "boudyet", "boudyem", "boudyete", "boudout"],
         "impératif": ["", "i", "", "", "ite", ""],
-        "participe passé": ["l", "l", "l", "l", "l", "l"],
+        "participe passé": ["nniy", "nnaya", "nnoye", "nnyye"],
         "gérondif": ["ya", "ya", "ya", "ya", "ya", "ya"]
     }
 }
@@ -145,209 +218,263 @@ terminaisons = {
 # byt' (быть - être)
 terminaisons_byt = {
     "présent": ["-", "-", "-", "-", "-", "-"],
-    "passé": ["byl", "byl", "byl/byla", "byli", "byli", "byli"],
+    "passé": ["byl", "byla", "bylo", "byli"],
     "futur": ["boudou", "boudech'", "boudyet", "boudyem", "boudyete", "boudout"],
     "impératif": ["", "boud'", "", "", "boud'te", ""],
-    "participe passé": ["byvchii", "byvchii", "byvchii", "byvchii", "byvchii", "byvchii"],
+    "participe passé": ["byvchii", "byvchaya", "byvcheye", "byvchiye"],
     "gérondif": ["boudoutchi", "boudoutchi", "boudoutchi", "boudoutchi", "boudoutchi", "boudoutchi"]
 }
 
 # yest' (есть - manger)
 terminaisons_yest = {
     "présent": ["yem", "yech'", "yest", "yedim", "yedite", "yedyat"],
-    "passé": ["yel", "yel", "yel/yela", "yeli", "yeli", "yeli"],
+    "passé": ["yel", "yela", "yelo", "yeli"],
     "futur": ["boudou yest'", "boudech' yest'", "boudyet yest'", "boudyem yest'", "boudyete yest'", "boudout yest'"],
     "impératif": ["", "yech'", "", "", "yech'te", ""],
-    "participe passé": ["yevchii", "yevchii", "yevchii", "yevchii", "yevchii", "yevchii"],
+    "participe passé": ["yevchii", "yevchaya", "yevcheye", "yevchiye"],
     "gérondif": ["yedya", "yedya", "yedya", "yedya", "yedya", "yedya"]
 }
 
 # pit' (пить - boire)
 terminaisons_pit = {
     "présent": ["p'you", "p'yoch'", "p'yot", "p'yom", "p'yote", "p'yout"],
-    "passé": ["pil", "pil", "pil/pila", "pili", "pili", "pili"],
+    "passé": ["pil", "pila", "pilo", "pili"],
     "futur": ["boudou pit'", "boudech' pit'", "boudyet pit'", "boudyem pit'", "boudyete pit'", "boudout pit'"],
     "impératif": ["", "pyei", "", "", "pyeite", ""],
-    "participe passé": ["pivchii", "pivchii", "pivchii", "pivchii", "pivchii", "pivchii"],
+    "participe passé": ["pivchii", "pivchaya", "pivcheye", "pivchiye"],
     "gérondif": ["piya", "piya", "piya", "piya", "piya", "piya"]
 }
 
 # dat' (дать - donner)
 terminaisons_dat = {
     "présent": ["dayou", "dayoch'", "dayot", "dadim", "dadite", "dadout"],
-    "passé": ["dal", "dal", "dal/dala", "dali", "dali", "dali"],
+    "passé": ["dal", "dala", "dalo", "dali"],
     "futur": ["dam", "dach'", "dast", "dadim", "dadite", "dadout"],
     "impératif": ["", "dai", "", "", "daite", ""],
-    "participe passé": ["davchii", "davchii", "davchii", "davchii", "davchii", "davchii"],
+    "participe passé": ["davchii", "davchaya", "davcheye", "davchiye"],
     "gérondif": ["dav", "dav", "dav", "dav", "dav", "dav"]
 }
 
 # jit' (жить - vivre)
 terminaisons_jit = {
     "présent": ["jivou", "jivyoch'", "jivyot", "jivyom", "jivyote", "jivout"],
-    "passé": ["jil", "jil", "jil/jila", "jili", "jili", "jili"],
+    "passé": ["jil", "jila", "jilo", "jili"],
     "futur": ["boudou jit'", "boudech' jit'", "boudyet jit'", "boudyem jit'", "boudyete jit'", "boudout jit'"],
     "impératif": ["", "jivi", "", "", "jivite", ""],
-    "participe passé": ["jivchii", "jivchii", "jivchii", "jivchii", "jivchii", "jivchii"],
+    "participe passé": ["jivchii", "jivchaya", "jivcheye", "jivchiye"],
     "gérondif": ["jivya", "jivya", "jivya", "jivya", "jivya", "jivya"]
 }
 
 # idti (идти - aller à pied)
 terminaisons_idti = {
     "présent": ["idou", "idyoch'", "idyot", "idyom", "idyote", "idout"],
-    "passé": ["chyol", "chyol", "chyol/chla", "chli", "chli", "chli"],
+    "passé": ["chyol", "chla", "chlo", "chli"],
     "futur": ["boudou idti", "boudech' idti", "boudyet idti", "boudyem idti", "boudyete idti", "boudout idti"],
     "impératif": ["", "idi", "", "", "idite", ""],
-    "participe passé": ["chedchii", "chedchii", "chedchii", "chedchii", "chedchii", "chedchii"],
+    "participe passé": ["chedchii", "chedchaya", "chedcheye", "chedchiye"],
     "gérondif": ["idya", "idya", "idya", "idya", "idya", "idya"]
 }
 
 # yekhat' (ехать - aller en véhicule)
 terminaisons_yekhat = {
     "présent": ["yedou", "yedech'", "yedyet", "yedyem", "yedyete", "yedout"],
-    "passé": ["yekhal", "yekhal", "yekhal/yekhala", "yekhali", "yekhali", "yekhali"],
+    "passé": ["yekhal", "yekhala", "yekhalo", "yekhali"],
     "futur": ["boudou yekhat'", "boudech' yekhat'", "boudyet yekhat'", "boudyem yekhat'", "boudyete yekhat'", "boudout yekhat'"],
     "impératif": ["", "yezjai", "", "", "yezjaite", ""],
-    "participe passé": ["yekhavchii", "yekhavchii", "yekhavchii", "yekhavchii", "yekhavchii", "yekhavchii"],
+    "participe passé": ["yekhavchii", "yekhavchaya", "yekhavcheye", "yekhavchiye"],
     "gérondif": ["yekhav", "yekhav", "yekhav", "yekhav", "yekhav", "yekhav"]
 }
 
 # motch' (мочь - pouvoir)
 terminaisons_motch = {
     "présent": ["mogou", "mojech'", "mojyet", "mojyem", "mojyete", "mogout"],
-    "passé": ["mog", "mog", "mog/mogla", "mogli", "mogli", "mogli"],
+    "passé": ["mog", "mogla", "moglo", "mogli"],
     "futur": ["smogou", "smojech'", "smojyet", "smojyem", "smojyete", "smogout"],
     "impératif": ["", "", "", "", "", ""],
-    "participe passé": ["mogchii", "mogchii", "mogchii", "mogchii", "mogchii", "mogchii"],
+    "participe passé": ["mogchii", "mogchaya", "mogcheye", "mogchiye"],
     "gérondif": ["mogya", "mogya", "mogya", "mogya", "mogya", "mogya"]
 }
 
 # khotyet' (хотеть - vouloir)
 terminaisons_khotyet = {
     "présent": ["khotchou", "khotchech'", "khotchet", "khotim", "khotite", "khotyat"],
-    "passé": ["khotyel", "khotyel", "khotyel/khotyela", "khotyeli", "khotyeli", "khotyeli"],
+    "passé": ["khotyel", "khotyela", "khotyelo", "khotyeli"],
     "futur": ["boudou khotyet'", "boudech' khotyet'", "boudyet khotyet'", "boudyem khotyet'", "boudyete khotyet'", "boudout khotyet'"],
     "impératif": ["", "khotchi", "", "", "khotchite", ""],
-    "participe passé": ["khotyevchii", "khotyevchii", "khotyevchii", "khotyevchii", "khotyevchii", "khotyevchii"],
+    "participe passé": ["khotyevchii", "khotyevchaya", "khotyevcheye", "khotyevchiye"],
     "gérondif": ["khotya", "khotya", "khotya", "khotya", "khotya", "khotya"]
 }
 
 # brat' (брать - prendre)
 terminaisons_brat = {
     "présent": ["byerou", "byeryoch'", "byeryot", "byeryom", "byeryote", "byerout"],
-    "passé": ["bral", "bral", "bral/brala", "brali", "brali", "brali"],
+    "passé": ["bral", "brala", "bralo", "brali"],
     "futur": ["boudou brat'", "boudech' brat'", "boudyet brat'", "boudyem brat'", "boudyete brat'", "boudout brat'"],
     "impératif": ["", "byeri", "", "", "byerite", ""],
-    "participe passé": ["bravchii", "bravchii", "bravchii", "bravchii", "bravchii", "bravchii"],
+    "participe passé": ["bravchii", "bravchaya", "bravcheye", "bravchiye"],
     "gérondif": ["byerya", "byerya", "byerya", "byerya", "byerya", "byerya"]
 }
 
 # stat' (стать - devenir)
 terminaisons_stat = {
     "présent": ["stanou", "stanech'", "stanyet", "stanyem", "stanyete", "stanout"],
-    "passé": ["stal", "stal", "stal/stala", "stali", "stali", "stali"],
+    "passé": ["stal", "stala", "stalo", "stali"],
     "futur": ["stanou", "stanech'", "stanyet", "stanyem", "stanyete", "stanout"],
     "impératif": ["", "stan'", "", "", "stan'te", ""],
-    "participe passé": ["stavchii", "stavchii", "stavchii", "stavchii", "stavchii", "stavchii"],
+    "participe passé": ["stavchii", "stavchaya", "stavcheye", "stavchiye"],
     "gérondif": ["stav", "stav", "stav", "stav", "stav", "stav"]
 }
 
 # vzyat' (взять - prendre/saisir, perfectif)
 terminaisons_vzyat = {
     "présent": ["-", "-", "-", "-", "-", "-"],
-    "passé": ["vzyal", "vzyal", "vzyal/vzyala", "vzyali", "vzyali", "vzyali"],
+    "passé": ["vzyal", "vzyala", "vzyalo", "vzyali"],
     "futur": ["voz'mou", "voz'myoch'", "voz'myot", "voz'myom", "voz'myote", "voz'mout"],
     "impératif": ["", "voz'mi", "", "", "voz'mite", ""],
-    "participe passé": ["vzyavchii", "vzyavchii", "vzyavchii", "vzyavchii", "vzyavchii", "vzyavchii"],
+    "participe passé": ["vzyavchii", "vzyavchaya", "vzyavcheye", "vzyavchiye"],
     "gérondif": ["vzyav", "vzyav", "vzyav", "vzyav", "vzyav", "vzyav"]
 }
 
 
-def conjuguer_verbe(verbe, pronom_index, temps_choisi):
-    """Conjugue un verbe selon le pronom et le temps donnés"""
+def conjuguer_verbe(verbe, pronom_index, temps_choisi, genre_index=None):
+    """Conjugue un verbe selon le pronom (ou genre au passé) et le temps donnés"""
+    # Pour le passé et participe passé, utiliser genre_index au lieu de pronom_index
+    if temps_choisi in ("passé", "participe passé") and genre_index is not None:
+        index_genre = genre_index
+    else:
+        index_genre = pronom_index
+
     # Vérifier si c'est un verbe irrégulier
     if verbe == "byt'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_byt[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_byt[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_byt[temps_choisi][index_genre]
         else:
             return terminaisons_byt[temps_choisi][pronom_index]
     elif verbe == "yest'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_yest[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_yest[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_yest[temps_choisi][index_genre]
         else:
             return terminaisons_yest[temps_choisi][pronom_index]
     elif verbe == "pit'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_pit[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_pit[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_pit[temps_choisi][index_genre]
         else:
             return terminaisons_pit[temps_choisi][pronom_index]
     elif verbe == "dat'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_dat[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_dat[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_dat[temps_choisi][index_genre]
         else:
             return terminaisons_dat[temps_choisi][pronom_index]
     elif verbe == "jit'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_jit[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_jit[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_jit[temps_choisi][index_genre]
         else:
             return terminaisons_jit[temps_choisi][pronom_index]
     elif verbe == "idti":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_idti[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_idti[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_idti[temps_choisi][index_genre]
         else:
             return terminaisons_idti[temps_choisi][pronom_index]
     elif verbe == "yekhat'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_yekhat[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_yekhat[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_yekhat[temps_choisi][index_genre]
         else:
             return terminaisons_yekhat[temps_choisi][pronom_index]
     elif verbe == "motch'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_motch[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_motch[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_motch[temps_choisi][index_genre]
         else:
             return terminaisons_motch[temps_choisi][pronom_index]
     elif verbe == "khotyet'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_khotyet[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_khotyet[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_khotyet[temps_choisi][index_genre]
         else:
             return terminaisons_khotyet[temps_choisi][pronom_index]
     elif verbe == "brat'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_brat[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_brat[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_brat[temps_choisi][index_genre]
         else:
             return terminaisons_brat[temps_choisi][pronom_index]
     elif verbe == "stat'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_stat[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_stat[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_stat[temps_choisi][index_genre]
         else:
             return terminaisons_stat[temps_choisi][pronom_index]
     elif verbe == "vzyat'":
-        if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+        if temps_choisi == "participe passé":
+            return terminaisons_vzyat[temps_choisi][index_genre]
+        elif temps_choisi == "gérondif":
             return terminaisons_vzyat[temps_choisi][0]
         elif temps_choisi == "impératif" and pronom_index == 0:
             return "Forme inexistante à l'impératif"
+        elif temps_choisi == "passé":
+            return terminaisons_vzyat[temps_choisi][index_genre]
         else:
             return terminaisons_vzyat[temps_choisi][pronom_index]
 
@@ -368,11 +495,17 @@ def conjuguer_verbe(verbe, pronom_index, temps_choisi):
         radical = verbe
 
     # Cas spéciaux pour certains temps
-    if temps_choisi == "participe passé" or temps_choisi == "gérondif":
+    if temps_choisi == "participe passé":
+        terminaison = terminaisons[type_verbe][temps_choisi][index_genre]
+        return radical + terminaison
+    elif temps_choisi == "gérondif":
         terminaison = terminaisons[type_verbe][temps_choisi][0]
         return radical + terminaison
     elif temps_choisi == "impératif" and pronom_index == 0:
         return "Forme inexistante à l'impératif"
+    elif temps_choisi == "passé":
+        terminaison = terminaisons[type_verbe][temps_choisi][index_genre]
+        return radical + terminaison
     else:
         terminaison = terminaisons[type_verbe][temps_choisi][pronom_index]
         return radical + terminaison
@@ -482,6 +615,7 @@ class QuizApp:
         self.bonne_reponse = None
         self.verbe_choisi = None
         self.pronom_index = None
+        self.genre_index = None
         self.temps_choisi = None
         self.index_aleatoire = None
 
@@ -713,11 +847,30 @@ class QuizApp:
             tous_verbes = verbes_1ere_conj + verbes_2eme_conj + verbes_irreguliers
 
         self.verbe_choisi = random.choice(tous_verbes)
-        pronom_choisi = random.choice(pronoms)
-        self.pronom_index = pronoms.index(pronom_choisi)
         self.temps_choisi = random.choice(temps)
 
-        self.bonne_reponse = conjuguer_verbe(self.verbe_choisi, self.pronom_index, self.temps_choisi)
+        # Pour le passé et participe passé, choisir un genre aléatoire au lieu d'un pronom
+        if self.temps_choisi == "passé":
+            self.genre_index = random.randint(0, len(genres_passe) - 1)
+            self.pronom_index = 0  # non utilisé au passé
+            genre_choisi = genres_passe[self.genre_index]
+            self.bonne_reponse = conjuguer_verbe(self.verbe_choisi, self.pronom_index, self.temps_choisi, genre_index=self.genre_index)
+        elif self.temps_choisi == "participe passé":
+            self.genre_index = random.randint(0, len(genres_participe) - 1)
+            self.pronom_index = 0  # non utilisé au participe passé
+            genre_choisi = genres_participe[self.genre_index]
+            self.bonne_reponse = conjuguer_verbe(self.verbe_choisi, self.pronom_index, self.temps_choisi, genre_index=self.genre_index)
+        elif self.temps_choisi == "impératif":
+            # L'impératif n'existe qu'à ty et vy
+            self.genre_index = None
+            pronom_choisi = random.choice(["ty", "vy"])
+            self.pronom_index = pronoms.index(pronom_choisi)
+            self.bonne_reponse = conjuguer_verbe(self.verbe_choisi, self.pronom_index, self.temps_choisi)
+        else:
+            self.genre_index = None
+            pronom_choisi = random.choice(pronoms)
+            self.pronom_index = pronoms.index(pronom_choisi)
+            self.bonne_reponse = conjuguer_verbe(self.verbe_choisi, self.pronom_index, self.temps_choisi)
 
         # Masquer le label simple et afficher le frame de conjugaison coloré
         self.question_label.pack_forget()
@@ -729,9 +882,19 @@ class QuizApp:
         else:
             self.irregulier_label.config(text="")
 
-        self.verbe_label.config(text=f"{self.verbe_choisi}")
+        # Afficher la traduction du verbe entre parenthèses
+        trad = traductions_verbes.get(self.verbe_choisi, "")
+        if trad:
+            self.verbe_label.config(text=f"{self.verbe_choisi} ({trad})")
+        else:
+            self.verbe_label.config(text=f"{self.verbe_choisi}")
         self.temps_label.config(text=f"{self.temps_choisi}")
-        self.pronom_label.config(text=f"{pronom_choisi}")
+
+        # Afficher le genre au passé / participe passé, le pronom sinon
+        if self.temps_choisi in ("passé", "participe passé"):
+            self.pronom_label.config(text=f"{genre_choisi}")
+        else:
+            self.pronom_label.config(text=f"{pronom_choisi}")
 
         # Réorganisation : nettoyer puis empaqueter
         for widget in (self.titre_frame, self.intro_label, self.irregulier_label,

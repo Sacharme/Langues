@@ -56,11 +56,11 @@ mots_portugais = []
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
-    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese.txt')
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'portuguese.txt')
 elif dictionnaire == 2:
-    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese_sample.txt')
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'portuguese_sample.txt')
 else:
-    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_portuguese.txt')
+    fichier_dictionnaire = os.path.join(BASE_DIR, 'Dictionnaires', 'portuguese.txt')
 
 # Lecture du fichier dictionnaire
 try:

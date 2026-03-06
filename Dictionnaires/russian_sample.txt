@@ -48,3 +48,5 @@ Heureux % stchastliv
 Pain % khlyeb
 Eau % vodá
 Téléphone % telefon
+
+Tic de language (genre) % Tipo
