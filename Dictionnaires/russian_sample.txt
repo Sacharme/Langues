@@ -1,14 +1,14 @@
 0 % nol'
-1 % adin
+1 % odin
 2 % dva
 3 % tri
-4 % tchetyre
+4 % tchetyré
 5 % pyat'
-6 % shest'
-7 % sem'
-8 % vosem'
-9 % dyevyat'
-10 % dyesyat'
+6 % chest'
+7 % syem'
+8 % vosyem'
+9 % dyévyat'
+10 % dyésyat'
 
 Je % ya
 Tu % ty
@@ -20,15 +20,15 @@ Vous % vy
 Ils % oni
 Elles % oni
 
-Bonjour % privyet
-Au revoir % poka
+Bonjour % zdravstvouïte
+Au revoir % do svidaniya
 Oui % da
 Non % nyet
 Merci % spasibo
-De rien % pozhaluista
-S'il vous plaît % pozhaluista
-Ça va ? % kak dyela
-Désolé % izvinitye
+De rien % nye za chto
+S'il vous plaît % pojalouïsta
+Ça va % kak dela
+Désolé % izvinite
 Ou % ili
 Et % i
 Donc % tak chto
@@ -39,14 +39,19 @@ Faire % dyelat'
 Manger % yest'
 Boire % pit'
 
-Beau % krasiv
-Grand % bol'ch
-Petit % malyenk
-Facile % lyogk
-Heureux % stchastliv
+Beau % krasivyi
+Belle % krasivaya
+Grand % bol'choï
+Grande % bol'chaya
+Petit % malyen'kii
+Petite % malyen'kaya
+Facile (M) % lyogkii
+Facile (F) % lyogkaya
+Heureux % stchastlivyi
+Heureuse % stchastlivaya
 
 Pain % khlyeb
-Eau % vodá
+Eau % voda
 Téléphone % telefon
 
-Tic de language (genre) % Tipo
+Tic de language (genre) % tipo

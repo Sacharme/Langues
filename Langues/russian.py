@@ -46,7 +46,7 @@ training_type = 2
 
 # Variable pour choisir le type de verbes
 # 0: tous les verbes, 1: uniquement verbes irréguliers, 2: uniquement verbes réguliers
-verb_mode = 1
+verb_mode = 2
 
 # créé une liste qui contient tous les mots en français (avant le "%" dans dictionnaire.txt)
 mots_francais = []
@@ -97,7 +97,7 @@ verbes_2eme_conj = [
     "govorit'", "khodit'", "lyoubit'", "outchit'", "videt'",
     "smotret'", "stoyat'", "sidet'", "lyejat'", "spat'", "derjat'",
     "nosit'", "prosit'", "platit'", "gotovit'", "stroit'", "zvonit'",
-    "kourit'", "khotyet'", "loujit'sya", "stanovit'sya",
+    "kourit'", "loujit'sya", "stanovit'sya",
     "pokoupat'", "pomnit'", "kontchit'",
     "poloutchit'", "otpravit'"
 ]

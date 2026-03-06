@@ -1,415 +1,421 @@
-0 %
-1 %
-2 %
-3 %
-4 %
-5 %
-6 %
-7 %
-8 %
-9 %
-10 %
+0 % nol'
+1 % odin
+2 % dva
+3 % tri
+4 % tchetyré
+5 % pyat'
+6 % chest'
+7 % syem'
+8 % vosyem'
+9 % dyévyat'
+10 % dyésyat'
 
-Lundi %
-Mardi %
-Mercredi %
-Jeudi %
-Vendredi %
-Samedi %
-Dimanche %
-Janvier %
-Février %
-Mars %
-Avril %
-Mai %
-Juin %
-Juillet %
-Août %
-Septembre %
-Octobre %
-Novembre %
-Décembre %
-Jour %
-Semaine %
-Mois %
-Année %
-Aujourd'hui %
-Demain %
-Hier %
-Matin %
-Après-midi %
-Soir %
-Nuit %
-Seconde %
-Minute %
-Heure %
-Maintenant %
+Lundi % ponedyel'nik
+Mardi % vtornik
+Mercredi % sreda
+Jeudi % tchetvierg
+Vendredi % pyatnitsa
+Samedi % soubota
+Dimanche % voskresyen'ye
 
-Couleur %
-Bleu %
-Rouge %
-Vert %
-Jaune %
-Noir %
-Blanc %
-Gris %
+Janvier % yanvar'
+Février % fevral'
+Mars % mart
+Avril % apryel'
+Mai % mai
+Juin % iyoun'
+Juillet % iyoul'
+Août % avgoust
+Septembre % sentyabr'
+Octobre % oktyabr'
+Novembre % noyabr'
+Décembre % dekabr'
 
-Bonjour %
-Salut %
-Au revoir %
-Merci %
-De rien %
-Ça va %
-Oui %
-Non %
-Peut-être % 
-Excusez-moi %
-S'il vous plaît %
-Désolé %
-Je %
-Tu %
-Il %
-Elle %
-Nous %
-Vous %
-Ils %
-Elles %
-Où %
-Pourquoi %
-Comment %
-Quand %
-Quoi %
-Combien %
-Et %
-Mais %
-Ou %
-Parce que %
-Toujours %
-Jamais %
-Déjà %
-Aussi %
-Ici %
-Là-bas %
-Près %
-Loin %
-Avant %
-Après %
-Dans %
-Avec %
-Sans %
-Pour %
-De %
-Sur %
-Sous %
-Beaucoup %
-Peu %
-Plus %
-Moins %
-Tout %
-Rien %
-Quelque chose %
-Quelqu'un %
-Personne (nobody) %
-Peut-être %
-Toujours (still) %
-Encore (again) %
-Bien sûr %
-Attention (be careful) %
+Jour % dyen'
+Semaine % nedyelya
+Mois % myesyats
+Année % god
+Aujourd'hui % sevodnya
+Demain % zavtra
+Hier % vtchera
+Maintenant % seïtchas
 
-Être %
-Avoir %
-Aller %
-Venir %
-Pouvoir %
-Vouloir %
-Devoir %
-Faire %
-Dire %
-Voir %
-Regarder %
-Manger %
-Boire %
-Dormir %
-Prendre %
-Donner %
-Mettre %
-Prendre (une douche) %
-Aimer %
-Détester %
-Savoir %
-Comprendre %
-Penser %
-Parler %
-Écouter %
-Entendre %
-Demander %
-Répondre %
-Aider %
-Trouver %
-Arriver %
-Partir %
-Revenir %
-Travailler %
-Étudier %
-Jouer %
-Acheter %
-Payer %
-Ouvrir %
-Fermer %
-Commencer %
-Terminer %
-Utiliser %
-Vivre (habiter) %
-Se souvenir %
-Oublier %
-Essayer %
-Espérer %
-Rester %
-Sortir %
-Entrer %
-Tomber %
-Porter (to wear) %
-Porter (to carry) %
-S'asseoir %
-Se lever %
-Marcher %
-Courrir %
+Couleur % tsvet
+Bleu % sinii
+Rouge % krasnyi
+Vert % zelyonyi
+Jaune % jyoltyi
+Noir % tchyornyi
+Blanc % byelyi
 
-Mon %
-Ma %
-Mes (M) %
-Mes (F) %
-Ton/Son %
-Ta/Sa %
-Tes/Ses (M) %
-Tes/Ses (F) %
-Notre (M) %
-Notre (F) %
-Nos (M) %
-Nos (F) %
-Votre/Leur (M) %
-Votre/Leur (F) %
-Vos/Leurs (M) %
-Vos/Leurs (F) %
+Je % ya
+Tu % ty
+Il % on
+Elle % ona
+Nous % my
+Vous % vy
+Ils % oni
+Elles % oni
 
-Beau %
-Belle %
-Grand %
-Petit %
-Bien (M) %
-Bien (F) %
-Mauvais %
-Facile %
-Difficile %
-Heureux %
-Triste %
-Chaud %
-Froid %
-Fatigué %
-Fatiguée %
-Nouveau %
-Nouvelle %
-Jeune %
-Vieux %
-Vieille %
-Cher %
-Chère %
-Bon marché (M) %
-Bon marché (F) %
-Propre (M) %
-Propre (F) %
-Sale (M) %
-Sale (F) %
-Rapide (M) %
-Rapide (F) %
-Lent %
-Lente %
-Gentil %
-Méchant %
-Méchante %
-Intelligent %
-Gros %
-Grosse %
-Riche (M) %
-Riche (F) %
-Pauvre %
-Possible %
-Impossible %
-Lourd %
-Léger %
-Plein %
-Vide (M) %
-Vide (F) %
-Parfait %
-Parfaite %
-Drôle (M) %
-Drôle (F) %
-Calme (M) %
-Calme (F) %
-Prêt %
-Prête %
-Malade %
-Seul %
-Seule %
-Fort %
-Forte %
-Faible (M) %
-Faible (F) %
-En retard (M) %
-En retard (F) %
-En avance (M) %
-En avance (F) %
-Important %
-Importante %
-Utile %
-Inutile %
-Simple %
-Compliqué %
-Compliquée %
-Basique (M) %
-Basique (F) %
-Confortable %
-Inconfortable %
+Bonjour % zdravstvouïte
+Salut % privyet
+Au revoir % do svidaniya
+Merci % spasibo
+De rien % nye za chto
+Ça va % kak dela
+Oui % da
+Non % nyet
+Peut-être % mojyet byt'
+S'il vous plaît % pojalouïsta
+Désolé % izvinite
+Où % gdye
+Pourquoi % potchemou
+Parce que % potomou chto
+Comment % kak
+Quand % kogda
+Quoi % chto
+Combien % skol'ko
+Et % i
+Mais % no
+Ou % ili
+Toujours % vsegda
+Jamais % nikogda
+Déjà % oujé
+Aussi % tojé
+Ici % zdyes'
+Là-bas % tam
+Près % blizko
+Loin % daleko
+Avant % do
+Après % poslye
+Dans % v
+Avec % s
+Sans % byez
+Pour % dlya
+De % iz
+Sur % na
+Sous % pod
+Beaucoup % mnogo
+Peu % malo
+Plus % bol'chye
+Moins % myen'chye
+Tout % vsyo
+Rien % nitchevo
+Quelque chose % chto-to
+Quelqu'un % kto-to
+Personne (nobody) % nikto
+Toujours (still) % vsyo yechyo
+Encore (again) % yechyo raz
+Encore (even) % yechyo
 
-Famille %
-Père %
-Mère %
-Frère %
-Sœur %
-Grand-père %
-Grand-mère %
-Fils %
-Fille %
-Ami %
-Amie %
-Enfant %
-Garçon %
-Fille (enfant) %
+Être % byt'
+Pouvoir % motch'
+Marcher % khodit'
+Avoir besoin % noujdat'sya
+Avoir % imyet'
+Faire % dyelat'
+Manger % yest'
+Boire % pit'
+Savoir % znat'
+Penser % doumat'
+Croire % vyerit'
+Donner % dat'
+Travailler % rabotat'
+Aller % idti
+Venir % prikhodit'
+Prendre (un objet) % brat'
+Prendre (une douche, un taxi) % prinimat'
+Voir % videt'
+Apprendre % outchit'
+Aimer % lyoubit'
+Vouloir % khotyet'
+Attendre % jdat'
+Parler % govorit'
+Écrire % pisat'
+Lire % tchitat'
+Devoir % doljyen
+Se nommer % zovout
+Demander (to ask) % sprochit'
+Demander (to request) % prosit'
+Répondre % otvyetchat'
+Mettre % klast'
+Dire % govorit'
+Acheter % pokoupat'
+Vendre % prodavat'
+Comprendre % ponimat'
+Montrer % pokazyvat'
+Arrêter % ostanavlivat'
+Payer % platit'
+Oublier % zabyvat'
+Devenir % stanovit'sya
+Se souvenir % pomnit'
+Choisir % vybirat'
+Changer % menyat'
+Aider % pomogat'
+Obtenir % poloutchit'
+Être d'accord % soglachat'sya
+Arriver % prikhodit'
+Bouger % dvigat'sya
 
-Pays %
-Brésil %
-France %
-Portugal %
-Espagne %
-USA %
-Russie % 
+Mon % moï
+Ma % moya
+Mes (M) % moï
+Mes (F) % moï
+Ton/Son % tvoï/yevo
+Ta/Sa % tvoya/yeyo
+Tes/Ses (M) % tvoï/yevo
+Tes/Ses (F) % tvoï/yeyo
+Notre (M) % nach
+Notre (F) % nacha
+Nos (M) % nachi
+Nos (F) % nachi
+Votre/Leur (M) % vach/ikh
+Votre/Leur (F) % vacha/ikh
+Vos/Leurs (M) % vachi/ikh
+Vos/Leurs (F) % vachi/ikh
 
-Chien %
-Chat %
-Oiseau %
-Poisson %
-Vache %
-Cheval %
-Mouton %
-Poulet %
+Beau % krasivyi
+Belle % krasivaya
+Grand % bol'choï
+Grande % bol'chaya
+Petit % malyen'kii
+Petite % malyen'kaya
+Bien (M) % khorochii
+Bien (F) % khorochaya
+Mauvais % plokhoï
+Mauvaise % plokhaya
+Facile (M) % lyogkii
+Facile (F) % lyogkaya
+Difficile (M) % troudnyi
+Difficile (F) % troudnaya
+Heureux % stchastlivyi
+Heureuse % stchastlivaya
+Triste (M) % groustnyi
+Triste (F) % groustnaya
+Chaud % goryatchii
+Chaude % goryatchaya
+Froid % kholodnyi
+Froide % kholodnaya
+Fatigué % oustalachii
+Fatiguée % oustalachaya
+Nouveau % novyi
+Nouvelle % novaya
+Jeune (M) % molodoï
+Jeune (F) % molodaya
+Vieux % staryi
+Vieille % staraya
+Cher % dorogoï
+Chère % dorogaya
+Bon marché (M) % dechyovyi
+Bon marché (F) % dechyovaya
+Propre (M) % tchistyi
+Propre (F) % tchistaya
+Sale (M) % gryaznyi
+Sale (F) % gryaznaya
+Rapide (M) % bystryi
+Rapide (F) % bystraya
+Lent % myedlyennyi
+Lente % myedlyennaya
+Gentil % dobryi
+Gentille % dobraya
+Méchant % zloï
+Méchante % zlaya
+Intelligent % oumnyi
+Intelligente % oumnaya
+Gros % tolstyi
+Grosse % tolstaya
+Riche (M) % bogatyi
+Riche (F) % bogataya
+Pauvre (M) % byednyi
+Pauvre (F) % byednaya
+Possible (M) % vozmojnyi
+Possible (F) % vozmojnaya
+Impossible (M) % nyevozmojnyi
+Impossible (F) % nyevozmojnaya
+Lourd % tyajyolyi
+Lourde % tyajyolaya
+Léger % lyogkii
+Légère % lyogkaya
+Plein % polnyi
+Pleine % polnaya
+Vide (M) % poustoï
+Vide (F) % poustaya
+Parfait % idyeal'nyi
+Parfaite % idyeal'naya
+Drôle (M) % smechnoï
+Drôle (F) % smechnaya
+Calme (M) % spokoïnyi
+Calme (F) % spokoïnaya
+Prêt % gotovyi
+Prête % gotovaya
+Malade (M) % bol'noï
+Malade (F) % bol'naya
+Seul % odinokoï
+Seule % odinokaya
+Fort % sil'nyi
+Forte % sil'naya
+Faible (M) % slabyï
+Faible (F) % slabaya
+En retard (M) % opozdavchii
+En retard (F) % opozdavchaya
+En avance (M) % rannii
+En avance (F) % rannyaya
+Important % vajnyi
+Importante % vajnaya
+Utile (M) % polyeznyi
+Utile (F) % polyeznaya
+Inutile (M) % byespolyeznyi
+Inutile (F) % byespolyeznaya
+Simple (M) % prostoï
+Simple (F) % prostaya
+Compliqué % slojnyi
+Compliquée % slojnaya
+Basique (M) % bazovyi
+Basique (F) % bazovaya
+Confortable (M) % oudoobnyï
+Confortable (F) % oudoobnaya
+Inconfortable (M) % nyeoudoobnyï
+Inconfortable (F) % nyeoudoobnaya
 
-Oeuf %
-Lait %
-Sel %
-Riz %
-Viande %
-Eau %
-Pain %
-Fromage %
-Beurre %
-Sucre %
-Café %
-Thé %
-Pomme %
-Banane %
-Orange %
-Tomate %
-Salade %
-Pomme de terre %
+Famille % sem'ya
+Père % otyets
+Mère % mat'
+Frère % brat
+Sœur % sestra
+Grand-père % dyedouchka
+Grand-mère % babouchka
+Fils % syn
+Fille % dotch'
+Ami % droug
+Amie % podrouga
+Enfant % rebyonok
+Garçon % mal'tchik
+Fille (enfant) % dyevotchka
 
-Maison %
-Appartement %
-Chambre %
-Salle de bain %
-Cuisine %
-Salon %
-Porte %
-Fenêtre %
-Lit %
-Table %
-Chaise %
-Clé %
+Pays % strana
+Brésil % braziliya
+France % frantsiya
+Portugal % portoügaliya
+Espagne % ispaniya
+USA % scha
+Russie % rossiya
 
-Ville %
-Rue %
-Magasin %
-Marché %
-Restaurant %
-École %
-Hôpital %
-Pharmacie %
-Gare %
-Arrêt de bus %
-Plage %
-Parc %
+Chien % sobaka
+Chat % kochka
+Oiseau % ptitsa
+Poisson % ryba
+Vache % korova
+Cheval % lochad'
+Mouton % ovtsa
+Poulet % kouritsa
 
-Voiture %
-Bus %
-Train %
-Avion %
+Oeuf % yaïtso
+Lait % moloko
+Sel % sol'
+Riz % ris
+Viande % myaso
+Eau % voda
+Pain % khlyeb
+Fromage % syr
+Beurre % maslo
+Sucre % sakhar
+Café % kofye
+Thé % tchaï
+Pomme % yabloko
+Banane % banan
+Orange % apyel'sin
+Tomate % pomidor
+Salade % salat
+Pomme de terre % kartochka
 
-Nom %
-Prénom %
-Numéro %
-Téléphone %
-Ordinateur %
-Internet %
+Maison % dom
+Appartement % kvartira
+Chambre % komnata
+Salle de bain % vannaya
+Cuisine % koukhnya
+Salon % gostinaya
+Porte % dver'
+Fenêtre % okno
+Lit % krovat'
+Table % stol
+Chaise % stoul
+Clé % klyoutch
 
-Soleil %
-Pluie %
-Mer %
-Vent %
-Ciel %
-Nuage %
+Ville % gorod
+Rue % oulitsa
+Magasin % magazin
+Marché % rynok
+Restaurant % restoran
+École % chkola
+Hôpital % bol'nitsa
+Pharmacie % aptyeka
+Gare % vokzal
+Arrêt de bus % ostanovka avtobousa
+Plage % plyaj
+Parc % park
 
-Amour %
-Peur %
-Joie %
-Colère %
-Tristesse %
+Voiture % machina
+Bus % avtobous
+Train % poyezd
+Avion % samolyot
 
-Prix %
-Argent (money) %
-Temps %
-Question %
-Réponse %
-Idée %
-Problème %
-Solution %
-Chance %
-Vie %
-Mort %
+Nom % familiya
+Prénom % imya
+Numéro % nomyer
+Téléphone % telefon
+Ordinateur % komp'yuter
+Internet % internet
 
-Petit-déjeuner %
-Déjeuner %
-Dîner %
+Soleil % solntse
+Pluie % dojd'
+Mer % morye
+Vent % vyeter
+Ciel % nyebo
+Nuage % oblako
 
-Stylo %
-Cahier %
-Livre %
-Sac %
-Bouteille %
-Montre %
-Lunettes %
-Chaussure %
-Pantalon %
-T-shirt %
+Amour % lyoubov'
+Peur % strakh
+Joie % radost'
+Colère % gnev
+Tristesse % petchal'
 
-Yeux %
-Oreille %
-Nez %
-Bouche %
-Dent %
-Main %
-Pied %
-Tête %
-Jambe %
-Bras %
-Ventre %
+Prix % tsena
+Argent (money) % dyen'gi
+Temps % vryemya
+Question % vopros
+Réponse % otvyet
+Idée % ideya
+Problème % problyema
+Solution % recheniye
+Chance % oudatcha
+Vie % jizn'
+Mort % smyert'
 
-Tic de language (genre) % Tipo
+Petit-déjeuner % zavtrak
+Déjeuner % obyed
+Dîner % oujin
+
+Stylo % routchka
+Cahier % tetrad'
+Livre % kniga
+Sac % soumka
+Bouteille % boutylka
+Montre % tchasy
+Lunettes % otchki
+Chaussure % toufli
+Pantalon % briouki
+T-shirt % foutbolka
+
+Yeux % glaza
+Oreille % oukho
+Nez % nos
+Bouche % rot
+Dent % zoub
+Main % rouka
+Pied % noga
+Tête % golova
+Jambe % noga
+Bras % rouka
+Ventre % jivot
+
+Tic de language (genre) % tipo
