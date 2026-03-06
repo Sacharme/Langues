@@ -62,7 +62,7 @@ Salut % privyet
 Au revoir % do svidaniya
 Merci % spasibo
 De rien % nye za chto
-Ça va % kak dela
+Ça va ? % kak dela
 Oui % da
 Non % nyet
 Peut-être % mojyet byt'
@@ -88,6 +88,7 @@ Près % blizko
 Loin % daleko
 Avant % do
 Après % poslye
+Pendant % do
 Dans % v
 Avec % s
 Sans % byez
@@ -159,20 +160,16 @@ Bouger % dvigat'sya
 
 Mon % moï
 Ma % moya
-Mes (M) % moï
-Mes (F) % moï
+Mes % moï
 Ton/Son % tvoï/yevo
 Ta/Sa % tvoya/yeyo
-Tes/Ses (M) % tvoï/yevo
-Tes/Ses (F) % tvoï/yeyo
+Tes/Ses % tvoï/yevo
 Notre (M) % nach
 Notre (F) % nacha
-Nos (M) % nachi
-Nos (F) % nachi
+No % nachi
 Votre/Leur (M) % vach/ikh
 Votre/Leur (F) % vacha/ikh
-Vos/Leurs (M) % vachi/ikh
-Vos/Leurs (F) % vachi/ikh
+Vos/Leurs % vachi/ikh
 
 Beau % krasivyi
 Belle % krasivaya
@@ -222,6 +219,8 @@ Méchant % zloï
 Méchante % zlaya
 Intelligent % oumnyi
 Intelligente % oumnaya
+Stupide (M) % zlyy
+Stupide (F) % zlyaya
 Gros % tolstyi
 Grosse % tolstaya
 Riche (M) % bogatyi
@@ -244,38 +243,10 @@ Parfait % idyeal'nyi
 Parfaite % idyeal'naya
 Drôle (M) % smechnoï
 Drôle (F) % smechnaya
-Calme (M) % spokoïnyi
-Calme (F) % spokoïnaya
 Prêt % gotovyi
 Prête % gotovaya
 Malade (M) % bol'noï
 Malade (F) % bol'naya
-Seul % odinokoï
-Seule % odinokaya
-Fort % sil'nyi
-Forte % sil'naya
-Faible (M) % slabyï
-Faible (F) % slabaya
-En retard (M) % opozdavchii
-En retard (F) % opozdavchaya
-En avance (M) % rannii
-En avance (F) % rannyaya
-Important % vajnyi
-Importante % vajnaya
-Utile (M) % polyeznyi
-Utile (F) % polyeznaya
-Inutile (M) % byespolyeznyi
-Inutile (F) % byespolyeznaya
-Simple (M) % prostoï
-Simple (F) % prostaya
-Compliqué % slojnyi
-Compliquée % slojnaya
-Basique (M) % bazovyi
-Basique (F) % bazovaya
-Confortable (M) % oudoobnyï
-Confortable (F) % oudoobnaya
-Inconfortable (M) % nyeoudoobnyï
-Inconfortable (F) % nyeoudoobnaya
 
 Famille % sem'ya
 Père % otyets
@@ -289,133 +260,39 @@ Fille % dotch'
 Ami % droug
 Amie % podrouga
 Enfant % rebyonok
-Garçon % mal'tchik
-Fille (enfant) % dyevotchka
+
+Garçon (sexe) % 
+Fille (sexe) %
 
 Pays % strana
-Brésil % braziliya
-France % frantsiya
-Portugal % portoügaliya
-Espagne % ispaniya
-USA % scha
 Russie % rossiya
+France % frantsiya
+Chine % chyina
+USA % scha
 
 Chien % sobaka
 Chat % kochka
 Oiseau % ptitsa
-Poisson % ryba
-Vache % korova
-Cheval % lochad'
-Mouton % ovtsa
-Poulet % kouritsa
 
 Oeuf % yaïtso
 Lait % moloko
-Sel % sol'
-Riz % ris
 Viande % myaso
 Eau % voda
 Pain % khlyeb
 Fromage % syr
-Beurre % maslo
-Sucre % sakhar
-Café % kofye
-Thé % tchaï
 Pomme % yabloko
 Banane % banan
-Orange % apyel'sin
-Tomate % pomidor
-Salade % salat
-Pomme de terre % kartochka
-
-Maison % dom
-Appartement % kvartira
-Chambre % komnata
-Salle de bain % vannaya
-Cuisine % koukhnya
-Salon % gostinaya
-Porte % dver'
-Fenêtre % okno
-Lit % krovat'
-Table % stol
-Chaise % stoul
-Clé % klyoutch
-
-Ville % gorod
-Rue % oulitsa
-Magasin % magazin
-Marché % rynok
-Restaurant % restoran
-École % chkola
-Hôpital % bol'nitsa
-Pharmacie % aptyeka
-Gare % vokzal
-Arrêt de bus % ostanovka avtobousa
-Plage % plyaj
-Parc % park
-
-Voiture % machina
-Bus % avtobous
-Train % poyezd
-Avion % samolyot
 
 Nom % familiya
 Prénom % imya
 Numéro % nomyer
+
 Téléphone % telefon
 Ordinateur % komp'yuter
 Internet % internet
 
-Soleil % solntse
-Pluie % dojd'
-Mer % morye
-Vent % vyeter
-Ciel % nyebo
-Nuage % oblako
-
-Amour % lyoubov'
-Peur % strakh
-Joie % radost'
-Colère % gnev
-Tristesse % petchal'
-
-Prix % tsena
-Argent (money) % dyen'gi
-Temps % vryemya
-Question % vopros
-Réponse % otvyet
-Idée % ideya
-Problème % problyema
-Solution % recheniye
-Chance % oudatcha
-Vie % jizn'
-Mort % smyert'
-
 Petit-déjeuner % zavtrak
 Déjeuner % obyed
 Dîner % oujin
-
-Stylo % routchka
-Cahier % tetrad'
-Livre % kniga
-Sac % soumka
-Bouteille % boutylka
-Montre % tchasy
-Lunettes % otchki
-Chaussure % toufli
-Pantalon % briouki
-T-shirt % foutbolka
-
-Yeux % glaza
-Oreille % oukho
-Nez % nos
-Bouche % rot
-Dent % zoub
-Main % rouka
-Pied % noga
-Tête % golova
-Jambe % noga
-Bras % rouka
-Ventre % jivot
 
 Tic de language (genre) % tipo
