@@ -1,57 +1,20 @@
-0 % nol'
-1 % odin
-2 % dva
-3 % tri
-4 % tchetyré
-5 % pyat'
-6 % chest'
-7 % syem'
-8 % vosyem'
-9 % dyévyat'
-10 % dyésyat'
+Lundi % ponedyel'nik
+Mardi % vtornik
+Mercredi % sreda
+Jeudi % tchetvierg
+Vendredi % pyatnitsa
+Samedi % subbota
+Dimanche % voskresyen'ye
 
-Je % ya
-Tu % ty
-Il % on
-Elle % ona
-Ça % eto
-Nous % my
-Vous % vy
-Ils % oni
-Elles % oni
-
-Bonjour % zdravstvouïte
-Au revoir % do svidaniya
-Oui % da
-Non % nyet
-Merci % spasibo
-De rien % nye za chto
-S'il vous plaît % pojalouïsta
-Ça va % kak dela
-Désolé % izvinite
-Ou % ili
-Et % i
-Donc % tak chto
-
-Être % byt'
-Avoir % imyet'
-Faire % dyelat'
-Manger % yest'
-Boire % pit'
-
-Beau % krasivyi
-Belle % krasivaya
-Grand % bol'choï
-Grande % bol'chaya
-Petit % malyen'kii
-Petite % malyen'kaya
-Facile (M) % lyogkii
-Facile (F) % lyogkaya
-Heureux % stchastlivyi
-Heureuse % stchastlivaya
-
-Pain % khlyeb
-Eau % voda
-Téléphone % telefon
-
-Tic de language (genre) % tipo
+Janvier % yanvar'
+Février % fevral'
+Mars % mart
+Avril % apryel'
+Mai % mai
+Juin % iyun'
+Juillet % iyul'
+Août % avgust
+Septembre % sentyabr'
+Octobre % oktyabr'
+Novembre % noyabr'
+Décembre % dekabr'

@@ -1,0 +1,226 @@
+
+
+Jour % dyen'
+Semaine % nedyelya
+Mois % myesyats
+Année % god
+Aujourd'hui % sevodnya
+Demain % zavtra
+Hier % vtchera
+Maintenant % seïtchas
+
+Couleur % tsvet
+Bleu % sinii
+Rouge % krasnyi
+Vert % zelyonyi
+Jaune % jyoltyi
+Noir % tchyornyi
+Blanc % byelyi
+
+Peut-être % mojyet byt'
+Où % gdye
+Pourquoi % potchemu
+Parce que % potomu chto
+Comment % kak
+Quand % kogda
+Quoi % chto
+Combien % skol'ko
+Mais % no
+Toujours % vsegda
+Jamais % nikogda
+Déjà % ujé
+Aussi % tojé
+Ici % zdyes'
+Là-bas % tam
+Près % blizko
+Loin % daleko
+Avant % do
+Après % poslye
+Pendant % do
+Dans % v
+Avec % s
+Sans % byez
+Pour % dlya
+De % iz
+Sur % na
+Sous % pod
+Beaucoup % mnogo
+Peu % malo
+Plus % bol'chye
+Moins % myen'chye
+Tout % vsyo
+Rien % nitchevo
+Quelque chose % chto-to
+Quelqu'un % kto-to
+Personne (nobody) % nikto
+Toujours (still) % vsyo yechyo
+Encore (again) % yechyo raz
+Encore (even) % yechyo
+
+Pouvoir % motch'
+Marcher % khodit'
+Avoir besoin % nujdat'sya
+Savoir % znat'
+Penser % dumat'
+Croire % vyerit'
+Donner % dat'
+Travailler % rabotat'
+Aller % idti
+Venir % prikhodit'
+Prendre (un objet) % brat'
+Prendre (une douche, un taxi) % prinimat'
+Voir % videt'
+Apprendre % utchit'
+Aimer % lyubit'
+Vouloir % khotyet'
+Attendre % jdat'
+Parler % govorit'
+Écrire % pisat'
+Lire % tchitat'
+Devoir % doljyen
+Se nommer % zovut
+Demander (to ask) % sprochit'
+Demander (to request) % prosit'
+Répondre % otvyetchat'
+Mettre % klast'
+Dire % govorit'
+Acheter % pokupat'
+Vendre % prodavat'
+Comprendre % ponimat'
+Montrer % pokazyvat'
+Arrêter % ostanavlivat'
+Payer % platit'
+Oublier % zabyvat'
+Devenir % stanovit'sya
+Se souvenir % pomnit'
+Choisir % vybirat'
+Changer % menyat'
+Aider % pomogat'
+Obtenir % polutchit'
+Être d'accord % soglachat'sya
+Arriver % prikhodit'
+Bouger % dvigat'sya
+
+Mon % moï
+Ma % moïa
+Mes % moï
+Ton/Son % tvoï/yevo
+Ta/Sa % tvoïa/yeyo
+Tes/Ses % tvoï/yevo
+Notre (M) % nach
+Notre (F) % nacha
+No % nachi
+Votre/Leur (M) % vach/ikh
+Votre/Leur (F) % vacha/ikh
+Vos/Leurs % vachi/ikh
+
+Bien (M) % khorochii
+Bien (F) % khorochaya
+Mauvais % plokhoy
+Mauvaise % plokhaya
+Difficile (M) % trudnyi
+Difficile (F) % trudnaya
+Triste (M) % grustnyi
+Triste (F) % grustnaya
+Chaud % goryatchii
+Chaude % goryatchaya
+Froid % kholodnyi
+Froide % kholodnaya
+Fatigué % ustalachii
+Fatiguée % ustalachaya
+Nouveau % novyi
+Nouvelle % novaya
+Jeune (M) % molodoy
+Jeune (F) % molodaya
+Vieux % staryi
+Vieille % staraya
+Cher % dorogoy
+Chère % dorogaya
+Bon marché (M) % dechyovyi
+Bon marché (F) % dechyovaya
+Propre (M) % tchistyi
+Propre (F) % tchistaya
+Sale (M) % gryaznyi
+Sale (F) % gryaznaya
+Rapide (M) % bystryi
+Rapide (F) % bystraya
+Lent % myedlyennyi
+Lente % myedlyennaya
+Gentil % dobryi
+Gentille % dobraya
+Méchant % zloy
+Méchante % zlaya
+Intelligent % umnyi
+Intelligente % umnaya
+Stupide (M) % zlyy
+Stupide (F) % zlyaya
+Gros % tolstyi
+Grosse % tolstaya
+Riche (M) % bogatyi
+Riche (F) % bogataya
+Pauvre (M) % byednyi
+Pauvre (F) % byednaya
+Possible (M) % vozmojnyi
+Possible (F) % vozmojnaya
+Impossible (M) % nyevozmojnyi
+Impossible (F) % nyevozmojnaya
+Lourd % tyajyolyi
+Lourde % tyajyolaya
+Léger % lyogkii
+Légère % lyogkaya
+Plein % polnyi
+Pleine % polnaya
+Vide (M) % pustoy
+Vide (F) % pustaya
+Parfait % idyeal'nyi
+Parfaite % idyeal'naya
+Drôle (M) % smechnoy
+Drôle (F) % smechnaya
+Prêt % gotovyi
+Prête % gotovaya
+Malade (M) % bol'noy
+Malade (F) % bol'naya
+
+Famille % sem'ya
+Père % otyets
+Mère % mat'
+Frère % brat
+Sœur % sestra
+Grand-père % dyeduchka
+Grand-mère % babuchka
+Fils % syn
+Fille % dotch'
+Ami % drug
+Amie % podruga
+Enfant % rebyonok
+
+Garçon (sexe) % 
+Fille (sexe) %
+
+Pays % strana
+Russie % rossiya
+France % frantsiya
+Chine % chyina
+USA % scha
+
+Chien % sobaka
+Chat % kochka
+Oiseau % ptitsa
+
+Oeuf % yaïtso
+Lait % moloko
+Viande % myaso
+Fromage % syr
+Pomme % yabloko
+Banane % banan
+
+Nom % familiya
+Prénom % imya
+Numéro % nomyer
+
+Ordinateur % komp'yuter
+Internet % internet
+
+Petit-déjeuner % zavtrak
+Déjeuner % obyed
+Dîner % ujin
