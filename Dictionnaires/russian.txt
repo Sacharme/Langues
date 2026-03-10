@@ -2,13 +2,13 @@
 1 % odin
 2 % dva
 3 % tri
-4 % tchetyré
+4 % tchetyre
 5 % pyat'
 6 % chest'
 7 % syem'
 8 % vosyem'
-9 % dyévyat'
-10 % dyésyat'
+9 % dyevyat'
+10 % dyesyat'
 
 Je % ya
 Tu % ty
@@ -20,6 +20,27 @@ Vous % vy
 Ils % oni
 Elles % oni
 
+Lundi % ponedyel'nik
+Mardi % vtornik
+Mercredi % sreda
+Jeudi % tchetvierg
+Vendredi % pyatnitsa
+Samedi % subbota
+Dimanche % voskresyen'ye
+
+Janvier % yanvar'
+Février % fevral'
+Mars % mart
+Avril % apryel'
+Mai % mai
+Juin % iyun'
+Juillet % iyul'
+Août % avgust
+Septembre % sentyabr'
+Octobre % oktyabr'
+Novembre % noyabr'
+Décembre % dekabr'
+
 Bonjour % zdravstvuïte
 Salut % privyet
 Au revoir % do svidaniya
@@ -28,7 +49,7 @@ Non % nyet
 Merci % spasibo
 De rien % nye za chto
 S'il vous plaît % pojaluïsta
-Ça va % kak dela
+Ça va ? % kak dela
 Désolé % izvinite
 Ou % ili
 Et % i
@@ -40,15 +61,15 @@ Faire % dyelat'
 Manger % yest'
 Boire % pit'
 
-Beau % krasivyi
+Beau % krasivyï
 Belle % krasivaya
-Grand % bol'choy
+Grand % bol'choï
 Grande % bol'chaya
-Petit % malyen'kii
+Petit % malyen'kiï
 Petite % malyen'kaya
-Facile (M) % lyogkii
+Facile (M) % lyogkiï
 Facile (F) % lyogkaya
-Heureux % stchastlivyi
+Heureux % stchastlivyï
 Heureuse % stchastlivaya
 
 Pain % khlyeb

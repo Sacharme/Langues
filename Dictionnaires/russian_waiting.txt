@@ -10,14 +10,13 @@ Hier % vtchera
 Maintenant % seïtchas
 
 Couleur % tsvet
-Bleu % sinii
-Rouge % krasnyi
-Vert % zelyonyi
-Jaune % jyoltyi
-Noir % tchyornyi
-Blanc % byelyi
+Bleu % siniï
+Rouge % krasnyï
+Vert % zelyonyï
+Jaune % jyoltyï
+Noir % tchyornyï
+Blanc % byelyï
 
-Peut-être % mojyet byt'
 Où % gdye
 Pourquoi % potchemu
 Parce que % potomu chto
@@ -28,8 +27,8 @@ Combien % skol'ko
 Mais % no
 Toujours % vsegda
 Jamais % nikogda
-Déjà % ujé
-Aussi % tojé
+Déjà % ujye
+Aussi % tojye
 Ici % zdyes'
 Là-bas % tam
 Près % blizko
@@ -43,6 +42,7 @@ Sans % byez
 Pour % dlya
 De % iz
 Sur % na
+Peut-être % mojyet byt'
 Sous % pod
 Beaucoup % mnogo
 Peu % malo
@@ -114,71 +114,71 @@ Votre/Leur (M) % vach/ikh
 Votre/Leur (F) % vacha/ikh
 Vos/Leurs % vachi/ikh
 
-Bien (M) % khorochii
+Bien (M) % khorochiï
 Bien (F) % khorochaya
-Mauvais % plokhoy
+Mauvais % plokhoï
 Mauvaise % plokhaya
-Difficile (M) % trudnyi
+Difficile (M) % trudnyï
 Difficile (F) % trudnaya
-Triste (M) % grustnyi
+Triste (M) % grustnyï
 Triste (F) % grustnaya
-Chaud % goryatchii
+Chaud % goryatchiï
 Chaude % goryatchaya
-Froid % kholodnyi
+Froid % kholodnyï
 Froide % kholodnaya
-Fatigué % ustalachii
+Fatigué % ustalachiï
 Fatiguée % ustalachaya
-Nouveau % novyi
+Nouveau % novyï
 Nouvelle % novaya
-Jeune (M) % molodoy
+Jeune (M) % molodoï
 Jeune (F) % molodaya
-Vieux % staryi
+Vieux % staryï
 Vieille % staraya
-Cher % dorogoy
+Cher % dorogoï
 Chère % dorogaya
-Bon marché (M) % dechyovyi
+Bon marché (M) % dechyovyï
 Bon marché (F) % dechyovaya
-Propre (M) % tchistyi
+Propre (M) % tchistyï
 Propre (F) % tchistaya
-Sale (M) % gryaznyi
+Sale (M) % gryaznyï
 Sale (F) % gryaznaya
-Rapide (M) % bystryi
+Rapide (M) % bystryï
 Rapide (F) % bystraya
-Lent % myedlyennyi
+Lent % myedlyennyï
 Lente % myedlyennaya
-Gentil % dobryi
+Gentil % dobryï
 Gentille % dobraya
-Méchant % zloy
+Méchant % zloï
 Méchante % zlaya
-Intelligent % umnyi
+Intelligent % umnyï
 Intelligente % umnaya
-Stupide (M) % zlyy
+Stupide (M) % zlyï
 Stupide (F) % zlyaya
-Gros % tolstyi
+Gros % tolstyï
 Grosse % tolstaya
-Riche (M) % bogatyi
+Riche (M) % bogatyï
 Riche (F) % bogataya
-Pauvre (M) % byednyi
+Pauvre (M) % byednyï
 Pauvre (F) % byednaya
-Possible (M) % vozmojnyi
+Possible (M) % vozmojnyï
 Possible (F) % vozmojnaya
-Impossible (M) % nyevozmojnyi
+Impossible (M) % nyevozmojnyï
 Impossible (F) % nyevozmojnaya
-Lourd % tyajyolyi
+Lourd % tyajyolyï
 Lourde % tyajyolaya
-Léger % lyogkii
+Léger % lyogkiï
 Légère % lyogkaya
-Plein % polnyi
+Plein % polnyï
 Pleine % polnaya
-Vide (M) % pustoy
+Vide (M) % pustoï
 Vide (F) % pustaya
-Parfait % idyeal'nyi
+Parfait % idyeal'nyï
 Parfaite % idyeal'naya
-Drôle (M) % smechnoy
+Drôle (M) % smechnoï
 Drôle (F) % smechnaya
-Prêt % gotovyi
+Prêt % gotovyï
 Prête % gotovaya
-Malade (M) % bol'noy
+Malade (M) % bol'noï
 Malade (F) % bol'naya
 
 Famille % sem'ya
