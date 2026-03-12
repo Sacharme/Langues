@@ -85,22 +85,22 @@ if not mots_francais:
 
 # Verbes réguliers 1ère conjugaison (en -at')
 verbes_1ere_conj = [
-    "dyelat'", "znat'", "dumat'", "rabotat'", "tchitat'", "pisat'",
-    "otvyetchat'", "pokupat'", "pomogat'", "vybirat'", "zabyvat'",
-    "menyat'", "ostanavlivat'", "pokazyvat'", "prodavat'", "ponimat'",
+    "dyelat'", "znat'", "doumat'", "rabotat'", "tchitat'", "pisat'",
+    "otvyetchat'", "pokoupat'", "pomogat'", "vybirat'", "zabyvat'",
+    "myenyat'", "ostanavlivat'", "pokazyvat'", "prodavat'", "ponimat'",
     "prinimat'", "jdat'"
 ]
 
 # Verbes réguliers 2ème conjugaison (en -it')
 verbes_2eme_conj = [
-    "imyet'", "khodit'", "videt'", "utchit'", "lyubit'", "govorit'",
-    "prosit'", "platit'", "pomnit'", "polutchit'", "vyerit'"
+    "imyet'", "khodit'", "vidyet'", "outchit'", "lyooubit'", "govorit'",
+    "prosit'", "platit'", "pomnit'", "poloutchit'", "vyerit'"
 ]
 
 # Verbes irréguliers (les plus courants)
 verbes_irreguliers = [
     "byt'", "yest'", "pit'", "motch'", "dat'", "idti", "khotyet'",
-    "brat'", "klast'", "stanovit'sya", "prikhodit'", "nujdat'sya",
+    "brat'", "klast'", "stanovit'sya", "prikhodit'", "noujdat'sya",
     "soglachat'sya", "dvigat'sya", "sprochit'"
 ]
 verbes_irreguliers_connus = []
@@ -111,16 +111,16 @@ traductions_verbes = {
     # 1ère conjugaison
     "dyelat'": "faire",
     "znat'": "savoir",
-    "dumat'": "penser",
+    "doumat'": "penser",
     "rabotat'": "travailler",
     "tchitat'": "lire",
     "pisat'": "écrire",
     "otvyetchat'": "répondre",
-    "pokupat'": "acheter",
+    "pokoupat'": "acheter",
     "pomogat'": "aider",
     "vybirat'": "choisir",
     "zabyvat'": "oublier",
-    "menyat'": "changer",
+    "myenyat'": "changer",
     "ostanavlivat'": "arrêter",
     "pokazyvat'": "montrer",
     "prodavat'": "vendre",
@@ -130,14 +130,14 @@ traductions_verbes = {
     # 2ème conjugaison
     "imyet'": "avoir",
     "khodit'": "marcher",
-    "videt'": "voir",
-    "utchit'": "apprendre",
-    "lyubit'": "aimer",
+    "vidyet'": "voir",
+    "outchit'": "apprendre",
+    "lyooubit'": "aimer",
     "govorit'": "parler",
     "prosit'": "demander (to request)",
     "platit'": "payer",
     "pomnit'": "se souvenir",
-    "polutchit'": "obtenir",
+    "poloutchit'": "obtenir",
     "vyerit'": "croire",
     # Irréguliers
     "byt'": "être",
@@ -151,7 +151,7 @@ traductions_verbes = {
     "klast'": "mettre",
     "stanovit'sya": "devenir",
     "prikhodit'": "venir",
-    "nujdat'sya": "avoir besoin",
+    "noujdat'sya": "avoir besoin",
     "soglachat'sya": "être d'accord",
     "dvigat'sya": "bouger",
     "sprochit'": "demander (to ask)",
@@ -174,19 +174,19 @@ genres_participe = ["Masculin", "Féminin", "Neutre", "Pluriel"]
 # Terminaisons pour les verbes réguliers
 terminaisons = {
     "1ere": {
-        "présent": ["you", "yech'", "yet", "yem", "yete", "yout"],
+        "présent": ["yu", "yech'", "yet", "yem", "yetye", "yut"],
         "passé": ["l", "la", "lo", "li"],
-        "futur": ["boudou", "budech'", "budyet", "budyem", "budyete", "budut"],
-        "impératif": ["", "i", "", "", "ite", ""],
-        "participe passé": ["nniy", "nnaya", "nnoye", "nnyye"],
+        "futur": ["boudou", "boudyech'", "boudyet", "boudyem", "boudyetye", "boudout"],
+        "impératif": ["", "î", "", "", "îtye", ""],
+        "participe passé": ["nnyî", "nnaya", "nnoye", "nnyye"],
         "gérondif": ["ya", "ya", "ya", "ya", "ya", "ya"]
     },
     "2eme": {
-        "présent": ["you", "ich'", "it", "im", "ite", "yat"],
+        "présent": ["yu", "ich'", "it", "im", "itye", "yat"],
         "passé": ["l", "la", "lo", "li"],
-        "futur": ["boudou", "budech'", "budyet", "budyem", "budyete", "budut"],
-        "impératif": ["", "i", "", "", "ite", ""],
-        "participe passé": ["nniy", "nnaya", "nnoye", "nnyye"],
+        "futur": ["boudou", "boudyech'", "boudyet", "boudyem", "boudyetye", "boudout"],
+        "impératif": ["", "i", "", "", "itye", ""],
+        "participe passé": ["nnyî", "nnaya", "nnoye", "nnyye"],
         "gérondif": ["ya", "ya", "ya", "ya", "ya", "ya"]
     }
 }
@@ -195,121 +195,121 @@ terminaisons = {
 
 # byt' (быть - être)
 terminaisons_byt = {
-    "présent": ["-", "-", "-", "-", "-", "-"],
+    "présyent": ["-", "-", "-", "-", "-", "-"],
     "passé": ["byl", "byla", "bylo", "byli"],
-    "futur": ["boudou", "budech'", "budyet", "budyem", "budyete", "budut"],
-    "impératif": ["", "boud'", "", "", "boud'te", ""],
-    "participe passé": ["byvchii", "byvchaya", "byvcheye", "byvchiye"],
-    "gérondif": ["budutchi", "budutchi", "budutchi", "budutchi", "budutchi", "budutchi"]
+    "futur": ["boudou", "boudyech'", "boudyet", "boudyem", "boudyetye", "boudout"],
+    "impératif": ["", "boud'", "", "", "boud'tye", ""],
+    "participe passé": ["byvchiî", "byvchaya", "byvchyeye", "byvchiye"],
+    "gérondif": ["boudoutchi", "boudoutchi", "boudoutchi", "boudoutchi", "boudoutchi", "boudoutchi"]
 }
 
 # yest' (есть - manger)
 terminaisons_yest = {
-    "présent": ["yem", "yech'", "yest", "yedim", "yedite", "yedyat"],
+    "présyent": ["yem", "yech'", "yest", "yedim", "yeditye", "yedyat"],
     "passé": ["yel", "yela", "yelo", "yeli"],
-    "futur": ["budu yest'", "budech' yest'", "budyet yest'", "budyem yest'", "budyete yest'", "budut yest'"],
-    "impératif": ["", "yech'", "", "", "yech'te", ""],
-    "participe passé": ["yevchii", "yevchaya", "yevcheye", "yevchiye"],
+    "futur": ["boudou yest'", "boudyech' yest'", "boudyet yest'", "boudyem yest'", "boudyetye yest'", "boudout yest'"],
+    "impératif": ["", "yech'", "", "", "yech'tye", ""],
+    "participe passé": ["yevchiî", "yevchaya", "yevchyeye", "yevchiye"],
     "gérondif": ["yedya", "yedya", "yedya", "yedya", "yedya", "yedya"]
 }
 
 # pit' (пить - boire)
 terminaisons_pit = {
-    "présent": ["p'you", "p'yoch'", "p'yot", "p'yom", "p'yote", "p'yout"],
+    "présyent": ["p'yu", "p'yoch'", "p'yot", "p'yom", "p'yotye", "p'yut"],
     "passé": ["pil", "pila", "pilo", "pili"],
-    "futur": ["budu pit'", "budech' pit'", "budyet pit'", "budyem pit'", "budyete pit'", "budut pit'"],
-    "impératif": ["", "pyei", "", "", "pyeite", ""],
-    "participe passé": ["pivchii", "pivchaya", "pivcheye", "pivchiye"],
+    "futur": ["boudou pit'", "boudyech' pit'", "boudyet pit'", "boudyem pit'", "boudyetye pit'", "boudout pit'"],
+    "impératif": ["", "pyeî", "", "", "pyeîtye", ""],
+    "participe passé": ["pivchiî", "pivchaya", "pivchyeye", "pivchiye"],
     "gérondif": ["piya", "piya", "piya", "piya", "piya", "piya"]
 }
 
 # dat' (дать - donner)
 terminaisons_dat = {
-    "présent": ["dayou", "dayoch'", "dayot", "dadim", "dadite", "dadout"],
+    "présyent": ["dayu", "dayoch'", "dayot", "dadim", "daditye", "dadout"],
     "passé": ["dal", "dala", "dalo", "dali"],
-    "futur": ["dam", "dach'", "dast", "dadim", "dadite", "dadout"],
-    "impératif": ["", "dai", "", "", "daite", ""],
-    "participe passé": ["davchii", "davchaya", "davcheye", "davchiye"],
+    "futur": ["dam", "dach'", "dast", "dadim", "daditye", "dadout"],
+    "impératif": ["", "daî", "", "", "daîtye", ""],
+    "participe passé": ["davchiî", "davchaya", "davchyeye", "davchiye"],
     "gérondif": ["dav", "dav", "dav", "dav", "dav", "dav"]
 }
 
 # jit' (жить - vivre)
 terminaisons_jit = {
-    "présent": ["jivou", "jivyoch'", "jivyot", "jivyom", "jivyote", "jivout"],
+    "présyent": ["jivou", "jivyoch'", "jivyot", "jivyom", "jivyotye", "jivout"],
     "passé": ["jil", "jila", "jilo", "jili"],
-    "futur": ["budu jit'", "budech' jit'", "budyet jit'", "budyem jit'", "budyete jit'", "budut jit'"],
-    "impératif": ["", "jivi", "", "", "jivite", ""],
-    "participe passé": ["jivchii", "jivchaya", "jivcheye", "jivchiye"],
+    "futur": ["boudou jit'", "boudyech' jit'", "boudyet jit'", "boudyem jit'", "boudyetye jit'", "boudout jit'"],
+    "impératif": ["", "jivi", "", "", "jivitye", ""],
+    "participe passé": ["jivchiî", "jivchaya", "jivchyeye", "jivchiye"],
     "gérondif": ["jivya", "jivya", "jivya", "jivya", "jivya", "jivya"]
 }
 
 # idti (идти - aller à pied)
 terminaisons_idti = {
-    "présent": ["idou", "idyoch'", "idyot", "idyom", "idyote", "idout"],
+    "présyent": ["idou", "idyoch'", "idyot", "idyom", "idyotye", "idout"],
     "passé": ["chyol", "chla", "chlo", "chli"],
-    "futur": ["budu idti", "budech' idti", "budyet idti", "budyem idti", "budyete idti", "budut idti"],
-    "impératif": ["", "idi", "", "", "idite", ""],
-    "participe passé": ["chedchii", "chedchaya", "chedcheye", "chedchiye"],
+    "futur": ["boudou idti", "boudyech' idti", "boudyet idti", "boudyem idti", "boudyetye idti", "boudout idti"],
+    "impératif": ["", "idi", "", "", "iditye", ""],
+    "participe passé": ["chyedchiî", "chyedchaya", "chyedchyeye", "chyedchiye"],
     "gérondif": ["idya", "idya", "idya", "idya", "idya", "idya"]
 }
 
 # yekhat' (ехать - aller en véhicule)
 terminaisons_yekhat = {
-    "présent": ["yedou", "yedech'", "yedyet", "yedyem", "yedyete", "yedout"],
+    "présyent": ["yedou", "yedyech'", "yedyet", "yedyem", "yedyetye", "yedout"],
     "passé": ["yekhal", "yekhala", "yekhalo", "yekhali"],
-    "futur": ["budu yekhat'", "budech' yekhat'", "budyet yekhat'", "budyem yekhat'", "budyete yekhat'", "budut yekhat'"],
-    "impératif": ["", "yezjai", "", "", "yezjaite", ""],
-    "participe passé": ["yekhavchii", "yekhavchaya", "yekhavcheye", "yekhavchiye"],
+    "futur": ["boudou yekhat'", "boudyech' yekhat'", "boudyet yekhat'", "boudyem yekhat'", "boudyetye yekhat'", "boudout yekhat'"],
+    "impératif": ["", "yezjaî", "", "", "yezjaîtye", ""],
+    "participe passé": ["yekhavchiî", "yekhavchaya", "yekhavchyeye", "yekhavchiye"],
     "gérondif": ["yekhav", "yekhav", "yekhav", "yekhav", "yekhav", "yekhav"]
 }
 
 # motch' (мочь - pouvoir)
 terminaisons_motch = {
-    "présent": ["mogou", "mojech'", "mojyet", "mojyem", "mojyete", "mogout"],
+    "présyent": ["mogou", "mojyech'", "mojyet", "mojyem", "mojyetye", "mogout"],
     "passé": ["mog", "mogla", "moglo", "mogli"],
-    "futur": ["smogou", "smojech'", "smojyet", "smojyem", "smojyete", "smogout"],
+    "futur": ["smogou", "smojyech'", "smojyet", "smojyem", "smojyetye", "smogout"],
     "impératif": ["", "", "", "", "", ""],
-    "participe passé": ["mogchii", "mogchaya", "mogcheye", "mogchiye"],
+    "participe passé": ["mogchiî", "mogchaya", "mogchyeye", "mogchiye"],
     "gérondif": ["mogya", "mogya", "mogya", "mogya", "mogya", "mogya"]
 }
 
 # khotyet' (хотеть - vouloir)
 terminaisons_khotyet = {
-    "présent": ["khotchou", "khotchech'", "khotchet", "khotim", "khotite", "khotyat"],
+    "présyent": ["khotchou", "khotchyech'", "khotchyet", "khotim", "khotitye", "khotyat"],
     "passé": ["khotyel", "khotyela", "khotyelo", "khotyeli"],
-    "futur": ["budu khotyet'", "budech' khotyet'", "budyet khotyet'", "budyem khotyet'", "budyete khotyet'", "budut khotyet'"],
-    "impératif": ["", "khotchi", "", "", "khotchite", ""],
-    "participe passé": ["khotyevchii", "khotyevchaya", "khotyevcheye", "khotyevchiye"],
+    "futur": ["boudou khotyet'", "boudyech' khotyet'", "boudyet khotyet'", "boudyem khotyet'", "boudyetye khotyet'", "boudout khotyet'"],
+    "impératif": ["", "khoti", "", "", "khotitye", ""],
+    "participe passé": ["khotyevchiî", "khotyevchaya", "khotyevchyeye", "khotyevchiye"],
     "gérondif": ["khotya", "khotya", "khotya", "khotya", "khotya", "khotya"]
 }
 
 # brat' (брать - prendre)
 terminaisons_brat = {
-    "présent": ["byerou", "byeryoch'", "byeryot", "byeryom", "byeryote", "byerout"],
+    "présyent": ["byerou", "byeryoch'", "byeryot", "byeryom", "byeryotye", "byerout"],
     "passé": ["bral", "brala", "bralo", "brali"],
-    "futur": ["budu brat'", "budech' brat'", "budyet brat'", "budyem brat'", "budyete brat'", "budut brat'"],
-    "impératif": ["", "byeri", "", "", "byerite", ""],
-    "participe passé": ["bravchii", "bravchaya", "bravcheye", "bravchiye"],
+    "futur": ["boudou brat'", "boudyech' brat'", "boudyet brat'", "boudyem brat'", "boudyetye brat'", "boudout brat'"],
+    "impératif": ["", "byeri", "", "", "byeritye", ""],
+    "participe passé": ["bravchiî", "bravchaya", "bravchyeye", "bravchiye"],
     "gérondif": ["byerya", "byerya", "byerya", "byerya", "byerya", "byerya"]
 }
 
 # stat' (стать - devenir)
 terminaisons_stat = {
-    "présent": ["stanou", "stanech'", "stanyet", "stanyem", "stanyete", "stanout"],
+    "présyent": ["stanou", "stanyech'", "stanyet", "stanyem", "stanyetye", "stanout"],
     "passé": ["stal", "stala", "stalo", "stali"],
-    "futur": ["stanou", "stanech'", "stanyet", "stanyem", "stanyete", "stanout"],
-    "impératif": ["", "stan'", "", "", "stan'te", ""],
-    "participe passé": ["stavchii", "stavchaya", "stavcheye", "stavchiye"],
+    "futur": ["stanou", "stanyech'", "stanyet", "stanyem", "stanyetye", "stanout"],
+    "impératif": ["", "stan'", "", "", "stan'tye", ""],
+    "participe passé": ["stavchiî", "stavchaya", "stavchyeye", "stavchiye"],
     "gérondif": ["stav", "stav", "stav", "stav", "stav", "stav"]
 }
 
 # vzyat' (взять - prendre/saisir, perfectif)
 terminaisons_vzyat = {
-    "présent": ["-", "-", "-", "-", "-", "-"],
+    "présyent": ["-", "-", "-", "-", "-", "-"],
     "passé": ["vzyal", "vzyala", "vzyalo", "vzyali"],
-    "futur": ["voz'mou", "voz'myoch'", "voz'myot", "voz'myom", "voz'myote", "voz'mout"],
-    "impératif": ["", "voz'mi", "", "", "voz'mite", ""],
-    "participe passé": ["vzyavchii", "vzyavchaya", "vzyavcheye", "vzyavchiye"],
+    "futur": ["voz'mou", "voz'myoch'", "voz'myot", "voz'myom", "voz'myotye", "voz'mout"],
+    "impératif": ["", "voz'mi", "", "", "voz'mitye", ""],
+    "participe passé": ["vzyavchiî", "vzyavchaya", "vzyavchyeye", "vzyavchiye"],
     "gérondif": ["vzyav", "vzyav", "vzyav", "vzyav", "vzyav", "vzyav"]
 }
 

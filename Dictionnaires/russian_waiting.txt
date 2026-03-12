@@ -1,38 +1,36 @@
-
-
 Jour % dyen'
-Semaine % nedyelya
+Semaine % nyedyelya
 Mois % myesyats
 Année % god
-Aujourd'hui % sevodnya
+Aujourd'hui % syegodnya
 Demain % zavtra
-Hier % vtchera
-Maintenant % seïtchas
+Hier % vtchyera
+Maintenant % syeîtchas
 
-Couleur % tsvet
-Bleu % siniï
-Rouge % krasnyï
-Vert % zelyonyï
-Jaune % jyoltyï
-Noir % tchyornyï
-Blanc % byelyï
+Couleur % tsvyet
+Bleu % siniî
+Rouge % krasnyî
+Vert % zyelyonyî
+Jaune % jyoltyî
+Noir % tchyornyî
+Blanc % byelyî
 
 Où % gdye
-Pourquoi % potchemu
-Parce que % potomu chto
+Pourquoi % potchyemou
+Parce que % potomou tchto
 Comment % kak
 Quand % kogda
-Quoi % chto
+Quoi % tchto
 Combien % skol'ko
 Mais % no
-Toujours % vsegda
+Toujours % vsyegda
 Jamais % nikogda
-Déjà % ujye
+Déjà % oujye
 Aussi % tojye
 Ici % zdyes'
 Là-bas % tam
 Près % blizko
-Loin % daleko
+Loin % dalyeko
 Avant % do
 Après % poslye
 Pendant % do
@@ -49,19 +47,19 @@ Peu % malo
 Plus % bol'chye
 Moins % myen'chye
 Tout % vsyo
-Rien % nitchevo
-Quelque chose % chto-to
+Rien % nitchyego
+Quelque chose % tchto-to
 Quelqu'un % kto-to
 Personne (nobody) % nikto
-Toujours (still) % vsyo yechyo
-Encore (again) % yechyo raz
-Encore (even) % yechyo
+Toujours (still) % vsyo yechchyo
+Encore (again) % yechchyo raz
+Encore (even) % yechchyo
 
 Pouvoir % motch'
 Marcher % khodit'
-Avoir besoin % nujdat'sya
+Avoir besoin % noujdat'sya
 Savoir % znat'
-Penser % dumat'
+Penser % doumat'
 Croire % vyerit'
 Donner % dat'
 Travailler % rabotat'
@@ -69,8 +67,8 @@ Aller % idti
 Venir % prikhodit'
 Prendre (un objet) % brat'
 Prendre (une douche, un taxi) % prinimat'
-Voir % videt'
-Apprendre % utchit'
+Voir % vidyet'
+Apprendre % outchit'
 Aimer % lyubit'
 Vouloir % khotyet'
 Attendre % jdat'
@@ -78,13 +76,13 @@ Parler % govorit'
 Écrire % pisat'
 Lire % tchitat'
 Devoir % doljyen
-Se nommer % zovut
-Demander (to ask) % sprochit'
+Se nommer % zovout
+Demander (to ask) % sprosit'
 Demander (to request) % prosit'
 Répondre % otvyetchat'
 Mettre % klast'
 Dire % govorit'
-Acheter % pokupat'
+Acheter % pokoupat'
 Vendre % prodavat'
 Comprendre % ponimat'
 Montrer % pokazyvat'
@@ -94,19 +92,19 @@ Oublier % zabyvat'
 Devenir % stanovit'sya
 Se souvenir % pomnit'
 Choisir % vybirat'
-Changer % menyat'
+Changer % myenyat'
 Aider % pomogat'
-Obtenir % polutchit'
+Obtenir % poloutchit'
 Être d'accord % soglachat'sya
 Arriver % prikhodit'
 Bouger % dvigat'sya
 
-Mon % moï
-Ma % moïa
-Mes % moï
-Ton/Son % tvoï/yevo
-Ta/Sa % tvoïa/yeyo
-Tes/Ses % tvoï/yevo
+Mon % moî
+Ma % moya
+Mes % moi
+Ton/Son % tvoî/yego
+Ta/Sa % tvoya/yeyo
+Tes/Ses % tvoi/yego
 Notre (M) % nach
 Notre (F) % nacha
 No % nachi
@@ -114,100 +112,100 @@ Votre/Leur (M) % vach/ikh
 Votre/Leur (F) % vacha/ikh
 Vos/Leurs % vachi/ikh
 
-Bien (M) % khorochiï
+Bien (M) % khorochiî
 Bien (F) % khorochaya
-Mauvais % plokhoï
+Mauvais % plokhoî
 Mauvaise % plokhaya
-Difficile (M) % trudnyï
-Difficile (F) % trudnaya
-Triste (M) % grustnyï
-Triste (F) % grustnaya
-Chaud % goryatchiï
+Difficile (M) % troudnyî
+Difficile (F) % troudnaya
+Triste (M) % groustnyî
+Triste (F) % groustnaya
+Chaud % goryatchiî
 Chaude % goryatchaya
-Froid % kholodnyï
+Froid % kholodnyî
 Froide % kholodnaya
-Fatigué % ustalachiï
-Fatiguée % ustalachaya
-Nouveau % novyï
+Fatigué % oustalyî
+Fatiguée % oustalaya
+Nouveau % novyî
 Nouvelle % novaya
-Jeune (M) % molodoï
+Jeune (M) % molodoî
 Jeune (F) % molodaya
-Vieux % staryï
+Vieux % staryî
 Vieille % staraya
-Cher % dorogoï
+Cher % dorogoî
 Chère % dorogaya
-Bon marché (M) % dechyovyï
-Bon marché (F) % dechyovaya
-Propre (M) % tchistyï
+Bon marché (M) % dyechyovyî
+Bon marché (F) % dyechyovaya
+Propre (M) % tchistyî
 Propre (F) % tchistaya
-Sale (M) % gryaznyï
+Sale (M) % gryaznyî
 Sale (F) % gryaznaya
-Rapide (M) % bystryï
+Rapide (M) % bystryî
 Rapide (F) % bystraya
-Lent % myedlyennyï
+Lent % myedlyennyî
 Lente % myedlyennaya
-Gentil % dobryï
+Gentil % dobryî
 Gentille % dobraya
-Méchant % zloï
+Méchant % zloî
 Méchante % zlaya
-Intelligent % umnyï
-Intelligente % umnaya
-Stupide (M) % zlyï
-Stupide (F) % zlyaya
-Gros % tolstyï
+Intelligent % oumnyî
+Intelligente % oumnaya
+Stupide (M) % zlyî
+Stupide (F) % zlaya
+Gros % tolstyî
 Grosse % tolstaya
-Riche (M) % bogatyï
+Riche (M) % bogatyî
 Riche (F) % bogataya
-Pauvre (M) % byednyï
+Pauvre (M) % byednyî
 Pauvre (F) % byednaya
-Possible (M) % vozmojnyï
+Possible (M) % vozmojnyî
 Possible (F) % vozmojnaya
-Impossible (M) % nyevozmojnyï
+Impossible (M) % nyevozmojnyî
 Impossible (F) % nyevozmojnaya
-Lourd % tyajyolyï
+Lourd % tyajyolyî
 Lourde % tyajyolaya
-Léger % lyogkiï
+Léger % lyogkiî
 Légère % lyogkaya
-Plein % polnyï
+Plein % polnyî
 Pleine % polnaya
-Vide (M) % pustoï
-Vide (F) % pustaya
-Parfait % idyeal'nyï
+Vide (M) % poustoî
+Vide (F) % poustaya
+Parfait % idyeal'nyî
 Parfaite % idyeal'naya
-Drôle (M) % smechnoï
-Drôle (F) % smechnaya
-Prêt % gotovyï
+Drôle (M) % smyechnoî
+Drôle (F) % smyechnaya
+Prêt % gotovyî
 Prête % gotovaya
-Malade (M) % bol'noï
+Malade (M) % bol'noî
 Malade (F) % bol'naya
 
-Famille % sem'ya
+Famille % syem'ya
 Père % otyets
 Mère % mat'
 Frère % brat
-Sœur % sestra
-Grand-père % dyeduchka
-Grand-mère % babuchka
+Sœur % syestra
+Grand-père % dyedouchka
+Grand-mère % babouchka
 Fils % syn
 Fille % dotch'
-Ami % drug
-Amie % podruga
-Enfant % rebyonok
+Ami % droug
+Amie % podrouga
+Enfant % ryebyonok
 
-Garçon (sexe) % 
+Garçon (sexe) %
 Fille (sexe) %
 
 Pays % strana
 Russie % rossiya
 France % frantsiya
-Chine % chyina
+Chine % kitaî
 USA % scha
 
 Chien % sobaka
 Chat % kochka
 Oiseau % ptitsa
 
-Oeuf % yaïtso
+Oeuf % yaîtso
 Lait % moloko
 Viande % myaso
 Fromage % syr
@@ -218,9 +216,9 @@ Nom % familiya
 Prénom % imya
 Numéro % nomyer
 
-Ordinateur % komp'yuter
-Internet % internet
+Ordinateur % komp'yutyer
+Internet % intyernyet
 
 Petit-déjeuner % zavtrak
 Déjeuner % obyed
-Dîner % ujin
+Dîner % oujin

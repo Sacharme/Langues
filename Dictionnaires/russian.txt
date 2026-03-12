@@ -2,9 +2,9 @@
 1 % odin
 2 % dva
 3 % tri
-4 % tchetyre
+4 % tchyetyrye
 5 % pyat'
-6 % chest'
+6 % chyest'
 7 % syem'
 8 % vosyem'
 9 % dyevyat'
@@ -20,40 +20,40 @@ Vous % vy
 Ils % oni
 Elles % oni
 
-Lundi % ponedyel'nik
+Lundi % ponyedyel'nik
 Mardi % vtornik
-Mercredi % sreda
-Jeudi % tchetvierg
+Mercredi % sryeda
+Jeudi % tchyetvyerg
 Vendredi % pyatnitsa
-Samedi % subbota
-Dimanche % voskresyen'ye
+Samedi % soubbota
+Dimanche % voskryesyen'ye
 
 Janvier % yanvar'
-Février % fevral'
+Février % fyevral'
 Mars % mart
 Avril % apryel'
-Mai % mai
+Mai % maî
 Juin % iyun'
 Juillet % iyul'
-Août % avgust
-Septembre % sentyabr'
+Août % avgoust
+Septembre % syentyabr'
 Octobre % oktyabr'
 Novembre % noyabr'
-Décembre % dekabr'
+Décembre % dyekabr'
 
-Bonjour % zdravstvuïte
+Bonjour % zdravstvouîtye
 Salut % privyet
 Au revoir % do svidaniya
 Oui % da
 Non % nyet
 Merci % spasibo
-De rien % nye za chto
-S'il vous plaît % pojaluïsta
-Ça va ? % kak dela
-Désolé % izvinite
+De rien % nye za tchto
+S'il vous plaît % pojalouîsta
+Ça va ? % kak dyela
+Désolé % izvinitye
 Ou % ili
 Et % i
-Donc % tak chto
+Donc % tak tchto
 
 Être % byt'
 Avoir % imyet'
@@ -61,19 +61,19 @@ Faire % dyelat'
 Manger % yest'
 Boire % pit'
 
-Beau % krasivyï
+Beau % krasivyî
 Belle % krasivaya
-Grand % bol'choï
+Grand % bol'choî
 Grande % bol'chaya
-Petit % malyen'kiï
+Petit % malyen'kiî
 Petite % malyen'kaya
-Facile (M) % lyogkiï
+Facile (M) % lyogkiî
 Facile (F) % lyogkaya
-Heureux % stchastlivyï
+Heureux % stchastlivyî
 Heureuse % stchastlivaya
 
 Pain % khlyeb
 Eau % voda
-Téléphone % telefon
+Téléphone % tyelyefon
 
 Tic de language (genre) % tipo
