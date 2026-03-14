@@ -15,35 +15,6 @@ Jaune % jyoltyî
 Noir % tchyornyî
 Blanc % byelyî
 
-Où % gdye
-Pourquoi % potchyemou
-Parce que % potomou tchto
-Comment % kak
-Quand % kogda
-Quoi % tchto
-Combien % skol'ko
-Mais % no
-Toujours % vsyegda
-Jamais % nikogda
-Déjà % oujye
-Aussi % tojye
-Ici % zdyes'
-Là-bas % tam
-Près % blizko
-Loin % dalyeko
-Avant % do
-Après % poslye
-Pendant % do
-Dans % v
-Avec % s
-Sans % byez
-Pour % dlya
-De % iz
-Sur % na
-Peut-être % mojyet byt'
-Sous % pod
-Beaucoup % mnogo
-Peu % malo
 Plus % bol'chye
 Moins % myen'chye
 Tout % vsyo
@@ -54,6 +25,9 @@ Personne (nobody) % nikto
 Toujours (still) % vsyo yechchyo
 Encore (again) % yechchyo raz
 Encore (even) % yechchyo
+Pourquoi % potchyemou
+Parce que % potomou tchto
+Peut-être % mojyet byt'
 
 Pouvoir % motch'
 Marcher % khodit'

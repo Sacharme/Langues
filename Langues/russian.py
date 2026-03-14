@@ -158,9 +158,9 @@ traductions_verbes = {
 }
 
 # Temps
-temps = ["présent", "passé", "futur", "gérondif"]
+temps = ["présent", "passé", "gérondif"]
 temps_connus = []
-temps_pas_connus = ["participe passé", "impératif"]
+temps_pas_connus = ["participe passé", "impératif", "futur"]
 
 # Pronoms russes
 pronoms = ["ya", "ty", "on/ona", "my", "vy", "oni"]
@@ -482,8 +482,12 @@ def conjuguer_verbe(verbe, pronom_index, temps_choisi, genre_index=None):
     elif temps_choisi == "impératif" and pronom_index == 0:
         return "Forme inexistante à l'impératif"
     elif temps_choisi == "passé":
+        if verbe.endswith("t'"):
+            radical_passe = verbe[:-2]
+        else:
+            radical_passe = radical
         terminaison = terminaisons[type_verbe][temps_choisi][index_genre]
-        return radical + terminaison
+        return radical_passe + terminaison
     else:
         terminaison = terminaisons[type_verbe][temps_choisi][pronom_index]
         return radical + terminaison

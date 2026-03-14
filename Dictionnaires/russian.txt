@@ -54,6 +54,8 @@ Désolé % izvinitye
 Ou % ili
 Et % i
 Donc % tak tchto
+Mais % no
+Sur % na
 
 Être % byt'
 Avoir % imyet'
