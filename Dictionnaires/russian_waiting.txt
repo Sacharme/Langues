@@ -1,3 +1,15 @@
+Fuck off % idi nakhouî
+
+Sous % pod
+Près % blizko
+Loin % dalyeko
+Pendant % do
+Déjà % oujye
+Tout % vsyo
+Rien % nitchyego
+Pourquoi % potchyemou
+Parce que % potomou tchto
+
 Jour % dyen'
 Semaine % nyedyelya
 Mois % myesyats
@@ -5,7 +17,6 @@ Année % god
 Aujourd'hui % syegodnya
 Demain % zavtra
 Hier % vtchyera
-Maintenant % syeîtchas
 
 Couleur % tsvyet
 Bleu % siniî
@@ -15,41 +26,21 @@ Jaune % jyoltyî
 Noir % tchyornyî
 Blanc % byelyî
 
-Plus % bol'chye
-Moins % myen'chye
-Tout % vsyo
-Rien % nitchyego
 Quelque chose % tchto-to
 Quelqu'un % kto-to
 Personne (nobody) % nikto
+Peut-être % mojyet byt'
 Toujours (still) % vsyo yechchyo
 Encore (again) % yechchyo raz
 Encore (even) % yechchyo
-Pourquoi % potchyemou
-Parce que % potomou tchto
-Peut-être % mojyet byt'
 
-Pouvoir % motch'
-Marcher % khodit'
-Avoir besoin % noujdat'sya
-Savoir % znat'
-Penser % doumat'
-Croire % vyerit'
-Donner % dat'
-Travailler % rabotat'
-Aller % idti
 Venir % prikhodit'
 Prendre (un objet) % brat'
 Prendre (une douche, un taxi) % prinimat'
 Voir % vidyet'
-Apprendre % outchit'
-Aimer % lyubit'
-Vouloir % khotyet'
 Attendre % jdat'
-Parler % govorit'
 Écrire % pisat'
 Lire % tchitat'
-Devoir % doljyen
 Se nommer % zovout
 Demander (to ask) % sprosit'
 Demander (to request) % prosit'
@@ -72,19 +63,6 @@ Obtenir % poloutchit'
 Être d'accord % soglachat'sya
 Arriver % prikhodit'
 Bouger % dvigat'sya
-
-Mon % moî
-Ma % moya
-Mes % moi
-Ton/Son % tvoî/yego
-Ta/Sa % tvoya/yeyo
-Tes/Ses % tvoi/yego
-Notre (M) % nach
-Notre (F) % nacha
-No % nachi
-Votre/Leur (M) % vach/ikh
-Votre/Leur (F) % vacha/ikh
-Vos/Leurs % vachi/ikh
 
 Bien (M) % khorochiî
 Bien (F) % khorochaya
@@ -196,3 +174,16 @@ Internet % intyernyet
 Petit-déjeuner % zavtrak
 Déjeuner % obyed
 Dîner % oujin
+
+Maison % dom
+
+Premier % pyervyî
+Deuxième % vtoroy
+Troisième % tryetyî
+Quatrième % tchyetyortyî
+Cinquième % pyatyî
+Sixième % shestoî
+Septième % syedmoy
+Huitième % vosmoy
+Neuvième % dyevyatoy
+Dixième % dyesyatoy

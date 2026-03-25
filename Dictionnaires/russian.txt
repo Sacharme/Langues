@@ -14,11 +14,41 @@ Je % ya
 Tu % ty
 Il % on
 Elle % ona
-Ça % eto
+Ce % eto
+Cette % eta
 Nous % my
 Vous % vy
 Ils % oni
 Elles % oni
+
+Mon (M) % moî
+Ma % moya
+Mon (N) % moyo
+Mes % moi
+Ton (M) % tvoî
+Ta % tvoya
+Ton (N) % tvoyo
+Tes % tvoi
+Son (M) % yego
+Sa (M) % yego
+Son (N) (M) % yego
+Ses (M) % yego
+Son (F) % yeyo
+Sa (F) % yeyo
+Son (N) (F) % yeyo
+Ses (F) % yeyo
+Notre (M) % nach
+Notre (F) % nacha
+Notre (N) % nachye
+Nos % nachi
+Votre (M) % vach
+Votre (F) % vacha
+Votre (N) % vachye
+Vos % vachi
+Leur (M) % ikh
+Leur (F) % ikh
+Leur (N) % ikh
+Leurs % ikh
 
 Lundi % ponyedyel'nik
 Mardi % vtornik
@@ -46,6 +76,7 @@ Salut % privyet
 Au revoir % do svidaniya
 Oui % da
 Non % nyet
+Ne ... pas % nye
 Merci % spasibo
 De rien % nye za tchto
 S'il vous plaît % pojalouîsta
@@ -56,12 +87,50 @@ Et % i
 Donc % tak tchto
 Mais % no
 Sur % na
+Où % gdye
+Comment % kak
+Quand % kogda
+Quoi % tchto
+Combien % skol'ko
+Toujours % vsyegda
+Jamais % nikogda
+Dans % v
+Avec % s
+Sans % byez
+Pour % dlya
+De % iz
+Beaucoup % mnogo
+Peu % malo
+Ici % zdyes'
+Là-bas % tam
+Avant % do
+Après % poslye
+Aussi % tojye
+Maintenant % syeîtchas
+Plus % bol'chye
+Moins % myen'chye
+Qui % kto
 
 Être % byt'
 Avoir % imyet'
 Faire % dyelat'
 Manger % yest'
 Boire % pit'
+Pouvoir % motch'
+Avoir besoin % noujdat'sya
+Aller % idti
+Devoir % doljyen
+Vouloir % khotyet'
+Apprendre % outchit'
+Parler % govorit'
+Marcher % khodit'
+Savoir % znat'
+Penser % doumat'
+Croire % vyerit'
+Donner % dat'
+Travailler % rabotat'
+Aimer % lyubit'
+Trouver (Penser) % schitat'
 
 Beau % krasivyî
 Belle % krasivaya

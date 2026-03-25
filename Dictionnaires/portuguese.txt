@@ -1156,7 +1156,7 @@ Citron % limão
 Noix de coco % coco
 Pastèque % melancia
 
-Carotte % cenouraa
+Carotte % cenoura
 Tomate % tomate
 Salade % alface
 Oignon % cebola

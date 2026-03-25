@@ -800,6 +800,10 @@ class QuizApp:
         self.reponse_entry.focus()
 
     def generer_question_traduction(self):
+        import time
+        random.seed(time.time())               # 1ère seed : temps actuel
+        graine = random.randint(0, 10**9)      # nombre aléatoire intermédiaire
+        random.seed(graine)                    # 2ème seed : ce nombre lui-même
         self.index_aleatoire = random.randint(0, len(mots_francais) - 1)
 
         # Toujours français vers espagnol
