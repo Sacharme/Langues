@@ -2,9 +2,9 @@
 1 % odin
 2 % dva
 3 % tri
-4 % tchyetyrye
+4 % chyetyrye
 5 % pyat'
-6 % chyest'
+6 % shyest'
 7 % syem'
 8 % vosyem'
 9 % dyevyat'
@@ -37,14 +37,14 @@ Son (F) % yeyo
 Sa (F) % yeyo
 Son (N) (F) % yeyo
 Ses (F) % yeyo
-Notre (M) % nach
-Notre (F) % nacha
-Notre (N) % nachye
-Nos % nachi
-Votre (M) % vach
-Votre (F) % vacha
-Votre (N) % vachye
-Vos % vachi
+Notre (M) % nash
+Notre (F) % nasha
+Notre (N) % nashye
+Nos % nashi
+Votre (M) % vash
+Votre (F) % vasha
+Votre (N) % vashye
+Vos % vashi
 Leur (M) % ikh
 Leur (F) % ikh
 Leur (N) % ikh
@@ -53,11 +53,10 @@ Leurs % ikh
 Lundi % ponyedyel'nik
 Mardi % vtornik
 Mercredi % sryeda
-Jeudi % tchyetvyerg
+Jeudi % chyetvyerg
 Vendredi % pyatnitsa
 Samedi % soubbota
 Dimanche % voskryesyen'ye
-
 Janvier % yanvar'
 Février % fyevral'
 Mars % mart
@@ -70,6 +69,22 @@ Septembre % syentyabr'
 Octobre % oktyabr'
 Novembre % noyabr'
 Décembre % dyekabr'
+Jour % dyen'
+Semaine % nyedyelya
+Mois % myesyats
+Année % god
+Aujourd'hui % syegodnya
+Demain % zavtra
+Hier % vchyera
+Âge % vozrast
+
+Couleur % tsvyet
+Bleu % siniî
+Rouge % krasnyî
+Vert % zyelyonyî
+Jaune % jyoltyî
+Noir % chyornyî
+Blanc % byelyî
 
 Bonjour % zdravstvouîtye
 Salut % privyet
@@ -78,19 +93,21 @@ Oui % da
 Non % nyet
 Ne ... pas % nye
 Merci % spasibo
-De rien % nye za tchto
+De rien % nye za chto
 S'il vous plaît % pojalouîsta
 Ça va ? % kak dyela
 Désolé % izvinitye
 Ou % ili
 Et % i
-Donc % tak tchto
+Donc % tak chto
 Mais % no
 Sur % na
 Où % gdye
 Comment % kak
 Quand % kogda
-Quoi % tchto
+Quoi % chto
+Que % chto
+Qui % kto
 Combien % skol'ko
 Toujours % vsyegda
 Jamais % nikogda
@@ -100,51 +117,74 @@ Sans % byez
 Pour % dlya
 De % iz
 Beaucoup % mnogo
-Peu % malo
+Peu (Quantité) % malo
 Ici % zdyes'
 Là-bas % tam
 Avant % do
 Après % poslye
 Aussi % tojye
-Maintenant % syeîtchas
-Plus % bol'chye
-Moins % myen'chye
-Qui % kto
+Maintenant % syeîchas
+Plus % bol'shye
+Moins % myen'shye
+Un peu (Adjectif) (Pretty) % nyemnogo
+
+Tic de language (genre) % tipo
+Fuck off % idi nakhouî
 
 Être % byt'
 Avoir % imyet'
 Faire % dyelat'
 Manger % yest'
 Boire % pit'
-Pouvoir % motch'
+Pouvoir % moch'
 Avoir besoin % noujdat'sya
 Aller % idti
 Devoir % doljyen
 Vouloir % khotyet'
-Apprendre % outchit'
+Apprendre % ouchit'
 Parler % govorit'
 Marcher % khodit'
-Savoir % znat'
+Savoir/Connaître % znat'
 Penser % doumat'
 Croire % vyerit'
 Donner % dat'
 Travailler % rabotat'
 Aimer % lyubit'
-Trouver (Penser) % schitat'
 
 Beau % krasivyî
 Belle % krasivaya
-Grand % bol'choî
-Grande % bol'chaya
+Grand % bol'shoî
+Grande % bol'shaya
 Petit % malyen'kiî
 Petite % malyen'kaya
 Facile (M) % lyogkiî
 Facile (F) % lyogkaya
-Heureux % stchastlivyî
-Heureuse % stchastlivaya
+Heureux % schastlivyî
+Heureuse % schastlivaya
 
 Pain % khlyeb
 Eau % voda
-Téléphone % tyelyefon
+Oeuf % yaîtso
+Lait % moloko
+Viande % myaso
+Fromage % syr
+Banane % banan
 
-Tic de language (genre) % tipo
+Nom % familiya
+Prénom % imya
+Numéro % nomyer
+Téléphone % tyelyefon
+Maison % dom
+Dieu % bog
+École % shkola
+
+Chien % sobaka
+Chat % koshka
+Oiseau % ptitsa
+
+Pays % strana
+Russie % rossiya
+France % frantsiya
+Chine % kitaî
+USA % ssha
+

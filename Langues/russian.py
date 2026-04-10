@@ -195,7 +195,7 @@ terminaisons = {
 
 # byt' (быть - être)
 terminaisons_byt = {
-    "présyent": ["-", "-", "-", "-", "-", "-"],
+    "présent": ["-", "-", "-", "-", "-", "-"],
     "passé": ["byl", "byla", "bylo", "byli"],
     "futur": ["boudou", "boudyech'", "boudyet", "boudyem", "boudyetye", "boudout"],
     "impératif": ["", "boud'", "", "", "boud'tye", ""],
@@ -205,7 +205,7 @@ terminaisons_byt = {
 
 # yest' (есть - manger)
 terminaisons_yest = {
-    "présyent": ["yem", "yech'", "yest", "yedim", "yeditye", "yedyat"],
+    "présent": ["yem", "yech'", "yest", "yedim", "yeditye", "yedyat"],
     "passé": ["yel", "yela", "yelo", "yeli"],
     "futur": ["boudou yest'", "boudyech' yest'", "boudyet yest'", "boudyem yest'", "boudyetye yest'", "boudout yest'"],
     "impératif": ["", "yech'", "", "", "yech'tye", ""],
@@ -215,7 +215,7 @@ terminaisons_yest = {
 
 # pit' (пить - boire)
 terminaisons_pit = {
-    "présyent": ["p'yu", "p'yoch'", "p'yot", "p'yom", "p'yotye", "p'yut"],
+    "présent": ["p'yu", "p'yoch'", "p'yot", "p'yom", "p'yotye", "p'yut"],
     "passé": ["pil", "pila", "pilo", "pili"],
     "futur": ["boudou pit'", "boudyech' pit'", "boudyet pit'", "boudyem pit'", "boudyetye pit'", "boudout pit'"],
     "impératif": ["", "pyeî", "", "", "pyeîtye", ""],
@@ -225,7 +225,7 @@ terminaisons_pit = {
 
 # dat' (дать - donner)
 terminaisons_dat = {
-    "présyent": ["dayu", "dayoch'", "dayot", "dadim", "daditye", "dadout"],
+    "présent": ["dayu", "dayoch'", "dayot", "dadim", "daditye", "dadout"],
     "passé": ["dal", "dala", "dalo", "dali"],
     "futur": ["dam", "dach'", "dast", "dadim", "daditye", "dadout"],
     "impératif": ["", "daî", "", "", "daîtye", ""],
@@ -236,7 +236,7 @@ terminaisons_dat = {
 
 # idti (идти - aller à pied)
 terminaisons_idti = {
-    "présyent": ["idou", "idyoch'", "idyot", "idyom", "idyotye", "idout"],
+    "présent": ["idou", "idyoch'", "idyot", "idyom", "idyotye", "idout"],
     "passé": ["chyol", "chla", "chlo", "chli"],
     "futur": ["boudou idti", "boudyech' idti", "boudyet idti", "boudyem idti", "boudyetye idti", "boudout idti"],
     "impératif": ["", "idi", "", "", "iditye", ""],
@@ -248,7 +248,7 @@ terminaisons_idti = {
 
 # motch' (мочь - pouvoir)
 terminaisons_motch = {
-    "présyent": ["mogou", "mojyech'", "mojyet", "mojyem", "mojyetye", "mogout"],
+    "présent": ["mogou", "mojyech'", "mojyet", "mojyem", "mojyetye", "mogout"],
     "passé": ["mog", "mogla", "moglo", "mogli"],
     "futur": ["smogou", "smojyech'", "smojyet", "smojyem", "smojyetye", "smogout"],
     "impératif": ["", "", "", "", "", ""],
@@ -258,7 +258,7 @@ terminaisons_motch = {
 
 # khotyet' (хотеть - vouloir)
 terminaisons_khotyet = {
-    "présyent": ["khotchou", "khotchyech'", "khotchyet", "khotim", "khotitye", "khotyat"],
+    "présent": ["khotchou", "khotchyech'", "khotchyet", "khotim", "khotitye", "khotyat"],
     "passé": ["khotyel", "khotyela", "khotyelo", "khotyeli"],
     "futur": ["boudou khotyet'", "boudyech' khotyet'", "boudyet khotyet'", "boudyem khotyet'", "boudyetye khotyet'", "boudout khotyet'"],
     "impératif": ["", "khoti", "", "", "khotitye", ""],
@@ -268,7 +268,7 @@ terminaisons_khotyet = {
 
 # brat' (брать - prendre)
 terminaisons_brat = {
-    "présyent": ["byerou", "byeryoch'", "byeryot", "byeryom", "byeryotye", "byerout"],
+    "présent": ["byerou", "byeryoch'", "byeryot", "byeryom", "byeryotye", "byerout"],
     "passé": ["bral", "brala", "bralo", "brali"],
     "futur": ["boudou brat'", "boudyech' brat'", "boudyet brat'", "boudyem brat'", "boudyetye brat'", "boudout brat'"],
     "impératif": ["", "byeri", "", "", "byeritye", ""],
@@ -279,7 +279,7 @@ terminaisons_brat = {
 
 # klast' (класть - mettre)
 terminaisons_klast = {
-    "présyent": ["kladou", "kladyoch'", "kladyot", "kladyom", "kladyotye", "kladout"],
+    "présent": ["kladou", "kladyoch'", "kladyot", "kladyom", "kladyotye", "kladout"],
     "passé": ["klal", "klala", "klalo", "klali"],
     "futur": ["boudou klast'", "boudyech' klast'", "boudyet klast'", "boudyem klast'", "boudyetye klast'", "boudout klast'"],
     "impératif": ["", "kladi", "", "", "kladitye", ""],
@@ -290,7 +290,7 @@ terminaisons_klast = {
 
 # stanovit'sya (становиться - devenir)
 terminaisons_stanovitsya = {
-    "présyent": ["stanovlyous'", "stanovich'sya", "stanovitsya", "stanovimsya", "stanovites'", "stanovyatsya"],
+    "présent": ["stanovlyous'", "stanovich'sya", "stanovitsya", "stanovimsya", "stanovites'", "stanovyatsya"],
     "passé": ["stanovilsya", "stanovilas'", "stanovilos'", "stanovilis'"],
     "futur": ["boudou stanovit'sya", "boudyech' stanovit'sya", "boudyet stanovit'sya", "boudyem stanovit'sya", "boudyetye stanovit'sya", "boudout stanovit'sya"],
     "impératif": ["", "stanovis'", "", "", "stanovites'", ""],
@@ -300,7 +300,7 @@ terminaisons_stanovitsya = {
 
 # noujdat'sya (нуждаться - avoir besoin)
 terminaisons_noujdatsya = {
-    "présyent": ["noujdayous'", "noujdayech'sya", "noujdayetsya", "noujdayemsya", "noujdayetes'", "noujdayutsya"],
+    "présent": ["noujdayous'", "noujdayech'sya", "noujdayetsya", "noujdayemsya", "noujdayetes'", "noujdayutsya"],
     "passé": ["noujdalsya", "noujdalas'", "noujdalos'", "noujdalis'"],
     "futur": ["boudou noujdat'sya", "boudyech' noujdat'sya", "boudyet noujdat'sya", "boudyem noujdat'sya", "boudyetye noujdat'sya", "boudout noujdat'sya"],
     "impératif": ["", "noujdaîsya", "", "", "noujdaîtes'", ""],
@@ -310,7 +310,7 @@ terminaisons_noujdatsya = {
 
 # soglachat'sya (соглашаться - être d'accord)
 terminaisons_soglachatsya = {
-    "présyent": ["soglachayous'", "soglachayech'sya", "soglachayetsya", "soglachayemsya", "soglachayetes'", "soglachayutsya"],
+    "présent": ["soglachayous'", "soglachayech'sya", "soglachayetsya", "soglachayemsya", "soglachayetes'", "soglachayutsya"],
     "passé": ["soglachalsya", "soglachalas'", "soglachalos'", "soglachalis'"],
     "futur": ["boudou soglachat'sya", "boudyech' soglachat'sya", "boudyet soglachat'sya", "boudyem soglachat'sya", "boudyetye soglachat'sya", "boudout soglachat'sya"],
     "impératif": ["", "soglacha îsya", "", "", "soglacha îtes'", ""],
@@ -320,7 +320,7 @@ terminaisons_soglachatsya = {
 
 # dvigat'sya (двигаться - bouger)
 terminaisons_dvigatsya = {
-    "présyent": ["dvigayous'", "dvigayech'sya", "dvigayetsya", "dvigayemsya", "dvigayetes'", "dvigayutsya"],
+    "présent": ["dvigayous'", "dvigayech'sya", "dvigayetsya", "dvigayemsya", "dvigayetes'", "dvigayutsya"],
     "passé": ["dvigalsya", "dvigalas'", "dvigalos'", "dvigalis'"],
     "futur": ["boudou dvigat'sya", "boudyech' dvigat'sya", "boudyet dvigat'sya", "boudyem dvigat'sya", "boudyetye dvigat'sya", "boudout dvigat'sya"],
     "impératif": ["", "dvigaîsya", "", "", "dvigaîtes'", ""],
@@ -1049,9 +1049,9 @@ class QuizApp:
         mots_russes.clear()
 
         if dictionnaire == 1:
-            fichier_dict = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_russian.txt')
+            fichier_dict = os.path.join(BASE_DIR, 'Dictionnaires', 'russian.txt')
         else:
-            fichier_dict = os.path.join(BASE_DIR, 'Dictionnaires', 'dictionnaire_russian_sample.txt')
+            fichier_dict = os.path.join(BASE_DIR, 'Dictionnaires', 'russian_sample.txt')
 
         try:
             with open(fichier_dict, 'r', encoding='utf-8') as fichier:
