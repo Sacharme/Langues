@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 # ============== CONFIGURATION ==============
-AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde
+AUTO_SAVE_THRESHOLD = 100  # Nombre d'essais avant auto-sauvegarde (dictionnaire complet)
+SAMPLE_MULTIPLIER = 25  # Multiplicateur pour le mode échantillon (25 * nb mots)
 
 # Objectifs par catégorie (%)
 GOALS = {
@@ -56,6 +57,19 @@ mots_espagnols = []
 
 # Chemin de base pour les fichiers (racine du projet)
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Chemin du fichier échantillon (pour compter les mots)
+fichier_sample = os.path.join(base_dir, 'Dictionnaires', 'spanish_sample.txt')
+
+# Compter le nombre de mots dans le fichier échantillon
+nb_mots_sample = 0
+try:
+    with open(fichier_sample, 'r', encoding='utf-8') as f:
+        for ligne in f:
+            if '%' in ligne.strip():
+                nb_mots_sample += 1
+except FileNotFoundError:
+    nb_mots_sample = 0
 
 # Choix du fichier dictionnaire en fonction de la variable
 if dictionnaire == 1:
@@ -584,6 +598,12 @@ class QuizApp:
         self.current_category = get_current_category()
         self.has_saved = False
 
+        # Variables pour le mode révision
+        self.revision_queue = []       # file d'attente des indices à réviser
+        self.revision_errors = []      # indices des mots ratés dans le tour actuel
+        self.revision_current_idx = 0  # position dans la file d'attente
+        self.revision_round = 0        # numéro du tour de révision
+
         self.setup_ui()
         self.nouvelle_question()
 
@@ -778,6 +798,13 @@ class QuizApp:
         # Remettre le fond neutre
         self.root.configure(bg='#454545')
 
+        # Mode révision
+        if training_type == 3:
+            self.mode_actuel = 'revision'
+            self.generer_question_revision()
+            self.reponse_entry.focus()
+            return
+
         # Choix du type de question selon training_type
         if training_type == 0:
             # Utiliser la proportion du curseur pour choisir entre conjugaison et traduction
@@ -814,6 +841,62 @@ class QuizApp:
         self.conjugaison_frame.pack_forget()
         self.question_label.pack(pady=20)
         self.question_label.config(text=f"\n\n{mot_affiche}", foreground="#d6c124")  # Rouge par exemple
+
+    def init_revision(self):
+        """Initialise le mode révision avec tous les mots dans l'ordre du fichier"""
+        self.revision_queue = list(range(len(mots_francais)))
+        self.revision_errors = []
+        self.revision_current_idx = 0
+        self.revision_round = 1
+        self.total_questions = 0
+        self.correct_answers = 0
+        self.update_percentage_display()
+
+    def generer_question_revision(self):
+        """Génère la prochaine question en mode révision"""
+        # Si la queue est vide, initialiser
+        if not self.revision_queue:
+            self.init_revision()
+
+        # Si on a parcouru toute la queue actuelle
+        if self.revision_current_idx >= len(self.revision_queue):
+            if self.revision_errors:
+                # Il reste des erreurs : nouveau tour avec seulement les mots ratés
+                self.revision_queue = self.revision_errors[:]
+                self.revision_errors = []
+                self.revision_current_idx = 0
+                self.revision_round += 1
+            else:
+                # Tout est juste ! Révision terminée
+                self.conjugaison_frame.pack_forget()
+                self.question_label.pack(pady=20)
+                self.question_label.config(
+                    text=f"\n\nRévision terminée !\n{self.correct_answers}/{self.total_questions}",
+                    foreground="#2bc46c"
+                )
+                self.bonne_reponse = None
+                self.valider_btn.config(state="disabled")
+                self.reponse_entry.config(state="disabled")
+                return
+
+        # Récupérer l'index du mot actuel
+        word_index = self.revision_queue[self.revision_current_idx]
+        mot_affiche = mots_francais[word_index]
+        self.bonne_reponse = mots_espagnols[word_index]
+        self.index_aleatoire = word_index
+
+        # Masquer le frame de conjugaison et afficher le label simple
+        self.conjugaison_frame.pack_forget()
+        self.question_label.pack(pady=20)
+
+        # Afficher le numéro du mot et le tour
+        position = self.revision_current_idx + 1
+        total = len(self.revision_queue)
+        tour_info = f"Tour {self.revision_round} — " if self.revision_round > 1 else ""
+        self.question_label.config(
+            text=f"{tour_info}{position}/{total}\n\n{mot_affiche}",
+            foreground="#d6c124"
+        )
 
     def generer_question_conjugaison(self):
         # Choisir les verbes selon la variable conjugaison_irreguliers_seulement
@@ -883,30 +966,22 @@ class QuizApp:
             messagebox.showwarning("Attention", "Veuillez entrer une réponse!")
             return
 
-        if self.mode_actuel == 'traduction':
+        if self.mode_actuel == 'revision':
+            # Vérification pour le mode révision (même logique que traduction)
+            resultat = self._evaluer_traduction(reponse_utilisateur)
+            self.afficher_resultat(resultat)
+
+            # Gérer la progression de la révision
+            if resultat == "echec":
+                word_index = self.revision_queue[self.revision_current_idx]
+                if word_index not in self.revision_errors:
+                    self.revision_errors.append(word_index)
+            self.revision_current_idx += 1
+
+        elif self.mode_actuel == 'traduction':
             # Vérification pour la traduction (toujours français vers espagnol)
-            try:
-                index_reponse = mots_espagnols.index(reponse_utilisateur)
-                if index_reponse == self.index_aleatoire:
-                    self.afficher_resultat("succes")
-                else:
-                    # Vérifier si c'est juste une erreur d'accent
-                    reponse_sans_accents = self.normaliser_texte(reponse_utilisateur)
-                    bonne_reponse_sans_accents = self.normaliser_texte(self.bonne_reponse)
-
-                    if reponse_sans_accents == bonne_reponse_sans_accents:
-                        self.afficher_resultat("presque")
-                    else:
-                        self.afficher_resultat("echec")
-            except ValueError:
-                # Vérifier si c'est juste une erreur d'accent
-                reponse_sans_accents = self.normaliser_texte(reponse_utilisateur)
-                bonne_reponse_sans_accents = self.normaliser_texte(self.bonne_reponse)
-
-                if reponse_sans_accents == bonne_reponse_sans_accents:
-                    self.afficher_resultat("presque")
-                else:
-                    self.afficher_resultat("echec")
+            resultat = self._evaluer_traduction(reponse_utilisateur)
+            self.afficher_resultat(resultat)
         else:
             # Vérification pour la conjugaison
             if reponse_utilisateur.lower() == self.bonne_reponse.lower():
@@ -928,11 +1003,33 @@ class QuizApp:
         self.valider_btn.config(state="disabled", text="Valider")
         self.reponse_entry.config(state="disabled")
 
-        # Vérifier auto-save
-        self.check_auto_save()
+        # Vérifier auto-save (pas en mode révision)
+        if training_type != 3:
+            self.check_auto_save()
 
         # Passer automatiquement à la question suivante après 750ms
         self.root.after(750, self.nouvelle_question)
+
+    def _evaluer_traduction(self, reponse_utilisateur):
+        """Évalue une réponse de traduction et retourne le résultat"""
+        try:
+            index_reponse = mots_espagnols.index(reponse_utilisateur)
+            if index_reponse == self.index_aleatoire:
+                return "succes"
+            else:
+                reponse_sans_accents = self.normaliser_texte(reponse_utilisateur)
+                bonne_reponse_sans_accents = self.normaliser_texte(self.bonne_reponse)
+                if reponse_sans_accents == bonne_reponse_sans_accents:
+                    return "presque"
+                else:
+                    return "echec"
+        except ValueError:
+            reponse_sans_accents = self.normaliser_texte(reponse_utilisateur)
+            bonne_reponse_sans_accents = self.normaliser_texte(self.bonne_reponse)
+            if reponse_sans_accents == bonne_reponse_sans_accents:
+                return "presque"
+            else:
+                return "echec"
 
     def afficher_resultat(self, resultat):
         """Affiche le résultat en changeant la couleur de fond de toute la fenêtre"""
@@ -1054,8 +1151,12 @@ class QuizApp:
         """Change le type d'entraînement"""
         global training_type
 
-        # Cycle entre 0, 1, 2
-        training_type = (training_type + 1) % 3
+        # Cycle entre 0, 1, 2, 3
+        training_type = (training_type + 1) % 4
+        
+        # Si on entre en mode révision, initialiser la révision
+        if training_type == 3:
+            self.init_revision()
         
         # Vérifier si la catégorie a changé
         new_category = get_current_category()
@@ -1102,8 +1203,10 @@ class QuizApp:
             self.training_status.config(text="Mixte\n(25% conj / 75% trad)", foreground="#7c3aed")
         elif training_type == 1:
             self.training_status.config(text="Traduction\nuniquement", foreground="#dc2626")
-        else:
+        elif training_type == 2:
             self.training_status.config(text="Conjugaison\nuniquement", foreground="#ea580c")
+        elif training_type == 3:
+            self.training_status.config(text="Révision", foreground="#f59e0b")
 
         # Statut verbes irréguliers
         if verb_mode == 1:
@@ -1126,9 +1229,16 @@ class QuizApp:
         self.has_saved = False
         self.update_percentage_display()
     
+    def get_auto_save_threshold(self):
+        """Retourne le seuil d'auto-sauvegarde selon le dictionnaire utilisé"""
+        if dictionnaire == 2 and nb_mots_sample > 0:
+            return SAMPLE_MULTIPLIER * nb_mots_sample
+        return AUTO_SAVE_THRESHOLD
+
     def check_auto_save(self):
         """Vérifie si l'auto-sauvegarde doit être déclenchée - quitte automatiquement"""
-        if self.total_questions >= AUTO_SAVE_THRESHOLD and not self.has_saved:
+        threshold = self.get_auto_save_threshold()
+        if self.total_questions >= threshold and not self.has_saved:
             self.save_progress()
             # Force exit in case save_progress didn't exit
             self.root.quit()

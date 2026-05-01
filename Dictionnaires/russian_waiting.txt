@@ -1,1523 +1,1503 @@
-11 % 
-12 % 
-13 % 
-14 % 
-15 % 
-16 % 
-17 % 
-18 % 
-19 % 
-
-20 % 
-21 % 
-22 % 
-23 % 
-24 % 
-25 % 
-30 % 
-40 % 
-50 % 
-60 % 
-70 % 
-80 % 
-90 % 
-100 % 
-
-200 % 
-300 % 
-400 % 
-500 % 
-600 % 
-700 % 
-800 % 
-900 % 
-1 000 % 
-10 000 % 
-100 000 % 
-1 000 000 % 
 
 
-Matin % 
-Après-midi % 
-Soir % 
-Nuit % 
-Seconde % 
-Minute % 
-Heure % 
-
-Fois % 
-Temps % 
-Bientôt % 
-Tôt % 
-Tard % 
-
-Bleue % 
-Rouge (F) % 
-Verte % 
-Jaune (F) % 
-Noire % 
-Blanche % 
-Orange % 
-Violet % 
-Violette % 
-Rose % 
-Gris % 
-Grise % 
-
-Près % 
-Loin % 
-Gauche % 
-Droite % 
-Il y a % 
-Au dessus % 
-En dessous % 
-Bon appétit % 
-Devant % 
-Derrière % 
-
-Pendant que % 
-Chaque % 
-Tout % 
-Tous % 
-Si % 
-Déjà % 
-Donc % 
-Pourquoi % 
-
-Toujours (always) % 
-Toujours (still) % 
-Parce que % 
-En % 
-Dans (M Sing) % 
-Dans (F Sing) % 
-Dans (M Plur) % 
-Dans (F Plur) % 
-Plus (+) % 
-Par % 
-
-Même (M) (same) % 
-Même (F) (same) % 
-Même (even) % 
-Presque % 
-À % 
-Aucun % 
-Aucune % 
-Meilleur % 
-Meilleure % 
-Pire % 
-
-Autre (M) % 
-Autre (M) % 
-Quelque chose % 
-Quelqu'un % 
-Quelques (M) % 
-Quelques (F) % 
-Rien % 
-Dedans % 
-Dehors % 
-
-Encore (yet) % 
-Encore (again) % 
-Depuis % 
-Parfois % 
-Peut-être % 
-À propos % 
-Jusqu'à % 
-Trop % 
-Pas assez % 
-Assez % 
-
-À partir de % 
-Personne (nobody) % 
-Personne (somebody) % 
-Comme ça % 
-Bien sûr % 
-Outre % 
-Seulement % 
-tant (so) % 
-Tant que % 
-Ensemble (together) % 
-
-Suivant % 
-Durant % 
-Au secours % 
-Précédent % 
-N'est-ce pas % 
-Côté (side) % 
-Juste (only) % 
-Tout droit % 
-Plutôt que % 
-
-Attention (be careful) % 
-Au moins % 
-Au plus % 
-Autant que % 
-Restant % 
-Au cause de % 
-Grâce à % 
-Sauf % 
-Contre (against) % 
-
-Il y avait % 
-Il y aura % 
-Il y aurait % 
-Soudainement % 
-Lentement % 
-Sinon % 
-Moitié % 
-Malgré % 
-Entre % 
-
-À côté % 
-Sous % 
-Vers % 
-À peine % 
-D'ailleurs % 
-Allo % 
-Autour % 
-Quelconque % 
-D'affilés % 
-Aussitôt que % 
-Nulle part % 
-
-Selon % 
-Bref % 
-Certainement % 
-Parmi % 
-À travers % 
-Dès que % 
-Au % 
-À la % 
-Récemment % 
-Actuellement % 
-
-Comme % 
-Dont % 
-Au lieu de % 
-Plus loin % 
-Soit (either) % 
-Vite (soon) % 
-Propre (own) % 
-C'est-à-dire % 
 
 
-Rester % 
-Venir % 
-Prendre (un objet) % 
-Prendre (une douche, un taxi) % 
-Voir % 
-Attendre % 
-Ouvrir % 
-Fermer % 
-Écrire % 
-Lire % 
 
-Se nommer % 
-Demander (to ask) % 
-Demander (to request) % 
-Répondre % 
+
+
+
+
+
+
+
+
+
+
+Penis % khouî
+Vagin % pîzda
+Baiser % yebat'
+Homme % moujchina
+Femme % jyenshshiny
+Enfant % ryebyenok
+Garçon (sexe) % muzhskoy
+Fille (sexe) % zhenskiy
+
+
+
+
+
+
+11 % odinnadtsat'
+12 % dvyenadtsat'
+13 % trinadtsat'
+14 % chyetyrnadtsat'
+15 % pyatnadtsat'
+16 % shyestnadtsat'
+17 % syemnadtsat'
+18 % vosyemnadtsat'
+19 % dyevyatnadtsat'
+
+20 % dvadtsat'
+21 % dvadtsat' odin
+22 % dvadtsat' dva
+23 % dvadtsat' tri
+24 % dvadtsat' chyetyrye
+25 % dvadtsat' pyat'
+30 % tridtsat'
+40 % sorok
+50 % pyat'dyesyat
+60 % shyest'dyesyat
+70 % syem'dyesyat
+80 % vosyem'dyesyat
+90 % dyevyanosto
+100 % sto
+
+200 % dvyesti
+300 % trista
+400 % chyetyryesta
+500 % pyat'sot
+600 % shyest'sot
+700 % syem'sot
+800 % vosyem'sot
+900 % dyevyat'sot
+1 000 % tysyacha
+10 000 % dyesyat' tysyach
+100 000 % sto tysyach
+1 000 000 % million
+
+
+Matin % outro
+Après-midi % poldyen'
+Soir % vyechyer
+Nuit % noch'
+Seconde % vtoroî
+Minute % minouta
+Heure % chas
+
+Fois % vryemya
+Temps % vryemya
+Bientôt % skoro
+Tôt % rano
+Tard % pozdno
+
+Bleue % siniî
+Rouge (F) % krasnyî
+Verte % zyelyenyî
+Jaune (F) % jyeltyî
+Noire % chyernyî
+Blanche % byelyî
+Orange % apyel'sin
+Violet % fiolyetovyî
+Violette % fiolyetovyî
+Rose % rozovyî
+Gris % syeryî
+Grise % syeryî
+
+
+
+
+
+
+
+
+
+Près % zakryvat'
+Loin % dalyeko
+Il y a % yest'
+Au dessus % vyshye
+En dessous % nijye
+Bon appétit % naslajdaîtyes' yedoî
+Devant % spyeryedi
+Derrière % pozadi
+
+Même % dajye
+Presque % pochti
+À % imyeyet
+Aucun % nikto
+Aucune % nikto
+Meilleur % louchshiî
+Meilleure % louchshiî
+Pire % khoudshiî
+
+Autre (M) % drougoî
+Autre (M) % drougoî
+Quelque chose % chto-niboud'
+Quelqu'un % kto-to
+Quelques (M) % nyeskol'ko
+Quelques (F) % nyeskol'ko
+Dedans % vnoutri
+Dehors % vnye
+
+Encore (yet) % snova
+Encore (again) % snova
+Parfois % inogda
+Peut-être % mojyet byt'
+À propos % o
+Trop % slishkom
+Pas assez % nyedostatochno
+Assez % dostatochno
+
+À partir de % ot
+Personne (nobody) % chyelovyek
+Personne (somebody) % chyelovyek
+Comme ça % vot tak
+Bien sûr % konyechno
+Outre % kromye
+Seulement % tol'ko
+tant (so) % tak mnogo
+Tant que % poka
+Ensemble (together) % vmyestye
+
+Suivant % slyedouyushshiî
+Durant % v tyechyeniye
+Au secours % pomoshsh'
+Précédent % pryedydoushshiî
+N'est-ce pas % nye tak li?
+Côté (side) % storona
+Juste (only) % tol'ko
+Tout droit % pryamo
+Plutôt que % skoryeye, chyem
+
+Attention (be careful) % vnimaniye
+Au moins % po myen'shyeî myerye
+Au plus % maksimoum
+Autant que % stol'ko, skol'ko
+Restant % ostavshiîsya
+Au cause de % iz-za
+Grâce à % blagodarya
+Sauf % kromye
+Contre (against) % protiv
+
+Il y avait % tam bylo
+Il y aura % boudyet
+Il y aurait % bylo by
+Soudainement % vnyezapno
+Lentement % myedlyenno
+Sinon % v protivnom slouchaye
+Moitié % polovina
+Malgré % nyesmotrya na
+Entre % myejdou
+
+À côté % ryadom s
+Sous % nijye
+Vers % k
+À peine % yedva
+D'ailleurs % kromye
+Allo % privyet
+Autour % vokroug
+Quelconque % lyuboî
+D'affilés % podryad
+Aussitôt que % kak tol'ko
+Nulle part % nigdye
+
+Selon % v sootvyetstvii s
+Bref % kratkiî
+Certainement % konyechno
+Parmi % sryedi
+À travers % chyeryez
+Dès que % kak tol'ko
+Au % v
+À la % k
+Récemment % nyedavno
+Actuellement % v nastoyashshyeye vryemya
+
+
+Dont % iz kotorykh
+Au lieu de % vmyesto
+Plus loin % dal'shye
+Soit (either) % ili
+Propre (own) % sobstvyennyî
+C'est-à-dire % to yest'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Écrire % napisat'
+Lire % chitat'
+Rester % ostavat'sya
+Essayer % poprobovat'
+Se nommer % nazovitye syebya
+Demander % prosit'
+Répondre % otvyechat'
+Regarder % smotryet'
+Acheter % koupit'
+Vendre % prodavat'
+Couper % ryezat'
+
+Tirer % vytashshit'
+Pousser % tolkat'
+Dormir % spat'
+Vivre % jit'
+Mourir % oumyeryet'
+Apporter/Ammener % prinyesi
+Emporter/Emmener % zabrat'
+Comprendre % ponyat'
+Montrer % pokazat'
+Casser % slomat'
+
+Voler (steal) % lyetat'
+Voler (fly) % lyetat'
+Arrêter % ostanavlivat'sya
+Nager % plavat'
+Écouter % sloushat'
+Entendre % slyshat'
+Jouer (aux jeux vidéos) % igrat'
+Jouer (en général) % igrat'
+
+Éteindre % vyklyuchat'
+Allumer % zajyech'
+Uriner % mochit'sya
+Payer % platit'
+Détester % nyenavidyet'
+Oublier % zabyvat'
+Commencer % dlya nachala
+Terminer (t) % zakonchit'
+Terminer (a) % zakonchit'
+
+Gagner % zarabatyvat'
+Perdre % tyeryat'
+Organiser/Réparer % organizovat' / otryemontirovat'
+Agir % dyeîstvovat'
+Revenir % vyernout'sya
+Refuser % mousor
+Crier % krichat'
+Sauver % sokhranyat'
+
+Jeter % brosat'
+Sauter % pryjok
+Devenir % stanovit'sya
+Mentir % loj'
+Se souvenir % pomnit'
+Laisser % ouîti
+Embrasser % potsyelovat'
+Choisir % vybirat'
+Changer % izmyenit'
+
+Aider % pomoshsh'
+Prétendre % pritvoryat'sya
+Inventer % izobryetat'
+Prendre soin % zabotit'sya
+Suivre % slyedovat'
+Porter (to wear) % nyesti
+Porter (to carry) % nyesti
+Penser (trouver) % doumat'
+Envoyer % otpravlyat'
+Obtenir % polouchat'
+Être d'accord % soglashat'sya
+
+Espérer % nadyeyat'sya
+Exister % soushshyestvovat'
+Expliquer % ob"yasnyat'
+Coller % palka
+Danser % tantsyevat'
+Chanter % pyet'
+Echanger % obmyenyat'
+Arriver % priyezjat'
+Découvrir % obnaroujit'
+Tourner % povyernout'
+Toucher (verbe) % prikosnout'sya
+
+Manquer % skouchat'
+Empêcher % pryedotvratit'
+Bouger % pyeryemyestit'
+Répandre % rasprostranyeniye
+Tomber % padat'
+Remercier % blagodarit'
+Faire confiance % dovyeryat'
+Parier (bet) % stavka
+Prendre (une photo) % brat'
+
+Sourir % oulybka
+Pleurer % plakat'
+Assembler % sobrat'
+Décider % ryeshat'
+Servir % sloujit'
+Fonctionner % founktsiya
+Deviner % pryedpolagat'
+Naître % rodit'sya
+Placer % myesto
+Garder % dyerjat'
+Maintenir % poddyerjivat'
+
+Grandir % rasti
+Protéger % zashshishshat'
+Promettre % obyeshshat'
+Préparer % podgotovit'
+Confondre % zapoutat'
+Admirer % voskhishshat'sya
+Prier % molit'sya
+Courrir % byegat'
+Sentir (to feel) % chouvstvovat'
+Se passer (to happen) % slouchat'sya
+
+Télécharger % skachat'
+Cacher % skryvat'
+Tenir % dyerjat'
+Créer % sozdavat'
+Contenir % sodyerjat'
+Respirer % dyshat'
+Déplacer % dvigat'sya
+Se moquer % razvlyekaîtyes'
+S'échapper % pobyeg
+Vivre (habiter) % jit'
+
+Apparaître % poyavlyat'sya
+Disparaître (d) % propadat'
+Disparaître (s) % propadat'
+Déchirer % rvat'
+Mélanger % smyeshivaniye
+Continuer % prodoljat'
+Remplir % napolnyat'
+Vider % poustoî
+Vomir % rvat'
+Respecter % ouvajat'
+Autoriser % avtorizovat'
 Mettre % 
-Regarder (to look) % 
-Regarder (to watch) % 
-Dire % 
-Acheter % 
-Vendre % 
-Couper % 
-
-Tirer % 
-Pousser % 
-Dormir % 
-Vivre % 
-Mourir % 
-Apporter/Ammener % 
-Emporter/Emmener % 
-Comprendre % 
-Montrer % 
-Casser % 
-
-Voler (steal) % 
-Voler (fly) % 
-Arrêter % 
-Nager % 
-Écouter % 
-Entendre % 
-Jouer (aux jeux vidéos) % 
-Jouer (en général) % 
-
-Éteindre % 
-Allumer % 
-Uriner % 
-Payer % 
-Détester % 
-Oublier % 
-Commencer % 
-Terminer (t) % 
-Terminer (a) % 
-
-Gagner % 
-Perdre % 
-Organiser/Réparer % 
-Agir % 
-Revenir % 
-Refuser % 
-Mériter % 
-Crier % 
-Sauver % 
-
-Jeter % 
-Sauter % 
-Essayer % 
-Devenir % 
-Mentir % 
-Se souvenir % 
-Laisser % 
-Embrasser % 
-Choisir % 
-Changer % 
-
-Aider % 
-Prétendre % 
-Inventer % 
-Prendre soin % 
-Suivre % 
-Porter (to wear) % 
-Porter (to carry) % 
-Penser (trouver) % 
-Envoyer % 
-Obtenir % 
-Être d'accord % 
-
-Espérer % 
-Exister % 
-Expliquer % 
-Coller % 
-Danser % 
-Chanter % 
-Echanger % 
-Arriver % 
-Découvrir % 
-Tourner % 
-Toucher (verbe) % 
-
-Manquer % 
-Empêcher % 
-Bouger % 
-Répandre % 
-Tomber % 
-Remercier % 
-Faire confiance % 
-Parier (bet) % 
-Prendre (une photo) % 
-
-Sourir % 
-Pleurer % 
-Assembler % 
-Décider % 
-Servir % 
-Fonctionner % 
-Deviner % 
-Naître % 
-Placer % 
-Garder % 
-Maintenir % 
-
-Grandir % 
-Protéger % 
-Promettre % 
-Préparer % 
-Confondre % 
-Admirer % 
-Prier % 
-Courrir % 
-Sentir (to feel) % 
-Se passer (to happen) % 
-
-Télécharger % 
-Cacher % 
-Tenir % 
-Créer % 
-Contenir % 
-Respirer % 
-Déplacer % 
-Se moquer % 
-S'échapper % 
-Vivre (habiter) % 
-
-Apparaître % 
-Disparaître (d) % 
-Disparaître (s) % 
-Déchirer % 
-Mélanger % 
-Continuer % 
-Remplir % 
-Vider % 
-Vomir % 
-Respecter % 
-Autoriser % 
-
-Permettre % 
-Interdire % 
-Interdire % 
-Sécher % 
-Mouiller % 
-Accéder % 
-Chuchoter % 
-Partager (c) % 
-Partager (p) % 
-Rêver % 
-Développer % 
-
-Comparer % 
-Tricher % 
-Copier % 
-Ajouter % 
-Observer % 
-Espionner % 
-Abandonner % 
-Démissionner % 
-Douter % 
-Juger % 
-Répéter % 
-
-Conduire % 
-Paniquer % 
-Monter % 
-Descendre % 
-S'asseoir % 
-Préférer % 
-Risquer % 
-Remplacer % 
-Augmenter % 
-Soutenir % 
-Utiliser % 
-
-Avoir faim % 
-S'inquiéter % 
-Retourner % 
-Avoir soif % 
-Trouver (to find) % 
-Se venger % 
-Tuer % 
-Accompagner % 
-Réserver % 
-Sonner % 
-
-Pratiquer % 
-Oser % 
-Intéresser % 
-Enseigner % 
-Déguiser % 
-Approcher % 
-Cliquer % 
-Convaincre % 
-Jurer % 
-
-Chasser (to hunt) % 
-Défendre % 
-Attaquer % 
-Gâcher % 
-S'éloigner % 
-Prédire % 
-Échouer % 
-Lâcher % 
-Exagérer % 
-Surprendre % 
-
-Récupérer % 
-Voter % 
-Soulager % 
-Réduire % 
-Diminuer % 
-Survivre % 
-Tendre % 
-Se dépêcher % 
-Conseiller % 
-Lier % 
-
-Récompenser % 
-Croquer % 
-Profiter % 
-Punir % 
-Souffrir % 
-Énerver / Faire chier % 
-Faire pitié (dar) % 
-Faire pitié (fazer) % 
-Concerner % 
-Regretter % 
-
-Exciter % 
-Prévenir % 
-S'entraîner (physique) % 
-S'entraîner (général) % 
-Avancer % 
-Fair exprès % 
-Se battre % 
-Séparer % 
-Partir % 
-Piéger/Duper % 
-Supporter (to cheer) % 
-
-Supprimer % 
-Ralentir % 
-Accélérer % 
-Définir % 
-Décrire % 
-Guider % 
-Programmer % 
-Motiver % 
-Choquer % 
-Alterner % 
-
-Présenter % 
-Se tromper % 
-Habituer % 
-Câliner % 
-Fumer % 
-Insulter (formel) % 
-Insulter (informel) % 
-Annuler % 
-Avoir l'habitude % 
-
-Galérer (to struggle) % 
-Arnaquer % 
-Contrôler % 
-Sélectionner % 
-Influencer % 
-Coincer (physique) % 
-Coincer (stratégique) % 
-Hésiter % 
-Rembourser % 
-
-Rechercher % 
-Harceler % 
-Se plaindre % 
-Évaluer % 
-Cultiver % 
-Menacer % 
-Attirer % 
-Empoisonner % 
-Pardonner % 
-Rassurer % 
-
-Prouver % 
-Insister % 
-Trahir % 
-Exclure % 
-Imaginer % 
-Grossir % 
-Maigrir % 
-
-Adopter % 
-Dépenser % 
-Impacter % 
-Élever % 
-Résoudre % 
-Étonner % 
-Afficher % 
-Se la péter % 
-Supporter/En pouvoir % 
-
-Passioner % 
-Posséder % 
-Brûler % 
-Déchiffrer % 
-Restreindre % 
-Appartenir % 
-Moisir % 
-Frotter % 
-Peindre % 
-
-Apprécier % 
-Inonder % 
-Se lever % 
-Louer % 
-Enlever % 
-Retirer % 
-Réunir % 
-Déclarer % 
-
-Critiquer % 
-Tousser % 
-Ronfler % 
-Péter % 
-Inviter % 
-Se demander % 
-
-Moi (Pronom Tonique) % 
-Toi (Pronom Tonique) % 
-Lui (Pronom Tonique) % 
-Elle (Pronom Tonique) % 
-Nous (Pronom Tonique) % 
-Vous (Pronom Tonique) % 
-Eux (Pronom Tonique) % 
-Elles (Pronom Tonique) % 
-
-Me (Pronom Réfléchi) % 
-Te (Pronom Réfléchi) % 
-Se (Pronom Réfléchi) % 
-Le (Pronom Réfléchi) % 
-La (Pronom Réfléchi) % 
-Nous (Pronom Réfléchi) % 
-Vous (Pronom Réfléchi) % 
-
-Moi-même (M) % 
-Moi-même (F) % 
-Toi-même (M) % 
-Toi-même (F) % 
-Lui-même % 
-Elle-même % 
-Nous-mêmes (M) % 
-Nous-mêmes (F) % 
-Vous-mêmes (M) % 
-Vous-mêmes (F) % 
-Eux-mêmes % 
-Elles-mêmes % 
-
-Moche (M) % 
-Moche (F) % 
-Triste % 
-Chaud % 
-Froid % 
-Froide % 
-Reposé % 
-Reposée % 
-Fatigué % 
-Fatiguée % 
-
-Nouveau % 
-Nouvelle % 
-Ancien % 
-Ancienne % 
-Jeune % 
-Vieux % 
-Vieille % 
-Cher % 
-Chère % 
-Bon marché (M) % 
-Bon marché (F) % 
-
-Propre (M) % 
-Propre (F) % 
-Sale (M) % 
-Sale (F) % 
-Rapide (M) % 
-Rapide (F) % 
-Lent % 
-Lente % 
-Gentil % 
-Méchant % 
-Méchante % 
-
-Intelligent % 
-Débile (M) % 
-Débile (F) % 
-Gros % 
-Grosse % 
-Riche (M) % 
-Riche (F) % 
-Pauvre % 
-Possible % 
-
-Impossible % 
-Souvent % 
-Rare (M) % 
-Rare (F) % 
-Lourd % 
-Lourde % 
-Léger % 
-Légère % 
-Libre % 
-Obligatoire % 
-
-Plein % 
-Pleine % 
-Vide (M) % 
-Vide (F) % 
-Parfait % 
-Parfaite % 
-Incroyable % 
-Drôle (M) % 
-Drôle (F) % 
-Sérieux % 
-Sérieuse % 
-
-Évident % 
-Discret % 
-Discrète % 
-Mignon % 
-Mignonne % 
-Premier % 
-Première % 
-Dernier % 
-Dernière % 
-Calme (M) % 
-Calme (F) % 
-
-Long % 
-Longue % 
-Court % 
-Courte % 
-Spécial % 
-Spéciale % 
-Ordinaire % 
-Timide (M) % 
-Timide (F) % 
-Prêt % 
-Prête % 
-
-Malade % 
-Malade % 
-Bourré (drunk) % 
-Bourrée (drunk) % 
-Vrai % 
-Vraie % 
-Faux % 
-Fausse % 
-Fort % 
-Forte % 
-Faible (M) % 
-Faible (F) % 
-
-Généreux % 
-Généreuse % 
-Égoïste % 
-Juste (fair) (M) % 
-Juste (fair) (F) % 
-Injuste (M) % 
-Injuste (F) % 
-En avance (M) % 
-En avance (F) % 
-En retard (M) % 
-En retard (F) % 
-
-Seul % 
-Seule % 
-Clair % 
-Claire % 
-Sombre (M) % 
-Sombre (F) % 
-Précis % 
-Précise % 
-Imprécis % 
-Imprécise % 
-
-Occupé % 
-Occupée % 
-Curieux % 
-Curieuse % 
-Curieuse % 
-Intéressant % 
-Intéressante % 
-Ennuyeux % 
-Ennuyeuse % 
-Étrange (M) % 
-Étrange (F) % 
-
-Anxieux % 
-Anxieuse % 
-Normal % 
-Normale % 
-Original % 
-Originale % 
-Autorisé % 
-Autorisée % 
-Interdit % 
-Interdite % 
-
-Important % 
-Importante % 
-Capable % 
-Incapable % 
-Soudain % 
-Soudaine % 
-Vivant % 
-Vivante % 
-Mort (adj) % 
-Morte (adj) % 
-
-Maigre (M) % 
-Maigre (F) % 
-Blessé % 
-Blessée % 
-Excellent % 
-Excellente % 
-Chiant % 
-Chiante % 
-
-Sec % 
-Sèche % 
-Mouillé % 
-Mouillée % 
-Entier % 
-Entière % 
-Certain % 
-Certaine % 
-Incertain % 
-Incertaine % 
-
-Fier % 
-Fière % 
-Deçu % 
-Deçue % 
-Principal % 
-Principale % 
-Réel % 
-Réelle % 
-Fictif % 
-Fictive % 
-
-Solide (M) % 
-Solide (F) % 
-Liquide (M) % 
-Liquide (F) % 
-Dangeureux % 
-Dangeureuse % 
-Fou % 
-Folle % 
-Utile % 
-Inutile % 
-Nécessaire (M) % 
-Nécessaire (F) % 
-
-Infini % 
-Infinie % 
-Fini % 
-Finie % 
-Impressionnant % 
-Impressionnante % 
-Simple % 
-Compliqué % 
-Compliquée % 
-
-Stressant % 
-Stressante % 
-Basique (M) % 
-Basique (F) % 
-Complexe (M) % 
-Complexe (F) % 
-Moderne (M) % 
-Moderne (F) % 
-
-Neutre (M) % 
-Neutre (F) % 
-Raciste % 
-Frais % 
-Fraîche % 
-Agréable % 
-Aléatoire (M) % 
-Aléatoire (F) % 
-
-Précieux % 
-Précieuse % 
-Grave % 
-Honteux % 
-Honteuse % 
-Doux % 
-Douce % 
-Gênant % 
-Gênante % 
-
-Pair % 
-Paire % 
-Impair % 
-Impaire % 
-Dégoûtant % 
-Dégoûtante % 
-Répugnant % 
-Répugnante % 
-National % 
-Nationale % 
-International % 
-Internationale % 
-
-Ridicule (M) % 
-Ridicule (F) % 
-Mou % 
-Molle % 
-Dur % 
-Dure % 
-Automatique (M) % 
-Automatique (F) % 
-Manuel % 
-Manuelle % 
-
-Général % 
-Générale % 
-Privé % 
-Privée % 
-Public % 
-Publique % 
-Efficace % 
-Concentré % 
-Concentrée % 
-Déconcentré % 
-Déconcentrée % 
-
-Jaloux % 
-Jalouse % 
-Logique (M) % 
-Logique (F) % 
-Illogique (M) % 
-Illogique (F) % 
-À l'aise % 
-Mal à l'aise % 
-Récent % 
-Récente % 
-Confortable % 
-Inconfortable % 
-
-Actuel % 
-Actuelle % 
-Fascinant % 
-Fascinante % 
-Matériel % 
-Matérielle % 
-Imaginaire (M) % 
-Imaginaire (F) % 
-
-Noble % 
-Ambitieux % 
-Ambitieuse % 
-Géant % 
-Géante % 
-Nain % 
-Naine % 
-Commercial % 
-Commerciale % 
-Faillible % 
-Infaillible % 
-
-Clair (obvious) % 
-Claire (obvious) % 
-Honnête (M) % 
-Honnête (F) % 
-Secret % 
-Secrète % 
-Enceinte % 
-Absent % 
-Absente % 
-
-Perdu % 
-Perdue % 
-Vulnérable % 
-Hypocrite % 
-Fameux/Connu % 
-Fameuse/Connue % 
-Spectaculaire % 
-Comparable % 
-Incomparable % 
-
-Aveugle (M) % 
-Aveugle (F) % 
-Sourd % 
-Sourde % 
-Muet % 
-Muette % 
-
-Gourmand % 
-Gourmande % 
-Urgent % 
-Urgente % 
-Éternel % 
-Éternelle % 
-
-Famille % 
-Père % 
-Mère % 
-Frère % 
-Sœur % 
-Grand-père % 
-Grand-mère % 
-Cousin % 
-Cousine % 
-
-Oncle % 
-Tante % 
-Neveu % 
-Nièce % 
-Fils % 
-Fille % 
-Petit-fils % 
-Petite-fille % 
-
-Vache % 
-Cheval % 
-Poisson % 
-Cochon % 
-Cochonne % 
-Mouton % 
-Poule % 
-
-Sel % 
-Poivre % 
-Riz % 
-Sauce % 
-Sucre % 
-Jus % 
-Huile % 
-Ail % 
-
-Jambon % 
-Beurre % 
-Thé % 
-Café % 
-Vanille % 
-Chocolat % 
-Pâte % 
-Blé % 
-Glace (ice cream) % 
-Gâteau % 
-
-Pomme % 
-Orange % 
-Raisin % 
-Fraise % 
-Citron % 
-
-Carotte % 
-Tomate % 
-Salade % 
-Oignon % 
-Pomme de terre % 
-Maïs % 
-Haricot % 
-Courgette % 
-
-Sortie % 
-Entrée % 
-Route % 
-Voiture % 
-Cours % 
-Amour % 
-Soleil % 
-Ville % 
-Magasin % 
-Plage % 
-
-Homme % 
-Femme % 
-Enfant % 
-Ami % 
-Livre % 
-Sac % 
-Pluie % 
-Mer % 
-Vent % 
-Clé % 
-Table % 
-
-Lit % 
-Rivière % 
-Forêt % 
-Monnaie % 
-Virgule % 
-Arbre % 
-Fleur % 
-Musique % 
-Film % 
-Porte % 
-Chargeur % 
-
-Lumière % 
-Chaussure % 
-Pantalon % 
-T-shirt % 
-Lunettes % 
-Bouteille % 
-Nuage % 
-Ciel % 
-Restaurant % 
-Bras % 
-
-Jambe % 
-Tête % 
-Prix % 
-Question % 
-Réponse % 
-Petit-déjeuner % 
-Déjeuner % 
-Dîner % 
-Stylo % 
-Cahier % 
-Montre % 
-
-Piscine % 
-Bus % 
-Marché % 
-Yeux % 
-Chambre % 
-Salle de bain % 
-Cuisine % 
-Salon % 
-Feu % 
-Pharmacie % 
-Hôpital % 
-
-Médecin (M) % 
-Médecin (F) % 
-Alphabet % 
-Photographie % 
-Vidéo % 
-Langue % 
-Musée % 
-Coeur % 
-Sport % 
-Point % 
-Point d'interrogation % 
-Point d'exclamation % 
-
-Phrase % 
-Mot % 
-Lettre % 
-Échecs (jeu) % 
-Oreille % 
-Nez % 
-Bouche % 
-Main % 
-Pied % 
-Doigt % 
-Sein % 
-
-Cheveux % 
-Docteur % 
-Docteure % 
-Douleur % 
-Sol % 
-Mur % 
-Montagne % 
-Prochain % 
-Prochaine % 
-
-Saison % 
-Été % 
-Automne % 
-Hiver % 
-Printemps % 
-Groupe/Bande % 
-Chance % 
-Garçon % 
-Fille % 
-Choix % 
-
-Lieu % 
-Peur % 
-Idée % 
-Animal % 
-Danger % 
-Vêtement % 
-Parapluie % 
-Armoire % 
-Frigo % 
-Cri % 
-
-Silence % 
-Rêve % 
-Retard % 
-Mission % 
-Façon % 
-Vérité % 
-Mensonge % 
-Santé % 
-
-Nord % 
-Sud % 
-Est (direction) % 
-Ouest % 
-Les deux (both) (M) % 
-Les deux (both) (F) % 
-Histoire % 
-Propriétaire (M) % 
-Propriétaire (F) % 
-Espace % 
-Étoile % 
-
-Douche % 
-Pièce (part) % 
-Tâche % 
-Client % 
-Cliente % 
-Analyse % 
-Milieu % 
-Équipe % 
-Capote % 
-Règle (ruler) % 
-Lien % 
-
-Cause % 
-Conséquence % 
-Avion % 
-Bateau % 
-Train % 
-Drapeau % 
-Trou % 
-Papier % 
-Virage % 
-Anniversaire % 
-Lune % 
-
-Couteau % 
-Fourchette % 
-Odeur % 
-Sens % 
-Vue % 
-Odorat % 
-Toucher (sens) % 
-Goût % 
-Ouïe % 
-Village (indigène) % 
-Village (urbain) % 
-
-Humiliation % 
-Tirage au sort % 
-Panier % 
-Sorcier % 
-Sorcière % 
-Problème % 
-Solution % 
-Nouvelle (news) % 
-Aile % 
-Chaise % 
-Cadeau % 
-
-Jardin % 
-Camion % 
-Professeur % 
-Professeure % 
-Peau % 
-Élève (M) % 
-Élève (F) % 
-Étudiant % 
-Étudiante % 
-Cerveau % 
-Dent % 
-
-Cauchemar % 
-Dessin % 
-Avantage % 
-Poids % 
-Vitesse % 
-Taille % 
-Passé % 
-Présent % 
-Futur % 
-Bagarre % 
-Paix % 
-
-Sujet % 
-Roi % 
-Reine % 
-Voisin % 
-Voisine % 
-Nature % 
-Beauté % 
-Église % 
-Champ % 
-Raison % 
-Occupation % 
-
-Bruit % 
-Hésitation % 
-Émotion % 
-Bougie % 
-Outil % 
-Âge % 
-Repas % 
-Or (gold) % 
-Chemin % 
-Étage % 
-Moment % 
-
-Adresse % 
-Objectif % 
-Signal % 
-Campagne (countryside) % 
-Poudre % 
-Blague (grosse blague) % 
-Blague (petite blague) % 
-Surprise % 
-Entreprise % 
-Immeuble % 
-Terrain % 
-
-Personnage % 
-Confiance % 
-Touriste % 
-Énergie % 
-Conclusion % 
-Exemple % 
-Limite % 
-Option % 
-Sac à dos % 
-Objet % 
-Responsable % 
-
-Doute % 
-Blessure (bobo) % 
-Blessure (grave) % 
-Gamin (méchant) % 
-Gamin (normal) % 
-Mec/Bro % 
-Stade % 
-Glace (ice) % 
-Espoir % 
-Pause % 
-Dessert % 
-
-Voeu % 
-Verre % 
-Voyage % 
-Niveau % 
-Vacance % 
-Éducation % 
-Bisou % 
-Miel % 
-Vie % 
-Match % 
-Serviette % 
-
-Piège % 
-Corde % 
-Usine % 
-Action % 
-Escalier % 
-Ascenseur % 
-Gomme % 
-Corps % 
-Chute % 
-Comportement % 
-Neige % 
-
-Sucette % 
-Gorgée (d'eau) % 
-Flèche (pour panneau) % 
-Chaussette % 
-Réseau % 
-Stress % 
-Bande déssinée % 
-Vague (wave) % 
-Visage % 
-Os % 
-Muscle % 
-
-Conversation % 
-Réunion % 
-Succès % 
-Gossip % 
-Cas (case) % 
-Accident % 
-Condition % 
-Planète % 
-Brosse à dents % 
-Dentifrice % 
-Prison % 
-
-Erreur % 
-Maladie % 
-Science % 
-Supporter (fan) (t) % 
-Supporter (fan) (f) % 
-Air % 
-Paysage % 
-Humain % 
-Humanité % 
-Nourriture % 
-Boisson % 
-
-Honte % 
-Conseil % 
-Plaisir % 
-Pitié % 
-Quantité % 
-Risque % 
-Récompense % 
-Proie % 
-Prédateur % 
-Alphabet % 
-Art % 
-
-Alcool % 
-Cash % 
-Accent % 
-Arbitre (foot) % 
-Poubelle % 
-Déchet % 
-Publicité % 
-Information % 
-Liste % 
-Paradis % 
-Enfer % 
-
-Définition % 
-Organisation % 
-Description % 
-Guide % 
-Transport % 
-Éléctricité % 
-Réalité % 
-Motivation % 
-Journal % 
-Carte (card) % 
-Carte (map) % 
-
-Dos (corps) % 
-Internet % 
-Bébé % 
-Avancement % 
-Détail % 
-Intérêt % 
-Respect % 
-Opportunité % 
-Guerre % 
-Ministre (M) % 
-Ministre (F) % 
-
-Président % 
-Politique % 
-Origine % 
-Avis / Opinion % 
-Valeur % 
-Fumée % 
-Habitude % 
-Midi % 
-Minuit % 
-Voleur % 
-Voleuse % 
-
-Échelle (ladder) % 
-Échelle (scale) % 
-Collection % 
-Charisme % 
-Couronnne % 
-Trésor % 
-Arme % 
-Épée % 
-Tir % 
-Opération % 
-Bijou % 
-
-Voix (voice) % 
-Arnaque % 
-Arnaqueur % 
-Câlin % 
-Code % 
-Domaine % 
-Taux % 
-Bordel (mess) % 
-Indice (hint) % 
-Examen % 
-Étape % 
-
-Remboursement % 
-Pouvoir (power) % 
-Manifestation % 
-Trajet % 
-Devoir (homework) % 
-Lac % 
-Noël % 
-Bouton % 
-Avant hier % 
-Après demain % 
-Pompier % 
-
-Policier % 
-Police % 
-Culture % 
-Recette % 
-Ventre % 
-Loi % 
-Avocat (lawyer) % 
-Boule % 
-Ballon % 
-
-Carré % 
-Triangle % 
-Cercle % 
-Gueule de bois % 
-Bois % 
-
-Herbe % 
-Couloir % 
-Poche % 
-Pouce % 
-Noeud % 
-Cou % 
-Moustache % 
-Barbe % 
-Magie % 
-
-Parents % 
-Siège % 
-Angoisse % 
-Collier % 
-Boucle % 
-Casque (moto) % 
-Casque (musique) % 
-Passion % 
-Talent % 
-Possession % 
-Défi % 
-
-Folie % 
-Jeunesse % 
-Dragon % 
-Cinglé % 
-Esprit % 
-Ennemi % 
-Sanction % 
-Imagination % 
-Incendie % 
-Absence % 
-Commerce % 
-
-Honneur % 
-Foyer % 
-Armure % 
-Garage % 
-Expérience % 
-Coffre % 
-Nid % 
-Addiction % 
-Feu (signalisation) % 
-Fenêtre % 
-Urgence % 
-
-Génération % 
-Feu d'artifice % 
-Fête % 
-Victoire % 
-Critique % 
-Génie % 
-Tour de magie % 
-Trahison % 
-Admiration % 
-Statue % 
-Distance % 
-
-Diplôme % 
-Trône % 
-Chapeau % 
-Casquette % 
-Veste % 
-Tasse % 
-Sieste % 
-Prince % 
-Princesse % 
-Tour (bâtiment) % 
-Monde % 
-
-Corne % 
-Restriction % 
-Horaire % 
-Hypocrisie % 
-Graine % 
-Racine % 
-Célébration % 
-Blessé (émotionnel) % 
-Spectacle % 
-
-Jalousie % 
-Humour % 
-Gros mot % 
-Autoroute % 
-Bombe % 
-Recherche % 
+
+Permettre % pozvolyat'
+Interdire % zapryetit'
+Interdire % zapryetit'
+Sécher % soukhoî
+Mouiller % vlajnyî
+Accéder % dostoup
+Chuchoter % shyepot
+Partager (c) % dyelit'sya
+Partager (p) % dyelit'sya
+Rêver % myechtat'
+Développer % razvivat'
+
+Comparer % sravnivat'
+Tricher % izmyenyat'
+Copier % kopirovat'
+Ajouter % dobavlyat'
+Observer % nablyudat'
+Espionner % shpion
+Abandonner % sdat'sya
+Démissionner % podat' v otstavkou
+Douter % somnyevat'sya
+Juger % soudit'
+Répéter % povtorit'
+
+Conduire % yezdit'
+Paniquer % panika
+Monter % podnyat'sya
+Descendre % spoustit'sya
+S'asseoir % sidyet'
+Préférer % pryedpochitat'
+Risquer % risk
+Remplacer % zamyenyat'
+Augmenter % ouvyelichivat'
+Soutenir % poddyerjivat'
+Utiliser % ispol'zovat'
+
+Avoir faim % byt' golodnym
+S'inquiéter % volnovat'sya
+Retourner % vozvrashshat'sya
+Avoir soif % jajdat'
+Trouver (to find) % nakhodit'
+Se venger % otomstit'
+Tuer % oubiîstvo
+Accompagner % soprovojdat'
+Réserver % zabronirovat'
+Sonner % kol'tso
+
+Pratiquer % ouprajnyat'sya
+Oser % osmyelit'sya
+Intéresser % intyeryes
+Enseigner % ouchit'
+Déguiser % zamaskirovat'
+Approcher % podkhod
+Cliquer % najat'
+Convaincre % oubyejdat'
+Jurer % rougat'sya
+
+Chasser (to hunt) % okhota
+Défendre % zashshishshat'
+Attaquer % vzyat'sya
+Gâcher % portit'sya
+S'éloigner % ouîti
+Prédire % pryedskazyvat'
+Échouer % nyeoudacha
+Lâcher % otpoustit'
+Exagérer % pryeouvyelichivat'
+Surprendre % syurpriz
+
+Récupérer % vosstanovit'
+Voter % golosovaniye
+Soulager % oblyegchit'
+Réduire % oumyen'shat'
+Diminuer % snijat'sya
+Survivre % vyjivat'
+Tendre % nyejnyî
+Se dépêcher % toropit'sya
+Conseiller % sovyetovat'
+Lier % svyazyvat'
+
+Récompenser % nagrada
+Croquer % khroust
+Profiter % naslajdat'sya
+Punir % nakazyvat'
+Souffrir % stradat'
+Énerver / Faire chier % razdrajat' / razozlit'
+Faire pitié (dar) % proyavi jalost'
+Faire pitié (fazer) % proyavi jalost'
+Concerner % byespokoîstvo
+Regretter % sojalyet'
+
+Exciter % vozboujdat'
+Prévenir % pryedotvrashshat'
+S'entraîner (physique) % obouchyeniye
+S'entraîner (général) % obouchyeniye
+Avancer % dvigaîtyes' vpyeryed
+Fair exprès % chyestno namyeryenno
+Se battre % drat'sya
+Séparer % otdyel'nyî
+Partir % ostavlyat'
+Piéger/Duper % oulovka / doup
+Supporter (to cheer) % poddyerjivat'
+
+Supprimer % oudalit'
+Ralentir % zamyedlit'
+Accélérer % ouskoryeniye
+Définir % opryedyelyat'
+Décrire % opisyvat'
+Guider % napravlyat'
+Programmer % programma
+Motiver % motivirovat'
+Choquer % shok
+Alterner % al'tyernativnyî
+
+Présenter % pryedstavit'
+Se tromper % sdyelat' oshibkou
+Habituer % privykaîtye k
+Câliner % obnimat'
+Fumer % kouryeniye
+Insulter (formel) % oskorblyat'
+Insulter (informel) % oskorblyat'
+Annuler % otmyena
+Avoir l'habitude % imyet' privychkou
+
+Galérer (to struggle) % borot'sya
+Arnaquer % moshyennichyestvo
+Contrôler % kontrol'
+Sélectionner % vybirat'
+Influencer % vliyaniye
+Coincer (physique) % zastryavshiî
+Coincer (stratégique) % zastryavshiî
+Hésiter % somnyevat'sya
+Rembourser % pogasit'
+
+Rechercher % dlya isslyedovaniya
+Harceler % pryeslyedovat'
+Se plaindre % jalovat'sya
+Évaluer % otsyenivat'
+Cultiver % koul'tivirovat'
+Menacer % ougrojat'
+Attirer % privlyekat'
+Empoisonner % yad
+Pardonner % prostit'
+Rassurer % ouspokoit'
+
+Prouver % dokazyvat'
+Insister % nastaivat'
+Trahir % pryedavat'
+Exclure % isklyuchat'
+Imaginer % pryedstavlyat' syebye
+Grossir % stat' bol'shye
+Maigrir % pokhoudyet'
+
+Adopter % ousynovit'
+Dépenser % tratit'
+Impacter % vliyaniye
+Élever % podnimat'
+Résoudre % ryeshat'
+Étonner % oudivlyat'
+Afficher % otobrajat'
+Se la péter % vypyendrivat'sya
+Supporter/En pouvoir % poddyerjka / ou vlasti
+
+Passioner % strastnyî
+Posséder % vladyet'
+Brûler % goryet'
+Déchiffrer % rasshifrovat'
+Restreindre % ogranichivat'
+Appartenir % prinadlyejat'
+Moisir % forma
+Frotter % roub.
+Peindre % risovat'
+
+Apprécier % tsyenit'
+Inonder % navodnyeniye
+Se lever % vstavat'
+Louer % sdat' v aryendou
+Enlever % oudalit'
+Retirer % otzyvat'
+Réunir % vossoyedinit'sya
+Déclarer % ob"yavit'
+
+Critiquer % kritikovat'
+Tousser % kashlyat'
+Ronfler % khrap
+Péter % pyerdyet'
+Inviter % priglashat'
+Se demander % oudivlyat'sya
+
+Moi (Pronom Tonique) % mnye
+Toi (Pronom Tonique) % ty
+Lui (Pronom Tonique) % yemou
+Elle (Pronom Tonique) % ona
+Nous (Pronom Tonique) % my
+Vous (Pronom Tonique) % ty
+Eux (Pronom Tonique) % ikh
+Elles (Pronom Tonique) % oni
+
+Me (Pronom Réfléchi) % mnye
+Te (Pronom Réfléchi) % ty
+Se (Pronom Réfléchi) % sye
+Le (Pronom Réfléchi) % to
+La (Pronom Réfléchi) % tam
+Nous (Pronom Réfléchi) % my
+Vous (Pronom Réfléchi) % ty
+
+Moi-même (M) % sam
+Moi-même (F) % sam
+Toi-même (M) % sam
+Toi-même (F) % sam
+Lui-même % sam
+Elle-même % syebya
+Nous-mêmes (M) % my sami
+Nous-mêmes (F) % my sami
+Vous-mêmes (M) % sami
+Vous-mêmes (F) % sami
+Eux-mêmes % sami syebya
+Elles-mêmes % sami syebya
+
+Moche (M) % ourodlivyî
+Moche (F) % ourodlivyî
+Triste % groustno
+Chaud % goryachiî
+Froid % kholodnyî
+Froide % kholodnyî
+Reposé % otdokhnouvshiî
+Reposée % otdokhnouvshiî
+Fatigué % oustalost'
+Fatiguée % oustalyî
+
+Nouveau % novyî
+Nouvelle % novyî
+Ancien % dryevniî
+Ancienne % staryî
+Jeune % molodoî
+Vieux % staryî
+Vieille % staryî
+Cher % dorogoî
+Chère % dorogoî
+Bon marché (M) % dyeshyevyî
+Bon marché (F) % dyeshyevyî
+
+Propre (M) % sobstvyennyî
+Propre (F) % sobstvyennyî
+Sale (M) % gryaznyî
+Sale (F) % gryaznyî
+Rapide (M) % bystryî
+Rapide (F) % bystryî
+Lent % myedlyennyî
+Lente % myedlyennyî
+Gentil % dobryî
+Méchant % zloî
+Méchante % zlo
+
+Intelligent % oumnyî
+Débile (M) % gloupyî
+Débile (F) % gloupyî
+Gros % tolstyî
+Grosse % tolstyî
+Riche (M) % bogatyî
+Riche (F) % bogatyî
+Pauvre % byednyî
+Possible % vozmojnyî
+
+Impossible % nyevozmojnyî
+Souvent % chasto
+Rare (M) % ryedkiî
+Rare (F) % ryedkiî
+Lourd % tyajyelyî
+Lourde % tyajyelyî
+Léger % svyet
+Légère % svyet
+Libre % byesplatno
+Obligatoire % obyazatyel'nyî
+
+Plein % polnyî
+Pleine % polnyî
+Vide (M) % poustoî
+Vide (F) % poustoî
+Parfait % idyeal'nyî
+Parfaite % idyeal'nyî
+Incroyable % oudivityel'nyî
+Drôle (M) % zabavnyî
+Drôle (F) % zabavnyî
+Sérieux % syer'yeznyî
+Sérieuse % syer'yeznyî
+
+Évident % ochyevidnyî
+Discret % sdyerjannyî
+Discrète % sdyerjannyî
+Mignon % milyî
+Mignonne % milyî
+Premier % pyervyî
+Première % pyervyî
+Dernier % poslyedniî
+Dernière % poslyedniî
+Calme (M) % spokoîstviye
+Calme (F) % spokoîstviye
+
+Long % dlinnyî
+Longue % dlinnyî
+Court % korotkiî
+Courte % korotkiî
+Spécial % osobyennyî
+Spéciale % osobyennyî
+Ordinaire % obychnyî
+Timide (M) % zastyenchivyî
+Timide (F) % zastyenchivyî
+Prêt % gotovyî
+Prête % gotovyî
+
+Malade % bol'noî
+Malade % bol'noî
+Bourré (drunk) % p'yanyî
+Bourrée (drunk) % farshirovannyye
+Vrai % istinnyî
+Vraie % istinnyî
+Faux % fal'shivyî
+Fausse % loj'
+Fort % sil'nyî
+Forte % fortye
+Faible (M) % slabyî
+Faible (F) % slabyî
+
+Généreux % shshyedryî
+Généreuse % shshyedryî
+Égoïste % egotsyentrichnyî
+Juste (fair) (M) % tol'ko
+Juste (fair) (F) % tol'ko
+Injuste (M) % nyespravyedlivyî
+Injuste (F) % nyespravyedlivyî
+En avance (M) % zaranyeye
+En avance (F) % zaranyeye
+En retard (M) % pozdno
+En retard (F) % pozdno
+
+Seul % odin
+Seule % odin
+Clair % prozrachnyî
+Claire % prozrachnyî
+Sombre (M) % tyemnyî
+Sombre (F) % tyemnyî
+Précis % tochnyî
+Précise % tochnyî
+Imprécis % nyetochnyî
+Imprécise % nyeyasno
+
+Occupé % zanyatyî
+Occupée % zanyatyî
+Curieux % lyubopytnyî
+Curieuse % lyubopytnyî
+Curieuse % lyubopytnyî
+Intéressant % intyeryesnyî
+Intéressante % intyeryesnyî
+Ennuyeux % skouchnyî
+Ennuyeuse % skouchnyî
+Étrange (M) % strannyî
+Étrange (F) % strannyî
+
+Anxieux % tryevojnyî
+Anxieuse % tryevojnyî
+Normal % normal'nyî
+Normale % normal'nyî
+Original % original
+Originale % original
+Autorisé % dopoustimyî
+Autorisée % avtorizovannyî
+Interdit % zapryeshshyennyî
+Interdite % zapryeshshyennyî
+
+Important % vajnyî
+Importante % vajnyî
+Capable % sposobnyî
+Incapable % nye mogoushshiî
+Soudain % vnyezapno
+Soudaine % vnyezapno
+Vivant % jivoî
+Vivante % jivoî
+Mort (adj) % myertvyî
+Morte (adj) % myertvyî
+
+Maigre (M) % toshshiî
+Maigre (F) % toshshiî
+Blessé % povryedit'
+Blessée % ranyenyî
+Excellent % otlichnyî
+Excellente % otlichnyî
+Chiant % outomityel'nyî
+Chiante % skouchnyî
+
+Sec % soukhoî
+Sèche % soushyenyî
+Mouillé % vlajnyî
+Mouillée % vlajnyî
+Entier % vyes'
+Entière % vyes'
+Certain % opryedyelyennyî
+Certaine % opryedyelyennyî
+Incertain % nyeopryedyelyennyî
+Incertaine % nyeopryedyelyennyî
+
+Fier % gordyî
+Fière % gordyî
+Deçu % rasstroyennyî
+Deçue % rasstroyennyî
+Principal % osnovnoî
+Principale % osnovnoî
+Réel % nastoyashshiî
+Réelle % nastoyashshiî
+Fictif % vymyshlyennyî
+Fictive % vymyshlyennyî
+
+Solide (M) % tvyerdyî
+Solide (F) % tvyerdyî
+Liquide (M) % jidkost'
+Liquide (F) % jidkost'
+Dangeureux % opasnyî
+Dangeureuse % opasnyî
+Fou % byezoumnyî
+Folle % soumasshyedshiî
+Utile % polyeznyî
+Inutile % byespolyeznyî
+Nécessaire (M) % nyeobkhodimyî
+Nécessaire (F) % nyeobkhodimyî
+
+Infini % byeskonyechnost'
+Infinie % byeskonyechnyî
+Fini % zakonchyennyî
+Finie % zakonchyennyî
+Impressionnant % vpyechatlyayushshiî
+Impressionnante % vpyechatlyayushshiî
+Simple % prostoî
+Compliqué % slojnyî
+Compliquée % slojnyî
+
+Stressant % stryessovyî
+Stressante % stryessovyî
+Basique (M) % bazovyî
+Basique (F) % bazovyî
+Complexe (M) % slojnyî
+Complexe (F) % slojnyî
+Moderne (M) % sovryemyennyî
+Moderne (F) % sovryemyennyî
+
+Neutre (M) % nyeîtral'nyî
+Neutre (F) % nyeîtral'nyî
+Raciste % rasist
+Frais % zatraty
+Fraîche % svyejiî
+Agréable % priyatnyî
+Aléatoire (M) % slouchaînyî
+Aléatoire (F) % slouchaînyî
+
+Précieux % dragotsyennyî
+Précieuse % dragotsyennyî
+Grave % syer'yeznyî
+Honteux % stydyashshiîsya
+Honteuse % stydyashshiîsya
+Doux % myagkiî
+Douce % nyejnyî
+Gênant % smoushshayushshiî
+Gênante % smoushshayushshiî
+
+Pair % vglyadyet'sya
+Paire % para
+Impair % strannyî
+Impaire % strannyî
+Dégoûtant % otvratityel'nyî
+Dégoûtante % otvratityel'nyî
+Répugnant % otvratityel'nyî
+Répugnante % otvratityel'nyî
+National % natsional'nyî
+Nationale % natsional'nyî
+International % myejdounarodnyî
+Internationale % myejdounarodnyî
+
+Ridicule (M) % nyelyepyî
+Ridicule (F) % nyelyepyî
+Mou % myagkiî
+Molle % myagkiî
+Dur % jyestkiî
+Dure % jyestkiî
+Automatique (M) % avtomatichyeskiî
+Automatique (F) % avtomatichyeskiî
+Manuel % roukovodstvo
+Manuelle % roukovodstvo
+
+Général % obshshiî
+Générale % obshshiî
+Privé % chastnyî
+Privée % chastnyî
+Public % aouditoriya
+Publique % obshshyestvyennyî
+Efficace % effyektivnyî
+Concentré % kontsyentrat
+Concentrée % kontsyentrirovannyî
+Déconcentré % dyetsyentralizovannyî
+Déconcentrée % dyetsyentralizovannyî
+
+Jaloux % ryevnivyî
+Jalouse % ryevnivyî
+Logique (M) % logika
+Logique (F) % logika
+Illogique (M) % nyelogichno
+Illogique (F) % nyelogichno
+À l'aise % nyeprinoujdyenno
+Mal à l'aise % nyeoudobno
+Récent % nyedavniî
+Récente % nyedavniî
+Confortable % komfortnyî
+Inconfortable % nyeoudobno
+
+Actuel % tyekoushshiî
+Actuelle % tyekoushshiî
+Fascinant % ocharovatyel'nyî
+Fascinante % ocharovatyel'nyî
+Matériel % matyerial
+Matérielle % matyerial
+Imaginaire (M) % voobrajayemyî
+Imaginaire (F) % voobrajayemyî
+
+Ambitieux % ambitsioznyî
+Ambitieuse % ambitsioznyî
+Géant % gigant
+Géante % vyelikansha
+Nain % karlik
+Naine % karlik
+Commercial % kommyerchyeskiî
+Commerciale % kommyerchyeskiî
+
+Clair (obvious) % prozrachnyî
+Claire (obvious) % prozrachnyî
+Honnête (M) % chyestnyî
+Honnête (F) % chyestnyî
+Secret % syekryet
+Secrète % syekryet
+Enceinte % byeryemyennaya
+Absent % otsoutstvouyushshiî
+Absente % otsoutstvouyushshiî
+
+Perdu % potyeryannyî
+Perdue % potyeryannyî
+Fameux/Connu % znamyenityî / izvyestnyî
+Fameuse/Connue % znamyenityî / izvyestnyî
+Spectaculaire % zryelishshnyî
+Comparable % sopostavimyî
+Incomparable % nyesravnyennyî
+
+Aveugle (M) % slyepoî
+Aveugle (F) % slyepoî
+Sourd % gloukhoî
+Sourde % gloukhoî
+Muet % nyemoî
+Muette % nyemoî
+
+Gourmand % gourman
+Gourmande % gourman
+Urgent % srochnyî
+Urgente % srochnyî
+Éternel % vyechnyî
+Éternelle % vyechnyî
+
+
+Cousin % dvoyurodnyî brat
+Cousine % dvoyurodnyî brat
+Oncle % dyadya
+Tante % tyetya
+Neveu % plyemyannik
+Nièce % plyemyannitsa
+Petit-fils % vnouk
+Petite-fille % vnouchka
+
+Vache % korova
+Cheval % loshad'
+Poisson % ryba
+Cochon % svin'ya
+Cochonne % shlyukha
+Mouton % ovtsa
+Poule % kouritsa
+
+Sel % sol'
+Poivre % pyeryets
+Riz % ris
+Sauce % soous
+Sucre % sakhar
+Jus % sok
+Huile % maslo
+Ail % chyesnok
+
+Jambon % vyetchina
+Beurre % maslo
+Thé % chaî
+Café % kofye
+Vanille % vanil'
+Chocolat % shokolad
+Pâte % tyesto
+Blé % pshyenitsa
+Glace (ice cream) % lyed
+Gâteau % tort
+
+Pomme % yabloko
+Orange % apyel'sin
+Raisin % vinograd
+Fraise % kloubnika
+Citron % limon
+
+Carotte % morkov'
+Tomate % pomidor
+Salade % salat
+Oignon % louk
+Pomme de terre % kartofyel'
+Maïs % no
+Haricot % fasol'
+Courgette % tsoukkini
+
+Sortie % vykhod
+Entrée % vkhod
+Route % doroga
+Voiture % mashina
+Cours % kours
+Amour % lyubov'
+Soleil % solntsye
+Ville % gorod
+Magasin % magazin
+Plage % plyaj
+
+
+
+
+
+
+
+
+
+
+
+Livre % kniga
+Sac % soumka
+Pluie % dojd'
+Mer % morye
+Vent % vyetyer
+Clé % klyuch
+Table % stol
+
+Rivière % ryeka
+Forêt % lyes
+Monnaie % nalichnyye
+Virgule % zapyataya
+Arbre % dyeryevo
+Fleur % tsvyetok
+Musique % mouzyka
+Porte % dvyer'
+Chargeur % zaryadnoye oustroîstvo
+
+Chaussure % chistka
+Pantalon % bryuki
+T-shirt % foutbolka
+Lunettes % ochki
+Bouteille % boutylka
+Nuage % oblako
+Ciel % nyebo
+Restaurant % ryestoran
+Bras % rouka
+
+Jambe % noga
+Tête % golova
+Prix % tsyena
+Question % vopros
+Réponse % otvyechat'
+Stylo % rouchka
+Cahier % bloknot
+Montre % smotryet'
+
+Piscine % bassyeîn
+Bus % avtobous
+Marché % khodit'
+Yeux % glaza
+Chambre % spal'nya
+Salle de bain % vannaya komnata
+Cuisine % koukhnya
+Salon % gostinaya
+Pharmacie % aptyeka
+Hôpital % bol'nitsa
+
+Médecin (M) % doktor
+Médecin (F) % doktor
+Alphabet % alfavit
+Photographie % fotografiya
+Vidéo % vidyeo
+Langue % yazyk
+Musée % mouzyeî
+Coeur % syerdtsye
+Sport % sport
+Point % tochka
+Point d'interrogation % znak voprosa
+Point d'exclamation % vosklitsatyel'nyî znak
+
+Phrase % pryedlojyeniye
+Échecs (jeu) % shakhmaty
+Oreille % oukho
+Nez % nos
+Bouche % rot
+Main % rouka
+Pied % stoupnya
+Doigt % palyets
+Sein % groud'
+
+Cheveux % volosy
+Docteur % doktor
+Docteure % doktor
+Douleur % bol'
+Sol % zyemlya
+Mur % styena
+Montagne % gora
+Prochain % slyedouyushshiî
+Prochaine % slyedouyushshiî
+
+Saison % syezon
+Été % lyeto
+Automne % osyen'
+Hiver % zima
+Printemps % vyesna
+Groupe/Bande % grouppa
+Chance % shans
+Choix % vybor
+
+Lieu % myesto
+Peur % strakh
+Idée % idyeya
+Animal % jivotnoye
+Danger % opasnost'
+Vêtement % odyejda
+Armoire % boufyet
+Frigo % kholodil'nik
+
+Rêve % myechtat'
+Façon % sposob
+Vérité % pravda
+Mensonge % loj'
+Santé % zdorov'ye
+
+Nord % syevyer
+Sud % yug
+Est (direction) % vostok
+Ouest % zapad
+Les deux (both) (M) % oba
+Les deux (both) (F) % oba
+Histoire % istoriya
+Propriétaire (M) % vladyelyets
+Propriétaire (F) % vladyelyets
+Espace % kosmos
+Étoile % zvyezda
+
+Douche % doush
+Pièce (part) % kousok
+Tâche % pyatno
+Client % kliyent
+Cliente % kliyent
+Analyse % analiz
+Milieu % syeryedina
+Équipe % komanda
+Capote % kapyushon
+Règle (ruler) % pravityel'
+Lien % svyaz'
+
+Cause % prichina
+Conséquence % poslyedstviye
+Avion % samolyet
+Bateau % lodka
+Train % tryenirovat'sya
+Drapeau % flag
+Trou % dyra
+Papier % boumaga
+Virage % povyernout'
+Anniversaire % dyen' rojdyeniya
+Lune % louna
+
+Couteau % noj
+Fourchette % vilka
+Odeur % zapakh
+Sens % smysl
+Vue % vid
+Odorat % zapakh
+Toucher (sens) % prikosnout'sya
+Goût % vkous
+Ouïe % sloukh
+Village (indigène) % dyeryevnya
+Village (urbain) % dyeryevnya
+
+Problème % problyema
+Solution % ryeshyeniye
+Nouvelle (news) % novyî
+Chaise % stoul
+Cadeau % podarok
+
+Jardin % sad
+Camion % grouzovik
+Professeur % ouchityel'
+Professeure % profyessor
+Peau % koja
+Élève (M) % ouchyenik
+Élève (F) % ouchyenik
+Étudiant % stoudyent
+Étudiante % stoudyent
+Cerveau % mozg
+Dent % zoub
+
+Cauchemar % koshmar
+Dessin % risounok
+Avantage % pryeimoushshyestvo
+Poids % massa
+Vitesse % skorost'
+Taille % razmyer
+Passé % prokhodit'
+Présent % zdyes'
+Futur % boudoushshyeye
+Bagarre % drat'sya
+Paix % mir
+
+Sujet % pryedmyet
+Roi % korol'
+Reine % korolyeva
+Voisin % sosyed
+Voisine % sosyed
+Nature % priroda
+Beauté % krasota
+Église % tsyerkov'
+Champ % polye
+Raison % prichina
+Occupation % zanyatiye
+
+Bruit % shoum
+Hésitation % kolyebaniye
+Émotion % emotsii
+Bougie % svyecha
+Outil % instroumyent
+Or (gold) % zoloto
+Chemin % pout'
+Étage % pol
+Moment % momyent
+
+Adresse % adryes
+Objectif % tsyel'
+Signal % signal
+Campagne (countryside) % kampaniya
+Poudre % poudra
+Blague (grosse blague) % shoutit'
+Blague (petite blague) % shoutit'
+Surprise % syurpriz
+Entreprise % biznyes
+Immeuble % zdaniye
+Terrain % zyemlya
+
+Personnage % kharaktyer
+Confiance % dovyeryat'
+Touriste % touristichyeskiî
+Énergie % enyergiya
+Conclusion % zaklyuchyeniye
+Exemple % primyer
+Limite % limit
+Option % variant
+Sac à dos % ryukzak
+Objet % ob"yekt
+Responsable % otvyetstvyennyî
+
+Doute % somnyevat'sya
+Blessure (bobo) % rana
+Blessure (grave) % rana
+Gamin (méchant) % ryebyenok
+Gamin (normal) % ryebyenok
+Mec/Bro % chouvak / bratan
+Stade % stadion
+Glace (ice) % lyed
+Espoir % nadyeyat'sya
+Pause % pyeryeryv
+Dessert % dyesyert
+
+Voeu % jyelaniye
+Verre % styeklo
+Voyage % poutyeshyestviye
+Niveau % ourovyen'
+Vacance % vakansiya
+Éducation % obrazovaniye
+Bisou % tsyelovat'
+Miel % myed
+Vie % jizn'
+Match % sootvyetstvovat'
+Serviette % polotyentsye
+
+Piège % lovoushka
+Corde % vyeryevka
+Usine % fabrika
+Action % dyeîstviye
+Escalier % lyestnitsa
+Ascenseur % lift
+Gomme % lastik
+Corps % tyelo
+Chute % padat'
+Comportement % povyedyeniye
+Neige % snyeg
+
+Sucette % lyedyenyets
+Gorgée (d'eau) % glotok
+Flèche (pour panneau) % stryelka
+Chaussette % nosok
+Réseau % syet'
+Stress % stryess
+Bande déssinée % komiks
+Vague (wave) % volna
+Visage % litso
+Os % kost'
+Muscle % myshtsy
+
+Conversation % byesyeda
+Réunion % vstryecha
+Succès % ouspyekh
+Gossip % sloukh
+Cas (case) % slouchaî
+Accident % nyeschastnyî slouchaî
+Condition % sostoyaniye
+Planète % planyeta
+Brosse à dents % zoubnaya shshyetka
+Dentifrice % zoubnaya pasta
+Prison % tyur'ma
+
+Erreur % oshibka
+Maladie % bolyezn'
+Science % naouka
+Supporter (fan) (t) % poddyerjivat'
+Supporter (fan) (f) % poddyerjivat'
+Air % vozdoukh
+Paysage % pyeîzaj
+Humain % chyelovyek
+Humanité % chyelovyechyestvo
+Nourriture % yeda
+Boisson % napitok
+
+Honte % styd
+Conseil % sovyet
+Plaisir % oudovol'stviye
+Pitié % jalost'
+Quantité % kolichyestvo
+Risque % risk
+Récompense % nagrada
+Proie % dobycha
+Prédateur % khishshnik
+Alphabet % alfavit
+Art % iskousstvo
+
+Alcool % alkogol'
+Cash % nalichnyye
+Accent % aktsyent
+Arbitre (foot) % arbitr
+Poubelle % mousornyî bak
+Déchet % naprasno tratit'
+Publicité % ryeklama
+Information % informatsiya
+Liste % spisok
+Paradis % nyebyesa
+Enfer % ad
+
+Définition % opryedyelyeniye
+Organisation % organizatsiya
+Description % opisaniye
+Guide % gid
+Transport % transport
+Éléctricité % elyektrichyestvo
+Réalité % ryeal'nost'
+Motivation % motivatsiya
+Journal % gazyeta
+Carte (card) % karta
+Carte (map) % karta
+
+Dos (corps) % nazad
+Internet % intyernyet
+Bébé % malysh
+Avancement % prodvijyeniye
+Détail % dyetal'
+Intérêt % intyeryes
+Respect % ouvajat'
+Opportunité % vozmojnost'
+Guerre % voîna
+Ministre (M) % ministr
+Ministre (F) % ministr
+
+Président % pryezidyent
+Politique % politika
+Origine % istochnik
+Avis / Opinion % obzor / mnyeniye
+Valeur % tsyenit'
+Fumée % dym
+Habitude % privychka
+Midi % poldyen'
+Minuit % polnoch'
+Voleur % vor
+Voleuse % vor
+
+Échelle (ladder) % lyestnitsa
+Échelle (scale) % lyestnitsa
+Collection % kollyektsiya
+Charisme % kharizma
+Couronnne % korona
+Trésor % sokrovishshye
+Arme % vooroujyen
+Épée % myech
+Tir % vystryelil
+Opération % opyeratsiya
+Bijou % dragotsyennost'
+
+Voix (voice) % golos
+Arnaque % moshyennichyestvo
+Arnaqueur % moshyennik
+Câlin % priyatnyî
+Code % kod
+Domaine % domyen
+Taux % stavka
+Bordel (mess) % byesporyadok
+Indice (hint) % namyekat'
+Examen % ekzamyen
+Étape % etap
+
+Remboursement % vozvrashshat' dyen'gi
+Pouvoir (power) % vlast'
+Manifestation % dyemonstratsiya
+Trajet % marshrout
+Devoir (homework) % dolg
+Lac % ozyero
+Noël % rojdyestvo
+Bouton % knopka
+Avant hier % do vchyerashnyego dnya
+Après demain % poslye zavtra
+Pompier % pojarnyî
+
+Policier % politsyeîskiî
+Police % politsiya
+Culture % koul'toura
+Recette % ryetsyept
+Ventre % jivot
+Loi % zakon
+Avocat (lawyer) % advokat
+Boule % myach
+Ballon % myach
+
+Carré % kvadrat
+Triangle % tryeougol'nik
+Cercle % kroug
+Gueule de bois % pokhmyel'ye
+Bois % napitok
+
+Herbe % trava
+Couloir % koridor
+Poche % otvarnoî
+Pouce % bol'shoî palyets
+Noeud % ouzyel
+Cou % shyeya
+Moustache % ousy
+Barbe % boroda
+Magie % magiya
+
+Parents % rodityeli
+Siège % sidyen'ye
+Angoisse % toska
+Collier % ojyeryel'ye
+Boucle % pyetlya
+Casque (moto) % shlyem
+Casque (musique) % shlyem
+Passion % strast'
+Talent % talant
+Possession % vladyeniye
+Défi % ispytaniye
+
+Folie % byezoumiye
+Jeunesse % molodost'
+Dragon % drakon
+Cinglé % soumasshyedshiî
+Esprit % doukh
+Ennemi % vrag
+Sanction % sanktsiya
+Imagination % voobrajyeniye
+Incendie % ogon'
+Absence % otsoutstviye
+Commerce % torgovlya
+
+Honneur % chyest'
+Foyer % ochag
+Armure % bronya
+Garage % garaj
+Expérience % opyt
+Coffre % groud'
+Nid % gnyezdo
+Addiction % zavisimost'
+Feu (signalisation) % ogon'
+Fenêtre % okno
+Urgence % chryezvychaînaya sitouatsiya
+
+Génération % pokolyeniye
+Feu d'artifice % fyeîyervyerk
+Fête % vyechyerinka
+Victoire % pobyeda
+Critique % kritichyeskiî
+Génie % gyeniî
+Tour de magie % volshyebnyî tryuk
+Trahison % izmyena
+Admiration % voskhishshyeniye
+Statue % statouya
+Distance % rasstoyaniye
+
+Diplôme % diplom
+Trône % tron
+Chapeau % shlyapa
+Casquette % kyepka
+Veste % kourtka
+Tasse % chashka
+Sieste % vzdryemnout'
+Prince % prints
+Princesse % printsyessa
+Tour (bâtiment) % krouglyî
+Monde % mir
+
+Corne % rog
+Restriction % ogranichyeniye
+Horaire % yejyechasno
+Hypocrisie % litsyemyeriye
+Graine % syemya
+Racine % koryen'
+Célébration % prazdnik
+Blessé (émotionnel) % povryedit'
+Spectacle % pokazyvat'
+
+Jalousie % ryevnost'
+Humour % yumor
+Gros mot % rougannoye slovo
+Autoroute % shossye
+Bombe % bombit'
+Recherche % isslyedovat'

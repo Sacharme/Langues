@@ -1,11 +1,9 @@
-Bon % khoroshiî
-Bonne % khoroshaya
-Bien % khorosho
-Mauvais % plokhoî
-Mauvaise % plokhaya
-Difficile (M) % troudnyî
-Difficile (F) % troudnaya
-
-Petit-déjeuner % zavtrak
-Déjeuner % obyed
-Dîner % oujin
+Ami % droug
+Amie % podrouga
+Lit % krovat'
+Film % fil'm
+Lumière % svyet
+Feu % ogon'
+Mot % slovo
+Lettre (alphabet) % pis'mo
+Repas % yeda

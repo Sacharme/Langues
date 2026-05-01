@@ -86,9 +86,20 @@ Jaune % jyoltyî
 Noir % chyornyî
 Blanc % byelyî
 
+Famille % syem'ya
+Père % otyets
+Mère % mat'
+Frère % brat
+Sœur % syestra
+Grand-père % dyedoushka
+Grand-mère % baboushka
+Fils (son) % syn
+Fille (daughter) % dyevochka
+
 Bonjour % zdravstvouîtye
 Salut % privyet
 Au revoir % do svidaniya
+Au revoir (courant) % poka
 Oui % da
 Non % nyet
 Ne ... pas % nye
@@ -109,12 +120,14 @@ Quoi % chto
 Que % chto
 Qui % kto
 Combien % skol'ko
-Toujours % vsyegda
+Toujours (always) % vsyegda
+Toujours (still) % vsyegda
 Jamais % nikogda
 Dans % v
 Avec % s
 Sans % byez
-Pour % dlya
+Pour (d) % dlya
+Pour (z) % za
 De % iz
 Beaucoup % mnogo
 Peu (Quantité) % malo
@@ -127,9 +140,29 @@ Maintenant % syeîchas
 Plus % bol'shye
 Moins % myen'shye
 Un peu (Adjectif) (Pretty) % nyemnogo
+Chaque % kajdyî
+Tout % vsye
+Tous % vsye
+Si % yesli
+Comme % kak
+Jusqu'à % do
+Depuis % ot
+Il faut % nado
+En % v
+Chez % k
+Par % po
+Gauche % lyevyî
+Droite % vyerno
+Pendant que % poka
+Déjà % oujye
+Rien % nichyego
+Pourquoi % za chto
+Parce que % potomou chto
 
 Tic de language (genre) % tipo
-Fuck off % idi nakhouî
+Va te faire foutre % idi na khouî
+Putain % blyat'
+Language slang % mat
 
 Être % byt'
 Avoir % imyet'
@@ -150,6 +183,13 @@ Croire % vyerit'
 Donner % dat'
 Travailler % rabotat'
 Aimer % lyubit'
+Prendre % brat'
+Dire % skazat'
+Attendre % jdat'
+Venir % prikhodit'
+Voir % vidyet'
+Ouvrir % otkryt'
+Fermer % zakryvat'
 
 Beau % krasivyî
 Belle % krasivaya
@@ -161,7 +201,17 @@ Facile (M) % lyogkiî
 Facile (F) % lyogkaya
 Heureux % schastlivyî
 Heureuse % schastlivaya
+Bon % khoroshiî
+Bonne % khoroshaya
+Bien % khorosho
+Mauvais % plokhoî
+Mauvaise % plokhaya
+Difficile (M) % troudnyî
+Difficile (F) % troudnaya
 
+Petit-déjeuner % zavtrak
+Déjeuner % obyed
+Dîner % oujin
 Pain % khlyeb
 Eau % voda
 Oeuf % yaîtso
