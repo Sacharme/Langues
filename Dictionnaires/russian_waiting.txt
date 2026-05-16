@@ -6,15 +6,6 @@
 
 
 
-
-
-
-
-
-
-
-Penis % khouî
-Vagin % pîzda
 Baiser % yebat'
 Homme % moujchina
 Femme % jyenshshiny
@@ -22,6 +13,15 @@ Enfant % ryebyenok
 Garçon (sexe) % muzhskoy
 Fille (sexe) % zhenskiy
 
+
+
+
+
+Film % fil'm
+Lumière % svyet
+Feu % ogon'
+Mot % slovo
+Lettre (alphabet) % pis'mo
 
 
 
@@ -118,6 +118,7 @@ Aucune % nikto
 Meilleur % louchshiî
 Meilleure % louchshiî
 Pire % khoudshiî
+Pire % khoudshiî
 
 Autre (M) % drougoî
 Autre (M) % drougoî
@@ -128,8 +129,6 @@ Quelques (F) % nyeskol'ko
 Dedans % vnoutri
 Dehors % vnye
 
-Encore (yet) % snova
-Encore (again) % snova
 Parfois % inogda
 Peut-être % mojyet byt'
 À propos % o
@@ -223,23 +222,16 @@ C'est-à-dire % to yest'
 
 
 
-
-
-Écrire % napisat'
-Lire % chitat'
 Rester % ostavat'sya
 Essayer % poprobovat'
 Se nommer % nazovitye syebya
 Demander % prosit'
 Répondre % otvyechat'
 Regarder % smotryet'
-Acheter % koupit'
-Vendre % prodavat'
 Couper % ryezat'
 
 Tirer % vytashshit'
 Pousser % tolkat'
-Dormir % spat'
 Vivre % jit'
 Mourir % oumyeryet'
 Apporter/Ammener % prinyesi
@@ -260,7 +252,6 @@ Jouer (en général) % igrat'
 Éteindre % vyklyuchat'
 Allumer % zajyech'
 Uriner % mochit'sya
-Payer % platit'
 Détester % nyenavidyet'
 Oublier % zabyvat'
 Commencer % dlya nachala
@@ -1050,11 +1041,7 @@ Salon % gostinaya
 Pharmacie % aptyeka
 Hôpital % bol'nitsa
 
-Médecin (M) % doktor
-Médecin (F) % doktor
-Alphabet % alfavit
-Photographie % fotografiya
-Vidéo % vidyeo
+
 Langue % yazyk
 Musée % mouzyeî
 Coeur % syerdtsye
@@ -1074,8 +1061,6 @@ Doigt % palyets
 Sein % groud'
 
 Cheveux % volosy
-Docteur % doktor
-Docteure % doktor
 Douleur % bol'
 Sol % zyemlya
 Mur % styena
@@ -1102,9 +1087,6 @@ Armoire % boufyet
 Frigo % kholodil'nik
 
 Rêve % myechtat'
-Façon % sposob
-Vérité % pravda
-Mensonge % loj'
 Santé % zdorov'ye
 
 Nord % syevyer

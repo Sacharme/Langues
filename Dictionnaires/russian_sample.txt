@@ -1,9 +1,9 @@
-Ami % droug
-Amie % podrouga
-Lit % krovat'
-Film % fil'm
-Lumière % svyet
-Feu % ogon'
-Mot % slovo
-Lettre (alphabet) % pis'mo
 Repas % yeda
+Lit % krovat'
+Médecin % doktor
+Alphabet % alfavit
+Photographie % fotografiya
+Vidéo % vidyeo
+Façon % sposob
+Vérité % pravda
+Mensonge % loj'

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Russe — Entraînement</title>
+    <meta name="description" content="Application d'entraînement de vocabulaire et conjugaison russe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background animated particles -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <div class="app-container" id="appContainer">
+        <!-- Feedback overlay (correct/wrong) -->
+        <div class="feedback-overlay" id="feedbackOverlay"></div>
+
+        <!-- Correct answer display (shown on error) -->
+        <div class="correct-answer" id="correctAnswer"></div>
+
+        <!-- Revision progress info -->
+        <div class="revision-info" id="revisionInfo"></div>
+
+        <!-- Question area -->
+        <div class="question-area" id="questionArea">
+            <!-- Translation mode -->
+            <div class="question-translation" id="questionTranslation">
+                <span class="word-display" id="wordDisplay"></span>
+            </div>
+            <!-- Conjugation mode -->
+            <div class="question-conjugation hidden" id="questionConjugation">
+                <div class="conj-header">
+                    <span class="conj-intro">Conjuguer</span>
+                    <span class="conj-irregular hidden" id="conjIrregular">irrégulier</span>
+                </div>
+                <div class="conj-verb" id="conjVerb"></div>
+                <div class="conj-tense" id="conjTense"></div>
+                <div class="conj-pronoun" id="conjPronoun"></div>
+            </div>
+        </div>
+
+        <!-- Input area -->
+        <div class="input-area">
+            <input type="text" id="answerInput" class="answer-input" placeholder="Votre réponse..." autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+            <button id="validateBtn" class="validate-btn">
+                <span>Valider</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            </button>
+        </div>
+
+        <!-- Score display -->
+        <div class="score-display" id="scoreDisplay">
+            <div class="score-percentage" id="scorePercentage">0%</div>
+            <div class="score-detail" id="scoreDetail">0/0</div>
+        </div>
+
+        <!-- Settings controls -->
+        <div class="controls">
+            <button class="control-btn" id="dictBtn">
+                <span class="control-label">Dictionnaire</span>
+                <span class="control-status" id="dictStatus">Échantillon</span>
+            </button>
+            <button class="control-btn" id="trainingBtn">
+                <span class="control-label">Entraînement</span>
+                <span class="control-status" id="trainingStatus">Traduction</span>
+            </button>
+            <button class="control-btn" id="verbBtn">
+                <span class="control-label">Verbes</span>
+                <span class="control-status" id="verbStatus">Réguliers</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

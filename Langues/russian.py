@@ -97,29 +97,6 @@ if not mots_francais:
 # Le signe mou (ь) est représenté par une apostrophe droite dans les noms de verbes
 # mais on utilise des guillemets doubles pour éviter les conflits Python
 
-# Verbes réguliers 1ère conjugaison (en -at')
-verbes_1ere_conj = [
-    "dyelat'", "znat'", "doumat'", "rabotat'", "jdat'", "pisat'", "tchitat'",
-    "otvyetchat'", "pokoupat'", "prodavat'", "ponimat'", "pokazyvat'",
-    "ostanavlivat'", "zabyvat'", "vybirat'", "myenyat'", "pomogat'", "prinimat'"
-]
-
-# Verbes réguliers 2ème conjugaison (en -it', -et')
-verbes_2eme_conj = [
-    "imyet'", "khodit'", "vidyet'", "outchit'", "lyubit'", "govorit'",
-    "prosit'", "platit'", "pomnit'", "poloutchit'", "vyerit'", "prikhodit'",
-    "sprosit'"
-]
-
-# Verbes irréguliers (les plus courants)
-verbes_irreguliers = [
-    "byt'", "yest'", "pit'", "motch'", "dat'", "idti", "khotyet'",
-    "brat'", "klast'", "stanovit'sya", "noujdat'sya",
-    "soglachat'sya", "dvigat'sya"
-]
-verbes_irreguliers_connus = []
-verbes_irreguliers_pas_connus = []
-
 # Traductions des verbes (russe translittéré -> français)
 traductions_verbes = {
     # 1ère conjugaison
@@ -170,6 +147,29 @@ traductions_verbes = {
     "soglachat'sya": "être d'accord",
     "dvigat'sya": "bouger",
 }
+
+# Verbes réguliers 1ère conjugaison (en -at')
+verbes_1ere_conj = [
+    "dyelat'", "znat'", "doumat'", "rabotat'", "jdat'", "pisat'", "tchitat'",
+    "otvyetchat'", "pokoupat'", "prodavat'", "ponimat'", "pokazyvat'",
+    "ostanavlivat'", "zabyvat'", "vybirat'", "myenyat'", "pomogat'", "prinimat'"
+]
+
+# Verbes réguliers 2ème conjugaison (en -it', -et')
+verbes_2eme_conj = [
+    "imyet'", "khodit'", "vidyet'", "outchit'", "lyubit'", "govorit'",
+    "prosit'", "platit'", "pomnit'", "poloutchit'", "vyerit'", "prikhodit'",
+    "sprosit'"
+]
+
+# Verbes irréguliers (les plus courants)
+verbes_irreguliers = [
+    "byt'", "yest'", "pit'", "motch'", "dat'", "idti", "khotyet'",
+    "brat'", "klast'", "stanovit'sya", "noujdat'sya",
+    "soglachat'sya", "dvigat'sya"
+]
+verbes_irreguliers_connus = []
+verbes_irreguliers_pas_connus = []
 
 # Temps
 temps = ["présent", "passé", "gérondif"]

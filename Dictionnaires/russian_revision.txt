@@ -1,0 +1,8 @@
+Ami % droug
+Amie % podrouga
+Acheter % koupit'
+Vendre % prodavat'
+Dormir % spat'
+Payer % platit'
+Écrire % napisat'
+Lire % chitat'

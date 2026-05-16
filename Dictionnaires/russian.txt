@@ -69,6 +69,7 @@ Septembre % syentyabr'
 Octobre % oktyabr'
 Novembre % noyabr'
 Décembre % dyekabr'
+
 Jour % dyen'
 Semaine % nyedyelya
 Mois % myesyats
@@ -87,14 +88,14 @@ Noir % chyornyî
 Blanc % byelyî
 
 Famille % syem'ya
-Père % otyets
 Mère % mat'
+Père % otyets
 Frère % brat
 Sœur % syestra
-Grand-père % dyedoushka
-Grand-mère % baboushka
 Fils (son) % syn
 Fille (daughter) % dyevochka
+Grand-père % dyedoushka
+Grand-mère % baboushka
 
 Bonjour % zdravstvouîtye
 Salut % privyet
@@ -120,8 +121,7 @@ Quoi % chto
 Que % chto
 Qui % kto
 Combien % skol'ko
-Toujours (always) % vsyegda
-Toujours (still) % vsyegda
+Toujours % vsyegda
 Jamais % nikogda
 Dans % v
 Avec % s
@@ -158,11 +158,14 @@ Déjà % oujye
 Rien % nichyego
 Pourquoi % za chto
 Parce que % potomou chto
+Encore % snova
 
 Tic de language (genre) % tipo
 Va te faire foutre % idi na khouî
 Putain % blyat'
 Language slang % mat
+Penis % khouî
+Vagin % pîzda
 
 Être % byt'
 Avoir % imyet'
@@ -220,14 +223,6 @@ Viande % myaso
 Fromage % syr
 Banane % banan
 
-Nom % familiya
-Prénom % imya
-Numéro % nomyer
-Téléphone % tyelyefon
-Maison % dom
-Dieu % bog
-École % shkola
-
 Chien % sobaka
 Chat % koshka
 Oiseau % ptitsa
@@ -238,3 +233,10 @@ France % frantsiya
 Chine % kitaî
 USA % ssha
 
+Nom % familiya
+Prénom % imya
+Numéro % nomyer
+Téléphone % tyelyefon
+Maison % dom
+Dieu % bog
+École % shkola
